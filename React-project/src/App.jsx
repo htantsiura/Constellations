@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import Header from './components/Header/Header'
+import SidePanel from './components/SidePanel/SidePanel'
 
 
 export default function App() {
@@ -17,10 +18,7 @@ export default function App() {
         <Header />
         <main className='main-section'>
           {/* pages for About and Contacts buttons */}
-          {/* Side panel with a list of Constellations and Stars cards */}
-          <div className="side-panel-container">
-
-          </div>
+          <SidePanel />
         </main>
       </div>
     </>

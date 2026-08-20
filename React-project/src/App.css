@@ -19,18 +19,7 @@
   overflow: hidden;
 }
 
-.side-panel-container {
-  background-color: var(--darkgrey);
-  opacity: 0.2;
-  display: flex;
-  justify-content: flex-end;
-  width: 360px;
-  height: 100vh;
 
-  position: absolute;
-  right: 0;
-  top: 0;
-}
 
 /* .counter {
   font-size: 16px;

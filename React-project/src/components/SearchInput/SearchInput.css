@@ -5,6 +5,7 @@
   background-color: var(--darkgrey);
   opacity: 1.0;
   outline: none;
+  width: 240px;
 }
 
 .header-search-input::placeholder {

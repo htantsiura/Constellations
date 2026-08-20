@@ -1,6 +1,5 @@
 import logo from '../../assets/header-logo.png'
 import './Header.css'
-import SearchInput from '../SearchInput/SearchInput'
 
 export default function Header() {
   return (
@@ -12,7 +11,6 @@ export default function Header() {
         <button className='nav-btn'>About the Project</button>
         <button className='nav-btn'>Contacts</button>
       </nav>
-      <SearchInput />
     </header>
   )
 }
