@@ -8,7 +8,7 @@ export default function Header() {
         <img src={ logo } alt="Interactive Constellations" className='header-logo'/>
       </div>
       <nav className='header-nav'>
-        <button className='nav-btn'>About the Project</button>
+        <button className='nav-btn'>About</button>
         <button className='nav-btn'>Contacts</button>
       </nav>
     </header>

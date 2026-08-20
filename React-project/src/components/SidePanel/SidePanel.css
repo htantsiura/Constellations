@@ -2,11 +2,12 @@
   background-color: var(--black);
   display: flex;
   justify-content: flex-start;
-  width: 360px;
+  width: 320px;
   height: 100vh;
   padding: 12px 0px;
 
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 0;
+  z-index: 101;
 }
