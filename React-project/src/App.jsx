@@ -13,11 +13,14 @@ export default function App() {
           { My three.js interactive 3D constellations }
         </Canvas> */}
       </div>
-      <div>
+      <div className='ui-container'>
         <Header />
-        <main>
+        <main className='main-section'>
           {/* pages for About and Contacts buttons */}
           {/* Side panel with a list of Constellations and Stars cards */}
+          <div className="side-panel-container">
+
+          </div>
         </main>
       </div>
     </>
