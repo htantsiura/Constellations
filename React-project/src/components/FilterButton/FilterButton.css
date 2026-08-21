@@ -4,12 +4,16 @@
   height: 32px;
   border-radius: var(--corner-radius);
   border: none;
-  background-color: var(--primary-500);
+  background-color: var(--darkgrey);
   opacity: 1;
   transition: opacity 0.2s ease;
+}
 
-  &:hover {
-    opacity: 0.8;
-  }
+.filter-btn:hover {
+  opacity: 0.8;
+}
+
+.mini-icon {
+  width: 32px;
 }
 

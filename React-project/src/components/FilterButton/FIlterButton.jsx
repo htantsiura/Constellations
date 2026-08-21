@@ -1,17 +1,18 @@
 import { useState } from 'react'
 import './FilterButton.css'
 
-export default function FilterButton({ id, bgColor, onClick }) {
-  const [isClicked, setIsClicked] = useState(0);
+export default function FilterButton({ id, icon, onClick, isActive, bgColor }) {
+
+  let color = isActive ? bgColor : "var(--darkgrey)";
 
   return(
     <button 
       id={ id } 
       className='filter-btn'
-      style={{ backgroundColor: bgColor }}
-      onClick={onClick}
+      onClick={ onClick }
+      style={{backgroundColor: color}}
     >
-      FF
+      <img src={ icon } alt="ic" className='mini-icon'/>
     </button>
   )
-}
+} 
