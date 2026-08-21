@@ -5,43 +5,47 @@ import { AllStars } from '../../StarsData'
 import { AllConstellations } from '../../ConstellationsData'
 import iconStar from '../../assets/Icon-star.png'
 import iconConstell from '../../assets/Icon-constellation.png'
+import SideContent from '../SideContent/SideContent'
 import { useState } from 'react'
 
 export default function SidePanel() {
   const [isStar, setIsStar] = useState(false);
   const [isConstellation, setIsConstellation] = useState(false);
+  const [contentStars, setContentStars] = useState(null)
+  const [contentConstell, setContentConstell] = useState(null)
 
   return (
     <div className="side-panel-container">
       
       <div className='side-panel-header'>
         <SearchInput />
+        
         <FilterButton 
           id="Constellation-btn" 
-          icon={iconStar} 
-          /* onClick={() => handleClick(isStar)} */
-          onClick={() => setIsStar(!isStar)}
-          isActive={isStar}
-          bgColor="var(--secondary-750)"
+          icon={iconConstell} 
+          onClick={() => {
+            setIsConstellation(!isConstellation),
+            setContentConstell( !isConstellation ? SideContent(isConstellation, AllConstellations) : null )
+          }}
+          isActive={isConstellation}
+          bgColor="var(--primary-500)"
         />
         <FilterButton 
           id="Star-btn" 
-          icon={iconConstell} 
-          onClick={() => setIsConstellation(!isConstellation)}
-          isActive={isConstellation}
-          bgColor="var(--primary-500)"
+          icon={iconStar} 
+          onClick={() => {
+            setIsStar(!isStar), 
+            setContentStars( !isStar ? SideContent(isStar, AllStars) : null )
+          }}
+          isActive={isStar}
+          bgColor="var(--secondary-750)"
         />
       </div>
 
       <div className='side-panel-body'>
-        {AllStars.map((item) => (
-          <p key={item.id}>
-            {item.officialName} / {item.entity}
-          </p>
-        ))}
+        {contentConstell}
+        {contentStars}
       </div>
     </div>
-    
   )
-  
 }
