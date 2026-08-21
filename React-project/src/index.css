@@ -19,7 +19,9 @@ html, body, #root {
   --lightgrey: #BFB9C6;
   --grey: #80738C;
   --darkgrey: #403946;
-  --black: #050506;
+  --darkgrey-900: #1A141F;
+  --darkgrey-950: #050506;
+  --black: #000000;
 
   /* Primary */
   --primary-50: #F2E5FF;

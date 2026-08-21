@@ -3,9 +3,8 @@
   border-radius: var(--corner-radius);
   border: none;
   background-color: var(--darkgrey);
-  opacity: 1.0;
   outline: none;
-  width: 220px;
+  width: 188px;
 }
 
 .header-search-input::placeholder {
