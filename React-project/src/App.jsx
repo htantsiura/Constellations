@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import Header from './components/Header/Header'
 import SidePanel from './components/SidePanel/SidePanel'
+import AboutTheProject from './components/AboutTheProject/AboutTheProject'
 
 
 export default function App() {
@@ -19,6 +20,7 @@ export default function App() {
         <main className='main-section'>
           {/* pages for About and Contacts buttons */}
           <SidePanel />
+          <AboutTheProject />
         </main>
       </div>
     </>

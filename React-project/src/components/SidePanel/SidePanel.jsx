@@ -3,8 +3,9 @@ import SearchInput from '../SearchInput/SearchInput'
 import FilterButton from '../FilterButton/FIlterButton'
 import { AllStars } from '../../StarsData'
 import { AllConstellations } from '../../ConstellationsData'
-import iconStar from '../../assets/Icon-star.png'
-import iconConstell from '../../assets/Icon-constellation.png'
+import iconStar from '../../assets/Icon-star.svg'
+import iconConstell from '../../assets/Icon-constellation.svg'
+
 import SideContent from '../SideContent/SideContent'
 import { useState } from 'react'
 
@@ -24,7 +25,7 @@ export default function SidePanel() {
           id="Constellation-btn" 
           icon={iconConstell} 
           onClick={() => {
-            setIsConstellation(!isConstellation),
+            setIsConstellation( !isConstellation ),
             setContentConstell( !isConstellation ? SideContent(isConstellation, AllConstellations) : null )
           }}
           isActive={isConstellation}
@@ -34,7 +35,7 @@ export default function SidePanel() {
           id="Star-btn" 
           icon={iconStar} 
           onClick={() => {
-            setIsStar(!isStar), 
+            setIsStar( !isStar ), 
             setContentStars( !isStar ? SideContent(isStar, AllStars) : null )
           }}
           isActive={isStar}
