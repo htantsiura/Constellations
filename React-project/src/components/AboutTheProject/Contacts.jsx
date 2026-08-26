@@ -13,7 +13,7 @@ export default function Contacts({ onClose }) {
       </div>
       <div className='page-about-body'>
         <div className='about-card'>
-          <p className='about-card-title'><h6>Contacts</h6></p>
+          {/* <p className='about-card-title'><h6>Contacts</h6></p> */}
           <a href="https://hennadiitantsiura.tilda.ws/" className='sm-link' >Portfolio</a><br/>
           <a href="https://www.linkedin.com/in/htantsiura/" className='sm-link' >Linkedin</a>
           <p>h.tantsiura@gmail.com</p>

@@ -1,16 +1,14 @@
 import './ButtonBack.css'
 
-export default function ButtonBack({ id, icon, onClick, isActive, bgColor }) {
+export default function ButtonBack({ id, icon, onClick, bgColor }) {
   return(
     <button 
       id={ id } 
       className='back-btn'
       onClick={ onClick }
-      /* onClick={ onClick }
-      style={{backgroundColor: color}} */
+      /* style={{backgroundColor: color}} */
     >
       <img src={ icon } alt="ic" className='mini-icon'/>
-      
     </button>
   )
 }

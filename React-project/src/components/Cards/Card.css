@@ -1,0 +1,38 @@
+.card-star {
+  background-color: var(--card-bg-color);
+  border-radius: var(--corner-radius);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body {
+  padding: var(--card-padding);
+}
+
+.card-header-star {
+  background-color: var(--card-bg-color);
+  border: none;
+  border-radius: var(--corner-radius);
+  color: var(--secondary-250);
+
+  font-size: 16px;
+
+  height: 48px;
+  width: 100%;
+  position: relative;
+  padding-left: var(--card-padding);
+  padding-right: 8px;
+
+  cursor: pointer;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+.icon-chevron {
+  width: 32px;
+  height: 32px;
+
+}

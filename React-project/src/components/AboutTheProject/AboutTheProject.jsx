@@ -28,12 +28,6 @@ export default function AboutTheProject({ onClose }) {
       <div className='page-about-body'>
         <AboutCard data={aboutData[0]} />
         <AboutCard data={aboutData[1]} />
-        <div className='about-card'>
-          <p className='about-card-title'><h6>Contacts</h6></p>
-          <a href="https://hennadiitantsiura.tilda.ws/" className='sm-link' >Portfolio</a><br/>
-          <a href="https://www.linkedin.com/in/htantsiura/" className='sm-link' >Linkedin</a>
-          <p>h.tantsiura@gmail.com</p>
-        </div>
       </div>
     </div>
   )

@@ -5,8 +5,8 @@ import { AllStars } from '../../StarsData'
 import { AllConstellations } from '../../ConstellationsData'
 import iconStar from '../../assets/Icon-star.svg'
 import iconConstell from '../../assets/Icon-constellation.svg'
-
 import SideContent from '../SideContent/SideContent'
+import CardStar from '../Cards/Card'
 import { useState } from 'react'
 
 export default function SidePanel() {
@@ -17,10 +17,8 @@ export default function SidePanel() {
 
   return (
     <div className="side-panel-container">
-      
       <div className='side-panel-header'>
         <SearchInput />
-        
         <FilterButton 
           id="Constellation-btn" 
           icon={iconConstell} 
@@ -42,10 +40,22 @@ export default function SidePanel() {
           bgColor="var(--secondary-750)"
         />
       </div>
-
       <div className='side-panel-body'>
-        {contentConstell}
-        {contentStars}
+        { 
+          AllStars.map((item) => (
+            <CardStar
+              key={ item.id }
+              item={ item }
+            />
+
+          ))
+        }
+        {/* <CardStar item={ AllStars[1]} />
+        <CardStar item={ AllStars[2]} />
+        <CardStar item={ AllStars[3]} />
+        <CardStar item={ AllStars[1]} />
+        <CardStar item={ AllStars[2]} />
+        <CardStar item={ AllStars[3]} /> */}
       </div>
     </div>
   )

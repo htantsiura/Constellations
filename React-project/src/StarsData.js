@@ -4,7 +4,7 @@ export const AllStars = [
     // Basic Identification
     entity: "Star",
     id: "rigel",
-    officialName: "Rigel",
+    name: "Rigel",
     bayerDesignation: "Beta Orionis",
     flamsteedDesignation: "19 Orionis",
     constellation: {
@@ -55,23 +55,27 @@ export const AllStars = [
     // Basic Identification
     entity: "Star",
     id: "betelgeuse",
-    officialName: "Betelgeuse",
+    name: "Betelgeuse",
   }, 
 
   {
     // Basic Identification
     entity: "Star",
     id: "bellatrix",
-    officialName: "Bellatrix",
+    name: "Bellatrix",
   }, 
 
   {
     // Basic Identification
     entity: "Star",
     id: "mintaka",
-    officialName: "Mintaka",
+    name: "Mintaka",
   }, 
 
-
-
+  {
+    // Basic Identification
+    entity: "Star",
+    id: "anyting",
+    name: "Anything Else",
+  }
 ];

@@ -1,13 +1,21 @@
 .back-btn {
-  width: 64px;
+  width: 48px;
   min-width: 44px;
   height: 32px;
+
   border-radius: var(--corner-radius);
   border: none;
+  /* border: 1px solid;
+  border-color: var(--btn-border-darkgrey); */
   background-color: var(--black);
   opacity: 1;
   transition: opacity 0.2s ease;
   cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 4px;
 }
 
 .back-btn:hover {
