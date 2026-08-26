@@ -13,6 +13,7 @@ export default function FilterButton({ id, icon, onClick, isActive, bgColor }) {
       style={{backgroundColor: color}}
     >
       <img src={ icon } alt="ic" className='mini-icon'/>
+      
     </button>
   )
 } 

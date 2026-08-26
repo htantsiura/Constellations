@@ -22,7 +22,7 @@
   gap: 8px;
 
   width: 320px;
-  height: 64px;
+  height: var(--header-height);
   padding: 16px 12px;
   z-index: 105;
 }

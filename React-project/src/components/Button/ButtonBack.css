@@ -1,0 +1,18 @@
+.back-btn {
+  width: 64px;
+  min-width: 44px;
+  height: 32px;
+  border-radius: var(--corner-radius);
+  border: none;
+  background-color: var(--black);
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+
+.back-btn:hover {
+  opacity: 0.8;
+}
+
+.mini-icon {
+  width: 32px;
+}

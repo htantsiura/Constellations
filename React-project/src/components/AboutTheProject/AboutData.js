@@ -9,6 +9,6 @@ export const aboutData = [
   },
   {
     title: 'Contacts',
-    description: 'my linkedin\nmy number\nmy portfolio'
+    description: 'linkedin \nmy number\nmy portfolio'
   }
 ]
