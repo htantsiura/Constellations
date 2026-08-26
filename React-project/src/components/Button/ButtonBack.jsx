@@ -5,6 +5,7 @@ export default function ButtonBack({ id, icon, onClick, isActive, bgColor }) {
     <button 
       id={ id } 
       className='back-btn'
+      onClick={ onClick }
       /* onClick={ onClick }
       style={{backgroundColor: color}} */
     >

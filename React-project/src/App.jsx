@@ -3,10 +3,11 @@ import './App.css'
 import Header from './components/Header/Header'
 import SidePanel from './components/SidePanel/SidePanel'
 import AboutTheProject from './components/AboutTheProject/AboutTheProject'
+import Contacts from './components/AboutTheProject/Contacts'
 
 
 export default function App() {
-  /* const [count, setCount] = useState(0) */
+  const [activePage, setActivePage] = useState('panel')
 
   return (
     <>
@@ -16,11 +17,14 @@ export default function App() {
         </Canvas> */}
       </div>
       <div className='ui-container'>
-        <Header />
+        <Header 
+          onOpenAbout={() => setActivePage('about')}
+          onOpenContacts={() => setActivePage('contacts')}
+        />
         <main className='main-section'>
-          {/* pages for About and Contacts buttons */}
-          <SidePanel />
-          <AboutTheProject />
+          { activePage === 'about' && <AboutTheProject onClose={() => setActivePage('panel')} /> }
+          { activePage === 'contacts' && <Contacts onClose={() => setActivePage('panel')} /> }
+          { activePage === 'panel' && <SidePanel /> }
         </main>
       </div>
     </>

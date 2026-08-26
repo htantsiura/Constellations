@@ -16,12 +16,13 @@ function AboutCard({ data }) {
   )
 }
 
-export default function AboutTheProject() {
+export default function AboutTheProject({ onClose }) {
   return(
     <div className='page-about'>
       <div className='page-about-header' >
         <ButtonBack 
           icon={ iconBackArrow }
+          onClick={ onClose }
           />
       </div>
       <div className='page-about-body'>
