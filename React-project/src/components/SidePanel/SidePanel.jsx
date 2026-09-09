@@ -12,8 +12,9 @@ import { useState } from 'react'
 export default function SidePanel() {
   const [isStar, setIsStar] = useState(false);
   const [isConstellation, setIsConstellation] = useState(false);
-  const [contentStars, setContentStars] = useState(null)
-  const [contentConstell, setContentConstell] = useState(null)
+  const [contentStars, setContentStars] = useState(null);
+  const [contentConstell, setContentConstell] = useState(null);
+  const [expandedId, setExpandedId] = useState(null);
 
   return (
     <div className="side-panel-container">
@@ -46,6 +47,8 @@ export default function SidePanel() {
             <CardStar
               key={ item.id }
               item={ item }
+              isExpanded={ expandedId === item.id }
+              onToggle={() => setExpandedId(expandedId === item.id ? null : item.id )}
             />
 
           ))
