@@ -6,7 +6,8 @@ import { AllConstellations } from '../../ConstellationsData'
 import iconStar from '../../assets/Icon-star.svg'
 import iconConstell from '../../assets/Icon-constellation.svg'
 import SideContent from '../SideContent/SideContent'
-import CardStar from '../Cards/Card'
+import StarCard from '../Cards/StarCard'
+import ConstellCard from '../Cards/ConstellCard'
 import { useState } from 'react'
 
 export default function SidePanel() {
@@ -44,21 +45,24 @@ export default function SidePanel() {
       <div className='side-panel-body'>
         { 
           AllStars.map((item) => (
-            <CardStar
+            <StarCard
               key={ item.id }
               item={ item }
               isExpanded={ expandedId === item.id }
               onToggle={() => setExpandedId(expandedId === item.id ? null : item.id )}
             />
-
           ))
         }
-        {/* <CardStar item={ AllStars[1]} />
-        <CardStar item={ AllStars[2]} />
-        <CardStar item={ AllStars[3]} />
-        <CardStar item={ AllStars[1]} />
-        <CardStar item={ AllStars[2]} />
-        <CardStar item={ AllStars[3]} /> */}
+        { 
+          AllConstellations.map((item) => (
+            <ConstellCard
+              key={ item.id }
+              item={ item }
+              isExpanded={ expandedId === item.id }
+              onToggle={() => setExpandedId(expandedId === item.id ? null : item.id )}
+            />
+          ))
+        }
       </div>
     </div>
   )

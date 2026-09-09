@@ -4,7 +4,7 @@ export const AllConstellations = [
     // Basic Information
     entity: "Constellation",
     id: "ori",
-    officialName: "Orion",
+    name: "Orion",
     commonName: "The Hunter",
     iauAbbreviation: "Ori",
 
@@ -69,14 +69,14 @@ export const AllConstellations = [
     // Basic Information
     entity: "Constellation",
     id: "vrg",
-    officialName: "Virgin",
+    name: "Virgin",
   },
 
   {
     // Basic Information
     entity: "Constellation",
     id: "gmn",
-    officialName: "Gemini",
+    name: "Gemini",
   }
    
 

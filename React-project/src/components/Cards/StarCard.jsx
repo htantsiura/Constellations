@@ -3,11 +3,11 @@ import iconChevron0 from '../../assets/Icon-chevron-0.svg'
 import iconChevron1 from '../../assets/Icon-chevron-1.svg'
 import { useState } from 'react'
 
-export default function CardStar({ item, isExpanded, onToggle}) {
+export default function StarCard({ item, isExpanded, onToggle}) {
 
   return (
-    <div className={`card-star ${isExpanded ? 'expanded' : ''}`}>
-      <button className='card-header-star' onClick={onToggle} >
+    <div className={`star-card ${isExpanded ? 'expanded' : ''}`}>
+      <button className='star-card-header' onClick={onToggle} >
         <p>{ item.name }</p>
         <img 
           src={ isExpanded ? iconChevron0 : iconChevron1 } 
