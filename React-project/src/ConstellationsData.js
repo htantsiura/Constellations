@@ -77,6 +77,20 @@ export const AllConstellations = [
     entity: "Constellation",
     id: "gmn",
     name: "Gemini",
+  },
+
+  {
+    // Basic Information
+    entity: "Constellation",
+    id: "vrg1",
+    name: "Virgin1",
+  },
+
+  {
+    // Basic Information
+    entity: "Constellation",
+    id: "gmn1",
+    name: "Gemini1",
   }
    
 

@@ -8,13 +8,17 @@
 
 .card-body {
   padding: var(--card-padding);
+  padding-top: 0px;
+  color: var(--text-grey);
+
+  font-size: 14px;
 }
 
 .star-card-header {
   background-color: var(--card-bg-color);
   border: none;
   border-radius: var(--corner-radius);
-  color: var(--secondary-250);
+  color: var(--secondary-500);
 
   font-size: 16px;
 
@@ -65,4 +69,14 @@
   justify-content: space-between;
   align-items: center;
   gap: 8px;
+}
+
+.constellation-name {
+  color: var(--darkgrey);
+}
+
+.card-body-line {
+  display: flex;
+  justify-content: space-between;
+
 }

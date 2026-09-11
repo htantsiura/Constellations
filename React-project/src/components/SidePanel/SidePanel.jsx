@@ -1,7 +1,7 @@
 import './SidePanel.css'
 import SearchInput from '../SearchInput/SearchInput'
 import FilterButton from '../FilterButton/FIlterButton'
-import { AllStars } from '../../StarsData'
+import StarsData from '../../StarsData_4.json'
 import { AllConstellations } from '../../ConstellationsData'
 import iconStar from '../../assets/Icon-star.svg'
 import iconConstell from '../../assets/Icon-constellation.svg'
@@ -10,12 +10,20 @@ import StarCard from '../Cards/StarCard'
 import ConstellCard from '../Cards/ConstellCard'
 import { useState } from 'react'
 
+const sortByName = (array) => {
+  return [...array].sort((a, b) => a.name.localeCompare(b.name));
+}
+
 export default function SidePanel() {
   const [isStar, setIsStar] = useState(false);
   const [isConstellation, setIsConstellation] = useState(false);
   const [contentStars, setContentStars] = useState(null);
   const [contentConstell, setContentConstell] = useState(null);
   const [expandedId, setExpandedId] = useState(null);
+
+  /* const sortedStars = sortByName(AllStars); */
+  const sortedStars = sortByName(StarsData);
+  const sortedConstellations = sortByName(AllConstellations);
 
   return (
     <div className="side-panel-container">
@@ -44,7 +52,8 @@ export default function SidePanel() {
       </div>
       <div className='side-panel-body'>
         { 
-          AllStars.map((item) => (
+          /* AllStars.map((item) => ( */
+          sortedStars.map((item) => (
             <StarCard
               key={ item.id }
               item={ item }
@@ -54,7 +63,8 @@ export default function SidePanel() {
           ))
         }
         { 
-          AllConstellations.map((item) => (
+          /* AllConstellations.map((item) => ( */
+          sortedConstellations.map((item) => (
             <ConstellCard
               key={ item.id }
               item={ item }

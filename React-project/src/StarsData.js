@@ -1,81 +1,221 @@
 export const AllStars = [
 
   {
-    // Basic Identification
+    id: "alioth",
     entity: "Star",
-    id: "rigel",
-    name: "Rigel",
-    bayerDesignation: "Beta Orionis",
-    flamsteedDesignation: "19 Orionis",
-    constellation: {
-      name: "Orion",
-      iauAbbreviation: "Ori"
-    },
-
-    // Astrometry and Position
-    astrometry: {
-      equatorialCoordinates: {
-        rightAscensionHours: 5.242,
-        declinationDegrees: -8.201
-      },
-      distance: {
-        lightYears: 860,
-        parsecs: 260
-      },
-      parallaxMilliarcseconds: 3.78,
-      properMotion: {
-        raMasPerYear: 1.87,
-        decMasPerYear: -0.56
-      }
-    },
-
-    // Physical Properties
-    physicalProperties: {
-      spectralClass: "B8 Ia",
-      stellarType: "Blue-white supergiant",
-      apparentMagnitude: 0.13,
-      absoluteMagnitude: -7.84,
-      massSolarMasses: 21,
-      radiusSolarRadii: 79,
-      luminositySolarLuminosities: 120000,
-      surfaceTemperatureKelvin: 12100,
-      estimatedAgeMillionsYears: 8
-    },
-
-    // Stellar System & Characteristics
-    system: {
-      isMultipleStarSystem: true,
-      componentCount: 4,
-      primaryComponent: "Rigel A",
-      variableType: "Alpha Cygni variable"
-    }
-  }, 
-
+    name: "Alioth",
+    constellation: "Ursa Major",
+    right_ascension: "12h 54m 01.74s",
+    declination: "+55° 57′ 35.4″",
+    apparent_magnitude: "1.77",
+    absolute_magnitude: "-0.2",
+    distance_light_year: "82.6",
+    spectral_class: "A0pCr"
+  },
   {
-    // Basic Identification
+    id: "dubhe",
     entity: "Star",
-    id: "betelgeuse",
-    name: "Betelgeuse",
-  }, 
-
+    name: "Dubhe",
+    constellation: "Ursa Major",
+    right_ascension: "11h 03m 43.67s",
+    declination: "+61° 45′ 03.7″",
+    apparent_magnitude: "1.79",
+    absolute_magnitude: "-1.1",
+    distance_light_year: "123",
+    spectral_class: "K0III"
+  },
   {
-    // Basic Identification
+    id: "alkaid",
     entity: "Star",
-    id: "bellatrix",
-    name: "Bellatrix",
-  }, 
-
+    name: "Alkaid",
+    constellation: "Ursa Major",
+    right_ascension: "13h 47m 32.44s",
+    declination: "+49° 18′ 47.9″",
+    apparent_magnitude: "1.85",
+    absolute_magnitude: "-0.6",
+    distance_light_year: "103.9",
+    spectral_class: "B3V"
+  },
   {
-    // Basic Identification
+    id: "mizar",
     entity: "Star",
-    id: "mintaka",
-    name: "Mintaka",
-  }, 
-
+    name: "Mizar",
+    constellation: "Ursa Major",
+    right_ascension: "13h 23m 55.54s",
+    declination: "+54° 55′ 31.3″",
+    apparent_magnitude: "2.23",
+    absolute_magnitude: "0.33",
+    distance_light_year: "82.9",
+    spectral_class: "A2V"
+  },
   {
-    // Basic Identification
+    id: "merak",
     entity: "Star",
-    id: "anyting",
-    name: "Anything Else",
+    name: "Merak",
+    constellation: "Ursa Major",
+    right_ascension: "11h 01m 50.48s",
+    declination: "+56° 22′ 56.7″",
+    apparent_magnitude: "2.37",
+    absolute_magnitude: "0.41",
+    distance_light_year: "79.7",
+    spectral_class: "A1V"
+  },
+  {
+    id: "phecda",
+    entity: "Star",
+    name: "Phecda",
+    constellation: "Ursa Major",
+    right_ascension: "11h 53m 49.85s",
+    declination: "+53° 41′ 41.1″",
+    apparent_magnitude: "2.44",
+    absolute_magnitude: "0.36",
+    distance_light_year: "83.2",
+    spectral_class: "A0Ve"
+  },
+  {
+    id: "megrez",
+    entity: "Star",
+    name: "Megrez",
+    constellation: "Ursa Major",
+    right_ascension: "12h 15m 25.56s",
+    declination: "+57° 01′ 57.4″",
+    apparent_magnitude: "3.31",
+    absolute_magnitude: "1.33",
+    distance_light_year: "80.5",
+    spectral_class: "A3V"
+  },
+
+  // Дополнительные важные звезды созвездия
+  {
+    id: "alcor",
+    entity: "Star",
+    name: "Alcor",
+    constellation: "Ursa Major",
+    right_ascension: "13h 25m 13.54s",
+    declination: "+54° 59′ 16.7″",
+    apparent_magnitude: "3.99",
+    absolute_magnitude: "2.01",
+    distance_light_year: "81.7",
+    spectral_class: "A5Vn"
+  },
+  {
+    id: "muscida",
+    entity: "Star",
+    name: "Muscida",
+    constellation: "Ursa Major",
+    right_ascension: "08h 30m 15.86s",
+    declination: "+60° 43′ 05.4″",
+    apparent_magnitude: "3.35",
+    absolute_magnitude: "-0.40",
+    distance_light_year: "179",
+    spectral_class: "G4II-III"
+  },
+  {
+    id: "talitha",
+    entity: "Star",
+    name: "Talitha",
+    constellation: "Ursa Major",
+    right_ascension: "08h 59m 12.42s",
+    declination: "+48° 02′ 30.6″",
+    apparent_magnitude: "3.12",
+    absolute_magnitude: "2.29",
+    distance_light_year: "47.3",
+    spectral_class: "A7V"
+  },
+  {
+    id: "alkaphrah",
+    entity: "Star",
+    name: "Alkaphrah",
+    constellation: "Ursa Major",
+    right_ascension: "09h 03m 37.56s",
+    declination: "+47° 09′ 24.0″",
+    apparent_magnitude: "3.57",
+    absolute_magnitude: "-0.62",
+    distance_light_year: "358",
+    spectral_class: "A1Vn"
+  },
+  {
+    id: "taniaborealis",
+    entity: "Star",
+    name: "Tania Borealis",
+    constellation: "Ursa Major",
+    right_ascension: "10h 17m 05.80s",
+    declination: "+42° 54′ 52.0″",
+    apparent_magnitude: "3.45",
+    absolute_magnitude: "0.38",
+    distance_light_year: "134",
+    spectral_class: "A2IV"
+  },
+  {
+    id: "taniaaustralis",
+    entity: "Star",
+    name: "Tania Australis",
+    constellation: "Ursa Major",
+    right_ascension: "10h 22m 19.74s",
+    declination: "+41° 29′ 58.0″",
+    apparent_magnitude: "3.06",
+    absolute_magnitude: "-1.35",
+    distance_light_year: "230",
+    spectral_class: "M0III"
+  },
+  {
+    id: "alulaborealis",
+    entity: "Star",
+    name: "Alula Borealis",
+    constellation: "Ursa Major",
+    right_ascension: "11h 18m 28.72s",
+    declination: "+33° 05′ 39.3″",
+    apparent_magnitude: "3.49",
+    absolute_magnitude: "-0.87",
+    distance_light_year: "399",
+    spectral_class: "K3III"
+  },
+  {
+    id: "alulaaustralis",
+    entity: "Star",
+    name: "Alula Australis",
+    constellation: "Ursa Major",
+    right_ascension: "11h 18m 10.93s",
+    declination: "+31° 31′ 45.1″",
+    apparent_magnitude: "3.79",
+    absolute_magnitude: "4.18",
+    distance_light_year: "27.3",
+    spectral_class: "G0V"
+  },
+  {
+    id: "sarir",
+    entity: "Star",
+    name: "Sarir",
+    constellation: "Ursa Major",
+    right_ascension: "09h 32m 51.43s",
+    declination: "+51° 40′ 38.3″",
+    apparent_magnitude: "3.17",
+    absolute_magnitude: "2.52",
+    distance_light_year: "43.9",
+    spectral_class: "F6IV"
+  },
+  {
+    id: "psiurnaemajoris",
+    entity: "Star",
+    name: "Psi Ursae Majoris",
+    constellation: "Ursa Major",
+    right_ascension: "11h 09m 39.78s",
+    declination: "+44° 29′ 54.8″",
+    apparent_magnitude: "3.00",
+    absolute_magnitude: "-0.27",
+    distance_light_year: "144",
+    spectral_class: "K1III"
+  },
+  {
+    id: "chalawan",
+    entity: "Star",
+    name: "Chalawan",
+    constellation: "Ursa Major",
+    right_ascension: "10h 59m 27.97s",
+    declination: "+40° 25′ 48.9″",
+    apparent_magnitude: "5.03",
+    absolute_magnitude: "4.29",
+    distance_light_year: "45.3",
+    spectral_class: "G1V"
   }
 ];
