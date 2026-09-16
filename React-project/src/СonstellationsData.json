@@ -1,0 +1,1491 @@
+[
+  {
+    "id": "andromeda",
+    "entity": "Constellation",
+    "name": "Andromeda",
+    "constellation_abbr": "And",
+    "right_ascension": 0.8,
+    "declination": 37.4,
+    "square": 722.3,
+    "main_stars_qty": 9,
+    "brightest_star": "Alpheratz",
+    "list_of_main_stars": [
+      "alpheratz",
+      "groombridge_34",
+      "mirach",
+      "adhil",
+      "titawin",
+      "nembus",
+      "almach",
+      "veritate",
+      "ross_248"
+    ]
+  },
+  {
+    "id": "antlia",
+    "entity": "Constellation",
+    "name": "Antlia",
+    "constellation_abbr": "Ant",
+    "right_ascension": 10.2,
+    "declination": -32.5,
+    "square": 238.9,
+    "main_stars_qty": 0,
+    "brightest_star": "",
+    "list_of_main_stars": []
+  },
+  {
+    "id": "apus",
+    "entity": "Constellation",
+    "name": "Apus",
+    "constellation_abbr": "Aps",
+    "right_ascension": 16.1,
+    "declination": -75.3,
+    "square": 206.3,
+    "main_stars_qty": 0,
+    "brightest_star": "",
+    "list_of_main_stars": []
+  },
+  {
+    "id": "aquarius",
+    "entity": "Constellation",
+    "name": "Aquarius",
+    "constellation_abbr": "Aqr",
+    "right_ascension": 22.3,
+    "declination": -10.8,
+    "square": 980.0,
+    "main_stars_qty": 9,
+    "brightest_star": "Sadalsuud",
+    "list_of_main_stars": [
+      "albali",
+      "sadalsuud",
+      "bunda",
+      "sadalmelik",
+      "ancha",
+      "sadachbia",
+      "situla",
+      "skat",
+      "ez_aqr"
+    ]
+  },
+  {
+    "id": "aquila",
+    "entity": "Constellation",
+    "name": "Aquila",
+    "constellation_abbr": "Aql",
+    "right_ascension": 19.7,
+    "declination": 3.4,
+    "square": 652.5,
+    "main_stars_qty": 5,
+    "brightest_star": "Altair",
+    "list_of_main_stars": [
+      "okab",
+      "tarazed",
+      "altair",
+      "libertas",
+      "alshain"
+    ]
+  },
+  {
+    "id": "ara",
+    "entity": "Constellation",
+    "name": "Ara",
+    "constellation_abbr": "Ara",
+    "right_ascension": 17.4,
+    "declination": -53.6,
+    "square": 237.1,
+    "main_stars_qty": 1,
+    "brightest_star": "Cervantes",
+    "list_of_main_stars": [
+      "cervantes"
+    ]
+  },
+  {
+    "id": "aries",
+    "entity": "Constellation",
+    "name": "Aries",
+    "constellation_abbr": "Ari",
+    "right_ascension": 2.6,
+    "declination": 20.8,
+    "square": 441.4,
+    "main_stars_qty": 6,
+    "brightest_star": "Hamal",
+    "list_of_main_stars": [
+      "mesarthim",
+      "sheratan",
+      "hamal",
+      "lilii_borea",
+      "bharani",
+      "botein"
+    ]
+  },
+  {
+    "id": "auriga",
+    "entity": "Constellation",
+    "name": "Auriga",
+    "constellation_abbr": "Aur",
+    "right_ascension": 6.0,
+    "declination": 42.0,
+    "square": 657.4,
+    "main_stars_qty": 7,
+    "brightest_star": "Capella",
+    "list_of_main_stars": [
+      "hassaleh",
+      "almaaz",
+      "saclateni",
+      "haedus",
+      "capella",
+      "menkalinan",
+      "mahasim"
+    ]
+  },
+  {
+    "id": "bootes",
+    "entity": "Constellation",
+    "name": "Boötes",
+    "constellation_abbr": "Boo",
+    "right_ascension": 14.7,
+    "declination": 31.2,
+    "square": 906.8,
+    "main_stars_qty": 8,
+    "brightest_star": "Arcturus",
+    "list_of_main_stars": [
+      "muphrid",
+      "arcturus",
+      "xuange",
+      "seginus",
+      "izar",
+      "merga",
+      "nekkar",
+      "alkalurops"
+    ]
+  },
+  {
+    "id": "caelum",
+    "entity": "Constellation",
+    "name": "Caelum",
+    "constellation_abbr": "Cae",
+    "right_ascension": 4.7,
+    "declination": -37.9,
+    "square": 125.0,
+    "main_stars_qty": 0,
+    "brightest_star": "",
+    "list_of_main_stars": []
+  },
+  {
+    "id": "camelopardalis",
+    "entity": "Constellation",
+    "name": "Camelopardalis",
+    "constellation_abbr": "Cam",
+    "right_ascension": 6.1,
+    "declination": 70.0,
+    "square": 756.8,
+    "main_stars_qty": 1,
+    "brightest_star": "Tonatiuh",
+    "list_of_main_stars": [
+      "tonatiuh"
+    ]
+  },
+  {
+    "id": "cancer",
+    "entity": "Constellation",
+    "name": "Cancer",
+    "constellation_abbr": "Cnc",
+    "right_ascension": 8.6,
+    "declination": 19.8,
+    "square": 505.9,
+    "main_stars_qty": 8,
+    "brightest_star": "Tarf",
+    "list_of_main_stars": [
+      "tarf",
+      "piautos",
+      "meleph",
+      "asellus_borealis",
+      "asellus_australis",
+      "copernicus",
+      "acubens",
+      "nahn"
+    ]
+  },
+  {
+    "id": "canes_venatici",
+    "entity": "Constellation",
+    "name": "Canes Venatici",
+    "constellation_abbr": "CVn",
+    "right_ascension": 13.1,
+    "declination": 40.1,
+    "square": 465.2,
+    "main_stars_qty": 3,
+    "brightest_star": "Cor Caroli",
+    "list_of_main_stars": [
+      "chara",
+      "la_superba",
+      "cor_caroli"
+    ]
+  },
+  {
+    "id": "canis_major",
+    "entity": "Constellation",
+    "name": "Canis Major",
+    "constellation_abbr": "CMa",
+    "right_ascension": 6.8,
+    "declination": -22.1,
+    "square": 380.1,
+    "main_stars_qty": 8,
+    "brightest_star": "Sirius",
+    "list_of_main_stars": [
+      "furud",
+      "mirzam",
+      "sirius",
+      "adhara",
+      "unurgunite",
+      "muliphein",
+      "wezen",
+      "aludra"
+    ]
+  },
+  {
+    "id": "canis_minor",
+    "entity": "Constellation",
+    "name": "Canis Minor",
+    "constellation_abbr": "CMi",
+    "right_ascension": 7.7,
+    "declination": 6.4,
+    "square": 183.4,
+    "main_stars_qty": 3,
+    "brightest_star": "Procyon",
+    "list_of_main_stars": [
+      "gomeisa",
+      "luyten's_star",
+      "procyon"
+    ]
+  },
+  {
+    "id": "capricornus",
+    "entity": "Constellation",
+    "name": "Capricornus",
+    "constellation_abbr": "Cap",
+    "right_ascension": 21.0,
+    "declination": -18.0,
+    "square": 413.9,
+    "main_stars_qty": 5,
+    "brightest_star": "Deneb Algedi",
+    "list_of_main_stars": [
+      "algedi",
+      "alshat",
+      "dabih",
+      "nashira",
+      "deneb_algedi"
+    ]
+  },
+  {
+    "id": "carina",
+    "entity": "Constellation",
+    "name": "Carina",
+    "constellation_abbr": "Car",
+    "right_ascension": 8.7,
+    "declination": -63.2,
+    "square": 494.2,
+    "main_stars_qty": 4,
+    "brightest_star": "Canopus",
+    "list_of_main_stars": [
+      "canopus",
+      "avior",
+      "miaplacidus",
+      "aspidiske"
+    ]
+  },
+  {
+    "id": "cassiopeia",
+    "entity": "Constellation",
+    "name": "Cassiopeia",
+    "constellation_abbr": "Cas",
+    "right_ascension": 1.3,
+    "declination": 62.2,
+    "square": 598.4,
+    "main_stars_qty": 8,
+    "brightest_star": "Cih",
+    "list_of_main_stars": [
+      "caph",
+      "fulu",
+      "schedar",
+      "achird",
+      "castula",
+      "cih",
+      "ruchbah",
+      "segin"
+    ]
+  },
+  {
+    "id": "centaurus",
+    "entity": "Constellation",
+    "name": "Centaurus",
+    "constellation_abbr": "Cen",
+    "right_ascension": 13.4,
+    "declination": -47.4,
+    "square": 1060.4,
+    "main_stars_qty": 5,
+    "brightest_star": "Rigil Kentaurus",
+    "list_of_main_stars": [
+      "hadar",
+      "menkent",
+      "proxima_centauri",
+      "toliman",
+      "rigil_kentaurus"
+    ]
+  },
+  {
+    "id": "cepheus",
+    "entity": "Constellation",
+    "name": "Cepheus",
+    "constellation_abbr": "Cep",
+    "right_ascension": 22.0,
+    "declination": 71.0,
+    "square": 587.8,
+    "main_stars_qty": 5,
+    "brightest_star": "Alderamin",
+    "list_of_main_stars": [
+      "alderamin",
+      "alfirk",
+      "kurhah",
+      "kruger_60",
+      "errai"
+    ]
+  },
+  {
+    "id": "cetus",
+    "entity": "Constellation",
+    "name": "Cetus",
+    "constellation_abbr": "Cet",
+    "right_ascension": 1.7,
+    "declination": -11.4,
+    "square": 1231.4,
+    "main_stars_qty": 6,
+    "brightest_star": "Diphda",
+    "list_of_main_stars": [
+      "diphda",
+      "baten_kaitos",
+      "mira",
+      "268_g._cet",
+      "kaffaljidhma",
+      "menkar"
+    ]
+  },
+  {
+    "id": "chamaeleon",
+    "entity": "Constellation",
+    "name": "Chamaeleon",
+    "constellation_abbr": "Cha",
+    "right_ascension": 11.1,
+    "declination": -79.4,
+    "square": 131.6,
+    "main_stars_qty": 0,
+    "brightest_star": "",
+    "list_of_main_stars": []
+  },
+  {
+    "id": "circinus",
+    "entity": "Constellation",
+    "name": "Circinus",
+    "constellation_abbr": "Cir",
+    "right_ascension": 14.8,
+    "declination": -63.1,
+    "square": 93.4,
+    "main_stars_qty": 0,
+    "brightest_star": "",
+    "list_of_main_stars": []
+  },
+  {
+    "id": "columba",
+    "entity": "Constellation",
+    "name": "Columba",
+    "constellation_abbr": "Col",
+    "right_ascension": 5.9,
+    "declination": -35.1,
+    "square": 270.2,
+    "main_stars_qty": 3,
+    "brightest_star": "Phact",
+    "list_of_main_stars": [
+      "phact",
+      "wazn",
+      "elkurud"
+    ]
+  },
+  {
+    "id": "coma_berenices",
+    "entity": "Constellation",
+    "name": "Coma Berenices",
+    "constellation_abbr": "Com",
+    "right_ascension": 12.8,
+    "declination": 23.3,
+    "square": 386.5,
+    "main_stars_qty": 1,
+    "brightest_star": "Diadem",
+    "list_of_main_stars": [
+      "diadem"
+    ]
+  },
+  {
+    "id": "corona_australis",
+    "entity": "Constellation",
+    "name": "Corona Australis",
+    "constellation_abbr": "CrA",
+    "right_ascension": 18.6,
+    "declination": -41.8,
+    "square": 127.7,
+    "main_stars_qty": 1,
+    "brightest_star": "Meridiana",
+    "list_of_main_stars": [
+      "meridiana"
+    ]
+  },
+  {
+    "id": "corona_borealis",
+    "entity": "Constellation",
+    "name": "Corona Borealis",
+    "constellation_abbr": "CrB",
+    "right_ascension": 15.8,
+    "declination": 32.6,
+    "square": 178.7,
+    "main_stars_qty": 2,
+    "brightest_star": "Alphecca",
+    "list_of_main_stars": [
+      "nusakan",
+      "alphecca"
+    ]
+  },
+  {
+    "id": "corvus",
+    "entity": "Constellation",
+    "name": "Corvus",
+    "constellation_abbr": "Crv",
+    "right_ascension": 12.4,
+    "declination": -18.4,
+    "square": 183.8,
+    "main_stars_qty": 4,
+    "brightest_star": "Gienah",
+    "list_of_main_stars": [
+      "alchiba",
+      "gienah",
+      "algorab",
+      "kraz"
+    ]
+  },
+  {
+    "id": "crater",
+    "entity": "Constellation",
+    "name": "Crater",
+    "constellation_abbr": "Crt",
+    "right_ascension": 11.4,
+    "declination": -15.9,
+    "square": 282.4,
+    "main_stars_qty": 1,
+    "brightest_star": "Alkes",
+    "list_of_main_stars": [
+      "alkes"
+    ]
+  },
+  {
+    "id": "crux",
+    "entity": "Constellation",
+    "name": "Crux",
+    "constellation_abbr": "Cru",
+    "right_ascension": 12.4,
+    "declination": -60.2,
+    "square": 68.4,
+    "main_stars_qty": 5,
+    "brightest_star": "Acrux",
+    "list_of_main_stars": [
+      "imai",
+      "ginan",
+      "acrux",
+      "gacrux",
+      "mimosa"
+    ]
+  },
+  {
+    "id": "cygnus",
+    "entity": "Constellation",
+    "name": "Cygnus",
+    "constellation_abbr": "Cyg",
+    "right_ascension": 20.6,
+    "declination": 44.5,
+    "square": 804.0,
+    "main_stars_qty": 8,
+    "brightest_star": "Deneb",
+    "list_of_main_stars": [
+      "albireo",
+      "campbell's_hydrogen_star",
+      "fawaris",
+      "cygnus_x_1",
+      "sadr",
+      "deneb",
+      "aljanah",
+      "azelfafage"
+    ]
+  },
+  {
+    "id": "delphinus",
+    "entity": "Constellation",
+    "name": "Delphinus",
+    "constellation_abbr": "Del",
+    "right_ascension": 20.7,
+    "declination": 11.7,
+    "square": 188.5,
+    "main_stars_qty": 4,
+    "brightest_star": "Rotanev",
+    "list_of_main_stars": [
+      "aldulfin",
+      "rotanev",
+      "sualocin",
+      "musica"
+    ]
+  },
+  {
+    "id": "dorado",
+    "entity": "Constellation",
+    "name": "Dorado",
+    "constellation_abbr": "Dor",
+    "right_ascension": 5.2,
+    "declination": -59.7,
+    "square": 179.2,
+    "main_stars_qty": 0,
+    "brightest_star": "",
+    "list_of_main_stars": []
+  },
+  {
+    "id": "draco",
+    "entity": "Constellation",
+    "name": "Draco",
+    "constellation_abbr": "Dra",
+    "right_ascension": 15.1,
+    "declination": 67.0,
+    "square": 1083.0,
+    "main_stars_qty": 18,
+    "brightest_star": "Eltanin",
+    "list_of_main_stars": [
+      "giausar",
+      "tianyi",
+      "taiyi",
+      "thuban",
+      "edasich",
+      "athebyne",
+      "aldhibah",
+      "rastaban",
+      "dziban",
+      "alruba",
+      "grumium",
+      "eltanin",
+      "fafnir",
+      "struve_2398_a",
+      "struve_2398_b",
+      "altais",
+      "alsafi",
+      "alrakis"
+    ]
+  },
+  {
+    "id": "equuleus",
+    "entity": "Constellation",
+    "name": "Equuleus",
+    "constellation_abbr": "Equ",
+    "right_ascension": 21.2,
+    "declination": 7.8,
+    "square": 71.6,
+    "main_stars_qty": 1,
+    "brightest_star": "Kitalpha",
+    "list_of_main_stars": [
+      "kitalpha"
+    ]
+  },
+  {
+    "id": "eridanus",
+    "entity": "Constellation",
+    "name": "Eridanus",
+    "constellation_abbr": "Eri",
+    "right_ascension": 3.5,
+    "declination": -28.8,
+    "square": 1137.9,
+    "main_stars_qty": 16,
+    "brightest_star": "Achernar",
+    "list_of_main_stars": [
+      "achernar",
+      "p_eridani",
+      "angetenar",
+      "azha",
+      "acamar",
+      "zibal",
+      "82_g._eri",
+      "ran",
+      "zaurak",
+      "beid",
+      "keid",
+      "beemim",
+      "theemin",
+      "sceptrum",
+      "cursa",
+      "p_eridani"
+    ]
+  },
+  {
+    "id": "fornax",
+    "entity": "Constellation",
+    "name": "Fornax",
+    "constellation_abbr": "For",
+    "right_ascension": 2.8,
+    "declination": -31.6,
+    "square": 397.5,
+    "main_stars_qty": 1,
+    "brightest_star": "Dalim",
+    "list_of_main_stars": [
+      "dalim"
+    ]
+  },
+  {
+    "id": "gemini",
+    "entity": "Constellation",
+    "name": "Gemini",
+    "constellation_abbr": "Gem",
+    "right_ascension": 7.1,
+    "declination": 22.6,
+    "square": 513.8,
+    "main_stars_qty": 10,
+    "brightest_star": "Pollux",
+    "list_of_main_stars": [
+      "propus",
+      "tejat",
+      "alhena",
+      "mebsuta",
+      "alzirr",
+      "mekbuda",
+      "wasat",
+      "castor",
+      "jishui",
+      "pollux"
+    ]
+  },
+  {
+    "id": "grus",
+    "entity": "Constellation",
+    "name": "Grus",
+    "constellation_abbr": "Gru",
+    "right_ascension": 22.5,
+    "declination": -46.4,
+    "square": 365.5,
+    "main_stars_qty": 3,
+    "brightest_star": "Alnair",
+    "list_of_main_stars": [
+      "aldhanab",
+      "alnair",
+      "tiaki"
+    ]
+  },
+  {
+    "id": "hercules",
+    "entity": "Constellation",
+    "name": "Hercules",
+    "constellation_abbr": "Her",
+    "right_ascension": 17.4,
+    "declination": 27.5,
+    "square": 1225.1,
+    "main_stars_qty": 7,
+    "brightest_star": "Kornephoros",
+    "list_of_main_stars": [
+      "marsic",
+      "cujam",
+      "kornephoros",
+      "ogma",
+      "rasalgethi",
+      "sarin",
+      "maasym"
+    ]
+  },
+  {
+    "id": "horologium",
+    "entity": "Constellation",
+    "name": "Horologium",
+    "constellation_abbr": "Hor",
+    "right_ascension": 3.3,
+    "declination": -51.3,
+    "square": 248.9,
+    "main_stars_qty": 0,
+    "brightest_star": "",
+    "list_of_main_stars": []
+  },
+  {
+    "id": "hydra",
+    "entity": "Constellation",
+    "name": "Hydra",
+    "constellation_abbr": "Hya",
+    "right_ascension": 10.6,
+    "declination": -14.5,
+    "square": 1302.8,
+    "main_stars_qty": 8,
+    "brightest_star": "Alphard",
+    "list_of_main_stars": [
+      "minchir",
+      "ashlesha",
+      "ross_687",
+      "alphard",
+      "ukdah",
+      "zhang",
+      "felis",
+      "ross_686"
+    ]
+  },
+  {
+    "id": "hydrus",
+    "entity": "Constellation",
+    "name": "Hydrus",
+    "constellation_abbr": "Hyi",
+    "right_ascension": 2.4,
+    "declination": -69.9,
+    "square": 243.0,
+    "main_stars_qty": 0,
+    "brightest_star": "",
+    "list_of_main_stars": []
+  },
+  {
+    "id": "indus",
+    "entity": "Constellation",
+    "name": "Indus",
+    "constellation_abbr": "Ind",
+    "right_ascension": 20.6,
+    "declination": -54.6,
+    "square": 294.0,
+    "main_stars_qty": 0,
+    "brightest_star": "",
+    "list_of_main_stars": []
+  },
+  {
+    "id": "lacerta",
+    "entity": "Constellation",
+    "name": "Lacerta",
+    "constellation_abbr": "Lac",
+    "right_ascension": 22.5,
+    "declination": 46.0,
+    "square": 200.7,
+    "main_stars_qty": 1,
+    "brightest_star": "Babcock's star",
+    "list_of_main_stars": [
+      "babcock's_star"
+    ]
+  },
+  {
+    "id": "leo",
+    "entity": "Constellation",
+    "name": "Leo",
+    "constellation_abbr": "Leo",
+    "right_ascension": 10.7,
+    "declination": 13.1,
+    "square": 947.0,
+    "main_stars_qty": 11,
+    "brightest_star": "Regulus",
+    "list_of_main_stars": [
+      "alterf",
+      "subra",
+      "ras_elased_australis",
+      "rasalas",
+      "regulus",
+      "adhafera",
+      "algieba",
+      "zosma",
+      "chertan",
+      "denebola",
+      "wolf_359"
+    ]
+  },
+  {
+    "id": "leo_minor",
+    "entity": "Constellation",
+    "name": "Leo Minor",
+    "constellation_abbr": "LMi",
+    "right_ascension": 10.2,
+    "declination": 32.2,
+    "square": 232.0,
+    "main_stars_qty": 1,
+    "brightest_star": "Praecipua",
+    "list_of_main_stars": [
+      "praecipua"
+    ]
+  },
+  {
+    "id": "lepus",
+    "entity": "Constellation",
+    "name": "Lepus",
+    "constellation_abbr": "Lep",
+    "right_ascension": 5.6,
+    "declination": -19.0,
+    "square": 290.3,
+    "main_stars_qty": 2,
+    "brightest_star": "Arneb",
+    "list_of_main_stars": [
+      "nihal",
+      "arneb"
+    ]
+  },
+  {
+    "id": "libra",
+    "entity": "Constellation",
+    "name": "Libra",
+    "constellation_abbr": "Lib",
+    "right_ascension": 15.2,
+    "declination": -15.6,
+    "square": 538.1,
+    "main_stars_qty": 4,
+    "brightest_star": "Zubeneschamali",
+    "list_of_main_stars": [
+      "zubenelgenubi",
+      "brachium",
+      "zubeneschamali",
+      "zubenelhakrabi"
+    ]
+  },
+  {
+    "id": "lupus",
+    "entity": "Constellation",
+    "name": "Lupus",
+    "constellation_abbr": "Lup",
+    "right_ascension": 15.2,
+    "declination": -42.7,
+    "square": 333.7,
+    "main_stars_qty": 0,
+    "brightest_star": "",
+    "list_of_main_stars": []
+  },
+  {
+    "id": "lynx",
+    "entity": "Constellation",
+    "name": "Lynx",
+    "constellation_abbr": "Lyn",
+    "right_ascension": 8.0,
+    "declination": 47.5,
+    "square": 545.4,
+    "main_stars_qty": 1,
+    "brightest_star": "Alsciaukat",
+    "list_of_main_stars": [
+      "alsciaukat"
+    ]
+  },
+  {
+    "id": "lyra",
+    "entity": "Constellation",
+    "name": "Lyra",
+    "constellation_abbr": "Lyr",
+    "right_ascension": 18.9,
+    "declination": 36.7,
+    "square": 286.5,
+    "main_stars_qty": 4,
+    "brightest_star": "Vega",
+    "list_of_main_stars": [
+      "vega",
+      "sheliak",
+      "sulafat",
+      "aladfar"
+    ]
+  },
+  {
+    "id": "mensa",
+    "entity": "Constellation",
+    "name": "Mensa",
+    "constellation_abbr": "Men",
+    "right_ascension": 5.4,
+    "declination": -77.5,
+    "square": 153.5,
+    "main_stars_qty": 0,
+    "brightest_star": "",
+    "list_of_main_stars": []
+  },
+  {
+    "id": "microscopium",
+    "entity": "Constellation",
+    "name": "Microscopium",
+    "constellation_abbr": "Mic",
+    "right_ascension": 20.8,
+    "declination": -36.3,
+    "square": 210.0,
+    "main_stars_qty": 1,
+    "brightest_star": "Lacaille 8760",
+    "list_of_main_stars": [
+      "lacaille_8760"
+    ]
+  },
+  {
+    "id": "monoceros",
+    "entity": "Constellation",
+    "name": "Monoceros",
+    "constellation_abbr": "Mon",
+    "right_ascension": 7.1,
+    "declination": -3.3,
+    "square": 481.6,
+    "main_stars_qty": 2,
+    "brightest_star": "Red Rectangle",
+    "list_of_main_stars": [
+      "red_rectangle",
+      "ross_614"
+    ]
+  },
+  {
+    "id": "musca",
+    "entity": "Constellation",
+    "name": "Musca",
+    "constellation_abbr": "Mus",
+    "right_ascension": 12.5,
+    "declination": -70.2,
+    "square": 138.4,
+    "main_stars_qty": 0,
+    "brightest_star": "",
+    "list_of_main_stars": []
+  },
+  {
+    "id": "norma",
+    "entity": "Constellation",
+    "name": "Norma",
+    "constellation_abbr": "Nor",
+    "right_ascension": 16.1,
+    "declination": -51.0,
+    "square": 165.2,
+    "main_stars_qty": 0,
+    "brightest_star": "",
+    "list_of_main_stars": []
+  },
+  {
+    "id": "octans",
+    "entity": "Constellation",
+    "name": "Octans",
+    "constellation_abbr": "Oct",
+    "right_ascension": 23.0,
+    "declination": -82.2,
+    "square": 291.0,
+    "main_stars_qty": 1,
+    "brightest_star": "Polaris Australis",
+    "list_of_main_stars": [
+      "polaris_australis"
+    ]
+  },
+  {
+    "id": "ophiuchus",
+    "entity": "Constellation",
+    "name": "Ophiuchus",
+    "constellation_abbr": "Oph",
+    "right_ascension": 17.4,
+    "declination": -4.4,
+    "square": 948.3,
+    "main_stars_qty": 9,
+    "brightest_star": "Rasalhague",
+    "list_of_main_stars": [
+      "yed_prior",
+      "yed_posterior",
+      "wolf_1061",
+      "marfik",
+      "sabik",
+      "guniibuu",
+      "rasalhague",
+      "cebalrai",
+      "barnard's_star"
+    ]
+  },
+  {
+    "id": "orion",
+    "entity": "Constellation",
+    "name": "Orion",
+    "constellation_abbr": "Ori",
+    "right_ascension": 5.6,
+    "declination": 5.4,
+    "square": 594.1,
+    "main_stars_qty": 10,
+    "brightest_star": "Rigel",
+    "list_of_main_stars": [
+      "tabit",
+      "rigel",
+      "bellatrix",
+      "mintaka",
+      "meissa",
+      "hatysa",
+      "alnilam",
+      "alnitak",
+      "saiph",
+      "betelgeuse"
+    ]
+  },
+  {
+    "id": "pavo",
+    "entity": "Constellation",
+    "name": "Pavo",
+    "constellation_abbr": "Pav",
+    "right_ascension": 19.6,
+    "declination": -65.8,
+    "square": 377.7,
+    "main_stars_qty": 1,
+    "brightest_star": "Peacock",
+    "list_of_main_stars": [
+      "peacock"
+    ]
+  },
+  {
+    "id": "pegasus",
+    "entity": "Constellation",
+    "name": "Pegasus",
+    "constellation_abbr": "Peg",
+    "right_ascension": 22.7,
+    "declination": 19.5,
+    "square": 1121.0,
+    "main_stars_qty": 11,
+    "brightest_star": "Enif",
+    "list_of_main_stars": [
+      "algenib",
+      "enif",
+      "biham",
+      "homam",
+      "matar",
+      "sadalbari",
+      "helvetios",
+      "scheat",
+      "markab",
+      "salm",
+      "alkarab"
+    ]
+  },
+  {
+    "id": "perseus",
+    "entity": "Constellation",
+    "name": "Perseus",
+    "constellation_abbr": "Per",
+    "right_ascension": 3.2,
+    "declination": 45.0,
+    "square": 615.0,
+    "main_stars_qty": 6,
+    "brightest_star": "Mirfak",
+    "list_of_main_stars": [
+      "miram",
+      "algol",
+      "misam",
+      "mirfak",
+      "atik",
+      "menkib"
+    ]
+  },
+  {
+    "id": "phoenix",
+    "entity": "Constellation",
+    "name": "Phoenix",
+    "constellation_abbr": "Phe",
+    "right_ascension": 0.4,
+    "declination": -48.6,
+    "square": 469.3,
+    "main_stars_qty": 2,
+    "brightest_star": "Ankaa",
+    "list_of_main_stars": [
+      "ankaa",
+      "wurren"
+    ]
+  },
+  {
+    "id": "pictor",
+    "entity": "Constellation",
+    "name": "Pictor",
+    "constellation_abbr": "Pic",
+    "right_ascension": 5.8,
+    "declination": -53.5,
+    "square": 246.7,
+    "main_stars_qty": 1,
+    "brightest_star": "Kapteyn's Star",
+    "list_of_main_stars": [
+      "kapteyn's_star"
+    ]
+  },
+  {
+    "id": "pisces",
+    "entity": "Constellation",
+    "name": "Pisces",
+    "constellation_abbr": "Psc",
+    "right_ascension": 0.5,
+    "declination": 13.7,
+    "square": 889.4,
+    "main_stars_qty": 6,
+    "brightest_star": "Alpherg",
+    "list_of_main_stars": [
+      "96_g._psc",
+      "van_maanen's_star",
+      "revati",
+      "alpherg",
+      "torcular",
+      "fumalsamakah"
+    ]
+  },
+  {
+    "id": "piscis_austrinus",
+    "entity": "Constellation",
+    "name": "Piscis Austrinus",
+    "constellation_abbr": "PsA",
+    "right_ascension": 22.3,
+    "declination": -30.6,
+    "square": 245.0,
+    "main_stars_qty": 2,
+    "brightest_star": "Fomalhaut",
+    "list_of_main_stars": [
+      "fomalhaut",
+      "lacaille_9352"
+    ]
+  },
+  {
+    "id": "puppis",
+    "entity": "Constellation",
+    "name": "Puppis",
+    "constellation_abbr": "Pup",
+    "right_ascension": 7.3,
+    "declination": -31.2,
+    "square": 673.4,
+    "main_stars_qty": 3,
+    "brightest_star": "Naos",
+    "list_of_main_stars": [
+      "azmidi",
+      "naos",
+      "tureis"
+    ]
+  },
+  {
+    "id": "pyxis",
+    "entity": "Constellation",
+    "name": "Pyxis",
+    "constellation_abbr": "Pyx",
+    "right_ascension": 8.9,
+    "declination": -27.4,
+    "square": 220.8,
+    "main_stars_qty": 0,
+    "brightest_star": "",
+    "list_of_main_stars": []
+  },
+  {
+    "id": "reticulum",
+    "entity": "Constellation",
+    "name": "Reticulum",
+    "constellation_abbr": "Ret",
+    "right_ascension": 3.9,
+    "declination": -59.9,
+    "square": 113.9,
+    "main_stars_qty": 0,
+    "brightest_star": "",
+    "list_of_main_stars": []
+  },
+  {
+    "id": "sagitta",
+    "entity": "Constellation",
+    "name": "Sagitta",
+    "constellation_abbr": "Sge",
+    "right_ascension": 19.7,
+    "declination": 18.9,
+    "square": 79.9,
+    "main_stars_qty": 1,
+    "brightest_star": "Sham",
+    "list_of_main_stars": [
+      "sham"
+    ]
+  },
+  {
+    "id": "sagittarius",
+    "entity": "Constellation",
+    "name": "Sagittarius",
+    "constellation_abbr": "Sgr",
+    "right_ascension": 19.1,
+    "declination": -28.5,
+    "square": 867.4,
+    "main_stars_qty": 14,
+    "brightest_star": "Kaus Australis",
+    "list_of_main_stars": [
+      "alnasl",
+      "polis",
+      "kaus_media",
+      "kaus_australis",
+      "kaus_borealis",
+      "ross_154",
+      "ainalrami",
+      "nunki",
+      "ascella",
+      "albaldah",
+      "arkab_prior",
+      "arkab_posterior",
+      "rukbat",
+      "terebellum"
+    ]
+  },
+  {
+    "id": "scorpius",
+    "entity": "Constellation",
+    "name": "Scorpius",
+    "constellation_abbr": "Sco",
+    "right_ascension": 16.9,
+    "declination": -30.7,
+    "square": 496.8,
+    "main_stars_qty": 16,
+    "brightest_star": "Antares",
+    "list_of_main_stars": [
+      "iklil",
+      "fang",
+      "dschubba",
+      "acrab",
+      "jabbah",
+      "alniyat",
+      "antares",
+      "paikauhale",
+      "larawag",
+      "xamidimura",
+      "pipirima",
+      "lesath",
+      "shaula",
+      "sargas",
+      "fuyue",
+      "graffias"
+    ]
+  },
+  {
+    "id": "sculptor",
+    "entity": "Constellation",
+    "name": "Sculptor",
+    "constellation_abbr": "Scl",
+    "right_ascension": 0.1,
+    "declination": -32.1,
+    "square": 475.0,
+    "main_stars_qty": 0,
+    "brightest_star": "",
+    "list_of_main_stars": []
+  },
+  {
+    "id": "scutum",
+    "entity": "Constellation",
+    "name": "Scutum",
+    "constellation_abbr": "Sct",
+    "right_ascension": 18.7,
+    "declination": -9.9,
+    "square": 109.1,
+    "main_stars_qty": 0,
+    "brightest_star": "",
+    "list_of_main_stars": []
+  },
+  {
+    "id": "serpens",
+    "entity": "Constellation",
+    "name": "Serpens",
+    "constellation_abbr": "Ser",
+    "right_ascension": 17.0,
+    "declination": 6.0,
+    "square": 636.9,
+    "main_stars_qty": 3,
+    "brightest_star": "Unukalhai",
+    "list_of_main_stars": [
+      "unukalhai",
+      "gudja",
+      "alya"
+    ]
+  },
+  {
+    "id": "sextans",
+    "entity": "Constellation",
+    "name": "Sextans",
+    "constellation_abbr": "Sex",
+    "right_ascension": 10.2,
+    "declination": -2.6,
+    "square": 313.5,
+    "main_stars_qty": 0,
+    "brightest_star": "",
+    "list_of_main_stars": []
+  },
+  {
+    "id": "taurus",
+    "entity": "Constellation",
+    "name": "Taurus",
+    "constellation_abbr": "Tau",
+    "right_ascension": 4.7,
+    "declination": 14.9,
+    "square": 797.2,
+    "main_stars_qty": 16,
+    "brightest_star": "Aldebaran",
+    "list_of_main_stars": [
+      "celaeno",
+      "electra",
+      "taygeta",
+      "maia",
+      "asterope",
+      "merope",
+      "alcyone",
+      "atlas",
+      "pleione",
+      "prima_hyadum",
+      "secunda_hyadum",
+      "ain",
+      "chamukuy",
+      "aldebaran",
+      "elnath",
+      "tianguan"
+    ]
+  },
+  {
+    "id": "telescopium",
+    "entity": "Constellation",
+    "name": "Telescopium",
+    "constellation_abbr": "Tel",
+    "right_ascension": 19.3,
+    "declination": -51.0,
+    "square": 251.5,
+    "main_stars_qty": 0,
+    "brightest_star": "",
+    "list_of_main_stars": []
+  },
+  {
+    "id": "triangulum",
+    "entity": "Constellation",
+    "name": "Triangulum",
+    "constellation_abbr": "Tri",
+    "right_ascension": 2.2,
+    "declination": 31.4,
+    "square": 131.9,
+    "main_stars_qty": 1,
+    "brightest_star": "Mothallah",
+    "list_of_main_stars": [
+      "mothallah"
+    ]
+  },
+  {
+    "id": "triangulum_australe",
+    "entity": "Constellation",
+    "name": "Triangulum Australe",
+    "constellation_abbr": "TrA",
+    "right_ascension": 16.1,
+    "declination": -65.4,
+    "square": 110.0,
+    "main_stars_qty": 1,
+    "brightest_star": "Atria",
+    "list_of_main_stars": [
+      "atria"
+    ]
+  },
+  {
+    "id": "tucana",
+    "entity": "Constellation",
+    "name": "Tucana",
+    "constellation_abbr": "Tuc",
+    "right_ascension": 23.8,
+    "declination": -65.7,
+    "square": 294.6,
+    "main_stars_qty": 0,
+    "brightest_star": "",
+    "list_of_main_stars": []
+  },
+  {
+    "id": "ursa_major",
+    "entity": "Constellation",
+    "name": "Ursa Major",
+    "constellation_abbr": "UMa",
+    "right_ascension": 11.3,
+    "declination": 55.6,
+    "square": 1279.7,
+    "main_stars_qty": 20,
+    "brightest_star": "Alioth",
+    "list_of_main_stars": [
+      "muscida",
+      "talitha",
+      "alkaphrah",
+      "intercrus",
+      "tania_borealis",
+      "tania_australis",
+      "chalawan",
+      "merak",
+      "lalande_21185",
+      "dubhe",
+      "alula_borealis",
+      "taiyangshou",
+      "groombridge_1830",
+      "phecda",
+      "megrez",
+      "alioth",
+      "mizar",
+      "alcor",
+      "alkaid",
+      "alula_australis"
+    ]
+  },
+  {
+    "id": "ursa_minor",
+    "entity": "Constellation",
+    "name": "Ursa Minor",
+    "constellation_abbr": "UMi",
+    "right_ascension": 15.0,
+    "declination": 78.0,
+    "square": 255.9,
+    "main_stars_qty": 4,
+    "brightest_star": "Polaris",
+    "list_of_main_stars": [
+      "polaris",
+      "kochab",
+      "pherkad",
+      "yildun"
+    ]
+  },
+  {
+    "id": "vela",
+    "entity": "Constellation",
+    "name": "Vela",
+    "constellation_abbr": "Vel",
+    "right_ascension": 9.6,
+    "declination": -47.2,
+    "square": 499.6,
+    "main_stars_qty": 3,
+    "brightest_star": "Alsephina",
+    "list_of_main_stars": [
+      "alsephina",
+      "suhail",
+      "markeb"
+    ]
+  },
+  {
+    "id": "virgo",
+    "entity": "Constellation",
+    "name": "Virgo",
+    "constellation_abbr": "Vir",
+    "right_ascension": 13.4,
+    "declination": -4.2,
+    "square": 1294.4,
+    "main_stars_qty": 13,
+    "brightest_star": "Spica",
+    "list_of_main_stars": [
+      "ross_128",
+      "zavijava",
+      "zaniah",
+      "3c_273",
+      "porrima",
+      "minelauva",
+      "vindemiatrix",
+      "spica",
+      "heze",
+      "kang",
+      "syrma",
+      "khambalia",
+      "elgafar"
+    ]
+  },
+  {
+    "id": "volans",
+    "entity": "Constellation",
+    "name": "Volans",
+    "constellation_abbr": "Vol",
+    "right_ascension": 7.8,
+    "declination": -69.8,
+    "square": 141.4,
+    "main_stars_qty": 0,
+    "brightest_star": "",
+    "list_of_main_stars": []
+  },
+  {
+    "id": "vulpecula",
+    "entity": "Constellation",
+    "name": "Vulpecula",
+    "constellation_abbr": "Vul",
+    "right_ascension": 20.2,
+    "declination": 24.4,
+    "square": 268.2,
+    "main_stars_qty": 1,
+    "brightest_star": "Anser",
+    "list_of_main_stars": [
+      "anser"
+    ]
+  }
+]

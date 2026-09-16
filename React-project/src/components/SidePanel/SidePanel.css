@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
-  width: 320px;
+  width: 340px;
   height: 100vh;
 
   position: fixed;
@@ -21,7 +21,7 @@
   align-items: flex-start;
   gap: 8px;
 
-  width: 320px;
+  width: 324px;
   height: var(--header-height);
   padding: 16px 12px;
   z-index: 105;

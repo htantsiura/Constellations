@@ -2,7 +2,7 @@ import './SidePanel.css'
 import SearchInput from '../SearchInput/SearchInput'
 import FilterButton from '../FilterButton/FIlterButton'
 import StarsData from '../../StarsData_4.json'
-import { AllConstellations } from '../../ConstellationsData'
+import ConstellationData from '../../СonstellationsData.json' 
 import iconStar from '../../assets/Icon-star.svg'
 import iconConstell from '../../assets/Icon-constellation.svg'
 import SideContent from '../SideContent/SideContent'
@@ -21,9 +21,8 @@ export default function SidePanel() {
   const [contentConstell, setContentConstell] = useState(null);
   const [expandedId, setExpandedId] = useState(null);
 
-  /* const sortedStars = sortByName(AllStars); */
   const sortedStars = sortByName(StarsData);
-  const sortedConstellations = sortByName(AllConstellations);
+  const sortedConstellations = sortByName(ConstellationData);
 
   return (
     <div className="side-panel-container">
