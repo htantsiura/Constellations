@@ -1,6 +1,4 @@
 import './SideContent.css'
-import { AllStars } from '../../StarsData'
-import { AllConstellations } from '../../ConstellationsData'
 
 export default function SideContent( isStar , data) {
   return (

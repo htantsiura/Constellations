@@ -1,0 +1,31 @@
+.constell-tag-btn {
+  /* width: 48px; */
+  min-width: 48px;
+  height: 24px;
+
+  border-radius: var(--corner-radius);
+  border: none;
+  /* border: 1px solid; */
+  /* border-color: var(--primary-250); */
+  background-color: var(--primary-750);
+  
+  color: var(--primary-250);
+  opacity: 1;
+  transition: opacity 0.2s ease;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-bottom: 8px;
+
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.2rem;
+}
+
+.constell-tag-btn:hover {
+  opacity: 0.8;
+}

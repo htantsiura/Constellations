@@ -4,6 +4,7 @@ import iconChevron1 from '../../assets/Icon-chevron-1.svg'
 import { useState } from 'react'
 import { formatRA } from '../utilities/formatRA'
 import { formatDec } from '../utilities/formatDec'
+import StarTagButton from '../Button/StarTagButton'
 
 const formatStarName = (name) => {
   return name
@@ -24,7 +25,10 @@ function CardBodyLine({ label, value }) {
 export default function ConstellCard({ item, isExpanded, onToggle}) {
 
   return (
-    <div className={`constell-card ${isExpanded ? 'expanded' : ''}`}>
+    <div 
+      id={`constell-${ item.id }`}
+      className={`constell-card ${isExpanded ? 'expanded' : ''}`}
+    >
       <button className='constell-card-header' onClick={onToggle} >
         <p>{ item.name }</p>
         <img 
@@ -42,13 +46,17 @@ export default function ConstellCard({ item, isExpanded, onToggle}) {
             <CardBodyLine label="Area:" value={ item.square + " sq.d."} />
             <CardBodyLine label="Main Stars Qty:" value={ item.main_stars_qty } />
             <CardBodyLine label="Brightest Star:" value={ item.brightest_star } />
-           {/*  <CardBodyLine label="Stars:" value={ "\n" + item.list_of_main_stars.join(", ") } /> */}
-            <p>{ 
-              item.list_of_main_stars
-                .map(star => formatStarName(star))
-                .join(", ")
+            <p>Stars:</p>
+            <div className='stars-tags-container'>
+              { item.list_of_main_stars.map((star, index) => (
+                  <StarTagButton
+                    key={ index }
+                    name={ formatStarName(star) }
+                    onClick={() => console.log(`Clicked: ${star}`)}
+                  />
+                )) 
               }
-            </p>
+            </div>
           </ul>
         </div>
       )}

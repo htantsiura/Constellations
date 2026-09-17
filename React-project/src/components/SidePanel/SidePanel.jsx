@@ -1,14 +1,15 @@
 import './SidePanel.css'
 import SearchInput from '../SearchInput/SearchInput'
 import FilterButton from '../FilterButton/FIlterButton'
-import StarsData from '../../StarsData_4.json'
-import ConstellationData from '../../СonstellationsData.json' 
+import StarsData from '../../StarsData.json'
+import ConstellationData from '../../ConstellationsData.json' 
 import iconStar from '../../assets/Icon-star.svg'
 import iconConstell from '../../assets/Icon-constellation.svg'
 import SideContent from '../SideContent/SideContent'
 import StarCard from '../Cards/StarCard'
 import ConstellCard from '../Cards/ConstellCard'
 import { useState } from 'react'
+import { openConstellation } from '../utilities/constellationUtils.jsx'
 
 const sortByName = (array) => {
   return [...array].sort((a, b) => a.name.localeCompare(b.name));
@@ -58,6 +59,7 @@ export default function SidePanel() {
               item={ item }
               isExpanded={ expandedId === item.id }
               onToggle={() => setExpandedId(expandedId === item.id ? null : item.id )}
+              onConstellationClick={() => openConstellation(item.constellation, setExpandedId, setIsConstellation )}
             />
           ))
         }

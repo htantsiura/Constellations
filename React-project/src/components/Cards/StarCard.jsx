@@ -4,7 +4,7 @@ import iconChevron1 from '../../assets/Icon-chevron-1.svg'
 import { useState } from 'react'
 import { formatRA } from '../utilities/formatRA'
 import { formatDec } from '../utilities/formatDec'
-import ConstellButton from '../Button/ConstellButton'
+import ConstellTagButton from '../Button/ConstellTagButton'
 
 function CardBodyLine({ label, value }) {
   return (
@@ -15,7 +15,7 @@ function CardBodyLine({ label, value }) {
   )
 }
 
-export default function StarCard({ item, isExpanded, onToggle}) {
+export default function StarCard({ item, isExpanded, onToggle, onConstellationClick }) {
 
   return (
     <div className={`star-card ${isExpanded ? 'expanded' : ''}`}>
@@ -31,8 +31,10 @@ export default function StarCard({ item, isExpanded, onToggle}) {
         isExpanded && (
         <div className='card-body' >
           <ul>
-            <ConstellButton name={( item.constellation)} />
-            
+            <ConstellTagButton 
+              name={( item.constellation)} 
+              onClick={ onConstellationClick }
+            />
             <CardBodyLine label="Right Ascension:" value={ formatRA( item.right_ascension )} />
             <CardBodyLine label="Declination:" value={ formatDec( item.declination )} />
             <CardBodyLine label="App. Magnitude:" value={ formatRA( item.apparent_magnitude )} />
