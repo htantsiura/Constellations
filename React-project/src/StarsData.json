@@ -2340,6 +2340,19 @@
     "spectral_class": "F0p"
   },
   {
+    "id": "del_ret",
+    "entity": "Star",
+    "name": "δ Ret",
+    "constellation": "Reticulum",
+    "constellation_abbr": "Ret",
+    "right_ascension": 3.9791,
+    "declination": -61.4001,
+    "apparent_magnitude": 4.56,
+    "absolute_magnitude": -1.5,
+    "distance_light_year": 530.0,
+    "spectral_class": "M2III"
+  }, 
+  {
     "id": "achernar",
     "entity": "Star",
     "name": "Achernar",

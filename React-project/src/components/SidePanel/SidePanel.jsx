@@ -10,14 +10,15 @@ import StarCard from '../Cards/StarCard'
 import ConstellCard from '../Cards/ConstellCard'
 import { useState } from 'react'
 import { openConstellation } from '../utilities/constellationUtils.jsx'
+import { openStar } from '../utilities/starUtils.jsx'
 
 const sortByName = (array) => {
   return [...array].sort((a, b) => a.name.localeCompare(b.name));
 }
 
 export default function SidePanel() {
-  const [isStar, setIsStar] = useState(false);
-  const [isConstellation, setIsConstellation] = useState(false);
+  const [isStar, setIsStar] = useState(true);
+  const [isConstellation, setIsConstellation] = useState(true);
   const [contentStars, setContentStars] = useState(null);
   const [contentConstell, setContentConstell] = useState(null);
   const [expandedId, setExpandedId] = useState(null);
@@ -52,7 +53,7 @@ export default function SidePanel() {
       </div>
       <div className='side-panel-body'>
         { 
-          /* AllStars.map((item) => ( */
+          isStar ? 
           sortedStars.map((item) => (
             <StarCard
               key={ item.id }
@@ -61,18 +62,19 @@ export default function SidePanel() {
               onToggle={() => setExpandedId(expandedId === item.id ? null : item.id )}
               onConstellationClick={() => openConstellation(item.constellation, setExpandedId, setIsConstellation )}
             />
-          ))
+          )) : null 
         }
         { 
-          /* AllConstellations.map((item) => ( */
+          isConstellation ? 
           sortedConstellations.map((item) => (
-            <ConstellCard
-              key={ item.id }
-              item={ item }
-              isExpanded={ expandedId === item.id }
-              onToggle={() => setExpandedId(expandedId === item.id ? null : item.id )}
-            />
-          ))
+          <ConstellCard
+            key={ item.id }
+            item={ item }
+            isExpanded={ expandedId === item.id }
+            onToggle={() => setExpandedId(expandedId === item.id ? null : item.id )}
+            onStarClick={ (starId) => openStar(starId, setExpandedId, setIsStar)}
+          />
+          )): null 
         }
       </div>
     </div>

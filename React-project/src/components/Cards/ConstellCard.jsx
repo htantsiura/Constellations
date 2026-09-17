@@ -22,7 +22,7 @@ function CardBodyLine({ label, value }) {
   )
 }
 
-export default function ConstellCard({ item, isExpanded, onToggle}) {
+export default function ConstellCard({ item, isExpanded, onToggle, onStarClick}) {
 
   return (
     <div 
@@ -52,7 +52,7 @@ export default function ConstellCard({ item, isExpanded, onToggle}) {
                   <StarTagButton
                     key={ index }
                     name={ formatStarName(star) }
-                    onClick={() => console.log(`Clicked: ${star}`)}
+                    onClick={ () => onStarClick(star) }
                   />
                 )) 
               }

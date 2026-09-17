@@ -18,7 +18,10 @@ function CardBodyLine({ label, value }) {
 export default function StarCard({ item, isExpanded, onToggle, onConstellationClick }) {
 
   return (
-    <div className={`star-card ${isExpanded ? 'expanded' : ''}`}>
+    <div 
+      id={`star-${ item.id }`}
+      className={`star-card ${isExpanded ? 'expanded' : ''}`}
+    >
       <button className='star-card-header' onClick={onToggle} >
         <p>{ item.name } <span className='constellation-name'>{ isExpanded ? null : "/ " + item.constellation }</span></p>
         <img 
