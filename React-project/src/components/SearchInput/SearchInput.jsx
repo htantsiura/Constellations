@@ -1,17 +1,15 @@
 import './SearchInput.css'
 
-export default function SearchInput() {
+export default function SearchInput({ value, onChange }) {
   return (
     <div className='search-container'>
       <input 
         type="text"
         placeholder='Search ...'
+        value={ value }
+        onChange={ onChange }
         className='header-search-input'
       />
-      {/* <div className='star-list-btn-container'>
-        <button className='filter-btn'>icon1</button>
-        <button className='filter-btn'>icon2</button>
-      </div> */}
     </div>
   )
 }

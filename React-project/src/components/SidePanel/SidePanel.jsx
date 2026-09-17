@@ -16,20 +16,34 @@ const sortByName = (array) => {
   return [...array].sort((a, b) => a.name.localeCompare(b.name));
 }
 
+
+
 export default function SidePanel() {
   const [isStar, setIsStar] = useState(true);
   const [isConstellation, setIsConstellation] = useState(true);
   const [contentStars, setContentStars] = useState(null);
   const [contentConstell, setContentConstell] = useState(null);
   const [expandedId, setExpandedId] = useState(null);
+  const [searchQuery, setSearchQuery] = useState('');
 
   const sortedStars = sortByName(StarsData);
   const sortedConstellations = sortByName(ConstellationData);
 
+  const filteredStars = sortedStars.filter((star) => 
+    star.name.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+  
+  const filteredConstellations = sortedConstellations.filter((constell) => 
+    constell.name.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
   return (
     <div className="side-panel-container">
       <div className='side-panel-header'>
-        <SearchInput />
+        <SearchInput 
+          value={ searchQuery }
+          onChange={(e) => setSearchQuery(e.target.value)}
+        />
         <FilterButton 
           id="Constellation-btn" 
           icon={iconConstell} 
@@ -54,7 +68,8 @@ export default function SidePanel() {
       <div className='side-panel-body'>
         { 
           isStar ? 
-          sortedStars.map((item) => (
+          /* sortedStars.map((item) => ( */
+          filteredStars.map((item) => (
             <StarCard
               key={ item.id }
               item={ item }
@@ -66,7 +81,8 @@ export default function SidePanel() {
         }
         { 
           isConstellation ? 
-          sortedConstellations.map((item) => (
+          /* sortedConstellations.map((item) => ( */
+          filteredConstellations.map((item) => (
           <ConstellCard
             key={ item.id }
             item={ item }
