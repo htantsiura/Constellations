@@ -1,9 +1,10 @@
 import StarsData from '../../StarsData.json'
 
-export const openStar = (starId, setExpandedId, setIsStar) => {
+export const openStar = (starId, setExpandedId, setIsStar, setSearchQuery) => {
   const targetStar = StarsData.find((s) => s.id === starId);
   
   if (targetStar) {
+    setSearchQuery('');
     setExpandedId(targetStar.id);
     setIsStar(true);
     
