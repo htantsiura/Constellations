@@ -1,6 +1,6 @@
 import './SideContent.css'
 
-export default function SideContent( isStar , data) {
+export default function SideContent({ isStar , data }) {
   return (
     <div>
       {data.map((item) => (

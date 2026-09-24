@@ -40,7 +40,7 @@ export default function StarCard({ item, isExpanded, onToggle, onConstellationCl
             />
             <CardBodyLine label="Right Ascension:" value={ formatRA( item.right_ascension )} />
             <CardBodyLine label="Declination:" value={ formatDec( item.declination )} />
-            <CardBodyLine label="App. Magnitude:" value={ formatRA( item.apparent_magnitude )} />
+            <CardBodyLine label="App. Magnitude:" value={ item.apparent_magnitude } />
             <CardBodyLine label="Abs. Magnitude:" value={ item.absolute_magnitude } />
             <CardBodyLine label="Distance:" value={ item.distance_light_year + " lyr" } />
             <CardBodyLine label="Spectral Class:" value={ item.spectral_class } />

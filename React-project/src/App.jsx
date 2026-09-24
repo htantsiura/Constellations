@@ -4,6 +4,7 @@ import Header from './components/Header/Header'
 import SidePanel from './components/SidePanel/SidePanel'
 import AboutTheProject from './components/AboutTheProject/AboutTheProject'
 import Contacts from './components/AboutTheProject/Contacts'
+import SkyCanvas from './components/SkyCanvas/SkyCanvas'
 
 
 export default function App() {
@@ -12,9 +13,7 @@ export default function App() {
   return (
     <>
       <div className='canvas-container'>
-        {/* <Canvas>
-          { My three.js interactive 3D constellations }
-        </Canvas> */}
+        <SkyCanvas/>
       </div>
       <div className='ui-container'>
         <Header 

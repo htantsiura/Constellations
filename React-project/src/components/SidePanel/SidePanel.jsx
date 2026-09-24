@@ -47,20 +47,14 @@ export default function SidePanel() {
         <FilterButton 
           id="Constellation-btn" 
           icon={iconConstell} 
-          onClick={() => {
-            setIsConstellation( !isConstellation ),
-            setContentConstell( !isConstellation ? SideContent(isConstellation, AllConstellations) : null )
-          }}
+          onClick={() => setIsConstellation( !isConstellation )}
           isActive={isConstellation}
           bgColor="var(--primary-500)"
         />
         <FilterButton 
           id="Star-btn" 
           icon={iconStar} 
-          onClick={() => {
-            setIsStar( !isStar ), 
-            setContentStars( !isStar ? SideContent(isStar, AllStars) : null )
-          }}
+          onClick={() => setIsStar( !isStar )}
           isActive={isStar}
           bgColor="var(--secondary-750)"
         />
