@@ -20,19 +20,20 @@ export default function SkyCanvas() {
     const width = container.clientWidth
     const height = container.clientHeight
     const camera = new THREE.PerspectiveCamera( 40, width / height, 1, 1000 )
-    camera.position.set(0, 0, 2)
+    camera.position.set(0, 0, 1)
 
     const renderer = new THREE.WebGLRenderer()
     renderer.setSize(width, height)
 
     const labelRenderer = new CSS2DRenderer()
     labelRenderer.setSize(width, height)
-    labelRenderer.setSize(width, height) // 👈 ИСПРАВЛЕНО: setSize вместо getSize
-    labelRenderer.domElement.style.position = 'absolute' // 👈 Накладываем сверху
+    labelRenderer.className = 'label-renderer-container'
+    labelRenderer.domElement.style.position = 'absolute' 
     labelRenderer.domElement.style.top = '0px'
     labelRenderer.domElement.style.left = '0px'
     labelRenderer.domElement.style.pointerEvents = 'none' // 👈 Клики пролетают к OrbitControls
-
+    labelRenderer.domElement.style.zIndex = '2' 
+    
     container.appendChild(renderer.domElement)
     container.appendChild(labelRenderer.domElement)
 
@@ -53,12 +54,14 @@ export default function SkyCanvas() {
     testCube.scale.set(0.2, 0.2, 0.2)
     scene.add(testCube)
 
+    const emptyGroup = new THREE.Group()
+
     ConstellationData.forEach((item) => {
       const constellPos = raDecToVector3(item, 25)
-      const cube = testCube.clone()
-      cube.position.set(constellPos.x, constellPos.y, constellPos.z)
-      cube.userData = { id: item.id, name: item.name }
-      scene.add(cube)
+      const cstllGroup = emptyGroup.clone()
+      cstllGroup.position.set(constellPos.x, constellPos.y, constellPos.z)
+      cstllGroup.userData = { id: item.id, name: item.name }
+      scene.add(cstllGroup)
 
       const div = document.createElement('div')
       div.className = 'constellation-label'
@@ -69,15 +72,12 @@ export default function SkyCanvas() {
       scene.add(label)
     })
 
-   
-
     // End of Scene ------------------------------------
 
     let animationFrameId
 
     function animate() {
       animationFrameId = requestAnimationFrame(animate)
-
 
       controls.update()
       renderer.render(scene, camera)
