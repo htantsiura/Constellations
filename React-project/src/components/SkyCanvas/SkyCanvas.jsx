@@ -3,7 +3,7 @@ import { useRef, useEffect } from "react"
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 import ConstellationData from '../../ConstellationsData.json' 
-import raDecToVector3 from '../ThreeComponents/ConstellPosition'
+import { raDecToVector3 } from '../utilities/ThreeHelpers'
 
 
 export default function SkyCanvas() {
