@@ -7,5 +7,22 @@
 
   display: flex; 
   align-items: center; 
-  justify-content: center 
+  justify-content: center;
+
+  overflow: hidden
 }
+
+.constellation-label {
+  color: var(--primary-250);
+
+  font-family: sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  
+  cursor: pointer;
+  /* pointer-events: none;
+  user-select: none;
+  white-space: nowrap; */
+}
+
