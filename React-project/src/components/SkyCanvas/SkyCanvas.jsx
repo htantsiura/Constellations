@@ -27,13 +27,8 @@ export default function SkyCanvas() {
 
     const labelRenderer = new CSS2DRenderer()
     labelRenderer.setSize(width, height)
-    labelRenderer.className = 'label-renderer-container'
-    labelRenderer.domElement.style.position = 'absolute' 
-    labelRenderer.domElement.style.top = '0px'
-    labelRenderer.domElement.style.left = '0px'
-    labelRenderer.domElement.style.pointerEvents = 'none' // 👈 Клики пролетают к OrbitControls
-    labelRenderer.domElement.style.zIndex = '2' 
-    
+    labelRenderer.domElement.className = 'label-renderer-container'
+
     container.appendChild(renderer.domElement)
     container.appendChild(labelRenderer.domElement)
 
@@ -51,10 +46,11 @@ export default function SkyCanvas() {
     const testGeometry = new THREE.BoxGeometry()
 
     const testCube = new THREE.Mesh( testGeometry, testMat)
-    testCube.scale.set(0.2, 0.2, 0.2)
+    testCube.scale.set(10.2, 10.2, 10.2)
     scene.add(testCube)
 
     const emptyGroup = new THREE.Group()
+    emptyGroup.add(testCube.clone())
 
     ConstellationData.forEach((item) => {
       const constellPos = raDecToVector3(item, 25)
@@ -95,9 +91,10 @@ export default function SkyCanvas() {
       renderer.setSize(w, h)
       labelRenderer.setSize(w, h) // update 2D renderer
     }
-    container.addEventListener('resize', handleResize)
+    window.addEventListener('resize', handleResize)
 
     return () => {
+      window.removeEventListener('resize', handleResize)
       cancelAnimationFrame(animationFrameId)
 
       if (container.contains(renderer.domElement)) {

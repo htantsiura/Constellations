@@ -9,7 +9,7 @@
   align-items: center; 
   justify-content: center;
 
-  
+  position: fixed; 
   top: 0px;
   left: 0px;
   z-index: 1;
@@ -18,7 +18,11 @@
 }
 
 .label-renderer-container {
-  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 2;
 }
 
 .constellation-label {
