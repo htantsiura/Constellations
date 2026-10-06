@@ -21,7 +21,7 @@ export default function SkyCanvas() {
 
     const width = container.clientWidth
     const height = container.clientHeight
-    const camera = new THREE.PerspectiveCamera( 40, width / height, 1, 1000 )
+    const camera = new THREE.PerspectiveCamera( 40, width / height, 1, 2000 )
     camera.position.set(0, 0, 0.1)
 
     const renderer = new THREE.WebGLRenderer()
@@ -59,28 +59,41 @@ export default function SkyCanvas() {
           const newStar = starObj.clone()
           const starPos = raDecToVector3ForStars(item, 1)
           const starLocalPos = starPos.clone().sub(constellPos)
-          const scale = 100
+          const scale = 200
           newStar.scale.set(item.distance_light_year / scale, item.distance_light_year / scale, item.distance_light_year / scale)
           newStar.position.set(starLocalPos.x, starLocalPos.y, starLocalPos.z)
           newStar.userData = { id: item.id, name: item.name, constellation: item.constellation }
           group.add(newStar)
-          //scene.add(newStar)
+
+          addLabel(item, 'star-label', starPos) 
         }
       })
+    }
+
+    function addLabel(item, className, position) {
+      
+      const div = document.createElement('div')
+      div.className = className
+      div.textContent = item.name
+
+      const label = new CSS2DObject(div)
+      label.center.set(-0.0, 0.5)
+      label.position.copy(position)
+      scene.add(label)
     }
 
     ConstellationData.forEach((item) => {
       const constellPos = raDecToVector3(item, 1)
       const cstllGroup = emptyGroup.clone()
       cstllGroup.position.set(constellPos.x, constellPos.y, constellPos.z)
-      cstllGroup.userData = { id: item.id, name: item.name }
+      cstllGroup.userData = { id: item.id, name: item.name, pivot: constellPos }
       scene.add(cstllGroup)
       //cstllGroup.add(testCube.clone())
 
       //adding stars
       addStarsToConstellations(cstllGroup, testCube, constellPos)
       
-      // creating label layer for labels
+      // creating a div for the label
       const div = document.createElement('div')
       div.className = 'constellation-label'
       div.textContent = item.name

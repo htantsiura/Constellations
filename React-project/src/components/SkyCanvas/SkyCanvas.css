@@ -26,12 +26,26 @@
 }
 
 .constellation-label {
-  color: var(--primary-250);
+  color: var(--primary-500);
 
   font-family: sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
+  
+  cursor: pointer;
+  /* pointer-events: none;
+  user-select: none;
+  white-space: nowrap; */
+}
+
+.star-label {
+  color: var(--secondary-750);
+
+  font-family: sans-serif;
+  font-size: 14px;
+  text-align: left;
+  margin-left: 16px;
   
   cursor: pointer;
   /* pointer-events: none;
