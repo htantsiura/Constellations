@@ -11,8 +11,15 @@ import { Vector3 } from 'three/webgpu'
 import { createConstellation, createStar } from '../ThreeComponents/ObjectsCreator'
 
 
-export default function SkyCanvas({ onStarClick }) {
+export default function SkyCanvas({ onStarClick, expandedId }) {
   const containerRef = useRef(null)
+
+  const allLabelsRef = useRef(new Map())
+  const activeStarRef = useRef(null)
+  const controlsRef = useRef(null);
+  const cameraRef = useRef(null);
+
+
 
   useEffect(() => {
     const container = containerRef.current
@@ -25,6 +32,7 @@ export default function SkyCanvas({ onStarClick }) {
     const height = container.clientHeight
     const camera = new THREE.PerspectiveCamera( 35, width / height, 1, 2500 )
     camera.position.set(0, 0, 0.1)
+    cameraRef.current = camera
 
     const renderer = new THREE.WebGLRenderer()
     renderer.setSize(width, height)
@@ -43,6 +51,7 @@ export default function SkyCanvas({ onStarClick }) {
     controls.minDistance = 0.1
     controls.maxDistance = 500
     controls.target.set(0, 0, 0)
+    controlsRef.current = controls
 
     // Main Code  ------------------------------------
 
@@ -106,8 +115,9 @@ export default function SkyCanvas({ onStarClick }) {
     StarsData.forEach((item) => {
       const parentGroup = constellationList[item.constellation]
       const absoluteStarPos = raDecToVector3ForStars(item, 1)
-      const relativeStarPos = absoluteStarPos.sub(constellationList[item.constellation].userData.pivot)
-      const newStar = createStar(item, relativeStarPos, setActiveStar, 'default')
+      const relativeStarPos = absoluteStarPos.clone().sub(constellationList[item.constellation].userData.pivot)
+      const newStar = createStar(item, relativeStarPos, absoluteStarPos, setActiveStar, 'default')
+      allLabelsRef.current.set(item.id, newStar)
       parentGroup.add(newStar)
     })
 
@@ -158,6 +168,61 @@ export default function SkyCanvas({ onStarClick }) {
       renderer.dispose()
     }
   }, [])
+
+  useEffect(() => {
+    if(!expandedId) return;
+    const targetLabel = allLabelsRef.current.get(expandedId)
+    if (targetLabel) {
+      if (activeStarRef.current && activeStarRef.current !== targetLabel) {
+        activeStarRef.current.userData.setState('default')
+      }
+      targetLabel.userData.setState('active')
+      activeStarRef.current = targetLabel
+
+      if(controlsRef.current && cameraRef.current) {
+
+        const currentCameraPos = cameraRef.current.position.clone();
+        
+        // 2. Устанавливаем цель на звезду
+        controlsRef.current.target.copy(targetLabel.userData.pivot);
+        //controlsRef.current.target.set(0, 0, 0);
+        
+        // 3. Возвращаем камеру обратно туда, где она стояла!
+        cameraRef.current.position.copy(currentCameraPos);
+        
+        controlsRef.current.update();
+
+        /* const starPos = targetLabel.userData.pivot;
+
+        // 2. Узнаем, на каком расстоянии сейчас камера от центра (чтобы не сбить зум)
+        const currentDistance = cameraRef.current.position.distanceTo(new THREE.Vector3(0, 0, 0));
+
+        // 3. Перемещаем камеру по орбите, чтобы она встала на одну линию со звездой
+        cameraRef.current.position.copy(starPos).normalize().multiplyScalar(currentDistance);
+
+        // 4. ЖЕСТКО говорим контроллеру всегда смотреть в центр галактики
+        controlsRef.current.target.set(0, 0, 0);
+        
+        controlsRef.current.update(); */
+
+
+        /* console.log(targetLabel.userData.name)
+        console.log(targetLabel.userData.pivot)
+
+        let worldPosition = new THREE.Vector3();
+        targetLabel.getWorldPosition(worldPosition);
+        console.log(worldPosition)
+        
+        const currentDistance = cameraRef.current.position.distanceTo(controlsRef.current.target);
+        cameraRef.current.position
+          .copy(worldPosition)
+          .normalize()
+          .multiplyScalar(currentDistance);
+        //controlsRef.current.target.copy(targetLabel.userData.pivot)
+        controlsRef.current.update() */
+      }
+    }
+  }, [expandedId])
 
 
   return (

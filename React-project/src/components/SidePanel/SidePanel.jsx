@@ -9,8 +9,8 @@ import SideContent from '../SideContent/SideContent'
 import StarCard from '../Cards/StarCard'
 import ConstellCard from '../Cards/ConstellCard'
 import { useState } from 'react'
-/*import { openConstellation } from '../utilities/constellationUtils.jsx'
-import { openStar } from '../utilities/starUtils.jsx' */
+import { openConstellation } from '../utilities/constellationUtils.jsx'
+import { openStar } from '../utilities/starUtils.jsx' 
 
 const sortByName = (array) => {
   return [...array].sort((a, b) => a.name.localeCompare(b.name));
@@ -26,6 +26,7 @@ export default function SidePanel({
   const [isConstellation, setIsConstellation] = useState(true);
   const [expandedId, setExpandedId] = useState(null);
   const [searchQuery, setSearchQuery] = useState(''); */
+  
   const [contentStars, setContentStars] = useState(null);
   const [contentConstell, setContentConstell] = useState(null);
 

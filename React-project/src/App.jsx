@@ -22,10 +22,18 @@ export default function App() {
     openStar(starId, setExpandedId, setIsStar, setSearchQuery);
   }
 
+  const handleConstellationSelect = (constellId) => {
+    //onConstellationClick
+    openConstellation(constellId, setExpandedId, setIsConstellation, setSearchQuery )
+  }
+
   return (
     <>
       <div className='canvas-container'>
-        <SkyCanvas onStarClick={handleStarSelect} />
+        <SkyCanvas 
+          onStarClick={handleStarSelect} 
+          expandedId={expandedId}
+        />
       </div>
       <div className='ui-container'>
         <Header 

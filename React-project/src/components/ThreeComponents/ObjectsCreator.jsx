@@ -30,7 +30,7 @@ export function createConstellation(item, position, state = 'default') {
   return group
 }
 
-export function createStar(item, position, onClickCallBack, state = 'default') {
+export function createStar(item, localPos, worldPos, onClickCallBack, state = 'default') {
 
   const container = document.createElement('div')
   container.className = 'star-label-container'
@@ -54,7 +54,7 @@ export function createStar(item, position, onClickCallBack, state = 'default') {
     name: item.name,
     constellation: item.constellation,
     type: 'star',
-    pivot: position,
+    pivot: worldPos,
     state: 'default', // 'default', 'active', 'pale'
     setState: (newState) => {
       container.classList.remove('default', 'active', 'pale')
@@ -63,7 +63,7 @@ export function createStar(item, position, onClickCallBack, state = 'default') {
     }
   }
   label.center.set(0, 0.5)
-  label.position.copy(position)
+  label.position.copy(localPos)
   container.addEventListener('click', () => {
     if (onClickCallBack) {
       onClickCallBack(label)
