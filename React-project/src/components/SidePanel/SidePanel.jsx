@@ -9,22 +9,25 @@ import SideContent from '../SideContent/SideContent'
 import StarCard from '../Cards/StarCard'
 import ConstellCard from '../Cards/ConstellCard'
 import { useState } from 'react'
-import { openConstellation } from '../utilities/constellationUtils.jsx'
-import { openStar } from '../utilities/starUtils.jsx'
+/*import { openConstellation } from '../utilities/constellationUtils.jsx'
+import { openStar } from '../utilities/starUtils.jsx' */
 
 const sortByName = (array) => {
   return [...array].sort((a, b) => a.name.localeCompare(b.name));
 }
 
-
-
-export default function SidePanel() {
-  const [isStar, setIsStar] = useState(true);
+export default function SidePanel({
+  isStar, setIsStar,
+  isConstellation, setIsConstellation,
+  expandedId, setExpandedId,
+  searchQuery, setSearchQuery
+}) {
+  /* const [isStar, setIsStar] = useState(true);
   const [isConstellation, setIsConstellation] = useState(true);
+  const [expandedId, setExpandedId] = useState(null);
+  const [searchQuery, setSearchQuery] = useState(''); */
   const [contentStars, setContentStars] = useState(null);
   const [contentConstell, setContentConstell] = useState(null);
-  const [expandedId, setExpandedId] = useState(null);
-  const [searchQuery, setSearchQuery] = useState('');
 
   const sortedStars = sortByName(StarsData);
   const sortedConstellations = sortByName(ConstellationData);
@@ -70,7 +73,6 @@ export default function SidePanel() {
               isExpanded={ expandedId === item.id }
               onToggle={() => setExpandedId(expandedId === item.id ? null : item.id )}
               onConstellationClick={() => openConstellation(item.constellation, setExpandedId, setIsConstellation, setSearchQuery )}
-              
             />
           )) : null 
         }

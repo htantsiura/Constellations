@@ -6,14 +6,26 @@ import AboutTheProject from './components/AboutTheProject/AboutTheProject'
 import Contacts from './components/AboutTheProject/Contacts'
 import SkyCanvas from './components/SkyCanvas/SkyCanvas'
 
+import { openConstellation } from './components/utilities/constellationUtils.jsx'
+import { openStar } from './components/utilities/starUtils.jsx'
+
 
 export default function App() {
   const [activePage, setActivePage] = useState('panel')
 
+  const [isStar, setIsStar] = useState(true);
+  const [isConstellation, setIsConstellation] = useState(true);
+  const [expandedId, setExpandedId] = useState(null);
+  const [searchQuery, setSearchQuery] = useState('');
+
+  const handleStarSelect = (starId) => {
+    openStar(starId, setExpandedId, setIsStar, setSearchQuery);
+  }
+
   return (
     <>
       <div className='canvas-container'>
-        <SkyCanvas/>
+        <SkyCanvas onStarClick={handleStarSelect} />
       </div>
       <div className='ui-container'>
         <Header 
@@ -23,7 +35,13 @@ export default function App() {
         <main className='main-section'>
           { activePage === 'about' && <AboutTheProject onClose={() => setActivePage('panel')} /> }
           { activePage === 'contacts' && <Contacts onClose={() => setActivePage('panel')} /> }
-          { activePage === 'panel' && <SidePanel /> }
+          { activePage === 'panel' && 
+            <SidePanel 
+              isStar={isStar} setIsStar={setIsStar}
+              isConstellation={isConstellation} setIsConstellation={setIsConstellation}
+              expandedId={expandedId} setExpandedId={setExpandedId}
+              searchQuery={searchQuery} setSearchQuery={setSearchQuery}
+            /> }
         </main>
       </div>
     </>

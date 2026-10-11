@@ -11,7 +11,7 @@ import { Vector3 } from 'three/webgpu'
 import { createConstellation, createStar } from '../ThreeComponents/ObjectsCreator'
 
 
-export default function SkyCanvas() {
+export default function SkyCanvas({ onStarClick }) {
   const containerRef = useRef(null)
 
   useEffect(() => {
@@ -89,6 +89,10 @@ export default function SkyCanvas() {
       }
       label.userData.setState('active')
       currentActiveStar = label;
+      if (onStarClick) {
+        // Обязательно передаем ID звезды, так как твоя функция openStar ищет именно по ID
+        onStarClick(label.userData.id); 
+      }
     }
 
     const constellationList = {}
