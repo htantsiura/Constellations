@@ -25,7 +25,7 @@
   z-index: 2;
 }
 
-.constellation-label {
+.constellation-label-container {
   color: var(--primary-500);
 
   font-family: sans-serif;
@@ -39,17 +39,77 @@
   white-space: nowrap; */
 }
 
-.star-label {
-  color: var(--secondary-750);
-
-  font-family: sans-serif;
-  font-size: 14px;
-  text-align: left;
-  margin-left: 16px;
-  
-  cursor: pointer;
-  /* pointer-events: none;
-  user-select: none;
-  white-space: nowrap; */
+.constellation-label-container.is-active {
+  color: var(--primary-250);
+  font-weight: normal;
 }
 
+
+
+
+.star-label-container {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  pointer-events: none;
+  user-select: none;
+
+  margin-left: calc(var(--star-icon-size) * -0.5);
+}
+
+.star-icon-default {
+  width: var(--star-icon-size);
+  height: var(--star-icon-size);
+  
+  background-color: var(--secondary-750);
+
+  /* apply svg as mask */
+  -webkit-mask-image: url('src/assets/starDefault.svg');
+  mask-image: url('src/assets/starDefault.svg');
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+}
+
+.star-icon-active {
+  width: var(--star-icon-size);
+  height: var(--star-icon-size);
+  
+  background-color: var(--secondary-500);
+
+  /* apply svg as mask */
+  -webkit-mask-image: url('src/assets/starClicked.svg');
+  mask-image: url('src/assets/starClicked.svg');
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+}
+
+/* По умолчанию: дефолтная иконка видна, активная скрыта */
+.star-label-container .star-icon-default {
+  display: block;
+}
+.star-label-container .star-icon-active {
+  display: none;
+}
+
+/* Когда на контейнере есть класс .is-active */
+.star-label-container.is-active .star-icon-default {
+  display: none;
+}
+.star-label-container.is-active .star-icon-active {
+  display: block;
+}
+
+/* Можно сразу изменить и стиль текста при активности */
+.star-label-container.is-active .star-label-text {
+  color: var(--secondary-500);
+  font-weight: normal;
+}

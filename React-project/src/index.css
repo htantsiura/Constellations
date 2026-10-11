@@ -14,6 +14,7 @@ html, body, #root {
   --corner-radius: 6px;
   --header-height: 64px;
   --card-padding: 16px;
+  --star-icon-size: 24px;
 
   /* Color variables */
   /* Neutral */

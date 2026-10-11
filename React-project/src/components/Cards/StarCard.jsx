@@ -38,6 +38,7 @@ export default function StarCard({ item, isExpanded, onToggle, onConstellationCl
               name={( item.constellation)} 
               onClick={ onConstellationClick }
             />
+            <CardBodyLine label="id:" value={ item.id } />
             <CardBodyLine label="Right Ascension:" value={ formatRA( item.right_ascension )} />
             <CardBodyLine label="Declination:" value={ formatDec( item.declination )} />
             <CardBodyLine label="App. Magnitude:" value={ item.apparent_magnitude } />
