@@ -8,7 +8,7 @@ import { raDecToVector3, raDecToVector3ForStars } from '../utilities/ThreeHelper
 import { CSS2DRenderer, CSS2DObject } from 'three/examples/jsm/renderers/CSS2DRenderer.js'
 import { vec3 } from 'three/tsl'
 import { Vector3 } from 'three/webgpu'
-import { createConstellation } from '../ThreeComponents/CreateConstellation'
+import { createConstellation, createStar } from '../ThreeComponents/ObjectsCreator'
 
 
 export default function SkyCanvas() {
@@ -59,115 +59,38 @@ export default function SkyCanvas() {
     //scene.add(star)
  */
 
+    // creating objects on the scene ---------------------------------
 
-  /*   const emptyGroup = new THREE.Group()
-
-    function addStarsToConstellations(group, constellPos) {
-      StarsData.forEach((item) => {
-        if (item.constellation === group.userData.name) {
-          const starPos = raDecToVector3ForStars(item, 1)
-          const starLocalPos = starPos.clone().sub(constellPos)
-          
-          const newStar = starObj.clone()
-          const scale = 200
-          newStar.scale.set(item.distance_light_year / scale, item.distance_light_year / scale, item.distance_light_year / scale)
-          //newStar.scale.set(0.2, 0.2, 0.2)
-          newStar.position.set(starLocalPos.x, starLocalPos.y, starLocalPos.z)
-          newStar.userData = { id: item.id, name: item.name, constellation: item.constellation }
-          group.add(newStar)
-          newStar.lookAt(camera.position)
-          newStar.rotation.set(1, 1, 1) 
-          
-          addStarLabel(item, group, starLocalPos) 
-        }
-      })
-    }
-
-    function addConstellationLabel(item, group, isActive = false) {
-      
-      const div = document.createElement('div')
-      div.className = `constellation-label-container ${isActive ? 'is-active' : ''}`
-      div.textContent = item.name
-
-      const label = new CSS2DObject(div)
-      label.center.set(0.5, 0.5)
-      label.position.set(0, 0, 0)
-
-      label.userData = {
-        id: item.id,
-        name: item.name,
-        isActive: isActive,
-        setActive: (activeState) => {
-          label.userData.isActive = activeState
-          div.classList.toggle('is-active', activeState)
-        }
-      }
-
-      group.add(label)
-      return label
-    }
-
-    function addStarLabel(item, group, position, isActive = false) {
-      
-      const container = document.createElement('div')
-      container.className = `star-label-container ${isActive ? 'is-active' : ''}`
-
-      const defIcon = document.createElement('div')
-      defIcon.className = 'star-icon-default'
-      container.appendChild(defIcon)
-      
-      const activeIcon = document.createElement('div')
-      activeIcon.className = 'star-icon-active'
-      container.appendChild(activeIcon)
-
-      const textDiv = document.createElement('div')
-      textDiv.className = 'star-label-text'
-      textDiv.textContent = item.name
-      container.appendChild(textDiv)
-
-      const label = new CSS2DObject(container)
-      label.center.set(0, 0.5)
-      label.position.copy(position)
-
-      label.userData = {
-        id: item.id,
-        name: item.name,
-        pivotPos: position,
-        isActive: isActive,
-        setActive: (activeState) => {
-          label.userData.isActive = activeState
-          container.classList.toggle('is-active', activeState)
-        }
-      }
-
-      group.add(label)
-      return label
-    }
-
-    ConstellationData.forEach((item) => {
-      const constellPos = raDecToVector3(item, 1)
-      const cstllGroup = emptyGroup.clone()
-      cstllGroup.position.set(constellPos.x, constellPos.y, constellPos.z)
-      cstllGroup.userData = { 
-        id: item.id, 
-        name: item.name, 
-        pivotPos: constellPos, 
-        type: 'constellation-group' 
-      }
-      addStarsToConstellations(cstllGroup, constellPos)
-      addConstellationLabel(item, cstllGroup) 
-      scene.add(cstllGroup)
-    }) */
-
-
+    const constellationList = {}
     ConstellationData.forEach((item) => {
       const constellPos = raDecToVector3(item, 1)
       const newConstellation = createConstellation(item, constellPos)
       scene.add(newConstellation)
+      constellationList[item.name] = newConstellation
+    })
+
+    StarsData.forEach((item) => {
+      const parentGroup = constellationList[item.constellation]
+      const absoluteStarPos = raDecToVector3ForStars(item, 1)
+      const relativeStarPos = absoluteStarPos.sub(constellationList[item.constellation].userData.pivot)
+      const newStar = createStar(item, relativeStarPos, 'default')
+      parentGroup.add(newStar)
     })
 
     // ------------------------------------
-    // Test Part  ------------------------------------
+    // Test Part  -------------------------
+
+    function changeStateStar(item, state) {
+      const targetStar = constellationList[item.constellation].children.find(child => child.userData?.name === item.name) 
+      console.log('targetStar = ' + constellationList[item.constellation].children[2].userData.name)
+
+      if (targetStar && targetStar.userData.state !== state) {
+        targetStar.userData.setState(state)
+      }
+    }
+
+    changeStateStar(StarsData[1], 'active')
+    changeStateStar(StarsData[2], 'default')
 
     /* const activeStar = scene.children.find(child => child.userData?.id === 'bellatrix')
     if(activeStar && activeStar.userData.setActive) {

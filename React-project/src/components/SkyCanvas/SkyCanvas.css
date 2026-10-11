@@ -92,24 +92,25 @@
   mask-position: center;
 }
 
-/* По умолчанию: дефолтная иконка видна, активная скрыта */
-.star-label-container .star-icon-default {
-  display: block;
-}
-.star-label-container .star-icon-active {
-  display: none;
-}
+/* default */
+.star-label-container .star-icon-default { display: block; }
+.star-label-container .star-icon-active { display: none; }
 
-/* Когда на контейнере есть класс .is-active */
-.star-label-container.is-active .star-icon-default {
-  display: none;
-}
-.star-label-container.is-active .star-icon-active {
-  display: block;
-}
-
-/* Можно сразу изменить и стиль текста при активности */
-.star-label-container.is-active .star-label-text {
+/*  .active */
+.star-label-container.active .star-icon-default { display: none; }
+.star-label-container.active .star-icon-active { display: block; }
+.star-label-container.active .star-label-text {
   color: var(--secondary-500);
   font-weight: normal;
 }
+/*  .pale */
+.star-label-container.pale .star-icon-default { 
+  display: block; 
+  background-color: var(--secondary-950);
+}
+.star-label-container.pale .star-icon-active { display: none; }
+.star-label-container.pale .star-label-text {
+  display: none;
+}
+
+

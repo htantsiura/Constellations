@@ -5,7 +5,7 @@ export function raDecToVector3(item, scale) {
   const defaultRadius = 10
   // linear distance
   const distance = (item.avg_distance ?? defaultRadius) * scale;
-  // log distance
+  // logariph distance
   //const distance = Math.log(item.avg_distance + 1) * scale;
 
   const raRad = item.right_ascension * (Math.PI / 12);
