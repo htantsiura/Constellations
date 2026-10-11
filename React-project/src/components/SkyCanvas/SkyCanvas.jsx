@@ -23,7 +23,7 @@ export default function SkyCanvas() {
 
     const width = container.clientWidth
     const height = container.clientHeight
-    const camera = new THREE.PerspectiveCamera( 35, width / height, 1, 2000 )
+    const camera = new THREE.PerspectiveCamera( 35, width / height, 1, 2500 )
     camera.position.set(0, 0, 0.1)
 
     const renderer = new THREE.WebGLRenderer()
@@ -41,10 +41,12 @@ export default function SkyCanvas() {
     controls.dampingFactor = 0.05
     controls.screenSpacePanning = false
     controls.minDistance = 0.1
-    controls.maxDistance = 100
+    controls.maxDistance = 500
     controls.target.set(0, 0, 0)
 
     // Main Code  ------------------------------------
+
+    let currentActiveStar = null;
 
     const testMat = new THREE.MeshBasicMaterial({ color: 'blue' , wireframe: true })
     const testGeometry = new THREE.BoxGeometry()
@@ -61,6 +63,34 @@ export default function SkyCanvas() {
 
     // creating objects on the scene ---------------------------------
 
+    /* const lineMaterial = new THREE.LineBasicMaterial({ 
+      color: 0xffffff, 
+    });
+
+    // 2. Допустим, у тебя есть позиции двух звезд
+    const starPos1 = raDecToVector3ForStars(StarsData[1], 1);
+    const starPos2 = raDecToVector3ForStars(StarsData[2], 1);
+    const starPos3 = raDecToVector3ForStars(StarsData[3], 1);
+    const starPos4 = raDecToVector3ForStars(StarsData[4], 1);
+
+    // 3. Создаем геометрию и передаем туда массив точек
+    const points = [starPos1, starPos2, starPos3, starPos4];
+    const lineGeometry = new THREE.BufferGeometry().setFromPoints(points);
+
+    // 4. Создаем саму линию и добавляем в группу созвездия (или на сцену)
+    const constellationLine = new THREE.Line(lineGeometry, lineMaterial);
+    scene.add(constellationLine);
+ */
+
+    function setActiveStar(label) {
+      if (currentActiveStar && currentActiveStar !== label) {
+        console.log("it works")
+        currentActiveStar.userData.setState('default')
+      }
+      label.userData.setState('active')
+      currentActiveStar = label;
+    }
+
     const constellationList = {}
     ConstellationData.forEach((item) => {
       const constellPos = raDecToVector3(item, 1)
@@ -73,43 +103,15 @@ export default function SkyCanvas() {
       const parentGroup = constellationList[item.constellation]
       const absoluteStarPos = raDecToVector3ForStars(item, 1)
       const relativeStarPos = absoluteStarPos.sub(constellationList[item.constellation].userData.pivot)
-      const newStar = createStar(item, relativeStarPos, 'default')
+      const newStar = createStar(item, relativeStarPos, setActiveStar, 'default')
       parentGroup.add(newStar)
     })
 
     // ------------------------------------
     // Test Part  -------------------------
 
-    function changeStateStar(item, state) {
-      const targetStar = constellationList[item.constellation].children.find(child => child.userData?.name === item.name) 
-      console.log('targetStar = ' + constellationList[item.constellation].children[2].userData.name)
-
-      if (targetStar && targetStar.userData.state !== state) {
-        targetStar.userData.setState(state)
-      }
-    }
-
-    changeStateStar(StarsData[1], 'active')
-    changeStateStar(StarsData[2], 'default')
-
-    /* const activeStar = scene.children.find(child => child.userData?.id === 'bellatrix')
-    if(activeStar && activeStar.userData.setActive) {
-      activeStar.userData.setActive(true)
-    }
-
-    const activeConstell = scene.children.find(child => child.userData?.id === 'orion')
-    const activeConstellLabel;
-    if(activeConstell) {
-      activeConstell.userData.setActive(true)
-    }
-
     
-    scene.children.forEach((item) => {
-      if (item.userData.name === "Orion")
-        console.log("name: " + item.userData.name)
-    }) */
-
-    console.log("number of children " + scene.children.length) 
+    //console.log("number of children " + scene.children.length) 
 
     // -----------------------------
 
