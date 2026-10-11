@@ -181,45 +181,27 @@ export default function SkyCanvas({ onStarClick, expandedId }) {
 
       if(controlsRef.current && cameraRef.current) {
 
-        const currentCameraPos = cameraRef.current.position.clone();
-        
-        // 2. Устанавливаем цель на звезду
-        controlsRef.current.target.copy(targetLabel.userData.pivot);
-        //controlsRef.current.target.set(0, 0, 0);
-        
-        // 3. Возвращаем камеру обратно туда, где она стояла!
-        cameraRef.current.position.copy(currentCameraPos);
-        
+        // 1. Получаем 100% точные глобальные координаты звезды
+        const worldPosition = new THREE.Vector3();
+        targetLabel.getWorldPosition(worldPosition);
+
+        // 2. Узнаем текущее расстояние от камеры до её фокуса (target).
+        // OrbitControls использует его для своих расчетов, его нельзя менять
+        const currentTargetDistance = cameraRef.current.position.distanceTo(controlsRef.current.target);
+
+        // 3. Строим луч зрения: от КАМЕРЫ прямо на ЗВЕЗДУ
+        const direction = new THREE.Vector3()
+          .subVectors(worldPosition, cameraRef.current.position)
+          .normalize();
+
+        // 4. Берем позицию камеры, пускаем от неё луч в сторону звезды 
+        // и ставим новую цель (target) прямо на этом луче
+        const newTargetPos = cameraRef.current.position.clone()
+          .add(direction.multiplyScalar(currentTargetDistance));
+
+        controlsRef.current.target.copy(newTargetPos);
         controlsRef.current.update();
 
-        /* const starPos = targetLabel.userData.pivot;
-
-        // 2. Узнаем, на каком расстоянии сейчас камера от центра (чтобы не сбить зум)
-        const currentDistance = cameraRef.current.position.distanceTo(new THREE.Vector3(0, 0, 0));
-
-        // 3. Перемещаем камеру по орбите, чтобы она встала на одну линию со звездой
-        cameraRef.current.position.copy(starPos).normalize().multiplyScalar(currentDistance);
-
-        // 4. ЖЕСТКО говорим контроллеру всегда смотреть в центр галактики
-        controlsRef.current.target.set(0, 0, 0);
-        
-        controlsRef.current.update(); */
-
-
-        /* console.log(targetLabel.userData.name)
-        console.log(targetLabel.userData.pivot)
-
-        let worldPosition = new THREE.Vector3();
-        targetLabel.getWorldPosition(worldPosition);
-        console.log(worldPosition)
-        
-        const currentDistance = cameraRef.current.position.distanceTo(controlsRef.current.target);
-        cameraRef.current.position
-          .copy(worldPosition)
-          .normalize()
-          .multiplyScalar(currentDistance);
-        //controlsRef.current.target.copy(targetLabel.userData.pivot)
-        controlsRef.current.update() */
       }
     }
   }, [expandedId])
