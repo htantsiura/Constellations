@@ -9,17 +9,17 @@ import { CSS2DRenderer, CSS2DObject } from 'three/examples/jsm/renderers/CSS2DRe
 import { vec3 } from 'three/tsl'
 import { Vector3 } from 'three/webgpu'
 import { createConstellation, createStar } from '../ThreeComponents/ObjectsCreator'
+import { smoothCameraMoving, smoothCameraNavigator } from '../ThreeComponents/SmoothCameraTargeting'
 
 
 export default function SkyCanvas({ onStarClick, expandedId }) {
   const containerRef = useRef(null)
-
   const allLabelsRef = useRef(new Map())
   const activeStarRef = useRef(null)
   const controlsRef = useRef(null);
   const cameraRef = useRef(null);
-
-
+  const desiredTargetRef = useRef(null);
+  const targetAnimationRef = useRef(null);
 
   useEffect(() => {
     const container = containerRef.current
@@ -134,7 +134,7 @@ export default function SkyCanvas({ onStarClick, expandedId }) {
     function animate() {
       animationFrameId = requestAnimationFrame(animate)
 
-      controls.update()
+      smoothCameraMoving(targetAnimationRef, controlsRef, cameraRef);
       renderer.render(scene, camera)
       labelRenderer.render(scene, camera)
     }
@@ -179,33 +179,9 @@ export default function SkyCanvas({ onStarClick, expandedId }) {
       targetLabel.userData.setState('active')
       activeStarRef.current = targetLabel
 
-      if(controlsRef.current && cameraRef.current) {
-
-        // 1. Получаем 100% точные глобальные координаты звезды
-        const worldPosition = new THREE.Vector3();
-        targetLabel.getWorldPosition(worldPosition);
-
-        // 2. Узнаем текущее расстояние от камеры до её фокуса (target).
-        // OrbitControls использует его для своих расчетов, его нельзя менять
-        const currentTargetDistance = cameraRef.current.position.distanceTo(controlsRef.current.target);
-
-        // 3. Строим луч зрения: от КАМЕРЫ прямо на ЗВЕЗДУ
-        const direction = new THREE.Vector3()
-          .subVectors(worldPosition, cameraRef.current.position)
-          .normalize();
-
-        // 4. Берем позицию камеры, пускаем от неё луч в сторону звезды 
-        // и ставим новую цель (target) прямо на этом луче
-        const newTargetPos = cameraRef.current.position.clone()
-          .add(direction.multiplyScalar(currentTargetDistance));
-
-        controlsRef.current.target.copy(newTargetPos);
-        controlsRef.current.update();
-
-      }
+      smoothCameraNavigator(controlsRef, cameraRef, targetLabel, targetAnimationRef);
     }
   }, [expandedId])
-
 
   return (
     <div ref={containerRef} className="sky-canvas-container" />
