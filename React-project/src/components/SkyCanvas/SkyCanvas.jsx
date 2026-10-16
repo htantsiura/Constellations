@@ -12,7 +12,7 @@ import { createConstellation, createStar } from '../ThreeComponents/ObjectsCreat
 import { smoothCameraMoving, smoothCameraNavigator } from '../ThreeComponents/SmoothCameraTargeting'
 
 
-export default function SkyCanvas({ onStarClick, expandedId }) {
+export default function SkyCanvas({ onStarClick, onConstellationClick, expandedId }) {
   const containerRef = useRef(null)
   const allLabelsRef = useRef(new Map())
   const activeStarRef = useRef(null)
@@ -107,9 +107,14 @@ export default function SkyCanvas({ onStarClick, expandedId }) {
     const constellationList = {}
     ConstellationData.forEach((item) => {
       const constellPos = raDecToVector3(item, 1)
-      const newConstellation = createConstellation(item, constellPos)
+      const newConstellation = createConstellation(item, constellPos, (label) => {
+        if (onConstellationClick) {
+          onConstellationClick(label.userData.name); 
+        }
+      })
       scene.add(newConstellation)
       constellationList[item.name] = newConstellation
+      allLabelsRef.current.set(item.id, newConstellation)
     })
 
     StarsData.forEach((item) => {

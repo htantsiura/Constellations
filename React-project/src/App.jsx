@@ -32,6 +32,7 @@ export default function App() {
       <div className='canvas-container'>
         <SkyCanvas 
           onStarClick={handleStarSelect} 
+          onConstellationClick={handleConstellationSelect}
           expandedId={expandedId}
         />
       </div>

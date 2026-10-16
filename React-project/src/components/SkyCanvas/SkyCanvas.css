@@ -25,7 +25,14 @@
   z-index: 2;
 }
 
+
 .constellation-label-container {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.constellation-label-text {
   color: var(--primary-500);
 
   font-family: sans-serif;
@@ -33,16 +40,62 @@
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   
-  cursor: pointer;
-  /* pointer-events: none;
   user-select: none;
-  white-space: nowrap; */
+  cursor: pointer;
+  pointer-events: auto;
+
 }
 
-.constellation-label-container.active {
+.constellation-label-text.active {
   color: var(--primary-250);
   font-weight: normal;
 }
+
+/* Контейнер кнопки таргета */
+.target-btn-container {
+  display: none; /* Скрываем по умолчанию */
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+/* МАГИЯ: Показываем кнопку таргета ТОЛЬКО когда всё созвездие активно */
+.constellation-label-container.active .target-btn-container {
+  display: block;
+}
+
+/* Стили для иконок (используй свои пути к SVG) */
+.target-icon-off,
+.target-icon-on {
+  width: var(--star-icon-size);
+  height: var(--star-icon-size);
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+}
+
+/* Состояние OFF */
+.target-icon-off {
+  background-color: var(--primary-750);
+  -webkit-mask-image: url('src/assets/starDefault.svg');
+  mask-image: url('src/assets/starDefault.svg'); 
+}
+
+/* Состояние ON */
+.target-icon-on {
+  background-color: var(--primary-500);
+  -webkit-mask-image: url('src/assets/starClicked.svg');
+  mask-image: url('src/assets/starClicked.svg'); 
+}
+
+/* ПЕРЕКЛЮЧЕНИЕ: Логика отображения иконок внутри кнопки */
+.target-btn-container .target-icon-off { display: block; }
+.target-btn-container .target-icon-on { display: none; }
+
+.target-btn-container.targeted .target-icon-off { display: none; }
+.target-btn-container.targeted .target-icon-on { display: block; }
 
 
 
@@ -52,11 +105,9 @@
   align-items: center;
   gap: 4px;
 
-  pointer-events: none;
-  user-select: none;
-
   margin-left: calc(var(--star-icon-size) * -0.5);
 
+  user-select: none;
   cursor: pointer;
   pointer-events: auto;
 }
