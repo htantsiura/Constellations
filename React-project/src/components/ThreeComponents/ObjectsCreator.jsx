@@ -3,17 +3,16 @@ import * as THREE from 'three'
 import { CSS2DObject } from 'three/examples/jsm/renderers/CSS2DRenderer.js'
 import { Vector3 } from 'three/webgpu'
 
-export function createConstellation(item, position, onClickCallBack, state = 'default') {
+export function createConstellation(item, 
+                                    position, 
+                                    onClickCallBack, 
+                                    onTargetToggle,
+                                    state = 'default') {
   const group = new THREE.Group()
   group.position.copy(position)
 
   const container = document.createElement('div')
   container.className = 'constellation-label-container'
-
-  const constellName = document.createElement('div')
-  constellName.className = 'constellation-label-text'
-  constellName.textContent = item.name
-  container.appendChild(constellName)
 
   const targetBtn = document.createElement('div')
   targetBtn.className = 'target-btn-container'
@@ -26,8 +25,10 @@ export function createConstellation(item, position, onClickCallBack, state = 'de
   targetOnIcon.className = 'target-icon-on'
   targetBtn.appendChild(targetOnIcon)
 
-  container.appendChild(targetBtn)
-
+  const constellName = document.createElement('div')
+  constellName.className = 'constellation-label-text'
+  constellName.textContent = item.name
+  
   constellName.addEventListener('click', () => {
     if (onClickCallBack) {
       onClickCallBack(group);
@@ -35,10 +36,10 @@ export function createConstellation(item, position, onClickCallBack, state = 'de
   });
 
   targetBtn.addEventListener('click', (e) => {
-    e.stopPropagation(); // Блокируем клик, чтобы не сработало нажатие на само созвездие
-    
-    const isTargeted = group.userData.isTargeted || false;
-    group.userData.isTargeted = !isTargeted;
+    e.stopPropagation() 
+
+    const isTargeted = group.userData.isTargeted || false
+    group.userData.isTargeted = !isTargeted
     
     if (group.userData.isTargeted) {
       targetBtn.classList.add('targeted');
@@ -47,32 +48,32 @@ export function createConstellation(item, position, onClickCallBack, state = 'de
     }
 
     if (onTargetToggle) {
-      onTargetToggle(group.userData.pivot, group.userData.isTargeted);
+      onTargetToggle(group.userData.pivot, group.userData.isTargeted)
     }
-  });
+  })
+
+  container.appendChild(targetBtn)
+  container.appendChild(constellName)
 
   group.userData = {
     id: item.id,
     name: item.name,
     type: 'constellation',
     pivot: position,
-    state: 'default', // default, active, pale
-    isTargeted: false, // храним состояние фокуса
+    state: 'default',
+    isTargeted: false,
     setState: (newState) => {
       container.classList.remove('default', 'active', 'pale');
-      group.userData.state = newState; // Исправлено с label на group
       container.classList.add(newState);
-      
+      group.userData.state = newState;
       if (newState === 'active') {
         constellName.classList.add('active');
       } else {
         constellName.classList.remove('active');
-        
-        // Если созвездие закрыли, автоматически сбрасываем таргет
         if (group.userData.isTargeted) {
-          group.userData.isTargeted = false;
-          targetBtn.classList.remove('targeted');
-          if (onTargetToggle) onTargetToggle(position, false);
+            group.userData.isTargeted = false;
+            targetBtn.classList.remove('targeted'); 
+            if (onTargetToggle) onTargetToggle(position, false);
         }
       }
     }

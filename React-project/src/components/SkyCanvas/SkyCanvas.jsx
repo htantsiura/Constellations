@@ -20,6 +20,7 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
   const cameraRef = useRef(null);
   const desiredTargetRef = useRef(null);
   const targetAnimationRef = useRef(null);
+  const teleportAnimationRef = useRef(null);
 
   useEffect(() => {
     const container = containerRef.current
@@ -49,13 +50,14 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
     controls.dampingFactor = 0.05
     controls.screenSpacePanning = false
     controls.minDistance = 0.1
-    controls.maxDistance = 500
+    controls.maxDistance = 3000
     controls.target.set(0, 0, 0)
     controlsRef.current = controls
 
     // Main Code  ------------------------------------
 
     let currentActiveStar = null;
+    const constellationList = {}
 
     const testMat = new THREE.MeshBasicMaterial({ color: 'blue' , wireframe: true })
     const testGeometry = new THREE.BoxGeometry()
@@ -104,14 +106,39 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
       }
     }
 
-    const constellationList = {}
+    
+
+    // Функция, которая обрабатывает нажатие на кнопку Target
+  const handleTargetToggle = (pivotPos, isTargeted) => {
+    if (!controlsRef.current || !cameraRef.current) return;
+
+    if (isTargeted) {
+      // 1. Считаем фактическое расстояние от камеры до координат созвездия
+      const distToConstellation = cameraRef.current.position.distanceTo(pivotPos);
+      
+      // 2. Вызываем плавный поворот (камера останется на месте, но прицел сместится на созвездие)
+      smoothCameraNavigator(controlsRef, cameraRef, pivotPos, targetAnimationRef, distToConstellation);
+    } else {
+      // Возврат "на Землю" (в центр 0,0,0)
+      const earthPos = new THREE.Vector3(0, 0, 0);
+      const distToEarth = cameraRef.current.position.distanceTo(earthPos);
+      
+      smoothCameraNavigator(controlsRef, cameraRef, earthPos, targetAnimationRef, distToEarth);
+    }
+  };
+
     ConstellationData.forEach((item) => {
       const constellPos = raDecToVector3(item, 1)
-      const newConstellation = createConstellation(item, constellPos, (label) => {
-        if (onConstellationClick) {
-          onConstellationClick(label.userData.name); 
-        }
-      })
+      const newConstellation = createConstellation(
+        item, 
+        constellPos, 
+        (label) => {
+          if (onConstellationClick) {
+            onConstellationClick(label.userData.name);
+          }
+        },
+        handleTargetToggle // <-- Это последний аргумент. Иконки больше не нужны!
+      )
       scene.add(newConstellation)
       constellationList[item.name] = newConstellation
       allLabelsRef.current.set(item.id, newConstellation)
@@ -140,6 +167,7 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
       animationFrameId = requestAnimationFrame(animate)
 
       smoothCameraMoving(targetAnimationRef, controlsRef, cameraRef);
+      
       renderer.render(scene, camera)
       labelRenderer.render(scene, camera)
     }
