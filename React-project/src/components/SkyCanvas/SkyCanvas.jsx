@@ -113,17 +113,16 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
     if (!controlsRef.current || !cameraRef.current) return;
 
     if (isTargeted) {
-      // 1. Считаем фактическое расстояние от камеры до координат созвездия
-      const distToConstellation = cameraRef.current.position.distanceTo(pivotPos);
-      
-      // 2. Вызываем плавный поворот (камера останется на месте, но прицел сместится на созвездие)
-      smoothCameraNavigator(controlsRef, cameraRef, pivotPos, targetAnimationRef, distToConstellation);
+      // Плавный поворот камеры, а в конце — скрытый перенос якоря в pivotPos
+      smoothCameraNavigator(controlsRef, cameraRef, pivotPos, targetAnimationRef, pivotPos);
     } else {
-      // Возврат "на Землю" (в центр 0,0,0)
-      const earthPos = new THREE.Vector3(0, 0, 0);
-      const distToEarth = cameraRef.current.position.distanceTo(earthPos);
+      // Возврат домой (untarget) — делаем мгновенно, без анимации отлета, как ты и просил
+      controlsRef.current.target.set(0, 0, 0);
+      cameraRef.current.position.set(0, 0, 0.1);
       
-      smoothCameraNavigator(controlsRef, cameraRef, earthPos, targetAnimationRef, distToEarth);
+      // Возвращаем защиту OrbitControls
+      controlsRef.current.maxDistance = 500; 
+      controlsRef.current.update();
     }
   };
 
