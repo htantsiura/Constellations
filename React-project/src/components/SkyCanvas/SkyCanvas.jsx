@@ -9,18 +9,24 @@ import { CSS2DRenderer, CSS2DObject } from 'three/examples/jsm/renderers/CSS2DRe
 import { vec3 } from 'three/tsl'
 import { Vector3 } from 'three/webgpu'
 import { createConstellation, createStar } from '../ThreeComponents/ObjectsCreator'
-import { smoothCameraMoving, smoothCameraNavigator } from '../ThreeComponents/SmoothCameraTargeting'
-
+import {
+  startTargetAnimation, 
+  updateTargetAnimation, 
+  startCameraAnimation, 
+  updateCameraAnimation, 
+  calculateRotatedTarget 
+} from '../ThreeComponents/SmoothCameraTargeting'
 
 export default function SkyCanvas({ onStarClick, onConstellationClick, expandedId }) {
   const containerRef = useRef(null)
   const allLabelsRef = useRef(new Map())
   const activeStarRef = useRef(null)
+
   const controlsRef = useRef(null);
   const cameraRef = useRef(null);
-  const desiredTargetRef = useRef(null);
-  const targetAnimationRef = useRef(null);
-  const teleportAnimationRef = useRef(null);
+  
+  const targetAnimRef = useRef(null); // Для плавного поворота (target)
+  const cameraAnimRef = useRef(null); // Для плавного полета (camera.position)
 
   useEffect(() => {
     const container = containerRef.current
@@ -106,25 +112,27 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
       }
     }
 
-    
+    const handleTargetToggle = (pivotPos, isTargeted, isAutoReset = false) => {
+      if (!controlsRef.current || !cameraRef.current) return;
 
-    // Функция, которая обрабатывает нажатие на кнопку Target
-  const handleTargetToggle = (pivotPos, isTargeted) => {
-    if (!controlsRef.current || !cameraRef.current) return;
+      if (isTargeted) {
+        controlsRef.current.maxDistance = Infinity; 
+        controlsRef.current.target.copy(pivotPos);  
+        controlsRef.current.update();
+      } else {
+        if (isAutoReset) return;
 
-    if (isTargeted) {
-      // Плавный поворот камеры, а в конце — скрытый перенос якоря в pivotPos
-      smoothCameraNavigator(controlsRef, cameraRef, pivotPos, targetAnimationRef, pivotPos);
-    } else {
-      // Возврат домой (untarget) — делаем мгновенно, без анимации отлета, как ты и просил
-      controlsRef.current.target.set(0, 0, 0);
-      cameraRef.current.position.set(0, 0, 0.1);
-      
-      // Возвращаем защиту OrbitControls
-      controlsRef.current.maxDistance = 500; 
-      controlsRef.current.update();
-    }
-  };
+        const centerPos = new THREE.Vector3(0, 0, 0);
+        const currentDist = cameraRef.current.position.distanceTo(centerPos);
+        controlsRef.current.maxDistance = Math.max(500, currentDist);
+        
+        const fakeCenterTarget = calculateRotatedTarget(cameraRef, controlsRef.current.target, centerPos);
+        startTargetAnimation(controlsRef, fakeCenterTarget, targetAnimRef, () => {
+          controlsRef.current.target.copy(centerPos);
+          controlsRef.current.update();
+        });
+      }
+    };
 
     ConstellationData.forEach((item) => {
       const constellPos = raDecToVector3(item, 1)
@@ -136,7 +144,7 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
             onConstellationClick(label.userData.name);
           }
         },
-        handleTargetToggle // <-- Это последний аргумент. Иконки больше не нужны!
+        handleTargetToggle
       )
       scene.add(newConstellation)
       constellationList[item.name] = newConstellation
@@ -155,9 +163,7 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
     // ------------------------------------
     // Test Part  -------------------------
 
-    
-    //console.log("number of children " + scene.children.length) 
-
+  
     // -----------------------------
 
     let animationFrameId
@@ -165,7 +171,8 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
     function animate() {
       animationFrameId = requestAnimationFrame(animate)
 
-      smoothCameraMoving(targetAnimationRef, controlsRef, cameraRef);
+      updateTargetAnimation(targetAnimRef, controlsRef);
+      updateCameraAnimation(cameraAnimRef, cameraRef, controlsRef);
       
       renderer.render(scene, camera)
       labelRenderer.render(scene, camera)
@@ -204,6 +211,7 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
   useEffect(() => {
     if(!expandedId) return;
     const targetLabel = allLabelsRef.current.get(expandedId)
+    
     if (targetLabel) {
       if (activeStarRef.current && activeStarRef.current !== targetLabel) {
         activeStarRef.current.userData.setState('default')
@@ -211,7 +219,15 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
       targetLabel.userData.setState('active')
       activeStarRef.current = targetLabel
 
-      smoothCameraNavigator(controlsRef, cameraRef, targetLabel, targetAnimationRef);
+      // Сценарий А: Плавный поворот камеры
+      const worldPosition = new THREE.Vector3();
+      targetLabel.getWorldPosition(worldPosition);
+
+      // Вычисляем точку на орбите, чтобы не "срезать угол"
+      const targetPos = calculateRotatedTarget(cameraRef, controlsRef.current.target, worldPosition);
+      
+      // Даем команду Аниматору Прицела начать плавный поворот
+      startTargetAnimation(controlsRef, targetPos, targetAnimRef);
     }
   }, [expandedId])
 

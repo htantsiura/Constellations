@@ -46,9 +46,8 @@ export function createConstellation(item,
     } else {
       targetBtn.classList.remove('targeted');
     }
-
     if (onTargetToggle) {
-      onTargetToggle(group.userData.pivot, group.userData.isTargeted)
+      onTargetToggle(group.userData.pivot, group.userData.isTargeted, false) 
     }
   })
 
@@ -73,7 +72,7 @@ export function createConstellation(item,
         if (group.userData.isTargeted) {
             group.userData.isTargeted = false;
             targetBtn.classList.remove('targeted'); 
-            if (onTargetToggle) onTargetToggle(position, false);
+            if (onTargetToggle) onTargetToggle(position, false, true);
         }
       }
     }

@@ -2,162 +2,92 @@ import { useRef, useEffect } from "react"
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 
-// to stars
+// 1. Animating target. Controls only that, where we look: controls.target)
 
-export function smoothCameraMoving(targetAnimationRef, controlsRef, cameraRef) {
-  if (targetAnimationRef.current && controlsRef.current && cameraRef.current) {
-    targetAnimationRef.current.progress += 0.01; 
+export function startTargetAnimation(controlsRef, newTargetPos, targetAnimRef, onComplete = null) {
+  if (!controlsRef.current) return;
+
+  targetAnimRef.current = {
+    start: controlsRef.current.target.clone(),
+    end: newTargetPos.clone(),
+    progress: 0,
+    onComplete: onComplete
+  };
+}
+
+export function updateTargetAnimation(targetAnimRef, controlsRef) {
+  if (targetAnimRef.current && controlsRef.current) {
+    targetAnimRef.current.progress += 0.02; 
     
-    if (targetAnimationRef.current.progress >= 1) {
-      // 1. Завершаем поворот на текущей маленькой дистанции
-      const finalTarget = cameraRef.current.position.clone().add(
-        targetAnimationRef.current.endDir.clone().multiplyScalar(targetAnimationRef.current.distance)
-      );
-      controlsRef.current.target.copy(finalTarget);
-
-      // 2. БЕЗШОВНЫЙ СНАП: Если мы летели к созвездию, переносим физический центр
-      if (targetAnimationRef.current.finalSnapTarget) {
-         // Отключаем лимиты, чтобы OrbitControls не утащил камеру!
-         controlsRef.current.maxDistance = Infinity;
-         // Переносим якорь в созвездие
-         controlsRef.current.target.copy(targetAnimationRef.current.finalSnapTarget);
+    if (targetAnimRef.current.progress >= 1) {
+      controlsRef.current.target.copy(targetAnimRef.current.end);
+      
+      if (typeof targetAnimRef.current.onComplete === 'function') {
+        targetAnimRef.current.onComplete();
       }
-
-      targetAnimationRef.current = null; 
       
+      targetAnimRef.current = null;
     } else {
-      const p = targetAnimationRef.current.progress;
-      const easeOut = 1 - Math.pow(1 - p, 3); 
-
-      // Плавный поворот как у звезд
-      const currentDir = targetAnimationRef.current.startDir.clone()
-        .lerp(targetAnimationRef.current.endDir, easeOut)
-        .normalize(); 
+      const p = targetAnimRef.current.progress;
+      const easeOut = 1 - Math.pow(1 - p, 3);
       
-      const currentTarget = cameraRef.current.position.clone().add(
-        currentDir.multiplyScalar(targetAnimationRef.current.distance)
-      );
-      
+      const currentTarget = targetAnimRef.current.start.clone()
+        .lerp(targetAnimRef.current.end, easeOut);
+        
       controlsRef.current.target.copy(currentTarget);
     }
-    
     controlsRef.current.update();
   }
 }
 
-// Добавили аргумент finalSnapTarget
-export function smoothCameraNavigator(controlsRef, cameraRef, targetObject, targetAnimationRef, finalSnapTarget = null) {
-  if (controlsRef.current && cameraRef.current) {
-    const worldPosition = new THREE.Vector3();
+// 2. Animating camera: camera.position
+
+export function startCameraAnimation(cameraRef, newCameraPos, cameraAnimRef, onComplete = null) {
+  if (!cameraRef.current) return;
+
+  cameraAnimRef.current = {
+    start: cameraRef.current.position.clone(),
+    end: newCameraPos.clone(),
+    progress: 0,
+    onComplete: onComplete
+  };
+}
+
+export function updateCameraAnimation(cameraAnimRef, cameraRef, controlsRef) {
+  if (cameraAnimRef.current && cameraRef.current && controlsRef.current) {
+    cameraAnimRef.current.progress += 0.02; // speed
     
-    // Понимаем и 3D-объекты, и прямые координаты
-    if (targetObject.getWorldPosition) {
-        targetObject.getWorldPosition(worldPosition);
+    if (cameraAnimRef.current.progress >= 1) {
+      cameraRef.current.position.copy(cameraAnimRef.current.end);
+      
+      if (typeof cameraAnimRef.current.onComplete === 'function') {
+         cameraAnimRef.current.onComplete();
+      }
+      
+      cameraAnimRef.current = null;
     } else {
-        worldPosition.copy(targetObject);
+      const p = cameraAnimRef.current.progress;
+      const easeOut = 1 - Math.pow(1 - p, 3);
+      
+      const currentPos = cameraAnimRef.current.start.clone()
+        .lerp(cameraAnimRef.current.end, easeOut);
+        
+      cameraRef.current.position.copy(currentPos);
     }
-
-    const currentTargetDistance = cameraRef.current.position.distanceTo(controlsRef.current.target);
-
-    const startDir = new THREE.Vector3()
-      .subVectors(controlsRef.current.target, cameraRef.current.position)
-      .normalize();
-
-    const endDir = new THREE.Vector3()
-      .subVectors(worldPosition, cameraRef.current.position)
-      .normalize();
-
-    targetAnimationRef.current = {
-      startDir: startDir,
-      endDir: endDir,
-      distance: currentTargetDistance,
-      progress: 0,
-      finalSnapTarget: finalSnapTarget // Передаем данные для скрытого прыжка
-    };
+    controlsRef.current.update(); 
   }
 }
 
+// 3. Unility
 
-/* export function smoothCameraMoving(targetAnimationRef, controlsRef, cameraRef) {
-  if (targetAnimationRef.current && controlsRef.current && cameraRef.current) {
-    targetAnimationRef.current.progress += 0.02; 
+export function calculateRotatedTarget(cameraRef, currentTarget, newObjectPos) {
+  if (!cameraRef.current) return newObjectPos;
+  
+  const currentDistance = cameraRef.current.position.distanceTo(currentTarget);
+  const directionToNewObject = new THREE.Vector3()
+    .subVectors(newObjectPos, cameraRef.current.position)
+    .normalize();
     
-    if (targetAnimationRef.current.progress >= 1) {
-      const finalTarget = cameraRef.current.position.clone().add(
-        targetAnimationRef.current.endDir.clone().multiplyScalar(targetAnimationRef.current.endDistance)
-      );
-      controlsRef.current.target.copy(finalTarget);
-
-      // === ДОБАВЛЯЕМ БЛОК ОТЛАДКИ ===
-      const camPos = cameraRef.current.position;
-      const tarPos = controlsRef.current.target;
-      const distance = camPos.distanceTo(tarPos);
-      const distToCenter = camPos.distanceTo(new THREE.Vector3(0,0,0));
-      
-      console.log('--- АНИМАЦИЯ ЗАВЕРШЕНА ---');
-      console.log(`📍 Камера (X: ${camPos.x.toFixed(2)}, Y: ${camPos.y.toFixed(2)}, Z: ${camPos.z.toFixed(2)})`);
-      console.log(`🎯 Таргет (X: ${tarPos.x.toFixed(2)}, Y: ${tarPos.y.toFixed(2)}, Z: ${tarPos.z.toFixed(2)})`);
-      console.log(`📏 Расстояние Камера -> Таргет: ${distance.toFixed(2)}`);
-      console.log(`🌐 Расстояние Камера -> Центр(0,0,0): ${distToCenter.toFixed(2)}`);
-      // ===================================
-
-
-
-      targetAnimationRef.current = null; 
-      
-    } else {
-      const p = targetAnimationRef.current.progress;
-      const easeOut = 1 - Math.pow(1 - p, 3); 
-
-      const currentDir = targetAnimationRef.current.startDir.clone()
-        .lerp(targetAnimationRef.current.endDir, easeOut)
-        .normalize(); 
-      
-      const currentDistance = THREE.MathUtils.lerp(
-        targetAnimationRef.current.startDistance,
-        targetAnimationRef.current.endDistance,
-        easeOut
-      );
-      
-      const currentTarget = cameraRef.current.position.clone().add(
-        currentDir.multiplyScalar(currentDistance)
-      );
-      
-      controlsRef.current.target.copy(currentTarget);
-    }
-    
-    controlsRef.current.update();
-  }
+  return cameraRef.current.position.clone()
+    .add(directionToNewObject.multiplyScalar(currentDistance));
 }
-
-export function smoothCameraNavigator(controlsRef, cameraRef, targetObject, targetAnimationRef, forceDistance = null) {
-  if (controlsRef.current && cameraRef.current) {
-    const worldPosition = new THREE.Vector3();
-    
-    if (targetObject.getWorldPosition) {
-        targetObject.getWorldPosition(worldPosition);
-    } else {
-        worldPosition.copy(targetObject);
-    }
-
-    const currentTargetDistance = cameraRef.current.position.distanceTo(controlsRef.current.target);
-
-    const startDir = new THREE.Vector3()
-      .subVectors(controlsRef.current.target, cameraRef.current.position)
-      .normalize();
-
-    const endDir = new THREE.Vector3()
-      .subVectors(worldPosition, cameraRef.current.position)
-      .normalize();
-
-    const endDistance = forceDistance !== null ? forceDistance : currentTargetDistance;
-
-    targetAnimationRef.current = {
-      startDir: startDir,
-      endDir: endDir,
-      startDistance: currentTargetDistance,
-      endDistance: endDistance, 
-      progress: 0
-    };
-  }
-} */

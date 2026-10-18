@@ -1872,9 +1872,10 @@
     "spectral_class": "K3/K4III"
   },
   {
-    "id": "deneb",
+    "id": "alpha_cygni",
+    "hyg_id": 101767,
     "entity": "Star",
-    "name": "Deneb",
+    "name": "Deneb (α Cyg)",
     "constellation": "Cygnus",
     "constellation_abbr": "Cyg",
     "right_ascension": 20.6905,
@@ -1885,9 +1886,10 @@
     "spectral_class": "A2Ia"
   },
   {
-    "id": "sadr",
+    "id": "gamma_cygni",
+    "hyg_id": 100128,
     "entity": "Star",
-    "name": "Sadr",
+    "name": "Sadr (γ Cyg)",
     "constellation": "Cygnus",
     "constellation_abbr": "Cyg",
     "right_ascension": 20.3705,
@@ -1898,9 +1900,10 @@
     "spectral_class": "F8Ib"
   },
   {
-    "id": "aljanah",
+    "id": "epsilon_cygni",
+    "hyg_id": 102157,
     "entity": "Star",
-    "name": "Aljanah",
+    "name": "Aljanah (ε Cyg)",
     "constellation": "Cygnus",
     "constellation_abbr": "Cyg",
     "right_ascension": 20.7702,
@@ -1911,9 +1914,10 @@
     "spectral_class": "K0III"
   },
   {
-    "id": "fawaris",
+    "id": "delta_cygni",
+    "hyg_id": 96858,
     "entity": "Star",
-    "name": "Fawaris",
+    "name": "Fawaris (δ Cyg)",
     "constellation": "Cygnus",
     "constellation_abbr": "Cyg",
     "right_ascension": 19.7496,
@@ -1924,9 +1928,10 @@
     "spectral_class": "B9.5III"
   },
   {
-    "id": "albireo",
+    "id": "beta_cygni",
+    "hyg_id": 95648,
     "entity": "Star",
-    "name": "Albireo",
+    "name": "Albireo (β Cyg)",
     "constellation": "Cygnus",
     "constellation_abbr": "Cyg",
     "right_ascension": 19.512,
@@ -1937,20 +1942,64 @@
     "spectral_class": "K3II+..."
   },
   {
-    "id": "azelfafage",
+    "id": "zeta_cygni",
+    "hyg_id": 104394,
     "entity": "Star",
-    "name": "Azelfafage",
+    "name": "Zeta Cygni (ζ Cyg)",
     "constellation": "Cygnus",
     "constellation_abbr": "Cyg",
-    "right_ascension": 21.7016,
-    "declination": 51.1896,
-    "apparent_magnitude": 4.69,
-    "absolute_magnitude": -3.93,
-    "distance_light_year": 1725.7,
-    "spectral_class": "B3IV"
+    "right_ascension": 21.2156,
+    "declination": 30.2269,
+    "apparent_magnitude": 3.21,
+    "absolute_magnitude": -0.0,
+    "distance_light_year": 143.1,
+    "spectral_class": "G8II SB"
+  },
+  {
+    "id": "tau_cygni",
+    "hyg_id": 104549,
+    "entity": "Star",
+    "name": "Tau Cygni (τ Cyg)",
+    "constellation": "Cygnus",
+    "constellation_abbr": "Cyg",
+    "right_ascension": 21.2465,
+    "declination": 38.0453,
+    "apparent_magnitude": 3.74,
+    "absolute_magnitude": 2.2,
+    "distance_light_year": 66.3,
+    "spectral_class": "F1IV"
+  },
+  {
+    "id": "iota_2_cygni",
+    "hyg_id": 95554,
+    "entity": "Star",
+    "name": "Iota-2 Cygni (ι² Cyg)",
+    "constellation": "Cygnus",
+    "constellation_abbr": "Cyg",
+    "right_ascension": 19.4951,
+    "declination": 51.7298,
+    "apparent_magnitude": 3.76,
+    "absolute_magnitude": 0.91,
+    "distance_light_year": 121.3,
+    "spectral_class": "A5Vn"
+  },
+  {
+    "id": "61_cygni",
+    "hyg_id": 103879,
+    "entity": "Star",
+    "name": "61 Cygni",
+    "constellation": "Cygnus",
+    "constellation_abbr": "Cyg",
+    "right_ascension": 21.1148,
+    "declination": 38.7494,
+    "apparent_magnitude": 5.2,
+    "absolute_magnitude": 7.49,
+    "distance_light_year": 11.4,
+    "spectral_class": "K5V"
   },
   {
     "id": "cygnus_x_1",
+    "hyg_id": 97987,
     "entity": "Star",
     "name": "Cygnus X-1",
     "constellation": "Cygnus",
@@ -1961,19 +2010,6 @@
     "absolute_magnitude": -0.03,
     "distance_light_year": 1941.4,
     "spectral_class": "B0Ib"
-  },
-  {
-    "id": "Wolf–Rayet star",
-    "entity": "Star",
-    "name": "Wolf–Rayet star",
-    "constellation": "Cygnus",
-    "constellation_abbr": "Cyg",
-    "right_ascension": 19.5792,
-    "declination": 30.5164,
-    "apparent_magnitude": 10.0,
-    "absolute_magnitude": -10.0,
-    "distance_light_year": 326156.0,
-    "spectral_class": "WC..."
   },
   {
     "id": "rotanev",
@@ -3079,19 +3115,6 @@
     "absolute_magnitude": 1.98,
     "distance_light_year": 98.8,
     "spectral_class": "A5V"
-  },
-  {
-    "id": "babcock's_star",
-    "entity": "Star",
-    "name": "Babcock's star",
-    "constellation": "Lacerta",
-    "constellation_abbr": "Lac",
-    "right_ascension": 22.7354,
-    "declination": 55.5892,
-    "apparent_magnitude": 8.83,
-    "absolute_magnitude": -11.17,
-    "distance_light_year": 326156.0,
-    "spectral_class": "A0p"
   },
   {
     "id": "7alp_lac",
@@ -4299,7 +4322,7 @@
     "declination": -46.7184,
     "apparent_magnitude": 3.32,
     "absolute_magnitude": -16.68,
-    "distance_light_year": 326156.0,
+    "distance_light_year": 182.0,
     "spectral_class": "G8IIIvar"
   },
   {
@@ -4715,7 +4738,7 @@
     "declination": -21.0588,
     "apparent_magnitude": 3.84,
     "absolute_magnitude": -16.16,
-    "distance_light_year": 326156.0,
+    "distance_light_year": 5000.0,
     "spectral_class": "B2III:"
   },
   {
@@ -6030,19 +6053,6 @@
     "absolute_magnitude": 13.49,
     "distance_light_year": 10.9,
     "spectral_class": "M4.5V"
-  },
-  {
-    "id": "3c_273",
-    "entity": "Star",
-    "name": "3C 273",
-    "constellation": "Virgo",
-    "constellation_abbr": "Vir",
-    "right_ascension": 12.4852,
-    "declination": 2.0524,
-    "apparent_magnitude": 12.88,
-    "absolute_magnitude": -7.12,
-    "distance_light_year": 326156.0,
-    "spectral_class": ""
   },
   {
     "id": "bet_vol",
