@@ -163,8 +163,6 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
     }
 
     LinesData.constellations.forEach((c) => {
-      //console.log("const " + c.common_name.native)
-      //if(c.common_name.native === "Orion") {
       const parentGroup = constellationList[c.common_name.native]
       if (parentGroup) {
         if(c.common_name.native === parentGroup.userData.name) {
