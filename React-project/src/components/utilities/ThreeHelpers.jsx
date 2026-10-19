@@ -6,8 +6,8 @@ export function raDecToVector3(item, scale) {
   // linear distance
   const distance = (item.avg_distance ?? defaultRadius) * scale;
   // logariph distance
-  const distance1 = (Math.log10(item.avg_distance) * 99 + 1) * scale;
-  console.log(item.name + " |\t\t" + item.avg_distance + " |\t\t" + distance + " |\t\t" + distance1)
+  //const distance = (Math.log10(item.avg_distance) * 99 + 1) * scale;
+  //console.log(item.name + " |\t\t" + item.avg_distance + " |\t\t" + distance + " |\t\t" + distance1)
 
   const raRad = item.right_ascension * (Math.PI / 12);
   const decRad = item.declination * (Math.PI / 180);
@@ -24,7 +24,7 @@ export function raDecToVector3ForStars(item, scale) {
   // linear distance
   const distance = (item.distance_light_year ?? defaultRadius) * scale;
   // log distance
-  //const distance = (Math.log(item.avg_distance) * 99 + 1) * scale;
+  //const distance = (Math.log10(item.distance_light_year) * 99 + 1) * scale;
 
   const raRad = item.right_ascension * (Math.PI / 12);
   const decRad = item.declination * (Math.PI / 180);

@@ -91,3 +91,21 @@ export function calculateRotatedTarget(cameraRef, currentTarget, newObjectPos) {
   return cameraRef.current.position.clone()
     .add(directionToNewObject.multiplyScalar(currentDistance));
 }
+
+export function updateStarsVisibility(activeConstellationGroup, isTargeted, allLabelsRef) {
+      allLabelsRef.current.forEach((groupObject) => {
+        
+        if (groupObject.userData.type === 'star') {
+          
+          if (isTargeted) {
+            if (groupObject.parent === activeConstellationGroup) {
+              groupObject.userData.setState('default'); 
+            } else {
+              groupObject.userData.setState('pale'); 
+            }
+          } else {
+            groupObject.userData.setState('default');
+          }
+        }
+      });
+    }

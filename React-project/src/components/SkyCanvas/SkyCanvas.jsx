@@ -14,7 +14,8 @@ import {
   updateTargetAnimation, 
   startCameraAnimation, 
   updateCameraAnimation, 
-  calculateRotatedTarget 
+  calculateRotatedTarget,
+  updateStarsVisibility 
 } from '../ThreeComponents/SmoothCameraTargeting'
 
 export default function SkyCanvas({ onStarClick, onConstellationClick, expandedId }) {
@@ -24,7 +25,7 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
 
   const controlsRef = useRef(null);
   const cameraRef = useRef(null);
-  
+
   const targetAnimRef = useRef(null); // Для плавного поворота (target)
   const cameraAnimRef = useRef(null); // Для плавного полета (camera.position)
 
@@ -99,9 +100,10 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
     scene.add(constellationLine);
  */
 
+    
+
     function setActiveStar(label) {
       if (currentActiveStar && currentActiveStar !== label) {
-        console.log("it works")
         currentActiveStar.userData.setState('default')
       }
       label.userData.setState('active')
@@ -112,7 +114,7 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
       }
     }
 
-    const handleTargetToggle = (pivotPos, isTargeted, isAutoReset = false) => {
+    const handleTargetToggle = (constellationGroup, pivotPos, isTargeted, isAutoReset = false) => {
       if (!controlsRef.current || !cameraRef.current) return;
 
       if (isTargeted) {
@@ -132,6 +134,7 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
           controlsRef.current.update();
         });
       }
+      updateStarsVisibility(constellationGroup, isTargeted, allLabelsRef);
     };
 
     ConstellationData.forEach((item) => {
@@ -144,7 +147,9 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
             onConstellationClick(label.userData.name);
           }
         },
-        handleTargetToggle
+        (pivotPos, isTargeted, isAutoReset) => {
+          handleTargetToggle(newConstellation, pivotPos, isTargeted, isAutoReset)
+        }
       )
       scene.add(newConstellation)
       constellationList[item.name] = newConstellation
