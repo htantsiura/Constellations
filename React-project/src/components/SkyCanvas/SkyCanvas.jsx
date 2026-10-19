@@ -2,8 +2,13 @@ import './SkyCanvas.css'
 import { useRef, useEffect } from "react"
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
-import ConstellationData from '../../ConstellationsData.json' 
-import StarsData from '../../StarsData.json' 
+
+//import ConstellationData from '../../ConstellationsData.json' 
+//import StarsData from '../../StarsData.json' 
+
+import ConstellationData from '../../ConstellationDataNew.json' 
+import StarsData from '../../StarsDataNew.json'
+
 import { raDecToVector3, raDecToVector3ForStars } from '../utilities/ThreeHelpers'
 import { CSS2DRenderer, CSS2DObject } from 'three/examples/jsm/renderers/CSS2DRenderer.js'
 import { vec3 } from 'three/tsl'

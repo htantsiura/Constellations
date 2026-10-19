@@ -1,8 +1,12 @@
 import './SidePanel.css'
 import SearchInput from '../SearchInput/SearchInput'
 import FilterButton from '../FilterButton/FIlterButton'
-import StarsData from '../../StarsData.json'
-import ConstellationData from '../../ConstellationsData.json' 
+//import StarsData from '../../StarsData.json'
+//import ConstellationData from '../../ConstellationsData.json' 
+
+import StarsData from '../../StarsDataNew.json'
+import ConstellationData from '../../ConstellationDataNew.json' 
+
 import iconStar from '../../assets/Icon-star.svg'
 import iconConstell from '../../assets/Icon-constellation.svg'
 import SideContent from '../SideContent/SideContent'
