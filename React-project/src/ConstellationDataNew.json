@@ -1,4 +1,36 @@
 [
+
+  {
+    "id": "andromeda",
+    "entity": "Constellation",
+    "name": "Andromeda",
+    "constellation_abbr": "And",
+    "right_ascension": 0.8,
+    "declination": 37.4,
+    "avg_distance": 380.4,
+    "square": 722.3,
+    "main_stars_qty": 17,
+    "brightest_star": "Alpheratz",
+    "list_of_main_stars": [
+      "Alpheratz",
+      "Mirach",
+      "Almach",
+      "Del And",
+      "Nembus",
+      "Omi And",
+      "Lam And",
+      "Mu And",
+      "Zet And",
+      "Titawin",
+      "Kap And",
+      "Phi And",
+      "Iot And",
+      "Pi And",
+      "Eps And",
+      "Eta And",
+      "Nu And"
+    ]
+  }, 
   {
     "id": "orion",
     "entity": "Constellation",
@@ -21,4 +53,6 @@
       "Meissa"
     ]
   }
+  
+
 ]

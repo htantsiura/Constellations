@@ -8,6 +8,7 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 
 import ConstellationData from '../../ConstellationDataNew.json' 
 import StarsData from '../../StarsDataNew.json'
+import LinesData from '../../LinesData_stellarium-skycultures-western.json'
 
 import { raDecToVector3, raDecToVector3ForStars } from '../utilities/ThreeHelpers'
 import { CSS2DRenderer, CSS2DObject } from 'three/examples/jsm/renderers/CSS2DRenderer.js'
@@ -69,9 +70,12 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
     // Main Code  ------------------------------------
 
     let currentActiveStar = null;
+    const distanceScale = 1
+    const isLogariphScale = false;
     const constellationList = {}
 
     const testMat = new THREE.MeshBasicMaterial({ color: 'blue' , wireframe: true })
+    const lineMaterial = new THREE.LineBasicMaterial({ color: 0x3F0080, });
     const testGeometry = new THREE.BoxGeometry()
     const testCube = new THREE.Mesh( testGeometry, testMat)
     const starScale = 0.5
@@ -86,25 +90,7 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
 
     // creating objects on the scene ---------------------------------
 
-    /* const lineMaterial = new THREE.LineBasicMaterial({ 
-      color: 0xffffff, 
-    });
-
-    // 2. Допустим, у тебя есть позиции двух звезд
-    const starPos1 = raDecToVector3ForStars(StarsData[1], 1);
-    const starPos2 = raDecToVector3ForStars(StarsData[2], 1);
-    const starPos3 = raDecToVector3ForStars(StarsData[3], 1);
-    const starPos4 = raDecToVector3ForStars(StarsData[4], 1);
-
-    // 3. Создаем геометрию и передаем туда массив точек
-    const points = [starPos1, starPos2, starPos3, starPos4];
-    const lineGeometry = new THREE.BufferGeometry().setFromPoints(points);
-
-    // 4. Создаем саму линию и добавляем в группу созвездия (или на сцену)
-    const constellationLine = new THREE.Line(lineGeometry, lineMaterial);
-    scene.add(constellationLine);
- */
-
+  
     
 
     function setActiveStar(label) {
@@ -143,7 +129,7 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
     };
 
     ConstellationData.forEach((item) => {
-      const constellPos = raDecToVector3(item, 1)
+      const constellPos = raDecToVector3(item, distanceScale, isLogariphScale)
       const newConstellation = createConstellation(
         item, 
         constellPos, 
@@ -163,12 +149,56 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
 
     StarsData.forEach((item) => {
       const parentGroup = constellationList[item.constellation]
-      const absoluteStarPos = raDecToVector3ForStars(item, 1)
+      const absoluteStarPos = raDecToVector3ForStars(item, distanceScale, isLogariphScale)
       const relativeStarPos = absoluteStarPos.clone().sub(constellationList[item.constellation].userData.pivot)
       const newStar = createStar(item, relativeStarPos, absoluteStarPos, setActiveStar, 'default')
       allLabelsRef.current.set(item.id, newStar)
       parentGroup.add(newStar)
     })
+
+
+
+    function createLines(data, constell_name) {
+
+    }
+
+    LinesData.constellations.forEach((c) => {
+      //console.log("const " + c.common_name.native)
+      //if(c.common_name.native === "Orion") {
+      const parentGroup = constellationList[c.common_name.native]
+      if (parentGroup) {
+        if(c.common_name.native === parentGroup.userData.name) {
+          const linesGroup = new THREE.Group()
+          let i = 0;
+          linesGroup.name = "linesGroup"
+          linesGroup.userData = {
+            constellation: c.common_name.native,
+            type: "linesGroup"
+          }
+          constellationList[c.common_name.native].add(linesGroup)
+          linesGroup.position.set(0, 0, 0)
+
+          c.lines.map((line) => {
+            const points = []
+            line.map((e) => {
+              const neededStar = constellationList[c.common_name.native].children.find(child => child.userData?.hip === e)
+              neededStar ? points.push(neededStar.userData.localPos) : null
+            })
+            const lineGeometry = new THREE.BufferGeometry().setFromPoints(points)
+            const newLine = new THREE.Line(lineGeometry, lineMaterial)
+            newLine.userData = {
+              index: i,
+              hips: line,
+              type: 'line',
+              constellation: c.common_name.native
+            }
+            linesGroup.add(newLine)
+            i++;
+          })
+        }
+      }
+    })
+
 
     // ------------------------------------
     // Test Part  -------------------------

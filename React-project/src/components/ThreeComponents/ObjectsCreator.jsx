@@ -2,6 +2,7 @@ import { createElement } from 'react'
 import * as THREE from 'three'
 import { CSS2DObject } from 'three/examples/jsm/renderers/CSS2DRenderer.js'
 import { Vector3 } from 'three/webgpu'
+import LinesData from '../../LinesData_stellarium-skycultures-western.json'
 
 export function createConstellation(item, 
                                     position, 
@@ -107,10 +108,12 @@ export function createStar(item, localPos, worldPos, onClickCallBack, state = 'd
   const label = new CSS2DObject(container)
   label.userData = {
     id: item.id,
+    hip: item.hip,
     name: item.name,
     constellation: item.constellation,
     type: 'star',
     pivot: worldPos,
+    localPos: localPos,
     state: 'default', // 'default', 'active', 'pale'
     setState: (newState) => {
       container.classList.remove('default', 'active', 'pale')
@@ -129,3 +132,35 @@ export function createStar(item, localPos, worldPos, onClickCallBack, state = 'd
 
   return(label)
 }
+
+export function createLine(data, constell_name) {
+  
+  data.map((c) => {
+    
+    if (c.common_name.native === constell_name) {
+      console.log("constellation " + c.iau)
+      console.log("lines " + c.lines[0])
+      console.log("english " + c.common_name.english)
+    }
+      
+  })
+}
+
+
+
+/* export function createLines((item) => {
+  item.lines.forEach((line) => {
+    line.forEach((element) => {
+
+    })
+
+  })
+  
+}) */
+
+/* {
+      "common_name": {"english": "Andromeda"},
+      "iau": "And",
+      "id": "CON western_SnT And",
+      "lines": [[677, 3092, 5447, 9640], [113726, 116631, 116805, 116584], [116631, 1473, 2912, 3092], [2912, 5447, 4436, 3881, 5434, 7607], ["thin", 3092, 3031, 3693, 4463]]
+    }, */
