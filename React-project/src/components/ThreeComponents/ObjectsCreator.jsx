@@ -2,7 +2,7 @@ import { createElement } from 'react'
 import * as THREE from 'three'
 import { CSS2DObject } from 'three/examples/jsm/renderers/CSS2DRenderer.js'
 import { Vector3 } from 'three/webgpu'
-import LinesData from '../../LinesData_stellarium-skycultures-western.json'
+import LinesData from '../../DataSources/LinesData_SnT_upd.json'
 
 export function createConstellation(item, 
                                     position, 
@@ -78,7 +78,7 @@ export function createConstellation(item,
       }
     }
   }
-
+  
   const label = new CSS2DObject(container)
   label.center.set(0.5, 0.5)
   label.position.set(0, 0, 0)

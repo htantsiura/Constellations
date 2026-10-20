@@ -1,5 +1,5 @@
 //import StarsData from '../../StarsData.json'
-import StarsData from '../../StarsDataNew.json'
+import StarsData from '../../DataSources/StarsData1.json'
 
 export const openStar = (starId, setExpandedId, setIsStar, setSearchQuery) => {
   //const targetStar = StarsData.find((s) => s.id === starId);

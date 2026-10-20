@@ -1,5 +1,5 @@
 //import ConstellationData from '../../ConstellationsData.json';
-import ConstellationData from '../../ConstellationDataNew.json';
+import ConstellationData from '../../DataSources/ConstellationData1.json';
 
 export const openConstellation = (constellationName, setExpandedId, setIsConstellation, setSearchQuery) => {
   const targetConstellation = ConstellationData.find(

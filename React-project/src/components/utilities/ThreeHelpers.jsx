@@ -1,4 +1,4 @@
-import ConstellationData from '../../ConstellationsData.json' 
+import ConstellationData from '../../DataSources/ConstellationData1.json' 
 import * as THREE from 'three'
 
 export function raDecToVector3(item, scale, isLogariph) {

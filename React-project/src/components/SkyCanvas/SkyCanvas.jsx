@@ -6,9 +6,9 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 //import ConstellationData from '../../ConstellationsData.json' 
 //import StarsData from '../../StarsData.json' 
 
-import ConstellationData from '../../ConstellationDataNew.json' 
-import StarsData from '../../StarsDataNew.json'
-import LinesData from '../../LinesData_stellarium-skycultures-western.json'
+import ConstellationData from '../../DataSources/ConstellationData1.json' 
+import StarsData from '../../DataSources/StarsData1.json'
+import LinesData from '../../DataSources/LinesData_SnT_upd.json'
 
 import { raDecToVector3, raDecToVector3ForStars } from '../utilities/ThreeHelpers'
 import { CSS2DRenderer, CSS2DObject } from 'three/examples/jsm/renderers/CSS2DRenderer.js'
@@ -71,7 +71,7 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
 
     let currentActiveStar = null;
     const distanceScale = 1
-    const isLogariphScale = false;
+    const isLogariphScale = true;
     const constellationList = {}
 
     const testMat = new THREE.MeshBasicMaterial({ color: 'blue' , wireframe: true })
@@ -148,8 +148,10 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
     })
 
     StarsData.forEach((item) => {
+      //console.log('star.  ', constellationList[item.constellation].userData.name)
       const parentGroup = constellationList[item.constellation]
       const absoluteStarPos = raDecToVector3ForStars(item, distanceScale, isLogariphScale)
+      console.log(item.name, item.constellation, "   ", absoluteStarPos)
       const relativeStarPos = absoluteStarPos.clone().sub(constellationList[item.constellation].userData.pivot)
       const newStar = createStar(item, relativeStarPos, absoluteStarPos, setActiveStar, 'default')
       allLabelsRef.current.set(item.id, newStar)

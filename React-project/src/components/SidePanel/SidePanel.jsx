@@ -4,8 +4,8 @@ import FilterButton from '../FilterButton/FIlterButton'
 //import StarsData from '../../StarsData.json'
 //import ConstellationData from '../../ConstellationsData.json' 
 
-import StarsData from '../../StarsDataNew.json'
-import ConstellationData from '../../ConstellationDataNew.json' 
+import StarsData from '../../DataSources/StarsData1.json'
+import ConstellationData from '../../DataSources/ConstellationData1.json' 
 
 import iconStar from '../../assets/Icon-star.svg'
 import iconConstell from '../../assets/Icon-constellation.svg'
