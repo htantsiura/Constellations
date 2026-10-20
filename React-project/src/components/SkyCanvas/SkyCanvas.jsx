@@ -14,14 +14,15 @@ import { raDecToVector3, raDecToVector3ForStars } from '../utilities/ThreeHelper
 import { CSS2DRenderer, CSS2DObject } from 'three/examples/jsm/renderers/CSS2DRenderer.js'
 import { vec3 } from 'three/tsl'
 import { Vector3 } from 'three/webgpu'
-import { createConstellation, createStar } from '../ThreeComponents/ObjectsCreator'
+import { createConstellation, createStar, createLines } from '../ThreeComponents/ObjectsCreator'
 import {
   startTargetAnimation, 
   updateTargetAnimation, 
   startCameraAnimation, 
   updateCameraAnimation, 
   calculateRotatedTarget,
-  updateStarsVisibility 
+  updateStarsVisibility,
+  updateLinesVisibility
 } from '../ThreeComponents/SmoothCameraTargeting'
 
 export default function SkyCanvas({ onStarClick, onConstellationClick, expandedId }) {
@@ -102,6 +103,7 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
       if (onStarClick) {
         // Обязательно передаем ID звезды, так как твоя функция openStar ищет именно по ID
         onStarClick(label.userData.id); 
+        //onStarClick(label.userData.hip); 
       }
     }
 
@@ -126,7 +128,10 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
         });
       }
       updateStarsVisibility(constellationGroup, isTargeted, allLabelsRef);
+      updateLinesVisibility(constellationGroup, isTargeted, constellationList)
     };
+
+    // Scene Objects creators ------------------------------------------------
 
     ConstellationData.forEach((item) => {
       const constellPos = raDecToVector3(item, distanceScale, isLogariphScale)
@@ -151,60 +156,36 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
       //console.log('star.  ', constellationList[item.constellation].userData.name)
       const parentGroup = constellationList[item.constellation]
       const absoluteStarPos = raDecToVector3ForStars(item, distanceScale, isLogariphScale)
-      console.log(item.name, item.constellation, "   ", absoluteStarPos)
       const relativeStarPos = absoluteStarPos.clone().sub(constellationList[item.constellation].userData.pivot)
       const newStar = createStar(item, relativeStarPos, absoluteStarPos, setActiveStar, 'default')
       allLabelsRef.current.set(item.id, newStar)
       parentGroup.add(newStar)
     })
 
-
-
-    function createLines(data, constell_name) {
-
-    }
-
     LinesData.constellations.forEach((c) => {
       const parentGroup = constellationList[c.common_name.native]
       if (parentGroup) {
         if(c.common_name.native === parentGroup.userData.name) {
-          const linesGroup = new THREE.Group()
           let i = 0;
-          linesGroup.name = "linesGroup"
-          linesGroup.userData = {
+          const newLinesGroup = createLines(c, constellationList, lineMaterial, i)
+          newLinesGroup.name = "linesGroup"
+          newLinesGroup.userData = {
             constellation: c.common_name.native,
             type: "linesGroup"
           }
-          constellationList[c.common_name.native].add(linesGroup)
-          linesGroup.position.set(0, 0, 0)
+          constellationList[c.common_name.native].add(newLinesGroup)
+          newLinesGroup.position.set(0, 0, 0)
 
-          c.lines.map((line) => {
-            const points = []
-            line.map((e) => {
-              const neededStar = constellationList[c.common_name.native].children.find(child => child.userData?.hip === e)
-              neededStar ? points.push(neededStar.userData.localPos) : null
-            })
-            const lineGeometry = new THREE.BufferGeometry().setFromPoints(points)
-            const newLine = new THREE.Line(lineGeometry, lineMaterial)
-            newLine.userData = {
-              index: i,
-              hips: line,
-              type: 'line',
-              constellation: c.common_name.native
-            }
-            linesGroup.add(newLine)
-            i++;
-          })
+          
         }
       }
     })
 
-
-    // ------------------------------------
-    // Test Part  -------------------------
+    // ------------------------------------------------------------------------
+    // Test Part  -------------------------------------------------------------
 
   
-    // -----------------------------
+    // ------------------------------------------------------------------------
 
     let animationFrameId
 

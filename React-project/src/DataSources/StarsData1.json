@@ -1,6 +1,6 @@
 [
   {
-    "id": "alpha andromedae",
+    "id": "alpheratz",
     "hip": 677,
     "hyg_id": 676,
     "entity": "Star",
@@ -17,7 +17,7 @@
     "spectral_class": "B9p"
   },
   {
-    "id": "delta andromedae",
+    "id": "del and",
     "hip": 3092,
     "hyg_id": 3086,
     "entity": "Star",
@@ -34,7 +34,7 @@
     "spectral_class": "K3III..."
   },
   {
-    "id": "beta andromedae",
+    "id": "mirach",
     "hip": 5447,
     "hyg_id": 5436,
     "entity": "Star",
@@ -51,7 +51,7 @@
     "spectral_class": "M0IIIvar"
   },
   {
-    "id": "gamma-1 andromedae",
+    "id": "almach",
     "hip": 9640,
     "hyg_id": 9618,
     "entity": "Star",
@@ -68,7 +68,7 @@
     "spectral_class": "B8V"
   },
   {
-    "id": "omicron andromedae",
+    "id": "omi and",
     "hip": 113726,
     "hyg_id": 113366,
     "entity": "Star",
@@ -85,7 +85,7 @@
     "spectral_class": "B6pv SB"
   },
   {
-    "id": "iota andromedae",
+    "id": "iot and",
     "hip": 116631,
     "hyg_id": 116265,
     "entity": "Star",
@@ -102,7 +102,7 @@
     "spectral_class": "B8V"
   },
   {
-    "id": "kappa andromedae",
+    "id": "kap and",
     "hip": 116805,
     "hyg_id": 116439,
     "entity": "Star",
@@ -119,7 +119,7 @@
     "spectral_class": "B9IVn"
   },
   {
-    "id": "lambda andromedae",
+    "id": "lam and",
     "hip": 116584,
     "hyg_id": 116218,
     "entity": "Star",
@@ -136,7 +136,7 @@
     "spectral_class": "G8III-IV"
   },
   {
-    "id": "sigma andromedae",
+    "id": "sig and",
     "hip": 1473,
     "hyg_id": 1470,
     "entity": "Star",
@@ -153,7 +153,7 @@
     "spectral_class": "A2V"
   },
   {
-    "id": "pi andromedae",
+    "id": "pi and",
     "hip": 2912,
     "hyg_id": 2906,
     "entity": "Star",
@@ -170,7 +170,7 @@
     "spectral_class": "B5V"
   },
   {
-    "id": "mu andromedae",
+    "id": "mu and",
     "hip": 4436,
     "hyg_id": 4426,
     "entity": "Star",
@@ -187,7 +187,7 @@
     "spectral_class": "A5V"
   },
   {
-    "id": "nu andromedae",
+    "id": "nu and",
     "hip": 3881,
     "hyg_id": 3871,
     "entity": "Star",
@@ -204,7 +204,7 @@
     "spectral_class": "B5V SB"
   },
   {
-    "id": "phi andromedae",
+    "id": "phi and",
     "hip": 5434,
     "hyg_id": 5423,
     "entity": "Star",
@@ -238,7 +238,7 @@
     "spectral_class": "K3III"
   },
   {
-    "id": "epsilon andromedae",
+    "id": "eps and",
     "hip": 3031,
     "hyg_id": 3025,
     "entity": "Star",
@@ -255,7 +255,7 @@
     "spectral_class": "G5III..."
   },
   {
-    "id": "zeta andromedae",
+    "id": "zet and",
     "hip": 3693,
     "hyg_id": 3685,
     "entity": "Star",
@@ -272,7 +272,7 @@
     "spectral_class": "K1II"
   },
   {
-    "id": "eta andromedae",
+    "id": "eta and",
     "hip": 4463,
     "hyg_id": 4453,
     "entity": "Star",
@@ -289,7 +289,7 @@
     "spectral_class": "G8III-IV"
   },
   {
-    "id": "iota antliae",
+    "id": "iot ant",
     "hip": 53502,
     "hyg_id": 53347,
     "entity": "Star",
@@ -306,7 +306,7 @@
     "spectral_class": "K0III"
   },
   {
-    "id": "alpha antliae",
+    "id": "alp ant",
     "hip": 51172,
     "hyg_id": 51027,
     "entity": "Star",
@@ -323,7 +323,7 @@
     "spectral_class": "K4III"
   },
   {
-    "id": "epsilon antliae",
+    "id": "eps ant",
     "hip": 46515,
     "hyg_id": 46382,
     "entity": "Star",
@@ -340,7 +340,7 @@
     "spectral_class": "K3III"
   },
   {
-    "id": "alpha apodis",
+    "id": "alp aps",
     "hip": 72370,
     "hyg_id": 72144,
     "entity": "Star",
@@ -357,7 +357,7 @@
     "spectral_class": "K5III"
   },
   {
-    "id": "gamma apodis",
+    "id": "gam aps",
     "hip": 81065,
     "hyg_id": 80819,
     "entity": "Star",
@@ -374,7 +374,7 @@
     "spectral_class": "K0IV SB"
   },
   {
-    "id": "delta-1 apodis",
+    "id": "del-1 aps",
     "hip": 80047,
     "hyg_id": 79805,
     "entity": "Star",
@@ -391,7 +391,7 @@
     "spectral_class": "M5III"
   },
   {
-    "id": "beta apodis",
+    "id": "bet aps",
     "hip": 81852,
     "hyg_id": 81602,
     "entity": "Star",
@@ -408,7 +408,7 @@
     "spectral_class": "K0III"
   },
   {
-    "id": "beta aquilae",
+    "id": "alshain",
     "hip": 98036,
     "hyg_id": 97725,
     "entity": "Star",
@@ -425,7 +425,7 @@
     "spectral_class": "G8IVvar"
   },
   {
-    "id": "alpha aquilae",
+    "id": "altair",
     "hip": 97649,
     "hyg_id": 97338,
     "entity": "Star",
@@ -442,7 +442,7 @@
     "spectral_class": "A7IV-V"
   },
   {
-    "id": "gamma aquilae",
+    "id": "tarazed",
     "hip": 97278,
     "hyg_id": 96970,
     "entity": "Star",
@@ -459,7 +459,7 @@
     "spectral_class": "K3II"
   },
   {
-    "id": "delta aquilae",
+    "id": "del aql",
     "hip": 95501,
     "hyg_id": 95207,
     "entity": "Star",
@@ -476,7 +476,7 @@
     "spectral_class": "F0IV"
   },
   {
-    "id": "lambda aquilae",
+    "id": "lam aql",
     "hip": 93805,
     "hyg_id": 93510,
     "entity": "Star",
@@ -493,7 +493,7 @@
     "spectral_class": "B9Vn"
   },
   {
-    "id": "zeta aquilae",
+    "id": "okab",
     "hip": 93747,
     "hyg_id": 93452,
     "entity": "Star",
@@ -510,7 +510,7 @@
     "spectral_class": "A0Vn"
   },
   {
-    "id": "eta aquilae",
+    "id": "eta aql",
     "hip": 97804,
     "hyg_id": 97493,
     "entity": "Star",
@@ -527,7 +527,7 @@
     "spectral_class": "F6Ibv SB"
   },
   {
-    "id": "theta aquilae",
+    "id": "the aql",
     "hip": 99473,
     "hyg_id": 99156,
     "entity": "Star",
@@ -544,7 +544,7 @@
     "spectral_class": "B9.5III"
   },
   {
-    "id": "epsilon aquilae",
+    "id": "eps aql",
     "hip": 93244,
     "hyg_id": 92951,
     "entity": "Star",
@@ -578,7 +578,7 @@
     "spectral_class": "K1IIIvar"
   },
   {
-    "id": "iota aquilae",
+    "id": "iot aql",
     "hip": 96468,
     "hyg_id": 96165,
     "entity": "Star",
@@ -595,7 +595,7 @@
     "spectral_class": "B5III"
   },
   {
-    "id": "epsilon aquarii",
+    "id": "albali",
     "hip": 102618,
     "hyg_id": 102287,
     "entity": "Star",
@@ -612,7 +612,7 @@
     "spectral_class": "A1V"
   },
   {
-    "id": "beta aquarii",
+    "id": "sadalsuud",
     "hip": 106278,
     "hyg_id": 105936,
     "entity": "Star",
@@ -629,7 +629,7 @@
     "spectral_class": "G0Ib"
   },
   {
-    "id": "alpha aquarii",
+    "id": "sadalmelik",
     "hip": 109074,
     "hyg_id": 108728,
     "entity": "Star",
@@ -646,7 +646,7 @@
     "spectral_class": "G2Ib"
   },
   {
-    "id": "gamma aquarii",
+    "id": "sadachbia",
     "hip": 110395,
     "hyg_id": 110049,
     "entity": "Star",
@@ -663,7 +663,7 @@
     "spectral_class": "A0V"
   },
   {
-    "id": "zeta-1 aquarii",
+    "id": "zet-1 aqr",
     "hip": 110960,
     "hyg_id": 110614,
     "entity": "Star",
@@ -680,7 +680,7 @@
     "spectral_class": "F3III-IV"
   },
   {
-    "id": "eta aquarii",
+    "id": "eta aqr",
     "hip": 111497,
     "hyg_id": 111147,
     "entity": "Star",
@@ -697,7 +697,7 @@
     "spectral_class": "B9IV-Vn"
   },
   {
-    "id": "pi aquarii",
+    "id": "pi aqr",
     "hip": 110672,
     "hyg_id": 110326,
     "entity": "Star",
@@ -714,7 +714,7 @@
     "spectral_class": "B1Ve"
   },
   {
-    "id": "iota aquarii",
+    "id": "iot aqr",
     "hip": 109139,
     "hyg_id": 108793,
     "entity": "Star",
@@ -731,7 +731,7 @@
     "spectral_class": "B8V"
   },
   {
-    "id": "theta aquarii",
+    "id": "ancha",
     "hip": 110003,
     "hyg_id": 109657,
     "entity": "Star",
@@ -748,7 +748,7 @@
     "spectral_class": "G8III-IV"
   },
   {
-    "id": "lambda aquarii",
+    "id": "lam aqr",
     "hip": 112961,
     "hyg_id": 112601,
     "entity": "Star",
@@ -765,7 +765,7 @@
     "spectral_class": "M2IIIvar"
   },
   {
-    "id": "phi aquarii",
+    "id": "phi aqr",
     "hip": 114724,
     "hyg_id": 114362,
     "entity": "Star",
@@ -782,7 +782,7 @@
     "spectral_class": "M2III"
   },
   {
-    "id": "psi-2 aquarii",
+    "id": "psi-2 aqr",
     "hip": 115033,
     "hyg_id": 114670,
     "entity": "Star",
@@ -833,7 +833,7 @@
     "spectral_class": "K1III"
   },
   {
-    "id": "delta aquarii",
+    "id": "skat",
     "hip": 113136,
     "hyg_id": 112776,
     "entity": "Star",
@@ -850,7 +850,7 @@
     "spectral_class": "A3V"
   },
   {
-    "id": "tau-2 aquarii",
+    "id": "tau-2 aqr",
     "hip": 112716,
     "hyg_id": 112357,
     "entity": "Star",
@@ -867,7 +867,7 @@
     "spectral_class": "K5III"
   },
   {
-    "id": "gamma arae",
+    "id": "gam ara",
     "hip": 85267,
     "hyg_id": 85008,
     "entity": "Star",
@@ -884,7 +884,7 @@
     "spectral_class": "B1Ib"
   },
   {
-    "id": "delta arae",
+    "id": "del ara",
     "hip": 85727,
     "hyg_id": 85467,
     "entity": "Star",
@@ -901,7 +901,7 @@
     "spectral_class": "B8V"
   },
   {
-    "id": "eta arae",
+    "id": "eta ara",
     "hip": 82363,
     "hyg_id": 82112,
     "entity": "Star",
@@ -918,7 +918,7 @@
     "spectral_class": "K5III"
   },
   {
-    "id": "zeta arae",
+    "id": "zet ara",
     "hip": 83081,
     "hyg_id": 82826,
     "entity": "Star",
@@ -935,7 +935,7 @@
     "spectral_class": "K5III"
   },
   {
-    "id": "epsilon-1 arae",
+    "id": "eps-1 ara",
     "hip": 83153,
     "hyg_id": 82898,
     "entity": "Star",
@@ -952,7 +952,7 @@
     "spectral_class": "K4III"
   },
   {
-    "id": "alpha arae",
+    "id": "alp ara",
     "hip": 85792,
     "hyg_id": 85530,
     "entity": "Star",
@@ -969,7 +969,7 @@
     "spectral_class": "B2Vne"
   },
   {
-    "id": "theta arae",
+    "id": "the ara",
     "hip": 88714,
     "hyg_id": 88439,
     "entity": "Star",
@@ -986,7 +986,7 @@
     "spectral_class": "B2Ib"
   },
   {
-    "id": "beta arae",
+    "id": "bet ara",
     "hip": 85258,
     "hyg_id": 84999,
     "entity": "Star",
@@ -1003,7 +1003,7 @@
     "spectral_class": "K3Ib-II"
   },
   {
-    "id": "gamma-2 arietis",
+    "id": "mesarthim",
     "hip": 8832,
     "hyg_id": 8813,
     "entity": "Star",
@@ -1020,7 +1020,7 @@
     "spectral_class": "A1p Si"
   },
   {
-    "id": "beta arietis",
+    "id": "sheratan",
     "hip": 8903,
     "hyg_id": 8884,
     "entity": "Star",
@@ -1037,7 +1037,7 @@
     "spectral_class": "A5V..."
   },
   {
-    "id": "alpha arietis",
+    "id": "hamal",
     "hip": 9884,
     "hyg_id": 9861,
     "entity": "Star",
@@ -1071,7 +1071,7 @@
     "spectral_class": "B8Vn"
   },
   {
-    "id": "beta tauri",
+    "id": "elnath",
     "hip": 25428,
     "hyg_id": 25364,
     "entity": "Star",
@@ -1088,7 +1088,7 @@
     "spectral_class": "B7III"
   },
   {
-    "id": "iota aurigae",
+    "id": "hassaleh",
     "hip": 23015,
     "hyg_id": 22961,
     "entity": "Star",
@@ -1105,7 +1105,7 @@
     "spectral_class": "K3IIvar"
   },
   {
-    "id": "eta aurigae",
+    "id": "haedus",
     "hip": 23767,
     "hyg_id": 23712,
     "entity": "Star",
@@ -1122,7 +1122,7 @@
     "spectral_class": "B3V"
   },
   {
-    "id": "alpha aurigae",
+    "id": "capella",
     "hip": 24608,
     "hyg_id": 24549,
     "entity": "Star",
@@ -1139,7 +1139,7 @@
     "spectral_class": "M1: comp"
   },
   {
-    "id": "beta aurigae",
+    "id": "menkalinan",
     "hip": 28360,
     "hyg_id": 28288,
     "entity": "Star",
@@ -1156,7 +1156,7 @@
     "spectral_class": "A2V"
   },
   {
-    "id": "theta aurigae",
+    "id": "mahasim",
     "hip": 28380,
     "hyg_id": 28309,
     "entity": "Star",
@@ -1173,7 +1173,7 @@
     "spectral_class": "A0p Si"
   },
   {
-    "id": "zeta aurigae",
+    "id": "saclateni",
     "hip": 23453,
     "hyg_id": 23398,
     "entity": "Star",
@@ -1190,7 +1190,7 @@
     "spectral_class": "K4II comp"
   },
   {
-    "id": "epsilon aurigae",
+    "id": "almaaz",
     "hip": 23416,
     "hyg_id": 23361,
     "entity": "Star",
@@ -1207,7 +1207,7 @@
     "spectral_class": "F0Ia"
   },
   {
-    "id": "delta aurigae",
+    "id": "del aur",
     "hip": 28358,
     "hyg_id": 28287,
     "entity": "Star",
@@ -1223,9 +1223,8 @@
     "distance_light_year": 126.0,
     "spectral_class": "K0III"
   },
-
   {
-    "id": "alpha bootis",
+    "id": "arcturus",
     "hip": 69673,
     "hyg_id": 69451,
     "entity": "Star",
@@ -1242,7 +1241,7 @@
     "spectral_class": "K2IIIp"
   },
   {
-    "id": "epsilon bootis",
+    "id": "izar",
     "hip": 72105,
     "hyg_id": 71879,
     "entity": "Star",
@@ -1259,7 +1258,7 @@
     "spectral_class": "A0"
   },
   {
-    "id": "delta bootis",
+    "id": "del boo",
     "hip": 74666,
     "hyg_id": 74438,
     "entity": "Star",
@@ -1276,7 +1275,7 @@
     "spectral_class": "G8III"
   },
   {
-    "id": "beta bootis",
+    "id": "nekkar",
     "hip": 73555,
     "hyg_id": 73327,
     "entity": "Star",
@@ -1293,7 +1292,7 @@
     "spectral_class": "G8III"
   },
   {
-    "id": "gamma bootis",
+    "id": "seginus",
     "hip": 71075,
     "hyg_id": 70851,
     "entity": "Star",
@@ -1310,7 +1309,7 @@
     "spectral_class": "A7IIIvar"
   },
   {
-    "id": "rho bootis",
+    "id": "rho boo",
     "hip": 71053,
     "hyg_id": 70828,
     "entity": "Star",
@@ -1327,7 +1326,7 @@
     "spectral_class": "K3III"
   },
   {
-    "id": "eta bootis",
+    "id": "muphrid",
     "hip": 67927,
     "hyg_id": 67711,
     "entity": "Star",
@@ -1344,7 +1343,7 @@
     "spectral_class": "G0IV"
   },
   {
-    "id": "tau bootis",
+    "id": "tau boo",
     "hip": 67275,
     "hyg_id": 67063,
     "entity": "Star",
@@ -1361,7 +1360,7 @@
     "spectral_class": "F7V"
   },
   {
-    "id": "zeta bootis",
+    "id": "zet boo",
     "hip": 71795,
     "hyg_id": 71569,
     "entity": "Star",
@@ -1378,7 +1377,7 @@
     "spectral_class": "A3IVn"
   },
   {
-    "id": "lambda bootis",
+    "id": "xuange",
     "hip": 69732,
     "hyg_id": 69510,
     "entity": "Star",
@@ -1395,7 +1394,7 @@
     "spectral_class": "A0sh"
   },
   {
-    "id": "theta bootis",
+    "id": "the boo",
     "hip": 70497,
     "hyg_id": 70274,
     "entity": "Star",
@@ -1412,7 +1411,7 @@
     "spectral_class": "F7V"
   },
   {
-    "id": "kappa-2 bootis",
+    "id": "kap-2 boo",
     "hip": 69483,
     "hyg_id": 69261,
     "entity": "Star",
@@ -1429,7 +1428,7 @@
     "spectral_class": "A8IV"
   },
   {
-    "id": "beta canis majoris",
+    "id": "mirzam",
     "hip": 30324,
     "hyg_id": 30251,
     "entity": "Star",
@@ -1446,7 +1445,7 @@
     "spectral_class": "B1II/III"
   },
   {
-    "id": "alpha canis majoris",
+    "id": "sirius",
     "hip": 32349,
     "hyg_id": 32263,
     "entity": "Star",
@@ -1463,7 +1462,7 @@
     "spectral_class": "A0m..."
   },
   {
-    "id": "delta canis majoris",
+    "id": "wezen",
     "hip": 34444,
     "hyg_id": 34354,
     "entity": "Star",
@@ -1480,7 +1479,7 @@
     "spectral_class": "F8Ia"
   },
   {
-    "id": "epsilon canis majoris",
+    "id": "adhara",
     "hip": 33579,
     "hyg_id": 33492,
     "entity": "Star",
@@ -1497,7 +1496,7 @@
     "spectral_class": "B2II"
   },
   {
-    "id": "eta canis majoris",
+    "id": "aludra",
     "hip": 35904,
     "hyg_id": 35806,
     "entity": "Star",
@@ -1514,7 +1513,7 @@
     "spectral_class": "B5Ia"
   },
   {
-    "id": "nu-2 canis majoris",
+    "id": "nu-2 cma",
     "hip": 31592,
     "hyg_id": 31512,
     "entity": "Star",
@@ -1531,7 +1530,7 @@
     "spectral_class": "K1III+..."
   },
   {
-    "id": "omicron-1 canis majoris",
+    "id": "omi-1 cma",
     "hip": 33152,
     "hyg_id": 33065,
     "entity": "Star",
@@ -1548,7 +1547,7 @@
     "spectral_class": "K3Iab"
   },
   {
-    "id": "iota canis majoris",
+    "id": "iot cma",
     "hip": 33347,
     "hyg_id": 33260,
     "entity": "Star",
@@ -1565,7 +1564,7 @@
     "spectral_class": "B3Ib/II"
   },
   {
-    "id": "gamma canis majoris",
+    "id": "muliphein",
     "hip": 34045,
     "hyg_id": 33956,
     "entity": "Star",
@@ -1582,7 +1581,7 @@
     "spectral_class": "B8II"
   },
   {
-    "id": "theta canis majoris",
+    "id": "the cma",
     "hip": 33160,
     "hyg_id": 33073,
     "entity": "Star",
@@ -1599,7 +1598,7 @@
     "spectral_class": "K4III"
   },
   {
-    "id": "alpha canis minoris",
+    "id": "procyon",
     "hip": 37279,
     "hyg_id": 37173,
     "entity": "Star",
@@ -1616,7 +1615,7 @@
     "spectral_class": "F5IV-V"
   },
   {
-    "id": "beta canis minoris",
+    "id": "gomeisa",
     "hip": 36188,
     "hyg_id": 36087,
     "entity": "Star",
@@ -1633,7 +1632,7 @@
     "spectral_class": "B8Vvar"
   },
   {
-    "id": "alpha-2 canum venaticorum",
+    "id": "cor caroli",
     "hip": 63125,
     "hyg_id": 62925,
     "entity": "Star",
@@ -1650,7 +1649,7 @@
     "spectral_class": "A0spe..."
   },
   {
-    "id": "beta canum venaticorum",
+    "id": "chara",
     "hip": 61317,
     "hyg_id": 61124,
     "entity": "Star",
@@ -1667,7 +1666,7 @@
     "spectral_class": "G0V"
   },
   {
-    "id": "gamma-1 caeli",
+    "id": "gam-1 cae",
     "hip": 23595,
     "hyg_id": 23540,
     "entity": "Star",
@@ -1684,7 +1683,7 @@
     "spectral_class": "K2III"
   },
   {
-    "id": "beta caeli",
+    "id": "bet cae",
     "hip": 21861,
     "hyg_id": 21808,
     "entity": "Star",
@@ -1701,7 +1700,7 @@
     "spectral_class": "F3V"
   },
   {
-    "id": "alpha caeli",
+    "id": "alp cae",
     "hip": 21770,
     "hyg_id": 21717,
     "entity": "Star",
@@ -1718,7 +1717,7 @@
     "spectral_class": "F2V"
   },
   {
-    "id": "delta caeli",
+    "id": "del cae",
     "hip": 21060,
     "hyg_id": 21008,
     "entity": "Star",
@@ -1752,7 +1751,7 @@
     "spectral_class": "A1V"
   },
   {
-    "id": "beta camelopardalis",
+    "id": "bet cam",
     "hip": 23522,
     "hyg_id": 23467,
     "entity": "Star",
@@ -1769,7 +1768,7 @@
     "spectral_class": "G0Ib"
   },
   {
-    "id": "alpha camelopardalis",
+    "id": "alp cam",
     "hip": 22783,
     "hyg_id": 22730,
     "entity": "Star",
@@ -1820,7 +1819,7 @@
     "spectral_class": "K4III"
   },
   {
-    "id": "gamma camelopardalis",
+    "id": "gam cam",
     "hip": 17959,
     "hyg_id": 17917,
     "entity": "Star",
@@ -1871,7 +1870,7 @@
     "spectral_class": "B9Ia"
   },
   {
-    "id": "alpha-2 capricorni",
+    "id": "algedi",
     "hip": 100064,
     "hyg_id": 99743,
     "entity": "Star",
@@ -1888,7 +1887,7 @@
     "spectral_class": "G6/G8III"
   },
   {
-    "id": "beta capricorni",
+    "id": "dabih",
     "hip": 100345,
     "hyg_id": 100020,
     "entity": "Star",
@@ -1905,7 +1904,7 @@
     "spectral_class": "A5:n"
   },
   {
-    "id": "psi capricorni",
+    "id": "psi cap",
     "hip": 102485,
     "hyg_id": 102154,
     "entity": "Star",
@@ -1922,7 +1921,7 @@
     "spectral_class": "F5V"
   },
   {
-    "id": "omega capricorni",
+    "id": "ome cap",
     "hip": 102978,
     "hyg_id": 102647,
     "entity": "Star",
@@ -1939,7 +1938,7 @@
     "spectral_class": "K4III"
   },
   {
-    "id": "zeta capricorni",
+    "id": "zet cap",
     "hip": 105881,
     "hyg_id": 105540,
     "entity": "Star",
@@ -1956,7 +1955,7 @@
     "spectral_class": "G4Ibp..."
   },
   {
-    "id": "epsilon capricorni",
+    "id": "eps cap",
     "hip": 106723,
     "hyg_id": 106381,
     "entity": "Star",
@@ -1973,7 +1972,7 @@
     "spectral_class": "B3V:p"
   },
   {
-    "id": "delta capricorni",
+    "id": "deneb algedi",
     "hip": 107556,
     "hyg_id": 107213,
     "entity": "Star",
@@ -1990,7 +1989,7 @@
     "spectral_class": "A5mF2 (IV)"
   },
   {
-    "id": "gamma capricorni",
+    "id": "nashira",
     "hip": 106985,
     "hyg_id": 106642,
     "entity": "Star",
@@ -2007,7 +2006,7 @@
     "spectral_class": "A7III:mp..."
   },
   {
-    "id": "theta capricorni",
+    "id": "the cap",
     "hip": 104139,
     "hyg_id": 103804,
     "entity": "Star",
@@ -2024,7 +2023,7 @@
     "spectral_class": "A1V"
   },
   {
-    "id": "alpha carinae",
+    "id": "canopus",
     "hip": 30438,
     "hyg_id": 30365,
     "entity": "Star",
@@ -2041,7 +2040,7 @@
     "spectral_class": "F0Ib"
   },
   {
-    "id": "beta carinae",
+    "id": "miaplacidus",
     "hip": 45238,
     "hyg_id": 45106,
     "entity": "Star",
@@ -2058,7 +2057,7 @@
     "spectral_class": "A2IV"
   },
   {
-    "id": "omega carinae",
+    "id": "ome car",
     "hip": 50099,
     "hyg_id": 49958,
     "entity": "Star",
@@ -2075,7 +2074,7 @@
     "spectral_class": "B8III"
   },
   {
-    "id": "theta carinae",
+    "id": "the car",
     "hip": 52419,
     "hyg_id": 52268,
     "entity": "Star",
@@ -2126,7 +2125,7 @@
     "spectral_class": "K3II"
   },
   {
-    "id": "iota carinae",
+    "id": "aspidiske",
     "hip": 45556,
     "hyg_id": 45425,
     "entity": "Star",
@@ -2143,7 +2142,7 @@
     "spectral_class": "A8Ib"
   },
   {
-    "id": "delta velorum",
+    "id": "alsephina",
     "hip": 42913,
     "hyg_id": 42794,
     "entity": "Star",
@@ -2228,7 +2227,7 @@
     "spectral_class": "G0Ia0"
   },
   {
-    "id": "epsilon carinae",
+    "id": "avior",
     "hip": 41037,
     "hyg_id": 40921,
     "entity": "Star",
@@ -2245,7 +2244,7 @@
     "spectral_class": "K3III+B2V"
   },
   {
-    "id": "chi carinae",
+    "id": "chi car",
     "hip": 38827,
     "hyg_id": 38713,
     "entity": "Star",
@@ -2262,7 +2261,7 @@
     "spectral_class": "B3IVp"
   },
   {
-    "id": "gamma-2 velorum",
+    "id": "gam-2 vel",
     "hip": 39953,
     "hyg_id": 39840,
     "entity": "Star",
@@ -2279,7 +2278,7 @@
     "spectral_class": "WC8 + O9I"
   },
   {
-    "id": "beta cassiopeiae",
+    "id": "caph",
     "hip": 746,
     "hyg_id": 744,
     "entity": "Star",
@@ -2296,7 +2295,7 @@
     "spectral_class": "F2III-IV"
   },
   {
-    "id": "alpha cassiopeiae",
+    "id": "schedar",
     "hip": 3179,
     "hyg_id": 3172,
     "entity": "Star",
@@ -2313,7 +2312,7 @@
     "spectral_class": "K0II-IIIvar"
   },
   {
-    "id": "gamma cassiopeiae",
+    "id": "cih",
     "hip": 4427,
     "hyg_id": 4417,
     "entity": "Star",
@@ -2330,7 +2329,7 @@
     "spectral_class": "B0IV:evar"
   },
   {
-    "id": "delta cassiopeiae",
+    "id": "ruchbah",
     "hip": 6686,
     "hyg_id": 6672,
     "entity": "Star",
@@ -2347,7 +2346,7 @@
     "spectral_class": "A5Vv SB"
   },
   {
-    "id": "epsilon cassiopeiae",
+    "id": "segin",
     "hip": 8886,
     "hyg_id": 8867,
     "entity": "Star",
@@ -2364,7 +2363,7 @@
     "spectral_class": "B2pvar"
   },
   {
-    "id": "gamma centauri",
+    "id": "gam cen",
     "hip": 61932,
     "hyg_id": 61739,
     "entity": "Star",
@@ -2381,7 +2380,7 @@
     "spectral_class": "A1IV"
   },
   {
-    "id": "epsilon centauri",
+    "id": "eps cen",
     "hip": 66657,
     "hyg_id": 66447,
     "entity": "Star",
@@ -2398,7 +2397,7 @@
     "spectral_class": "B1III"
   },
   {
-    "id": "beta centauri",
+    "id": "hadar",
     "hip": 68702,
     "hyg_id": 68483,
     "entity": "Star",
@@ -2415,7 +2414,7 @@
     "spectral_class": "B1III"
   },
   {
-    "id": "alpha-1 centauri",
+    "id": "rigil kentaurus",
     "hip": 71683,
     "hyg_id": 71456,
     "entity": "Star",
@@ -2432,7 +2431,7 @@
     "spectral_class": "G2V"
   },
   {
-    "id": "zeta centauri",
+    "id": "zet cen",
     "hip": 68002,
     "hyg_id": 67786,
     "entity": "Star",
@@ -2449,7 +2448,7 @@
     "spectral_class": "B2.5IV"
   },
   {
-    "id": "upsilon-1 centauri",
+    "id": "ups-1 cen",
     "hip": 68282,
     "hyg_id": 68064,
     "entity": "Star",
@@ -2466,7 +2465,7 @@
     "spectral_class": "B2IV-V"
   },
   {
-    "id": "phi centauri",
+    "id": "phi cen",
     "hip": 68245,
     "hyg_id": 68027,
     "entity": "Star",
@@ -2483,7 +2482,7 @@
     "spectral_class": "B2IV"
   },
   {
-    "id": "eta centauri",
+    "id": "eta cen",
     "hip": 71352,
     "hyg_id": 71125,
     "entity": "Star",
@@ -2500,7 +2499,7 @@
     "spectral_class": "B1Vn + A"
   },
   {
-    "id": "chi centauri",
+    "id": "chi cen",
     "hip": 68862,
     "hyg_id": 68642,
     "entity": "Star",
@@ -2517,7 +2516,7 @@
     "spectral_class": "B2V"
   },
   {
-    "id": "psi centauri",
+    "id": "psi cen",
     "hip": 70090,
     "hyg_id": 69867,
     "entity": "Star",
@@ -2534,7 +2533,7 @@
     "spectral_class": "A0IV"
   },
   {
-    "id": "theta centauri",
+    "id": "menkent",
     "hip": 68933,
     "hyg_id": 68714,
     "entity": "Star",
@@ -2551,7 +2550,7 @@
     "spectral_class": "K0IIIb"
   },
   {
-    "id": "nu centauri",
+    "id": "nu cen",
     "hip": 67464,
     "hyg_id": 67251,
     "entity": "Star",
@@ -2568,7 +2567,7 @@
     "spectral_class": "B2IV"
   },
   {
-    "id": "pi centauri",
+    "id": "pi cen",
     "hip": 55425,
     "hyg_id": 55260,
     "entity": "Star",
@@ -2585,7 +2584,7 @@
     "spectral_class": "B5Vn"
   },
   {
-    "id": "delta centauri",
+    "id": "del cen",
     "hip": 59196,
     "hyg_id": 59016,
     "entity": "Star",
@@ -2602,7 +2601,7 @@
     "spectral_class": "B2IVne"
   },
   {
-    "id": "sigma centauri",
+    "id": "sig cen",
     "hip": 60823,
     "hyg_id": 60635,
     "entity": "Star",
@@ -2619,7 +2618,7 @@
     "spectral_class": "B3V"
   },
   {
-    "id": "rho centauri",
+    "id": "rho cen",
     "hip": 59449,
     "hyg_id": 59267,
     "entity": "Star",
@@ -2636,7 +2635,7 @@
     "spectral_class": "B3V"
   },
   {
-    "id": "omicron-1 centauri",
+    "id": "omi-1 cen",
     "hip": 56243,
     "hyg_id": 56076,
     "entity": "Star",
@@ -2670,7 +2669,7 @@
     "spectral_class": "G8II/III"
   },
   {
-    "id": "iota centauri",
+    "id": "iot cen",
     "hip": 65109,
     "hyg_id": 64904,
     "entity": "Star",
@@ -2704,7 +2703,7 @@
     "spectral_class": "B8II/III"
   },
   {
-    "id": "kappa centauri",
+    "id": "kap cen",
     "hip": 73334,
     "hyg_id": 73107,
     "entity": "Star",
@@ -2721,7 +2720,7 @@
     "spectral_class": "B2IV"
   },
   {
-    "id": "eta cephei",
+    "id": "eta cep",
     "hip": 102422,
     "hyg_id": 102091,
     "entity": "Star",
@@ -2738,7 +2737,7 @@
     "spectral_class": "K0IV"
   },
   {
-    "id": "alpha cephei",
+    "id": "alderamin",
     "hip": 105199,
     "hyg_id": 104861,
     "entity": "Star",
@@ -2755,7 +2754,7 @@
     "spectral_class": "A7IV-V"
   },
   {
-    "id": "beta cephei",
+    "id": "alfirk",
     "hip": 106032,
     "hyg_id": 105691,
     "entity": "Star",
@@ -2772,7 +2771,7 @@
     "spectral_class": "B2IIIv SB"
   },
   {
-    "id": "iota cephei",
+    "id": "iot cep",
     "hip": 112724,
     "hyg_id": 112364,
     "entity": "Star",
@@ -2789,7 +2788,7 @@
     "spectral_class": "K0III"
   },
   {
-    "id": "gamma cephei",
+    "id": "errai",
     "hip": 116727,
     "hyg_id": 116361,
     "entity": "Star",
@@ -2806,7 +2805,7 @@
     "spectral_class": "K1IV"
   },
   {
-    "id": "delta cephei",
+    "id": "del cep",
     "hip": 110991,
     "hyg_id": 110645,
     "entity": "Star",
@@ -2823,7 +2822,7 @@
     "spectral_class": "G2Ibvar"
   },
   {
-    "id": "zeta cephei",
+    "id": "zet cep",
     "hip": 109492,
     "hyg_id": 109146,
     "entity": "Star",
@@ -2840,7 +2839,7 @@
     "spectral_class": "K1Ibv SB"
   },
   {
-    "id": "epsilon cephei",
+    "id": "eps cep",
     "hip": 109857,
     "hyg_id": 109511,
     "entity": "Star",
@@ -2857,7 +2856,7 @@
     "spectral_class": "F0IV"
   },
   {
-    "id": "mu cephei",
+    "id": "mu cep",
     "hip": 107259,
     "hyg_id": 106916,
     "entity": "Star",
@@ -2874,7 +2873,7 @@
     "spectral_class": "M2Ia"
   },
   {
-    "id": "theta cephei",
+    "id": "the cep",
     "hip": 101093,
     "hyg_id": 100767,
     "entity": "Star",
@@ -2891,7 +2890,7 @@
     "spectral_class": "A7III"
   },
   {
-    "id": "gamma ceti",
+    "id": "kaffaljidhma",
     "hip": 12706,
     "hyg_id": 12673,
     "entity": "Star",
@@ -2908,7 +2907,7 @@
     "spectral_class": "A3V"
   },
   {
-    "id": "alpha ceti",
+    "id": "menkar",
     "hip": 14135,
     "hyg_id": 14100,
     "entity": "Star",
@@ -2925,7 +2924,7 @@
     "spectral_class": "M2III"
   },
   {
-    "id": "lambda ceti",
+    "id": "lam cet",
     "hip": 13954,
     "hyg_id": 13920,
     "entity": "Star",
@@ -2942,7 +2941,7 @@
     "spectral_class": "B6III"
   },
   {
-    "id": "mu ceti",
+    "id": "mu cet",
     "hip": 12828,
     "hyg_id": 12795,
     "entity": "Star",
@@ -2959,7 +2958,7 @@
     "spectral_class": "F1III-IV"
   },
   {
-    "id": "xi-2 ceti",
+    "id": "xi-2 cet",
     "hip": 11484,
     "hyg_id": 11457,
     "entity": "Star",
@@ -2976,7 +2975,7 @@
     "spectral_class": "B9III"
   },
   {
-    "id": "delta ceti",
+    "id": "del cet",
     "hip": 12387,
     "hyg_id": 12355,
     "entity": "Star",
@@ -2993,7 +2992,7 @@
     "spectral_class": "B2IV"
   },
   {
-    "id": "omicron ceti",
+    "id": "mira",
     "hip": 10826,
     "hyg_id": 10800,
     "entity": "Star",
@@ -3010,7 +3009,7 @@
     "spectral_class": "M5e-M9e"
   },
   {
-    "id": "zeta ceti",
+    "id": "baten kaitos",
     "hip": 8645,
     "hyg_id": 8628,
     "entity": "Star",
@@ -3027,7 +3026,7 @@
     "spectral_class": "K2III"
   },
   {
-    "id": "tau ceti",
+    "id": "tau cet",
     "hip": 8102,
     "hyg_id": 8087,
     "entity": "Star",
@@ -3044,7 +3043,7 @@
     "spectral_class": "G8V"
   },
   {
-    "id": "beta ceti",
+    "id": "diphda",
     "hip": 3419,
     "hyg_id": 3413,
     "entity": "Star",
@@ -3061,7 +3060,7 @@
     "spectral_class": "K0III"
   },
   {
-    "id": "iota ceti",
+    "id": "iot cet",
     "hip": 1562,
     "hyg_id": 1559,
     "entity": "Star",
@@ -3078,7 +3077,7 @@
     "spectral_class": "K2III"
   },
   {
-    "id": "eta ceti",
+    "id": "eta cet",
     "hip": 5364,
     "hyg_id": 5353,
     "entity": "Star",
@@ -3095,7 +3094,7 @@
     "spectral_class": "K2III"
   },
   {
-    "id": "theta ceti",
+    "id": "the cet",
     "hip": 6537,
     "hyg_id": 6523,
     "entity": "Star",
@@ -3112,7 +3111,7 @@
     "spectral_class": "K0III"
   },
   {
-    "id": "alpha chamaeleontis",
+    "id": "alp cha",
     "hip": 40702,
     "hyg_id": 40587,
     "entity": "Star",
@@ -3129,7 +3128,7 @@
     "spectral_class": "F5III"
   },
   {
-    "id": "gamma chamaeleontis",
+    "id": "gam cha",
     "hip": 51839,
     "hyg_id": 51690,
     "entity": "Star",
@@ -3146,7 +3145,7 @@
     "spectral_class": "M0III"
   },
   {
-    "id": "delta-2 chamaeleontis",
+    "id": "del-2 cha",
     "hip": 52633,
     "hyg_id": 52481,
     "entity": "Star",
@@ -3163,7 +3162,7 @@
     "spectral_class": "B2.5IV"
   },
   {
-    "id": "beta chamaeleontis",
+    "id": "bet cha",
     "hip": 60000,
     "hyg_id": 59816,
     "entity": "Star",
@@ -3180,7 +3179,7 @@
     "spectral_class": "B5Vn"
   },
   {
-    "id": "epsilon chamaeleontis",
+    "id": "eps cha",
     "hip": 58484,
     "hyg_id": 58309,
     "entity": "Star",
@@ -3197,7 +3196,7 @@
     "spectral_class": "B9Vn"
   },
   {
-    "id": "beta circini",
+    "id": "bet cir",
     "hip": 74824,
     "hyg_id": 74595,
     "entity": "Star",
@@ -3214,7 +3213,7 @@
     "spectral_class": "A3V"
   },
   {
-    "id": "alpha circini",
+    "id": "alp cir",
     "hip": 71908,
     "hyg_id": 71682,
     "entity": "Star",
@@ -3231,7 +3230,7 @@
     "spectral_class": "F1Vp"
   },
   {
-    "id": "gamma circini",
+    "id": "gam cir",
     "hip": 75323,
     "hyg_id": 75094,
     "entity": "Star",
@@ -3248,7 +3247,7 @@
     "spectral_class": "B5III + F8"
   },
   {
-    "id": "alpha cancri",
+    "id": "acubens",
     "hip": 44066,
     "hyg_id": 43939,
     "entity": "Star",
@@ -3265,7 +3264,7 @@
     "spectral_class": "A5m"
   },
   {
-    "id": "delta cancri",
+    "id": "asellus australis",
     "hip": 42911,
     "hyg_id": 42792,
     "entity": "Star",
@@ -3282,7 +3281,7 @@
     "spectral_class": "K0III"
   },
   {
-    "id": "beta cancri",
+    "id": "tarf",
     "hip": 40526,
     "hyg_id": 40411,
     "entity": "Star",
@@ -3299,7 +3298,7 @@
     "spectral_class": "K4III"
   },
   {
-    "id": "gamma cancri",
+    "id": "asellus borealis",
     "hip": 42806,
     "hyg_id": 42687,
     "entity": "Star",
@@ -3316,7 +3315,7 @@
     "spectral_class": "A1IV"
   },
   {
-    "id": "iota cancri",
+    "id": "iot cnc",
     "hip": 43103,
     "hyg_id": 42984,
     "entity": "Star",
@@ -3333,7 +3332,7 @@
     "spectral_class": "G8Iab:"
   },
   {
-    "id": "alpha columbae",
+    "id": "phact",
     "hip": 26634,
     "hyg_id": 26569,
     "entity": "Star",
@@ -3350,7 +3349,7 @@
     "spectral_class": "B7IV"
   },
   {
-    "id": "beta columbae",
+    "id": "wazn",
     "hip": 27628,
     "hyg_id": 27559,
     "entity": "Star",
@@ -3367,7 +3366,7 @@
     "spectral_class": "K1.5III"
   },
   {
-    "id": "epsilon columbae",
+    "id": "eps col",
     "hip": 25859,
     "hyg_id": 25794,
     "entity": "Star",
@@ -3384,7 +3383,7 @@
     "spectral_class": "K1II/III"
   },
   {
-    "id": "eta columbae",
+    "id": "eta col",
     "hip": 28328,
     "hyg_id": 28256,
     "entity": "Star",
@@ -3401,7 +3400,7 @@
     "spectral_class": "K0III"
   },
   {
-    "id": "gamma columbae",
+    "id": "gam col",
     "hip": 28199,
     "hyg_id": 28127,
     "entity": "Star",
@@ -3418,7 +3417,7 @@
     "spectral_class": "B2.5IV"
   },
   {
-    "id": "delta columbae",
+    "id": "del col",
     "hip": 30277,
     "hyg_id": 30204,
     "entity": "Star",
@@ -3435,7 +3434,7 @@
     "spectral_class": "G7II"
   },
   {
-    "id": "alpha comae berenices",
+    "id": "diadem",
     "hip": 64241,
     "hyg_id": 64037,
     "entity": "Star",
@@ -3452,7 +3451,7 @@
     "spectral_class": "F5V"
   },
   {
-    "id": "beta comae berenices",
+    "id": "bet com",
     "hip": 64394,
     "hyg_id": 64189,
     "entity": "Star",
@@ -3469,7 +3468,7 @@
     "spectral_class": "G0V"
   },
   {
-    "id": "gamma comae berenices",
+    "id": "gam com",
     "hip": 60742,
     "hyg_id": 60554,
     "entity": "Star",
@@ -3486,7 +3485,7 @@
     "spectral_class": "K2IIICN+..."
   },
   {
-    "id": "gamma coronae australis",
+    "id": "gam cra",
     "hip": 93825,
     "hyg_id": 93530,
     "entity": "Star",
@@ -3503,7 +3502,7 @@
     "spectral_class": "F7IV-V"
   },
   {
-    "id": "alpha coronae australis",
+    "id": "meridiana",
     "hip": 94114,
     "hyg_id": 93819,
     "entity": "Star",
@@ -3520,7 +3519,7 @@
     "spectral_class": "A0/A1V"
   },
   {
-    "id": "beta coronae australis",
+    "id": "bet cra",
     "hip": 94160,
     "hyg_id": 93865,
     "entity": "Star",
@@ -3537,7 +3536,7 @@
     "spectral_class": "K0II/IIICN."
   },
   {
-    "id": "delta coronae australis",
+    "id": "del cra",
     "hip": 94005,
     "hyg_id": 93710,
     "entity": "Star",
@@ -3554,7 +3553,7 @@
     "spectral_class": "K1III"
   },
   {
-    "id": "theta coronae australis",
+    "id": "the cra",
     "hip": 90982,
     "hyg_id": 90700,
     "entity": "Star",
@@ -3571,7 +3570,7 @@
     "spectral_class": "G5III"
   },
   {
-    "id": "theta coronae borealis",
+    "id": "the crb",
     "hip": 76127,
     "hyg_id": 75895,
     "entity": "Star",
@@ -3588,7 +3587,7 @@
     "spectral_class": "B6Vnn"
   },
   {
-    "id": "beta coronae borealis",
+    "id": "nusakan",
     "hip": 75695,
     "hyg_id": 75466,
     "entity": "Star",
@@ -3605,7 +3604,7 @@
     "spectral_class": "F0p"
   },
   {
-    "id": "alpha coronae borealis",
+    "id": "alphecca",
     "hip": 76267,
     "hyg_id": 76035,
     "entity": "Star",
@@ -3622,7 +3621,7 @@
     "spectral_class": "A0V"
   },
   {
-    "id": "gamma coronae borealis",
+    "id": "gam crb",
     "hip": 76952,
     "hyg_id": 76716,
     "entity": "Star",
@@ -3639,7 +3638,7 @@
     "spectral_class": "A1Vs"
   },
   {
-    "id": "delta coronae borealis",
+    "id": "del crb",
     "hip": 77512,
     "hyg_id": 77276,
     "entity": "Star",
@@ -3656,7 +3655,7 @@
     "spectral_class": "G5III-IV"
   },
   {
-    "id": "epsilon coronae borealis",
+    "id": "eps crb",
     "hip": 78159,
     "hyg_id": 77923,
     "entity": "Star",
@@ -3673,7 +3672,7 @@
     "spectral_class": "K3III"
   },
   {
-    "id": "iota coronae borealis",
+    "id": "iot crb",
     "hip": 78493,
     "hyg_id": 78256,
     "entity": "Star",
@@ -3690,7 +3689,7 @@
     "spectral_class": "A0p..."
   },
   {
-    "id": "alpha crateris",
+    "id": "alkes",
     "hip": 53740,
     "hyg_id": 53584,
     "entity": "Star",
@@ -3707,7 +3706,7 @@
     "spectral_class": "K1III"
   },
   {
-    "id": "beta crateris",
+    "id": "bet crt",
     "hip": 54682,
     "hyg_id": 54522,
     "entity": "Star",
@@ -3724,7 +3723,7 @@
     "spectral_class": "A1V"
   },
   {
-    "id": "gamma crateris",
+    "id": "gam crt",
     "hip": 55705,
     "hyg_id": 55539,
     "entity": "Star",
@@ -3741,7 +3740,7 @@
     "spectral_class": "A9V"
   },
   {
-    "id": "zeta crateris",
+    "id": "zet crt",
     "hip": 57283,
     "hyg_id": 57111,
     "entity": "Star",
@@ -3758,7 +3757,7 @@
     "spectral_class": "G8III"
   },
   {
-    "id": "eta crateris",
+    "id": "eta crt",
     "hip": 58188,
     "hyg_id": 58014,
     "entity": "Star",
@@ -3775,7 +3774,7 @@
     "spectral_class": "A0V"
   },
   {
-    "id": "delta crateris",
+    "id": "del crt",
     "hip": 55282,
     "hyg_id": 55118,
     "entity": "Star",
@@ -3792,7 +3791,7 @@
     "spectral_class": "K0III"
   },
   {
-    "id": "epsilon crateris",
+    "id": "eps crt",
     "hip": 55687,
     "hyg_id": 55521,
     "entity": "Star",
@@ -3809,7 +3808,7 @@
     "spectral_class": "K5III"
   },
   {
-    "id": "theta crateris",
+    "id": "the crt",
     "hip": 56633,
     "hyg_id": 56464,
     "entity": "Star",
@@ -3826,7 +3825,7 @@
     "spectral_class": "B9.5Vn"
   },
   {
-    "id": "alpha-1 crucis",
+    "id": "acrux",
     "hip": 60718,
     "hyg_id": 60530,
     "entity": "Star",
@@ -3843,7 +3842,7 @@
     "spectral_class": "B0.5IV"
   },
   {
-    "id": "gamma crucis",
+    "id": "gacrux",
     "hip": 61084,
     "hyg_id": 60893,
     "entity": "Star",
@@ -3860,7 +3859,7 @@
     "spectral_class": "M4III"
   },
   {
-    "id": "beta crucis",
+    "id": "mimosa",
     "hip": 62434,
     "hyg_id": 62239,
     "entity": "Star",
@@ -3877,7 +3876,7 @@
     "spectral_class": "B0.5III"
   },
   {
-    "id": "delta crucis",
+    "id": "imai",
     "hip": 59747,
     "hyg_id": 59565,
     "entity": "Star",
@@ -3894,7 +3893,7 @@
     "spectral_class": "B2IV"
   },
   {
-    "id": "delta corvi",
+    "id": "algorab",
     "hip": 60965,
     "hyg_id": 60776,
     "entity": "Star",
@@ -3911,7 +3910,7 @@
     "spectral_class": "B9.5V"
   },
   {
-    "id": "gamma corvi",
+    "id": "gienah",
     "hip": 59803,
     "hyg_id": 59621,
     "entity": "Star",
@@ -3928,7 +3927,7 @@
     "spectral_class": "B8III"
   },
   {
-    "id": "epsilon corvi",
+    "id": "eps crv",
     "hip": 59316,
     "hyg_id": 59134,
     "entity": "Star",
@@ -3945,7 +3944,7 @@
     "spectral_class": "K2III"
   },
   {
-    "id": "beta corvi",
+    "id": "kraz",
     "hip": 61359,
     "hyg_id": 61166,
     "entity": "Star",
@@ -3962,7 +3961,7 @@
     "spectral_class": "G5II"
   },
   {
-    "id": "alpha corvi",
+    "id": "alchiba",
     "hip": 59199,
     "hyg_id": 59020,
     "entity": "Star",
@@ -3979,7 +3978,7 @@
     "spectral_class": "F0IV/V"
   },
   {
-    "id": "alpha cygni",
+    "id": "deneb",
     "hip": 102098,
     "hyg_id": 101767,
     "entity": "Star",
@@ -3996,7 +3995,7 @@
     "spectral_class": "A2Ia"
   },
   {
-    "id": "gamma cygni",
+    "id": "sadr",
     "hip": 100453,
     "hyg_id": 100128,
     "entity": "Star",
@@ -4013,7 +4012,7 @@
     "spectral_class": "F8Ib"
   },
   {
-    "id": "epsilon cygni",
+    "id": "aljanah",
     "hip": 102488,
     "hyg_id": 102157,
     "entity": "Star",
@@ -4030,7 +4029,7 @@
     "spectral_class": "K0III"
   },
   {
-    "id": "beta-1 cygni",
+    "id": "albireo",
     "hip": 95947,
     "hyg_id": 95648,
     "entity": "Star",
@@ -4047,7 +4046,7 @@
     "spectral_class": "K3II+..."
   },
   {
-    "id": "delta cygni",
+    "id": "fawaris",
     "hip": 97165,
     "hyg_id": 96858,
     "entity": "Star",
@@ -4064,7 +4063,7 @@
     "spectral_class": "B9.5III"
   },
   {
-    "id": "iota-2 cygni",
+    "id": "iot-2 cyg",
     "hip": 95853,
     "hyg_id": 95554,
     "entity": "Star",
@@ -4081,7 +4080,7 @@
     "spectral_class": "A5Vn"
   },
   {
-    "id": "kappa cygni",
+    "id": "kap cyg",
     "hip": 94779,
     "hyg_id": 94484,
     "entity": "Star",
@@ -4115,7 +4114,7 @@
     "spectral_class": "K3Ib-II comp"
   },
   {
-    "id": "nu cygni",
+    "id": "nu cyg",
     "hip": 103413,
     "hyg_id": 103081,
     "entity": "Star",
@@ -4132,7 +4131,7 @@
     "spectral_class": "A1Vn"
   },
   {
-    "id": "zeta cygni",
+    "id": "zet cyg",
     "hip": 104732,
     "hyg_id": 104394,
     "entity": "Star",
@@ -4149,7 +4148,7 @@
     "spectral_class": "G8II SB"
   },
   {
-    "id": "epsilon delphini",
+    "id": "aldulfin",
     "hip": 101421,
     "hyg_id": 101095,
     "entity": "Star",
@@ -4166,7 +4165,7 @@
     "spectral_class": "B6III"
   },
   {
-    "id": "beta delphini",
+    "id": "rotanev",
     "hip": 101769,
     "hyg_id": 101442,
     "entity": "Star",
@@ -4183,7 +4182,7 @@
     "spectral_class": "F5IV"
   },
   {
-    "id": "alpha delphini",
+    "id": "sualocin",
     "hip": 101958,
     "hyg_id": 101629,
     "entity": "Star",
@@ -4200,7 +4199,7 @@
     "spectral_class": "B9V"
   },
   {
-    "id": "gamma-2 delphini",
+    "id": "gam-2 del",
     "hip": 102532,
     "hyg_id": 102201,
     "entity": "Star",
@@ -4217,7 +4216,7 @@
     "spectral_class": "K1IV"
   },
   {
-    "id": "delta delphini",
+    "id": "del del",
     "hip": 102281,
     "hyg_id": 101950,
     "entity": "Star",
@@ -4234,7 +4233,7 @@
     "spectral_class": "A7IIIp d Del"
   },
   {
-    "id": "gamma doradus",
+    "id": "gam dor",
     "hip": 19893,
     "hyg_id": 19843,
     "entity": "Star",
@@ -4251,7 +4250,7 @@
     "spectral_class": "F4III"
   },
   {
-    "id": "alpha doradus",
+    "id": "alp dor",
     "hip": 21281,
     "hyg_id": 21228,
     "entity": "Star",
@@ -4268,7 +4267,7 @@
     "spectral_class": "A0V:"
   },
   {
-    "id": "zeta doradus",
+    "id": "zet dor",
     "hip": 23693,
     "hyg_id": 23638,
     "entity": "Star",
@@ -4285,7 +4284,7 @@
     "spectral_class": "F7V"
   },
   {
-    "id": "beta doradus",
+    "id": "bet dor",
     "hip": 26069,
     "hyg_id": 26004,
     "entity": "Star",
@@ -4302,7 +4301,7 @@
     "spectral_class": "F6Ia"
   },
   {
-    "id": "delta doradus",
+    "id": "del dor",
     "hip": 27100,
     "hyg_id": 27034,
     "entity": "Star",
@@ -4336,7 +4335,7 @@
     "spectral_class": "K1III/IV"
   },
   {
-    "id": "lambda draconis",
+    "id": "giausar",
     "hip": 56211,
     "hyg_id": 56044,
     "entity": "Star",
@@ -4353,7 +4352,7 @@
     "spectral_class": "M0IIIvar"
   },
   {
-    "id": "kappa draconis",
+    "id": "kap dra",
     "hip": 61281,
     "hyg_id": 61088,
     "entity": "Star",
@@ -4370,7 +4369,7 @@
     "spectral_class": "B6IIIp"
   },
   {
-    "id": "alpha draconis",
+    "id": "thuban",
     "hip": 68756,
     "hyg_id": 68537,
     "entity": "Star",
@@ -4387,7 +4386,7 @@
     "spectral_class": "A0III SB"
   },
   {
-    "id": "iota draconis",
+    "id": "edasich",
     "hip": 75458,
     "hyg_id": 75229,
     "entity": "Star",
@@ -4404,7 +4403,7 @@
     "spectral_class": "K2III"
   },
   {
-    "id": "theta draconis",
+    "id": "the dra",
     "hip": 78527,
     "hyg_id": 78290,
     "entity": "Star",
@@ -4421,7 +4420,7 @@
     "spectral_class": "F8IV-V"
   },
   {
-    "id": "eta draconis",
+    "id": "athebyne",
     "hip": 80331,
     "hyg_id": 80089,
     "entity": "Star",
@@ -4438,7 +4437,7 @@
     "spectral_class": "G8III"
   },
   {
-    "id": "zeta draconis",
+    "id": "aldhibah",
     "hip": 83895,
     "hyg_id": 83638,
     "entity": "Star",
@@ -4455,7 +4454,7 @@
     "spectral_class": "B6III"
   },
   {
-    "id": "phi draconis",
+    "id": "phi dra",
     "hip": 89908,
     "hyg_id": 89630,
     "entity": "Star",
@@ -4472,7 +4471,7 @@
     "spectral_class": "A0p (Si)"
   },
   {
-    "id": "chi draconis",
+    "id": "chi dra",
     "hip": 89937,
     "hyg_id": 89660,
     "entity": "Star",
@@ -4489,7 +4488,7 @@
     "spectral_class": "F7Vvar"
   },
   {
-    "id": "delta draconis",
+    "id": "altais",
     "hip": 94376,
     "hyg_id": 94081,
     "entity": "Star",
@@ -4506,7 +4505,7 @@
     "spectral_class": "G9III"
   },
   {
-    "id": "epsilon draconis",
+    "id": "eps dra",
     "hip": 97433,
     "hyg_id": 97124,
     "entity": "Star",
@@ -4523,7 +4522,7 @@
     "spectral_class": "G8III"
   },
   {
-    "id": "xi draconis",
+    "id": "grumium",
     "hip": 87585,
     "hyg_id": 87314,
     "entity": "Star",
@@ -4540,7 +4539,7 @@
     "spectral_class": "K2III"
   },
   {
-    "id": "nu-2 draconis",
+    "id": "nu-2 dra",
     "hip": 85829,
     "hyg_id": 85567,
     "entity": "Star",
@@ -4557,7 +4556,7 @@
     "spectral_class": "Am"
   },
   {
-    "id": "beta draconis",
+    "id": "rastaban",
     "hip": 85670,
     "hyg_id": 85410,
     "entity": "Star",
@@ -4574,7 +4573,7 @@
     "spectral_class": "G2II"
   },
   {
-    "id": "gamma draconis",
+    "id": "eltanin",
     "hip": 87833,
     "hyg_id": 87561,
     "entity": "Star",
@@ -4591,7 +4590,7 @@
     "spectral_class": "K5III"
   },
   {
-    "id": "alpha equulei",
+    "id": "kitalpha",
     "hip": 104987,
     "hyg_id": 104649,
     "entity": "Star",
@@ -4608,7 +4607,7 @@
     "spectral_class": "G0III+..."
   },
   {
-    "id": "delta equulei",
+    "id": "del equ",
     "hip": 104858,
     "hyg_id": 104520,
     "entity": "Star",
@@ -4625,7 +4624,7 @@
     "spectral_class": "F5V+..."
   },
   {
-    "id": "gamma equulei",
+    "id": "gam equ",
     "hip": 104521,
     "hyg_id": 104184,
     "entity": "Star",
@@ -4642,7 +4641,7 @@
     "spectral_class": "F0p"
   },
   {
-    "id": "beta eridani",
+    "id": "cursa",
     "hip": 23875,
     "hyg_id": 23820,
     "entity": "Star",
@@ -4659,7 +4658,7 @@
     "spectral_class": "A3IIIvar"
   },
   {
-    "id": "mu eridani",
+    "id": "mu eri",
     "hip": 22109,
     "hyg_id": 22056,
     "entity": "Star",
@@ -4676,7 +4675,7 @@
     "spectral_class": "B5IV"
   },
   {
-    "id": "nu eridani",
+    "id": "nu eri",
     "hip": 21444,
     "hyg_id": 21391,
     "entity": "Star",
@@ -4693,7 +4692,7 @@
     "spectral_class": "B2III SB"
   },
   {
-    "id": "omicron-1 eridani",
+    "id": "beid",
     "hip": 19587,
     "hyg_id": 19538,
     "entity": "Star",
@@ -4710,7 +4709,7 @@
     "spectral_class": "F2II-III"
   },
   {
-    "id": "gamma eridani",
+    "id": "zaurak",
     "hip": 18543,
     "hyg_id": 18497,
     "entity": "Star",
@@ -4727,7 +4726,7 @@
     "spectral_class": "M1IIIb Ca-1"
   },
   {
-    "id": "pi eridani",
+    "id": "pi eri",
     "hip": 17593,
     "hyg_id": 17551,
     "entity": "Star",
@@ -4744,7 +4743,7 @@
     "spectral_class": "M1III"
   },
   {
-    "id": "delta eridani",
+    "id": "del eri",
     "hip": 17378,
     "hyg_id": 17336,
     "entity": "Star",
@@ -4761,7 +4760,7 @@
     "spectral_class": "K0IV"
   },
   {
-    "id": "epsilon eridani",
+    "id": "ran",
     "hip": 16537,
     "hyg_id": 16496,
     "entity": "Star",
@@ -4778,7 +4777,7 @@
     "spectral_class": "K2V"
   },
   {
-    "id": "eta eridani",
+    "id": "azha",
     "hip": 13701,
     "hyg_id": 13667,
     "entity": "Star",
@@ -4795,7 +4794,7 @@
     "spectral_class": "K1III-IV"
   },
   {
-    "id": "pi ceti",
+    "id": "pi cet",
     "hip": 12770,
     "hyg_id": 12737,
     "entity": "Star",
@@ -4812,7 +4811,7 @@
     "spectral_class": "B7IV"
   },
   {
-    "id": "tau-1 eridani",
+    "id": "tau-1 eri",
     "hip": 12843,
     "hyg_id": 12810,
     "entity": "Star",
@@ -4829,7 +4828,7 @@
     "spectral_class": "F5/F6V"
   },
   {
-    "id": "tau-3 eridani",
+    "id": "tau-3 eri",
     "hip": 14146,
     "hyg_id": 14112,
     "entity": "Star",
@@ -4846,7 +4845,7 @@
     "spectral_class": "A4V"
   },
   {
-    "id": "tau-4 eridani",
+    "id": "tau-4 eri",
     "hip": 15474,
     "hyg_id": 15436,
     "entity": "Star",
@@ -4863,7 +4862,7 @@
     "spectral_class": "M3/M4III"
   },
   {
-    "id": "tau-5 eridani",
+    "id": "tau-5 eri",
     "hip": 16611,
     "hyg_id": 16570,
     "entity": "Star",
@@ -4880,7 +4879,7 @@
     "spectral_class": "B9V"
   },
   {
-    "id": "tau-6 eridani",
+    "id": "tau-6 eri",
     "hip": 17651,
     "hyg_id": 17609,
     "entity": "Star",
@@ -4897,7 +4896,7 @@
     "spectral_class": "F3/F5V"
   },
   {
-    "id": "tau-8 eridani",
+    "id": "tau-8 eri",
     "hip": 18216,
     "hyg_id": 18171,
     "entity": "Star",
@@ -4914,7 +4913,7 @@
     "spectral_class": "B5V"
   },
   {
-    "id": "tau-9 eridani",
+    "id": "tau-9 eri",
     "hip": 18673,
     "hyg_id": 18626,
     "entity": "Star",
@@ -4931,7 +4930,7 @@
     "spectral_class": "Ap Si"
   },
   {
-    "id": "upsilon-1 eridani",
+    "id": "ups-1 eri",
     "hip": 21248,
     "hyg_id": 21195,
     "entity": "Star",
@@ -4948,7 +4947,7 @@
     "spectral_class": "K0III"
   },
   {
-    "id": "upsilon-2 eridani",
+    "id": "theemin",
     "hip": 21393,
     "hyg_id": 21340,
     "entity": "Star",
@@ -4982,7 +4981,7 @@
     "spectral_class": "K4III"
   },
   {
-    "id": "upsilon-4 eridani",
+    "id": "ups-4 eri",
     "hip": 20042,
     "hyg_id": 19992,
     "entity": "Star",
@@ -5050,7 +5049,7 @@
     "spectral_class": "G8V"
   },
   {
-    "id": "theta-1 eridani",
+    "id": "acamar",
     "hip": 13847,
     "hyg_id": 13813,
     "entity": "Star",
@@ -5067,7 +5066,7 @@
     "spectral_class": "A4III+..."
   },
   {
-    "id": "iota eridani",
+    "id": "iot eri",
     "hip": 12486,
     "hyg_id": 12452,
     "entity": "Star",
@@ -5101,7 +5100,7 @@
     "spectral_class": "A2V"
   },
   {
-    "id": "kappa eridani",
+    "id": "kap eri",
     "hip": 11407,
     "hyg_id": 11380,
     "entity": "Star",
@@ -5118,7 +5117,7 @@
     "spectral_class": "B5IV"
   },
   {
-    "id": "chi eridani",
+    "id": "chi eri",
     "hip": 9007,
     "hyg_id": 8989,
     "entity": "Star",
@@ -5135,7 +5134,7 @@
     "spectral_class": "G5IV"
   },
   {
-    "id": "alpha eridani",
+    "id": "achernar",
     "hip": 7588,
     "hyg_id": 7574,
     "entity": "Star",
@@ -5152,7 +5151,7 @@
     "spectral_class": "B3Vp"
   },
   {
-    "id": "alpha fornacis",
+    "id": "dalim",
     "hip": 14879,
     "hyg_id": 14843,
     "entity": "Star",
@@ -5169,7 +5168,7 @@
     "spectral_class": "F8V"
   },
   {
-    "id": "beta fornacis",
+    "id": "bet for",
     "hip": 13147,
     "hyg_id": 13114,
     "entity": "Star",
@@ -5186,7 +5185,7 @@
     "spectral_class": "G8III"
   },
   {
-    "id": "nu fornacis",
+    "id": "nu for",
     "hip": 9677,
     "hyg_id": 9655,
     "entity": "Star",
@@ -5203,7 +5202,7 @@
     "spectral_class": "B9.5p (Si)"
   },
   {
-    "id": "xi geminorum",
+    "id": "alzirr",
     "hip": 32362,
     "hyg_id": 32276,
     "entity": "Star",
@@ -5220,7 +5219,7 @@
     "spectral_class": "F5IV"
   },
   {
-    "id": "lambda geminorum",
+    "id": "lam gem",
     "hip": 35350,
     "hyg_id": 35253,
     "entity": "Star",
@@ -5237,7 +5236,7 @@
     "spectral_class": "A3V..."
   },
   {
-    "id": "delta geminorum",
+    "id": "wasat",
     "hip": 35550,
     "hyg_id": 35453,
     "entity": "Star",
@@ -5254,7 +5253,7 @@
     "spectral_class": "F0IV..."
   },
   {
-    "id": "zeta geminorum",
+    "id": "mekbuda",
     "hip": 34088,
     "hyg_id": 34000,
     "entity": "Star",
@@ -5271,7 +5270,7 @@
     "spectral_class": "G3Ibv SB"
   },
   {
-    "id": "gamma geminorum",
+    "id": "alhena",
     "hip": 31681,
     "hyg_id": 31601,
     "entity": "Star",
@@ -5288,7 +5287,7 @@
     "spectral_class": "A0IV"
   },
   {
-    "id": "upsilon geminorum",
+    "id": "ups gem",
     "hip": 36962,
     "hyg_id": 36856,
     "entity": "Star",
@@ -5305,7 +5304,7 @@
     "spectral_class": "K5III"
   },
   {
-    "id": "kappa geminorum",
+    "id": "kap gem",
     "hip": 37740,
     "hyg_id": 37633,
     "entity": "Star",
@@ -5322,7 +5321,7 @@
     "spectral_class": "G8III"
   },
   {
-    "id": "beta geminorum",
+    "id": "pollux",
     "hip": 37826,
     "hyg_id": 37718,
     "entity": "Star",
@@ -5339,7 +5338,7 @@
     "spectral_class": "K0IIIvar"
   },
   {
-    "id": "iota geminorum",
+    "id": "iot gem",
     "hip": 36046,
     "hyg_id": 35946,
     "entity": "Star",
@@ -5356,7 +5355,7 @@
     "spectral_class": "G9III+..."
   },
   {
-    "id": "tau geminorum",
+    "id": "tau gem",
     "hip": 34693,
     "hyg_id": 34601,
     "entity": "Star",
@@ -5373,7 +5372,7 @@
     "spectral_class": "K2III"
   },
   {
-    "id": "alpha geminorum",
+    "id": "castor",
     "hip": 36850,
     "hyg_id": 36744,
     "entity": "Star",
@@ -5390,7 +5389,7 @@
     "spectral_class": "A2Vm"
   },
   {
-    "id": "theta geminorum",
+    "id": "the gem",
     "hip": 33018,
     "hyg_id": 32932,
     "entity": "Star",
@@ -5407,7 +5406,7 @@
     "spectral_class": "A3III"
   },
   {
-    "id": "epsilon geminorum",
+    "id": "mebsuta",
     "hip": 32246,
     "hyg_id": 32161,
     "entity": "Star",
@@ -5424,7 +5423,7 @@
     "spectral_class": "A3mA6-A9"
   },
   {
-    "id": "nu geminorum",
+    "id": "nu gem",
     "hip": 30883,
     "hyg_id": 30810,
     "entity": "Star",
@@ -5441,7 +5440,7 @@
     "spectral_class": "B6III"
   },
   {
-    "id": "mu geminorum",
+    "id": "tejat",
     "hip": 30343,
     "hyg_id": 30270,
     "entity": "Star",
@@ -5458,7 +5457,7 @@
     "spectral_class": "M3IIIvar"
   },
   {
-    "id": "eta geminorum",
+    "id": "propus",
     "hip": 29655,
     "hyg_id": 29582,
     "entity": "Star",
@@ -5492,7 +5491,7 @@
     "spectral_class": "G7III"
   },
   {
-    "id": "gamma gruis",
+    "id": "aldhanab",
     "hip": 108085,
     "hyg_id": 107742,
     "entity": "Star",
@@ -5509,7 +5508,7 @@
     "spectral_class": "B8III"
   },
   {
-    "id": "lambda gruis",
+    "id": "lam gru",
     "hip": 109111,
     "hyg_id": 108765,
     "entity": "Star",
@@ -5526,7 +5525,7 @@
     "spectral_class": "M0III"
   },
   {
-    "id": "delta-1 gruis",
+    "id": "del-1 gru",
     "hip": 110997,
     "hyg_id": 110650,
     "entity": "Star",
@@ -5543,7 +5542,7 @@
     "spectral_class": "G6/G8III"
   },
   {
-    "id": "alpha gruis",
+    "id": "alnair",
     "hip": 109268,
     "hyg_id": 108922,
     "entity": "Star",
@@ -5560,7 +5559,7 @@
     "spectral_class": "B7IV"
   },
   {
-    "id": "beta gruis",
+    "id": "tiaki",
     "hip": 112122,
     "hyg_id": 111768,
     "entity": "Star",
@@ -5577,7 +5576,7 @@
     "spectral_class": "M5III"
   },
   {
-    "id": "epsilon gruis",
+    "id": "eps gru",
     "hip": 112623,
     "hyg_id": 112263,
     "entity": "Star",
@@ -5594,7 +5593,7 @@
     "spectral_class": "A3V"
   },
   {
-    "id": "zeta gruis",
+    "id": "zet gru",
     "hip": 113638,
     "hyg_id": 113278,
     "entity": "Star",
@@ -5611,7 +5610,7 @@
     "spectral_class": "G8III"
   },
   {
-    "id": "delta herculis",
+    "id": "sarin",
     "hip": 84379,
     "hyg_id": 84121,
     "entity": "Star",
@@ -5628,7 +5627,7 @@
     "spectral_class": "A3IVv SB"
   },
   {
-    "id": "alpha-1 herculis",
+    "id": "rasalgethi",
     "hip": 84345,
     "hyg_id": 84086,
     "entity": "Star",
@@ -5645,7 +5644,7 @@
     "spectral_class": "M5IIvar"
   },
   {
-    "id": "beta herculis",
+    "id": "kornephoros",
     "hip": 80816,
     "hyg_id": 80571,
     "entity": "Star",
@@ -5662,7 +5661,7 @@
     "spectral_class": "G8III"
   },
   {
-    "id": "gamma herculis",
+    "id": "gam her",
     "hip": 80170,
     "hyg_id": 79928,
     "entity": "Star",
@@ -5679,7 +5678,7 @@
     "spectral_class": "A9III"
   },
   {
-    "id": "zeta herculis",
+    "id": "zet her",
     "hip": 81693,
     "hyg_id": 81444,
     "entity": "Star",
@@ -5696,7 +5695,7 @@
     "spectral_class": "F9IV"
   },
   {
-    "id": "epsilon herculis",
+    "id": "eps her",
     "hip": 83207,
     "hyg_id": 82952,
     "entity": "Star",
@@ -5713,7 +5712,7 @@
     "spectral_class": "A0V"
   },
   {
-    "id": "eta herculis",
+    "id": "eta her",
     "hip": 81833,
     "hyg_id": 81583,
     "entity": "Star",
@@ -5730,7 +5729,7 @@
     "spectral_class": "G8III-IV"
   },
   {
-    "id": "sigma herculis",
+    "id": "sig her",
     "hip": 81126,
     "hyg_id": 80880,
     "entity": "Star",
@@ -5747,7 +5746,7 @@
     "spectral_class": "B9Vvar"
   },
   {
-    "id": "tau herculis",
+    "id": "tau her",
     "hip": 79992,
     "hyg_id": 79750,
     "entity": "Star",
@@ -5764,7 +5763,7 @@
     "spectral_class": "B5IV"
   },
   {
-    "id": "pi herculis",
+    "id": "pi her",
     "hip": 84380,
     "hyg_id": 84122,
     "entity": "Star",
@@ -5781,7 +5780,7 @@
     "spectral_class": "K3IIvar"
   },
   {
-    "id": "rho herculis",
+    "id": "rho her",
     "hip": 85112,
     "hyg_id": 84853,
     "entity": "Star",
@@ -5798,7 +5797,7 @@
     "spectral_class": "B9.5III"
   },
   {
-    "id": "theta herculis",
+    "id": "the her",
     "hip": 87808,
     "hyg_id": 87537,
     "entity": "Star",
@@ -5815,7 +5814,7 @@
     "spectral_class": "K1IIvar"
   },
   {
-    "id": "iota herculis",
+    "id": "iot her",
     "hip": 86414,
     "hyg_id": 86148,
     "entity": "Star",
@@ -5832,7 +5831,7 @@
     "spectral_class": "B3V SB"
   },
   {
-    "id": "lambda herculis",
+    "id": "maasym",
     "hip": 85693,
     "hyg_id": 85433,
     "entity": "Star",
@@ -5849,7 +5848,7 @@
     "spectral_class": "K3IIIvar"
   },
   {
-    "id": "mu herculis",
+    "id": "mu her",
     "hip": 86974,
     "hyg_id": 86705,
     "entity": "Star",
@@ -5866,7 +5865,7 @@
     "spectral_class": "G5IV"
   },
   {
-    "id": "xi herculis",
+    "id": "xi her",
     "hip": 87933,
     "hyg_id": 87661,
     "entity": "Star",
@@ -5883,7 +5882,7 @@
     "spectral_class": "K0III"
   },
   {
-    "id": "omicron herculis",
+    "id": "omi her",
     "hip": 88794,
     "hyg_id": 88517,
     "entity": "Star",
@@ -5900,7 +5899,7 @@
     "spectral_class": "B9.5V"
   },
   {
-    "id": "chi herculis",
+    "id": "chi her",
     "hip": 77760,
     "hyg_id": 77524,
     "entity": "Star",
@@ -5917,7 +5916,7 @@
     "spectral_class": "F9V"
   },
   {
-    "id": "phi herculis",
+    "id": "phi her",
     "hip": 79101,
     "hyg_id": 78861,
     "entity": "Star",
@@ -5934,7 +5933,7 @@
     "spectral_class": "B9MNp..."
   },
   {
-    "id": "omega herculis",
+    "id": "cujam",
     "hip": 80463,
     "hyg_id": 80221,
     "entity": "Star",
@@ -5968,7 +5967,7 @@
     "spectral_class": "K4III"
   },
   {
-    "id": "alpha horologii",
+    "id": "alp hor",
     "hip": 19747,
     "hyg_id": 19697,
     "entity": "Star",
@@ -5985,7 +5984,7 @@
     "spectral_class": "K1III"
   },
   {
-    "id": "iota horologii",
+    "id": "iot hor",
     "hip": 12653,
     "hyg_id": 12620,
     "entity": "Star",
@@ -6002,7 +6001,7 @@
     "spectral_class": "G3IV"
   },
   {
-    "id": "eta horologii",
+    "id": "eta hor",
     "hip": 12225,
     "hyg_id": 12193,
     "entity": "Star",
@@ -6019,7 +6018,7 @@
     "spectral_class": "A6V"
   },
   {
-    "id": "zeta horologii",
+    "id": "zet hor",
     "hip": 12484,
     "hyg_id": 12451,
     "entity": "Star",
@@ -6036,7 +6035,7 @@
     "spectral_class": "F4IV"
   },
   {
-    "id": "mu horologii",
+    "id": "mu hor",
     "hip": 14240,
     "hyg_id": 14206,
     "entity": "Star",
@@ -6053,7 +6052,7 @@
     "spectral_class": "F0IV"
   },
   {
-    "id": "beta horologii",
+    "id": "bet hor",
     "hip": 13884,
     "hyg_id": 13850,
     "entity": "Star",
@@ -6070,7 +6069,7 @@
     "spectral_class": "A5III"
   },
   {
-    "id": "rho hydrae",
+    "id": "rho hya",
     "hip": 43234,
     "hyg_id": 43113,
     "entity": "Star",
@@ -6087,7 +6086,7 @@
     "spectral_class": "A0Vn"
   },
   {
-    "id": "eta hydrae",
+    "id": "eta hya",
     "hip": 42799,
     "hyg_id": 42680,
     "entity": "Star",
@@ -6104,7 +6103,7 @@
     "spectral_class": "B3V..."
   },
   {
-    "id": "sigma hydrae",
+    "id": "minchir",
     "hip": 42402,
     "hyg_id": 42283,
     "entity": "Star",
@@ -6121,7 +6120,7 @@
     "spectral_class": "K2III"
   },
   {
-    "id": "delta hydrae",
+    "id": "del hya",
     "hip": 42313,
     "hyg_id": 42195,
     "entity": "Star",
@@ -6138,7 +6137,7 @@
     "spectral_class": "A1Vnn"
   },
   {
-    "id": "epsilon hydrae",
+    "id": "ashlesha",
     "hip": 43109,
     "hyg_id": 42990,
     "entity": "Star",
@@ -6155,7 +6154,7 @@
     "spectral_class": "G0III-IV"
   },
   {
-    "id": "zeta hydrae",
+    "id": "zet hya",
     "hip": 43813,
     "hyg_id": 43689,
     "entity": "Star",
@@ -6172,7 +6171,7 @@
     "spectral_class": "G8III-IV"
   },
   {
-    "id": "theta hydrae",
+    "id": "the hya",
     "hip": 45336,
     "hyg_id": 45204,
     "entity": "Star",
@@ -6189,7 +6188,7 @@
     "spectral_class": "B9.5V"
   },
   {
-    "id": "iota hydrae",
+    "id": "ukdah",
     "hip": 47431,
     "hyg_id": 47297,
     "entity": "Star",
@@ -6206,7 +6205,7 @@
     "spectral_class": "K3IIIvar"
   },
   {
-    "id": "alpha hydrae",
+    "id": "alphard",
     "hip": 46390,
     "hyg_id": 46259,
     "entity": "Star",
@@ -6223,7 +6222,7 @@
     "spectral_class": "K3III"
   },
   {
-    "id": "upsilon-1 hydrae",
+    "id": "zhang",
     "hip": 48356,
     "hyg_id": 48219,
     "entity": "Star",
@@ -6240,7 +6239,7 @@
     "spectral_class": "G6/G8III"
   },
   {
-    "id": "upsilon-2 hydrae",
+    "id": "ups-2 hya",
     "hip": 49402,
     "hyg_id": 49261,
     "entity": "Star",
@@ -6257,7 +6256,7 @@
     "spectral_class": "B8V"
   },
   {
-    "id": "lambda hydrae",
+    "id": "lam hya",
     "hip": 49841,
     "hyg_id": 49700,
     "entity": "Star",
@@ -6274,7 +6273,7 @@
     "spectral_class": "K0III"
   },
   {
-    "id": "mu hydrae",
+    "id": "mu hya",
     "hip": 51069,
     "hyg_id": 50924,
     "entity": "Star",
@@ -6291,7 +6290,7 @@
     "spectral_class": "K4III"
   },
   {
-    "id": "nu hydrae",
+    "id": "nu hya",
     "hip": 52943,
     "hyg_id": 52789,
     "entity": "Star",
@@ -6308,7 +6307,7 @@
     "spectral_class": "K0/K1III"
   },
   {
-    "id": "xi hydrae",
+    "id": "xi hya",
     "hip": 56343,
     "hyg_id": 56174,
     "entity": "Star",
@@ -6325,7 +6324,7 @@
     "spectral_class": "G8III"
   },
   {
-    "id": "beta hydrae",
+    "id": "bet hya",
     "hip": 57936,
     "hyg_id": 57763,
     "entity": "Star",
@@ -6342,7 +6341,7 @@
     "spectral_class": "Ap Si"
   },
   {
-    "id": "gamma hydrae",
+    "id": "gam hya",
     "hip": 64962,
     "hyg_id": 64758,
     "entity": "Star",
@@ -6359,7 +6358,7 @@
     "spectral_class": "G8III"
   },
   {
-    "id": "pi hydrae",
+    "id": "pi hya",
     "hip": 68895,
     "hyg_id": 68675,
     "entity": "Star",
@@ -6393,7 +6392,7 @@
     "spectral_class": "K3III"
   },
   {
-    "id": "beta hydri",
+    "id": "bet hyi",
     "hip": 2021,
     "hyg_id": 2016,
     "entity": "Star",
@@ -6410,7 +6409,7 @@
     "spectral_class": "G2IV"
   },
   {
-    "id": "gamma hydri",
+    "id": "gam hyi",
     "hip": 17678,
     "hyg_id": 17637,
     "entity": "Star",
@@ -6427,7 +6426,7 @@
     "spectral_class": "M2III"
   },
   {
-    "id": "delta hydri",
+    "id": "del hyi",
     "hip": 11001,
     "hyg_id": 10975,
     "entity": "Star",
@@ -6444,7 +6443,7 @@
     "spectral_class": "A3V"
   },
   {
-    "id": "alpha hydri",
+    "id": "alp hyi",
     "hip": 9236,
     "hyg_id": 9217,
     "entity": "Star",
@@ -6461,7 +6460,7 @@
     "spectral_class": "F0V"
   },
   {
-    "id": "beta indi",
+    "id": "bet ind",
     "hip": 103227,
     "hyg_id": 102895,
     "entity": "Star",
@@ -6478,7 +6477,7 @@
     "spectral_class": "K0III"
   },
   {
-    "id": "eta indi",
+    "id": "eta ind",
     "hip": 102333,
     "hyg_id": 102002,
     "entity": "Star",
@@ -6495,7 +6494,7 @@
     "spectral_class": "A6:var"
   },
   {
-    "id": "alpha indi",
+    "id": "alp ind",
     "hip": 101772,
     "hyg_id": 101445,
     "entity": "Star",
@@ -6512,7 +6511,7 @@
     "spectral_class": "K0III"
   },
   {
-    "id": "theta indi",
+    "id": "the ind",
     "hip": 105319,
     "hyg_id": 104979,
     "entity": "Star",
@@ -6529,7 +6528,7 @@
     "spectral_class": "A5V"
   },
   {
-    "id": "delta indi",
+    "id": "del ind",
     "hip": 108431,
     "hyg_id": 108086,
     "entity": "Star",
@@ -6580,7 +6579,7 @@
     "spectral_class": "A7V"
   },
   {
-    "id": "beta leonis minoris",
+    "id": "bet lmi",
     "hip": 51233,
     "hyg_id": 51089,
     "entity": "Star",
@@ -6648,7 +6647,7 @@
     "spectral_class": "M0II"
   },
   {
-    "id": "alpha lacertae",
+    "id": "alp lac",
     "hip": 111169,
     "hyg_id": 110822,
     "entity": "Star",
@@ -6665,7 +6664,7 @@
     "spectral_class": "A1V"
   },
   {
-    "id": "beta lacertae",
+    "id": "bet lac",
     "hip": 110538,
     "hyg_id": 110192,
     "entity": "Star",
@@ -6784,7 +6783,7 @@
     "spectral_class": "K3III"
   },
   {
-    "id": "alpha leonis",
+    "id": "regulus",
     "hip": 49669,
     "hyg_id": 49528,
     "entity": "Star",
@@ -6801,7 +6800,7 @@
     "spectral_class": "B7V"
   },
   {
-    "id": "eta leonis",
+    "id": "eta leo",
     "hip": 49583,
     "hyg_id": 49441,
     "entity": "Star",
@@ -6818,7 +6817,7 @@
     "spectral_class": "A0Ib"
   },
   {
-    "id": "gamma-1 leonis",
+    "id": "algieba",
     "hip": 50583,
     "hyg_id": 50440,
     "entity": "Star",
@@ -6835,7 +6834,7 @@
     "spectral_class": "K0III"
   },
   {
-    "id": "zeta leonis",
+    "id": "adhafera",
     "hip": 50335,
     "hyg_id": 50193,
     "entity": "Star",
@@ -6852,7 +6851,7 @@
     "spectral_class": "F0III"
   },
   {
-    "id": "mu leonis",
+    "id": "rasalas",
     "hip": 48455,
     "hyg_id": 48318,
     "entity": "Star",
@@ -6869,7 +6868,7 @@
     "spectral_class": "K0III"
   },
   {
-    "id": "epsilon leonis",
+    "id": "ras elased australis",
     "hip": 47908,
     "hyg_id": 47772,
     "entity": "Star",
@@ -6886,7 +6885,7 @@
     "spectral_class": "G0II"
   },
   {
-    "id": "delta leonis",
+    "id": "zosma",
     "hip": 54872,
     "hyg_id": 54712,
     "entity": "Star",
@@ -6903,7 +6902,7 @@
     "spectral_class": "A4V"
   },
   {
-    "id": "beta leonis",
+    "id": "denebola",
     "hip": 57632,
     "hyg_id": 57459,
     "entity": "Star",
@@ -6920,7 +6919,7 @@
     "spectral_class": "A3Vvar"
   },
   {
-    "id": "theta leonis",
+    "id": "chertan",
     "hip": 54879,
     "hyg_id": 54718,
     "entity": "Star",
@@ -6937,7 +6936,7 @@
     "spectral_class": "A2V"
   },
   {
-    "id": "kappa leonis",
+    "id": "kap leo",
     "hip": 46146,
     "hyg_id": 46014,
     "entity": "Star",
@@ -6954,7 +6953,7 @@
     "spectral_class": "K2III"
   },
   {
-    "id": "lambda leonis",
+    "id": "alterf",
     "hip": 46750,
     "hyg_id": 46617,
     "entity": "Star",
@@ -6971,7 +6970,7 @@
     "spectral_class": "K5IIIvar"
   },
   {
-    "id": "iota leonis",
+    "id": "iot leo",
     "hip": 55642,
     "hyg_id": 55476,
     "entity": "Star",
@@ -6988,7 +6987,7 @@
     "spectral_class": "F2IV SB"
   },
   {
-    "id": "sigma leonis",
+    "id": "sig leo",
     "hip": 55434,
     "hyg_id": 55269,
     "entity": "Star",
@@ -7005,7 +7004,7 @@
     "spectral_class": "B9.5Vs"
   },
   {
-    "id": "epsilon leporis",
+    "id": "eps lep",
     "hip": 23685,
     "hyg_id": 23630,
     "entity": "Star",
@@ -7022,7 +7021,7 @@
     "spectral_class": "K4III"
   },
   {
-    "id": "mu leporis",
+    "id": "mu lep",
     "hip": 24305,
     "hyg_id": 24249,
     "entity": "Star",
@@ -7039,7 +7038,7 @@
     "spectral_class": "B9IV: HgMn"
   },
   {
-    "id": "alpha leporis",
+    "id": "arneb",
     "hip": 25985,
     "hyg_id": 25920,
     "entity": "Star",
@@ -7056,7 +7055,7 @@
     "spectral_class": "F0Ib"
   },
   {
-    "id": "beta leporis",
+    "id": "nihal",
     "hip": 25606,
     "hyg_id": 25542,
     "entity": "Star",
@@ -7073,7 +7072,7 @@
     "spectral_class": "G5II"
   },
   {
-    "id": "lambda leporis",
+    "id": "lam lep",
     "hip": 24845,
     "hyg_id": 24785,
     "entity": "Star",
@@ -7090,7 +7089,7 @@
     "spectral_class": "B0.5IV"
   },
   {
-    "id": "kappa leporis",
+    "id": "kap lep",
     "hip": 24327,
     "hyg_id": 24270,
     "entity": "Star",
@@ -7107,7 +7106,7 @@
     "spectral_class": "B7V"
   },
   {
-    "id": "gamma leporis",
+    "id": "gam lep",
     "hip": 27072,
     "hyg_id": 27006,
     "entity": "Star",
@@ -7124,7 +7123,7 @@
     "spectral_class": "F7V"
   },
   {
-    "id": "delta leporis",
+    "id": "del lep",
     "hip": 27654,
     "hyg_id": 27585,
     "entity": "Star",
@@ -7141,7 +7140,7 @@
     "spectral_class": "G8III/IV"
   },
   {
-    "id": "theta leporis",
+    "id": "the lep",
     "hip": 28910,
     "hyg_id": 28837,
     "entity": "Star",
@@ -7158,7 +7157,7 @@
     "spectral_class": "A0V"
   },
   {
-    "id": "eta leporis",
+    "id": "eta lep",
     "hip": 28103,
     "hyg_id": 28032,
     "entity": "Star",
@@ -7175,7 +7174,7 @@
     "spectral_class": "F1V"
   },
   {
-    "id": "zeta leporis",
+    "id": "zet lep",
     "hip": 27288,
     "hyg_id": 27220,
     "entity": "Star",
@@ -7192,7 +7191,7 @@
     "spectral_class": "A2Vann"
   },
   {
-    "id": "alpha-2 librae",
+    "id": "zubenelgenubi",
     "hip": 72622,
     "hyg_id": 72396,
     "entity": "Star",
@@ -7209,7 +7208,7 @@
     "spectral_class": "A3IV"
   },
   {
-    "id": "beta librae",
+    "id": "zubeneschamali",
     "hip": 74785,
     "hyg_id": 74556,
     "entity": "Star",
@@ -7226,7 +7225,7 @@
     "spectral_class": "B8V"
   },
   {
-    "id": "sigma librae",
+    "id": "brachium",
     "hip": 73714,
     "hyg_id": 73486,
     "entity": "Star",
@@ -7243,7 +7242,7 @@
     "spectral_class": "M3/M4III"
   },
   {
-    "id": "gamma librae",
+    "id": "zubenelhakrabi",
     "hip": 76333,
     "hyg_id": 76100,
     "entity": "Star",
@@ -7260,7 +7259,7 @@
     "spectral_class": "K0III"
   },
   {
-    "id": "upsilon librae",
+    "id": "ups lib",
     "hip": 76470,
     "hyg_id": 76235,
     "entity": "Star",
@@ -7277,7 +7276,7 @@
     "spectral_class": "K3III"
   },
   {
-    "id": "tau librae",
+    "id": "tau lib",
     "hip": 76600,
     "hyg_id": 76365,
     "entity": "Star",
@@ -7294,7 +7293,7 @@
     "spectral_class": "B2.5V"
   },
   {
-    "id": "alpha lupi",
+    "id": "alp lup",
     "hip": 71860,
     "hyg_id": 71634,
     "entity": "Star",
@@ -7311,7 +7310,7 @@
     "spectral_class": "B1.5III"
   },
   {
-    "id": "zeta lupi",
+    "id": "zet lup",
     "hip": 74395,
     "hyg_id": 74167,
     "entity": "Star",
@@ -7328,7 +7327,7 @@
     "spectral_class": "G8III"
   },
   {
-    "id": "epsilon lupi",
+    "id": "eps lup",
     "hip": 75264,
     "hyg_id": 75035,
     "entity": "Star",
@@ -7345,7 +7344,7 @@
     "spectral_class": "B2IV-V"
   },
   {
-    "id": "gamma lupi",
+    "id": "gam lup",
     "hip": 76297,
     "hyg_id": 76065,
     "entity": "Star",
@@ -7362,7 +7361,7 @@
     "spectral_class": "B2IV"
   },
   {
-    "id": "delta lupi",
+    "id": "del lup",
     "hip": 75141,
     "hyg_id": 74912,
     "entity": "Star",
@@ -7379,7 +7378,7 @@
     "spectral_class": "B1.5IV"
   },
   {
-    "id": "beta lupi",
+    "id": "bet lup",
     "hip": 73273,
     "hyg_id": 73046,
     "entity": "Star",
@@ -7396,7 +7395,7 @@
     "spectral_class": "B2III"
   },
   {
-    "id": "eta lupi",
+    "id": "eta lup",
     "hip": 78384,
     "hyg_id": 78148,
     "entity": "Star",
@@ -7413,7 +7412,7 @@
     "spectral_class": "B2.5IV"
   },
   {
-    "id": "phi-1 lupi",
+    "id": "phi-1 lup",
     "hip": 75177,
     "hyg_id": 74948,
     "entity": "Star",
@@ -7430,7 +7429,7 @@
     "spectral_class": "K5III"
   },
   {
-    "id": "chi lupi",
+    "id": "chi lup",
     "hip": 77634,
     "hyg_id": 77398,
     "entity": "Star",
@@ -7447,7 +7446,7 @@
     "spectral_class": "B9.5III-IV"
   },
   {
-    "id": "alpha lyncis",
+    "id": "alp lyn",
     "hip": 45860,
     "hyg_id": 45728,
     "entity": "Star",
@@ -7583,7 +7582,7 @@
     "spectral_class": "A2Vs"
   },
   {
-    "id": "alpha lyrae",
+    "id": "vega",
     "hip": 91262,
     "hyg_id": 90979,
     "entity": "Star",
@@ -7600,7 +7599,7 @@
     "spectral_class": "A0Vvar"
   },
   {
-    "id": "epsilon-1 lyrae",
+    "id": "eps-1 lyr",
     "hip": 91919,
     "hyg_id": 91633,
     "entity": "Star",
@@ -7617,7 +7616,7 @@
     "spectral_class": "F1V"
   },
   {
-    "id": "zeta-1 lyrae",
+    "id": "zet-1 lyr",
     "hip": 91971,
     "hyg_id": 91684,
     "entity": "Star",
@@ -7634,7 +7633,7 @@
     "spectral_class": "Am"
   },
   {
-    "id": "delta-2 lyrae",
+    "id": "del-2 lyr",
     "hip": 92791,
     "hyg_id": 92502,
     "entity": "Star",
@@ -7651,7 +7650,7 @@
     "spectral_class": "M4IIvar"
   },
   {
-    "id": "gamma lyrae",
+    "id": "sulafat",
     "hip": 93194,
     "hyg_id": 92902,
     "entity": "Star",
@@ -7668,7 +7667,7 @@
     "spectral_class": "B9III"
   },
   {
-    "id": "beta lyrae",
+    "id": "sheliak",
     "hip": 92420,
     "hyg_id": 92133,
     "entity": "Star",
@@ -7685,7 +7684,7 @@
     "spectral_class": "A8:V comp SB"
   },
   {
-    "id": "alpha mensae",
+    "id": "alp men",
     "hip": 29271,
     "hyg_id": 29198,
     "entity": "Star",
@@ -7702,7 +7701,7 @@
     "spectral_class": "G5V"
   },
   {
-    "id": "beta mensae",
+    "id": "bet men",
     "hip": 23467,
     "hyg_id": 23412,
     "entity": "Star",
@@ -7719,7 +7718,7 @@
     "spectral_class": "G8III"
   },
   {
-    "id": "alpha microscopii",
+    "id": "alp mic",
     "hip": 102831,
     "hyg_id": 102500,
     "entity": "Star",
@@ -7736,7 +7735,7 @@
     "spectral_class": "G8III"
   },
   {
-    "id": "beta microscopii",
+    "id": "bet mic",
     "hip": 102989,
     "hyg_id": 102659,
     "entity": "Star",
@@ -7787,7 +7786,7 @@
     "spectral_class": "A0Ib"
   },
   {
-    "id": "epsilon monocerotis",
+    "id": "eps mon",
     "hip": 30419,
     "hyg_id": 30346,
     "entity": "Star",
@@ -7821,7 +7820,7 @@
     "spectral_class": "K0III"
   },
   {
-    "id": "delta monocerotis",
+    "id": "del mon",
     "hip": 34769,
     "hyg_id": 34677,
     "entity": "Star",
@@ -7838,7 +7837,7 @@
     "spectral_class": "A2V"
   },
   {
-    "id": "beta monocerotis",
+    "id": "bet mon",
     "hip": 30867,
     "hyg_id": 30794,
     "entity": "Star",
@@ -7855,7 +7854,7 @@
     "spectral_class": "B3Ve"
   },
   {
-    "id": "gamma monocerotis",
+    "id": "gam mon",
     "hip": 29651,
     "hyg_id": 29578,
     "entity": "Star",
@@ -7872,7 +7871,7 @@
     "spectral_class": "K3III"
   },
   {
-    "id": "zeta monocerotis",
+    "id": "zet mon",
     "hip": 39863,
     "hyg_id": 39750,
     "entity": "Star",
@@ -7889,7 +7888,7 @@
     "spectral_class": "G2Ib"
   },
   {
-    "id": "alpha monocerotis",
+    "id": "alp mon",
     "hip": 37447,
     "hyg_id": 37340,
     "entity": "Star",
@@ -7906,7 +7905,7 @@
     "spectral_class": "K0III"
   },
   {
-    "id": "lambda muscae",
+    "id": "lam mus",
     "hip": 57363,
     "hyg_id": 57190,
     "entity": "Star",
@@ -7923,7 +7922,7 @@
     "spectral_class": "A7III"
   },
   {
-    "id": "epsilon muscae",
+    "id": "eps mus",
     "hip": 59929,
     "hyg_id": 59746,
     "entity": "Star",
@@ -7940,7 +7939,7 @@
     "spectral_class": "M5III"
   },
   {
-    "id": "alpha muscae",
+    "id": "alp mus",
     "hip": 61585,
     "hyg_id": 61392,
     "entity": "Star",
@@ -7957,7 +7956,7 @@
     "spectral_class": "B2IV-V"
   },
   {
-    "id": "beta muscae",
+    "id": "bet mus",
     "hip": 62322,
     "hyg_id": 62127,
     "entity": "Star",
@@ -7974,7 +7973,7 @@
     "spectral_class": "B2V"
   },
   {
-    "id": "delta muscae",
+    "id": "del mus",
     "hip": 63613,
     "hyg_id": 63411,
     "entity": "Star",
@@ -7991,7 +7990,7 @@
     "spectral_class": "K2III"
   },
   {
-    "id": "gamma muscae",
+    "id": "gam mus",
     "hip": 61199,
     "hyg_id": 61008,
     "entity": "Star",
@@ -8008,7 +8007,7 @@
     "spectral_class": "B5V"
   },
   {
-    "id": "eta normae",
+    "id": "eta nor",
     "hip": 78639,
     "hyg_id": 78400,
     "entity": "Star",
@@ -8025,7 +8024,7 @@
     "spectral_class": "G8III"
   },
   {
-    "id": "gamma-2 normae",
+    "id": "gam-2 nor",
     "hip": 80000,
     "hyg_id": 79759,
     "entity": "Star",
@@ -8042,7 +8041,7 @@
     "spectral_class": "G8III"
   },
   {
-    "id": "epsilon normae",
+    "id": "eps nor",
     "hip": 80582,
     "hyg_id": 80339,
     "entity": "Star",
@@ -8059,7 +8058,7 @@
     "spectral_class": "B4V"
   },
   {
-    "id": "delta normae",
+    "id": "del nor",
     "hip": 78914,
     "hyg_id": 78673,
     "entity": "Star",
@@ -8076,7 +8075,7 @@
     "spectral_class": "Am"
   },
   {
-    "id": "delta octantis",
+    "id": "del oct",
     "hip": 70638,
     "hyg_id": 70415,
     "entity": "Star",
@@ -8093,7 +8092,7 @@
     "spectral_class": "K2III"
   },
   {
-    "id": "nu octantis",
+    "id": "nu oct",
     "hip": 107089,
     "hyg_id": 106746,
     "entity": "Star",
@@ -8110,7 +8109,7 @@
     "spectral_class": "K0III"
   },
   {
-    "id": "beta octantis",
+    "id": "bet oct",
     "hip": 112405,
     "hyg_id": 112050,
     "entity": "Star",
@@ -8127,7 +8126,7 @@
     "spectral_class": "A9IV/V"
   },
   {
-    "id": "alpha ophiuchi",
+    "id": "rasalhague",
     "hip": 86032,
     "hyg_id": 85769,
     "entity": "Star",
@@ -8144,7 +8143,7 @@
     "spectral_class": "A5III"
   },
   {
-    "id": "kappa ophiuchi",
+    "id": "kap oph",
     "hip": 83000,
     "hyg_id": 82745,
     "entity": "Star",
@@ -8161,7 +8160,7 @@
     "spectral_class": "K2IIIvar"
   },
   {
-    "id": "lambda ophiuchi",
+    "id": "marfik",
     "hip": 80883,
     "hyg_id": 80637,
     "entity": "Star",
@@ -8178,7 +8177,7 @@
     "spectral_class": "A2V"
   },
   {
-    "id": "delta ophiuchi",
+    "id": "yed prior",
     "hip": 79593,
     "hyg_id": 79352,
     "entity": "Star",
@@ -8195,7 +8194,7 @@
     "spectral_class": "M1III"
   },
   {
-    "id": "epsilon ophiuchi",
+    "id": "yed posterior",
     "hip": 79882,
     "hyg_id": 79640,
     "entity": "Star",
@@ -8212,7 +8211,7 @@
     "spectral_class": "G8III"
   },
   {
-    "id": "upsilon ophiuchi",
+    "id": "ups oph",
     "hip": 80628,
     "hyg_id": 80385,
     "entity": "Star",
@@ -8229,7 +8228,7 @@
     "spectral_class": "A3m"
   },
   {
-    "id": "zeta ophiuchi",
+    "id": "zet oph",
     "hip": 81377,
     "hyg_id": 81130,
     "entity": "Star",
@@ -8246,7 +8245,7 @@
     "spectral_class": "O9.5V"
   },
   {
-    "id": "eta ophiuchi",
+    "id": "sabik",
     "hip": 84012,
     "hyg_id": 83755,
     "entity": "Star",
@@ -8263,7 +8262,7 @@
     "spectral_class": "A2.5Va"
   },
   {
-    "id": "beta ophiuchi",
+    "id": "cebalrai",
     "hip": 86742,
     "hyg_id": 86475,
     "entity": "Star",
@@ -8280,7 +8279,7 @@
     "spectral_class": "K2III"
   },
   {
-    "id": "gamma ophiuchi",
+    "id": "gam oph",
     "hip": 87108,
     "hyg_id": 86839,
     "entity": "Star",
@@ -8297,7 +8296,7 @@
     "spectral_class": "A0V"
   },
   {
-    "id": "nu ophiuchi",
+    "id": "nu oph",
     "hip": 88048,
     "hyg_id": 87775,
     "entity": "Star",
@@ -8314,7 +8313,7 @@
     "spectral_class": "K0III"
   },
   {
-    "id": "theta ophiuchi",
+    "id": "the oph",
     "hip": 84970,
     "hyg_id": 84711,
     "entity": "Star",
@@ -8348,7 +8347,7 @@
     "spectral_class": "F3III"
   },
   {
-    "id": "phi ophiuchi",
+    "id": "phi oph",
     "hip": 80894,
     "hyg_id": 80648,
     "entity": "Star",
@@ -8365,7 +8364,7 @@
     "spectral_class": "G8/K0III"
   },
   {
-    "id": "chi ophiuchi",
+    "id": "chi oph",
     "hip": 80569,
     "hyg_id": 80327,
     "entity": "Star",
@@ -8382,7 +8381,7 @@
     "spectral_class": "B2Vne"
   },
   {
-    "id": "psi ophiuchi",
+    "id": "psi oph",
     "hip": 80343,
     "hyg_id": 80101,
     "entity": "Star",
@@ -8399,7 +8398,7 @@
     "spectral_class": "K0III"
   },
   {
-    "id": "rho ophiuchi",
+    "id": "rho oph",
     "hip": 80473,
     "hyg_id": 80232,
     "entity": "Star",
@@ -8416,7 +8415,7 @@
     "spectral_class": "B2V"
   },
   {
-    "id": "alpha orionis",
+    "id": "betelgeuse",
     "hip": 27989,
     "hyg_id": 27919,
     "entity": "Star",
@@ -8433,7 +8432,7 @@
     "spectral_class": "M2Ib"
   },
   {
-    "id": "zeta orionis",
+    "id": "alnitak",
     "hip": 26727,
     "hyg_id": 26662,
     "entity": "Star",
@@ -8450,7 +8449,7 @@
     "spectral_class": "O9.5Ib SB"
   },
   {
-    "id": "kappa orionis",
+    "id": "saiph",
     "hip": 27366,
     "hyg_id": 27298,
     "entity": "Star",
@@ -8467,7 +8466,7 @@
     "spectral_class": "B0.5Iavar"
   },
   {
-    "id": "epsilon orionis",
+    "id": "alnilam",
     "hip": 26311,
     "hyg_id": 26246,
     "entity": "Star",
@@ -8484,7 +8483,7 @@
     "spectral_class": "B0Ia"
   },
   {
-    "id": "delta orionis",
+    "id": "mintaka",
     "hip": 25930,
     "hyg_id": 25865,
     "entity": "Star",
@@ -8501,7 +8500,7 @@
     "spectral_class": "O9.5II"
   },
   {
-    "id": "gamma orionis",
+    "id": "bellatrix",
     "hip": 25336,
     "hyg_id": 25273,
     "entity": "Star",
@@ -8518,7 +8517,7 @@
     "spectral_class": "B2III"
   },
   {
-    "id": "eta orionis",
+    "id": "eta ori",
     "hip": 25281,
     "hyg_id": 25218,
     "entity": "Star",
@@ -8535,7 +8534,7 @@
     "spectral_class": "B1V + B2"
   },
   {
-    "id": "beta orionis",
+    "id": "rigel",
     "hip": 24436,
     "hyg_id": 24378,
     "entity": "Star",
@@ -8552,7 +8551,7 @@
     "spectral_class": "B8Ia"
   },
   {
-    "id": "lambda orionis",
+    "id": "meissa",
     "hip": 26207,
     "hyg_id": 26142,
     "entity": "Star",
@@ -8586,7 +8585,7 @@
     "spectral_class": "A0p Si"
   },
   {
-    "id": "omicron-2 orionis",
+    "id": "omi-2 ori",
     "hip": 22957,
     "hyg_id": 22904,
     "entity": "Star",
@@ -8603,7 +8602,7 @@
     "spectral_class": "K2III"
   },
   {
-    "id": "pi-1 orionis",
+    "id": "pi-1 ori",
     "hip": 22845,
     "hyg_id": 22792,
     "entity": "Star",
@@ -8620,7 +8619,7 @@
     "spectral_class": "A0V"
   },
   {
-    "id": "pi-2 orionis",
+    "id": "pi-2 ori",
     "hip": 22509,
     "hyg_id": 22456,
     "entity": "Star",
@@ -8637,7 +8636,7 @@
     "spectral_class": "A1Vn"
   },
   {
-    "id": "pi-3 orionis",
+    "id": "tabit",
     "hip": 22449,
     "hyg_id": 22396,
     "entity": "Star",
@@ -8654,7 +8653,7 @@
     "spectral_class": "F6V"
   },
   {
-    "id": "pi-4 orionis",
+    "id": "pi-4 ori",
     "hip": 22549,
     "hyg_id": 22496,
     "entity": "Star",
@@ -8671,7 +8670,7 @@
     "spectral_class": "B2III SB"
   },
   {
-    "id": "pi-5 orionis",
+    "id": "pi-5 ori",
     "hip": 22797,
     "hyg_id": 22744,
     "entity": "Star",
@@ -8688,7 +8687,7 @@
     "spectral_class": "B2III SB"
   },
   {
-    "id": "pi-6 orionis",
+    "id": "pi-6 ori",
     "hip": 23123,
     "hyg_id": 23069,
     "entity": "Star",
@@ -8705,7 +8704,7 @@
     "spectral_class": "K2IIvar"
   },
   {
-    "id": "mu orionis",
+    "id": "mu ori",
     "hip": 28614,
     "hyg_id": 28543,
     "entity": "Star",
@@ -8722,7 +8721,7 @@
     "spectral_class": "Am..."
   },
   {
-    "id": "nu orionis",
+    "id": "nu ori",
     "hip": 29038,
     "hyg_id": 28966,
     "entity": "Star",
@@ -8739,7 +8738,7 @@
     "spectral_class": "B3IV"
   },
   {
-    "id": "xi orionis",
+    "id": "xi ori",
     "hip": 29426,
     "hyg_id": 29353,
     "entity": "Star",
@@ -8756,7 +8755,7 @@
     "spectral_class": "B3IV"
   },
   {
-    "id": "chi-2 orionis",
+    "id": "chi-2 ori",
     "hip": 28716,
     "hyg_id": 28645,
     "entity": "Star",
@@ -8773,7 +8772,7 @@
     "spectral_class": "B2Iavar"
   },
   {
-    "id": "chi-1 orionis",
+    "id": "chi-1 ori",
     "hip": 27913,
     "hyg_id": 27844,
     "entity": "Star",
@@ -8790,7 +8789,7 @@
     "spectral_class": "G0V"
   },
   {
-    "id": "alpha pavonis",
+    "id": "peacock",
     "hip": 100751,
     "hyg_id": 100425,
     "entity": "Star",
@@ -8807,7 +8806,7 @@
     "spectral_class": "B2IV"
   },
   {
-    "id": "delta pavonis",
+    "id": "del pav",
     "hip": 99240,
     "hyg_id": 98924,
     "entity": "Star",
@@ -8824,7 +8823,7 @@
     "spectral_class": "G5IV-Vvar"
   },
   {
-    "id": "beta pavonis",
+    "id": "bet pav",
     "hip": 102395,
     "hyg_id": 102064,
     "entity": "Star",
@@ -8841,7 +8840,7 @@
     "spectral_class": "A5IV"
   },
   {
-    "id": "gamma pavonis",
+    "id": "gam pav",
     "hip": 105858,
     "hyg_id": 105519,
     "entity": "Star",
@@ -8858,7 +8857,7 @@
     "spectral_class": "F6V"
   },
   {
-    "id": "zeta pavonis",
+    "id": "zet pav",
     "hip": 91792,
     "hyg_id": 91507,
     "entity": "Star",
@@ -8875,7 +8874,7 @@
     "spectral_class": "K2III"
   },
   {
-    "id": "epsilon pavonis",
+    "id": "eps pav",
     "hip": 98495,
     "hyg_id": 98184,
     "entity": "Star",
@@ -8892,7 +8891,7 @@
     "spectral_class": "A0V"
   },
   {
-    "id": "kappa pavonis",
+    "id": "kap pav",
     "hip": 93015,
     "hyg_id": 92723,
     "entity": "Star",
@@ -8909,7 +8908,7 @@
     "spectral_class": "F5Ib-II:"
   },
   {
-    "id": "pi pavonis",
+    "id": "pi pav",
     "hip": 88866,
     "hyg_id": 88589,
     "entity": "Star",
@@ -8926,7 +8925,7 @@
     "spectral_class": "Am"
   },
   {
-    "id": "eta pavonis",
+    "id": "eta pav",
     "hip": 86929,
     "hyg_id": 86661,
     "entity": "Star",
@@ -8943,7 +8942,7 @@
     "spectral_class": "K1III"
   },
   {
-    "id": "xi pavonis",
+    "id": "xi pav",
     "hip": 90098,
     "hyg_id": 89819,
     "entity": "Star",
@@ -8960,7 +8959,7 @@
     "spectral_class": "M1III SB"
   },
   {
-    "id": "lambda pavonis",
+    "id": "lam pav",
     "hip": 92609,
     "hyg_id": 92319,
     "entity": "Star",
@@ -8977,7 +8976,7 @@
     "spectral_class": "B2II-III"
   },
   {
-    "id": "pi-2 pegasi",
+    "id": "pi-2 peg",
     "hip": 109410,
     "hyg_id": 109064,
     "entity": "Star",
@@ -8994,7 +8993,7 @@
     "spectral_class": "F5III"
   },
   {
-    "id": "eta pegasi",
+    "id": "matar",
     "hip": 112158,
     "hyg_id": 111804,
     "entity": "Star",
@@ -9011,7 +9010,7 @@
     "spectral_class": "G2II-III.."
   },
   {
-    "id": "beta pegasi",
+    "id": "scheat",
     "hip": 113881,
     "hyg_id": 113521,
     "entity": "Star",
@@ -9028,7 +9027,7 @@
     "spectral_class": "M2II-IIIvar"
   },
   {
-    "id": "mu pegasi",
+    "id": "sadalbari",
     "hip": 112748,
     "hyg_id": 112389,
     "entity": "Star",
@@ -9045,7 +9044,7 @@
     "spectral_class": "M2III"
   },
   {
-    "id": "lambda pegasi",
+    "id": "lam peg",
     "hip": 112440,
     "hyg_id": 112084,
     "entity": "Star",
@@ -9062,7 +9061,7 @@
     "spectral_class": "G8II-III"
   },
   {
-    "id": "iota pegasi",
+    "id": "iot peg",
     "hip": 109176,
     "hyg_id": 108830,
     "entity": "Star",
@@ -9079,7 +9078,7 @@
     "spectral_class": "F5V"
   },
   {
-    "id": "kappa pegasi",
+    "id": "kap peg",
     "hip": 107354,
     "hyg_id": 107011,
     "entity": "Star",
@@ -9096,7 +9095,7 @@
     "spectral_class": "F5IV"
   },
   {
-    "id": "alpha pegasi",
+    "id": "markab",
     "hip": 113963,
     "hyg_id": 113603,
     "entity": "Star",
@@ -9113,7 +9112,7 @@
     "spectral_class": "B9.5III"
   },
   {
-    "id": "gamma pegasi",
+    "id": "algenib",
     "hip": 1067,
     "hyg_id": 1065,
     "entity": "Star",
@@ -9130,7 +9129,7 @@
     "spectral_class": "B2IV"
   },
   {
-    "id": "epsilon pegasi",
+    "id": "enif",
     "hip": 107315,
     "hyg_id": 106972,
     "entity": "Star",
@@ -9147,7 +9146,7 @@
     "spectral_class": "K2Ibvar"
   },
   {
-    "id": "theta pegasi",
+    "id": "biham",
     "hip": 109427,
     "hyg_id": 109081,
     "entity": "Star",
@@ -9164,7 +9163,7 @@
     "spectral_class": "A2V"
   },
   {
-    "id": "zeta pegasi",
+    "id": "homam",
     "hip": 112029,
     "hyg_id": 111676,
     "entity": "Star",
@@ -9181,7 +9180,7 @@
     "spectral_class": "B8.5V"
   },
   {
-    "id": "omicron persei",
+    "id": "atik",
     "hip": 17448,
     "hyg_id": 17406,
     "entity": "Star",
@@ -9198,7 +9197,7 @@
     "spectral_class": "B1III"
   },
   {
-    "id": "zeta persei",
+    "id": "zet per",
     "hip": 18246,
     "hyg_id": 18201,
     "entity": "Star",
@@ -9215,7 +9214,7 @@
     "spectral_class": "B1Ib"
   },
   {
-    "id": "xi persei",
+    "id": "menkib",
     "hip": 18614,
     "hyg_id": 18567,
     "entity": "Star",
@@ -9232,7 +9231,7 @@
     "spectral_class": "O7.5Iab:"
   },
   {
-    "id": "epsilon persei",
+    "id": "eps per",
     "hip": 18532,
     "hyg_id": 18485,
     "entity": "Star",
@@ -9249,7 +9248,7 @@
     "spectral_class": "B0.5V"
   },
   {
-    "id": "delta persei",
+    "id": "del per",
     "hip": 17358,
     "hyg_id": 17316,
     "entity": "Star",
@@ -9266,7 +9265,7 @@
     "spectral_class": "B5III SB"
   },
   {
-    "id": "alpha persei",
+    "id": "mirfak",
     "hip": 15863,
     "hyg_id": 15824,
     "entity": "Star",
@@ -9283,7 +9282,7 @@
     "spectral_class": "F5Ib"
   },
   {
-    "id": "gamma persei",
+    "id": "gam per",
     "hip": 14328,
     "hyg_id": 14292,
     "entity": "Star",
@@ -9300,7 +9299,7 @@
     "spectral_class": "G8III+..."
   },
   {
-    "id": "eta persei",
+    "id": "miram",
     "hip": 13268,
     "hyg_id": 13234,
     "entity": "Star",
@@ -9317,7 +9316,7 @@
     "spectral_class": "K3Ib comp SB"
   },
   {
-    "id": "tau persei",
+    "id": "tau per",
     "hip": 13531,
     "hyg_id": 13497,
     "entity": "Star",
@@ -9334,7 +9333,7 @@
     "spectral_class": "G4III..."
   },
   {
-    "id": "iota persei",
+    "id": "iot per",
     "hip": 14632,
     "hyg_id": 14596,
     "entity": "Star",
@@ -9351,7 +9350,7 @@
     "spectral_class": "G0V"
   },
   {
-    "id": "kappa persei",
+    "id": "misam",
     "hip": 14668,
     "hyg_id": 14632,
     "entity": "Star",
@@ -9368,7 +9367,7 @@
     "spectral_class": "K0III"
   },
   {
-    "id": "beta persei",
+    "id": "algol",
     "hip": 14576,
     "hyg_id": 14540,
     "entity": "Star",
@@ -9385,7 +9384,7 @@
     "spectral_class": "B8V"
   },
   {
-    "id": "rho persei",
+    "id": "rho per",
     "hip": 14354,
     "hyg_id": 14318,
     "entity": "Star",
@@ -9419,7 +9418,7 @@
     "spectral_class": "B3Ve"
   },
   {
-    "id": "mu persei",
+    "id": "mu per",
     "hip": 19812,
     "hyg_id": 19762,
     "entity": "Star",
@@ -9453,7 +9452,7 @@
     "spectral_class": "A2V"
   },
   {
-    "id": "lambda persei",
+    "id": "lam per",
     "hip": 19167,
     "hyg_id": 19119,
     "entity": "Star",
@@ -9470,7 +9469,7 @@
     "spectral_class": "A0IVn"
   },
   {
-    "id": "theta persei",
+    "id": "the per",
     "hip": 12777,
     "hyg_id": 12744,
     "entity": "Star",
@@ -9487,7 +9486,7 @@
     "spectral_class": "F7V"
   },
   {
-    "id": "phi persei",
+    "id": "phi per",
     "hip": 8068,
     "hyg_id": 8053,
     "entity": "Star",
@@ -9504,7 +9503,7 @@
     "spectral_class": "B2Vpe"
   },
   {
-    "id": "alpha phoenicis",
+    "id": "ankaa",
     "hip": 2081,
     "hyg_id": 2076,
     "entity": "Star",
@@ -9521,7 +9520,7 @@
     "spectral_class": "K0III..."
   },
   {
-    "id": "beta phoenicis",
+    "id": "bet phe",
     "hip": 5165,
     "hyg_id": 5154,
     "entity": "Star",
@@ -9538,7 +9537,7 @@
     "spectral_class": "G8IIIvar"
   },
   {
-    "id": "gamma phoenicis",
+    "id": "gam phe",
     "hip": 6867,
     "hyg_id": 6853,
     "entity": "Star",
@@ -9555,7 +9554,7 @@
     "spectral_class": "K5II-III"
   },
   {
-    "id": "epsilon phoenicis",
+    "id": "eps phe",
     "hip": 765,
     "hyg_id": 763,
     "entity": "Star",
@@ -9572,7 +9571,7 @@
     "spectral_class": "K0III"
   },
   {
-    "id": "zeta phoenicis",
+    "id": "wurren",
     "hip": 5348,
     "hyg_id": 5337,
     "entity": "Star",
@@ -9589,7 +9588,7 @@
     "spectral_class": "B6V + B0V"
   },
   {
-    "id": "delta phoenicis",
+    "id": "del phe",
     "hip": 7083,
     "hyg_id": 7068,
     "entity": "Star",
@@ -9606,7 +9605,7 @@
     "spectral_class": "K0III-IV"
   },
   {
-    "id": "alpha pictoris",
+    "id": "alp pic",
     "hip": 32607,
     "hyg_id": 32521,
     "entity": "Star",
@@ -9623,7 +9622,7 @@
     "spectral_class": "A7IV"
   },
   {
-    "id": "gamma pictoris",
+    "id": "gam pic",
     "hip": 27530,
     "hyg_id": 27461,
     "entity": "Star",
@@ -9640,7 +9639,7 @@
     "spectral_class": "K1III"
   },
   {
-    "id": "beta pictoris",
+    "id": "bet pic",
     "hip": 27321,
     "hyg_id": 27253,
     "entity": "Star",
@@ -9657,7 +9656,7 @@
     "spectral_class": "A3V"
   },
   {
-    "id": "alpha piscis austrini",
+    "id": "fomalhaut",
     "hip": 113368,
     "hyg_id": 113008,
     "entity": "Star",
@@ -9674,7 +9673,7 @@
     "spectral_class": "A3V"
   },
   {
-    "id": "delta piscis austrini",
+    "id": "del psa",
     "hip": 113246,
     "hyg_id": 112886,
     "entity": "Star",
@@ -9691,7 +9690,7 @@
     "spectral_class": "G8III"
   },
   {
-    "id": "gamma piscis austrini",
+    "id": "gam psa",
     "hip": 112948,
     "hyg_id": 112588,
     "entity": "Star",
@@ -9708,7 +9707,7 @@
     "spectral_class": "A0III"
   },
   {
-    "id": "beta piscis austrini",
+    "id": "bet psa",
     "hip": 111188,
     "hyg_id": 110841,
     "entity": "Star",
@@ -9725,7 +9724,7 @@
     "spectral_class": "A1V"
   },
   {
-    "id": "mu piscis austrini",
+    "id": "mu psa",
     "hip": 109285,
     "hyg_id": 108939,
     "entity": "Star",
@@ -9742,7 +9741,7 @@
     "spectral_class": "A2V"
   },
   {
-    "id": "iota piscis austrini",
+    "id": "iot psa",
     "hip": 107380,
     "hyg_id": 107037,
     "entity": "Star",
@@ -9759,7 +9758,7 @@
     "spectral_class": "B9.5V"
   },
   {
-    "id": "theta piscis austrini",
+    "id": "the psa",
     "hip": 107608,
     "hyg_id": 107265,
     "entity": "Star",
@@ -9776,7 +9775,7 @@
     "spectral_class": "A1V"
   },
   {
-    "id": "epsilon piscis austrini",
+    "id": "eps psa",
     "hip": 111954,
     "hyg_id": 111601,
     "entity": "Star",
@@ -9793,7 +9792,7 @@
     "spectral_class": "B8V"
   },
   {
-    "id": "phi piscium",
+    "id": "phi psc",
     "hip": 5742,
     "hyg_id": 5730,
     "entity": "Star",
@@ -9810,7 +9809,7 @@
     "spectral_class": "K0III..."
   },
   {
-    "id": "upsilon piscium",
+    "id": "ups psc",
     "hip": 6193,
     "hyg_id": 6179,
     "entity": "Star",
@@ -9827,7 +9826,7 @@
     "spectral_class": "A3V"
   },
   {
-    "id": "tau piscium",
+    "id": "tau psc",
     "hip": 5586,
     "hyg_id": 5574,
     "entity": "Star",
@@ -9844,7 +9843,7 @@
     "spectral_class": "K0III-IV..."
   },
   {
-    "id": "eta piscium",
+    "id": "alpherg",
     "hip": 7097,
     "hyg_id": 7083,
     "entity": "Star",
@@ -9861,7 +9860,7 @@
     "spectral_class": "G8III"
   },
   {
-    "id": "omicron piscium",
+    "id": "torcular",
     "hip": 8198,
     "hyg_id": 8183,
     "entity": "Star",
@@ -9878,7 +9877,7 @@
     "spectral_class": "K0III"
   },
   {
-    "id": "alpha piscium",
+    "id": "alp psc",
     "hip": 9487,
     "hyg_id": 9467,
     "entity": "Star",
@@ -9895,7 +9894,7 @@
     "spectral_class": "A2"
   },
   {
-    "id": "nu piscium",
+    "id": "nu psc",
     "hip": 7884,
     "hyg_id": 7869,
     "entity": "Star",
@@ -9912,7 +9911,7 @@
     "spectral_class": "K3III"
   },
   {
-    "id": "epsilon piscium",
+    "id": "eps psc",
     "hip": 4906,
     "hyg_id": 4896,
     "entity": "Star",
@@ -9929,7 +9928,7 @@
     "spectral_class": "K0III"
   },
   {
-    "id": "delta piscium",
+    "id": "del psc",
     "hip": 3786,
     "hyg_id": 3778,
     "entity": "Star",
@@ -9946,7 +9945,7 @@
     "spectral_class": "K5III"
   },
   {
-    "id": "omega piscium",
+    "id": "ome psc",
     "hip": 118268,
     "hyg_id": 117900,
     "entity": "Star",
@@ -9963,7 +9962,7 @@
     "spectral_class": "F4IV"
   },
   {
-    "id": "iota piscium",
+    "id": "iot psc",
     "hip": 116771,
     "hyg_id": 116405,
     "entity": "Star",
@@ -9980,7 +9979,7 @@
     "spectral_class": "F7V"
   },
   {
-    "id": "theta piscium",
+    "id": "the psc",
     "hip": 115830,
     "hyg_id": 115465,
     "entity": "Star",
@@ -9997,7 +9996,7 @@
     "spectral_class": "K1III"
   },
   {
-    "id": "gamma piscium",
+    "id": "gam psc",
     "hip": 114971,
     "hyg_id": 114609,
     "entity": "Star",
@@ -10014,7 +10013,7 @@
     "spectral_class": "G7III"
   },
   {
-    "id": "kappa piscium",
+    "id": "kap psc",
     "hip": 115738,
     "hyg_id": 115376,
     "entity": "Star",
@@ -10031,7 +10030,7 @@
     "spectral_class": "A0p"
   },
   {
-    "id": "lambda piscium",
+    "id": "lam psc",
     "hip": 116928,
     "hyg_id": 116562,
     "entity": "Star",
@@ -10048,7 +10047,7 @@
     "spectral_class": "A7V"
   },
   {
-    "id": "zeta puppis",
+    "id": "naos",
     "hip": 39429,
     "hyg_id": 39318,
     "entity": "Star",
@@ -10065,7 +10064,7 @@
     "spectral_class": "O5IAf"
   },
   {
-    "id": "rho puppis",
+    "id": "tureis",
     "hip": 39757,
     "hyg_id": 39644,
     "entity": "Star",
@@ -10082,7 +10081,7 @@
     "spectral_class": "F2mF5IIp"
   },
   {
-    "id": "xi puppis",
+    "id": "azmidi",
     "hip": 38170,
     "hyg_id": 38062,
     "entity": "Star",
@@ -10133,7 +10132,7 @@
     "spectral_class": "B8V"
   },
   {
-    "id": "pi puppis",
+    "id": "pi pup",
     "hip": 35264,
     "hyg_id": 35169,
     "entity": "Star",
@@ -10150,7 +10149,7 @@
     "spectral_class": "K3Ib"
   },
   {
-    "id": "nu puppis",
+    "id": "nu pup",
     "hip": 31685,
     "hyg_id": 31605,
     "entity": "Star",
@@ -10184,7 +10183,7 @@
     "spectral_class": "A2Iab"
   },
   {
-    "id": "omicron puppis",
+    "id": "omi pup",
     "hip": 38070,
     "hyg_id": 37962,
     "entity": "Star",
@@ -10201,7 +10200,7 @@
     "spectral_class": "B1IV:nne"
   },
   {
-    "id": "beta pyxidis",
+    "id": "bet pyx",
     "hip": 42515,
     "hyg_id": 42396,
     "entity": "Star",
@@ -10218,7 +10217,7 @@
     "spectral_class": "G5II/III"
   },
   {
-    "id": "alpha pyxidis",
+    "id": "alp pyx",
     "hip": 42828,
     "hyg_id": 42709,
     "entity": "Star",
@@ -10235,7 +10234,7 @@
     "spectral_class": "B1.5III"
   },
   {
-    "id": "gamma pyxidis",
+    "id": "gam pyx",
     "hip": 43409,
     "hyg_id": 43286,
     "entity": "Star",
@@ -10252,7 +10251,7 @@
     "spectral_class": "K3III"
   },
   {
-    "id": "alpha reticuli",
+    "id": "alp ret",
     "hip": 19780,
     "hyg_id": 19730,
     "entity": "Star",
@@ -10269,7 +10268,7 @@
     "spectral_class": "G7III"
   },
   {
-    "id": "beta reticuli",
+    "id": "bet ret",
     "hip": 17440,
     "hyg_id": 17398,
     "entity": "Star",
@@ -10286,7 +10285,7 @@
     "spectral_class": "K0IV SB"
   },
   {
-    "id": "delta reticuli",
+    "id": "del ret",
     "hip": 18597,
     "hyg_id": 18550,
     "entity": "Star",
@@ -10303,7 +10302,7 @@
     "spectral_class": "M2III"
   },
   {
-    "id": "epsilon reticuli",
+    "id": "eps ret",
     "hip": 19921,
     "hyg_id": 19871,
     "entity": "Star",
@@ -10320,7 +10319,7 @@
     "spectral_class": "K2IV"
   },
   {
-    "id": "alpha sculptoris",
+    "id": "alp scl",
     "hip": 4577,
     "hyg_id": 4567,
     "entity": "Star",
@@ -10337,7 +10336,7 @@
     "spectral_class": "B7IIIp"
   },
   {
-    "id": "delta sculptoris",
+    "id": "del scl",
     "hip": 117452,
     "hyg_id": 117085,
     "entity": "Star",
@@ -10354,7 +10353,7 @@
     "spectral_class": "A0V"
   },
   {
-    "id": "gamma sculptoris",
+    "id": "gam scl",
     "hip": 115102,
     "hyg_id": 114740,
     "entity": "Star",
@@ -10371,7 +10370,7 @@
     "spectral_class": "K1III"
   },
   {
-    "id": "beta sculptoris",
+    "id": "bet scl",
     "hip": 116231,
     "hyg_id": 115865,
     "entity": "Star",
@@ -10388,7 +10387,7 @@
     "spectral_class": "B9.5IVMNpe."
   },
   {
-    "id": "beta-1 scorpii",
+    "id": "acrab",
     "hip": 78820,
     "hyg_id": 78580,
     "entity": "Star",
@@ -10405,7 +10404,7 @@
     "spectral_class": "B0.5V"
   },
   {
-    "id": "delta scorpii",
+    "id": "dschubba",
     "hip": 78401,
     "hyg_id": 78165,
     "entity": "Star",
@@ -10422,7 +10421,7 @@
     "spectral_class": "B0.2IV"
   },
   {
-    "id": "pi scorpii",
+    "id": "fang",
     "hip": 78265,
     "hyg_id": 78029,
     "entity": "Star",
@@ -10439,7 +10438,7 @@
     "spectral_class": "B1V + B2V"
   },
   {
-    "id": "sigma scorpii",
+    "id": "alniyat",
     "hip": 80112,
     "hyg_id": 79870,
     "entity": "Star",
@@ -10456,7 +10455,7 @@
     "spectral_class": "B1III"
   },
   {
-    "id": "alpha scorpii",
+    "id": "antares",
     "hip": 80763,
     "hyg_id": 80519,
     "entity": "Star",
@@ -10473,7 +10472,7 @@
     "spectral_class": "M1Ib + B2.5V"
   },
   {
-    "id": "tau scorpii",
+    "id": "paikauhale",
     "hip": 81266,
     "hyg_id": 81020,
     "entity": "Star",
@@ -10490,7 +10489,7 @@
     "spectral_class": "B0V"
   },
   {
-    "id": "epsilon scorpii",
+    "id": "larawag",
     "hip": 82396,
     "hyg_id": 82144,
     "entity": "Star",
@@ -10507,7 +10506,7 @@
     "spectral_class": "K2IIIb"
   },
   {
-    "id": "mu-1 scorpii",
+    "id": "xamidimura",
     "hip": 82514,
     "hyg_id": 82263,
     "entity": "Star",
@@ -10524,7 +10523,7 @@
     "spectral_class": "B1.5IV + B"
   },
   {
-    "id": "zeta-2 scorpii",
+    "id": "zet-2 sco",
     "hip": 82729,
     "hyg_id": 82477,
     "entity": "Star",
@@ -10541,7 +10540,7 @@
     "spectral_class": "K4III"
   },
   {
-    "id": "eta scorpii",
+    "id": "eta sco",
     "hip": 84143,
     "hyg_id": 83885,
     "entity": "Star",
@@ -10558,7 +10557,7 @@
     "spectral_class": "F3p"
   },
   {
-    "id": "theta scorpii",
+    "id": "sargas",
     "hip": 86228,
     "hyg_id": 85965,
     "entity": "Star",
@@ -10575,7 +10574,7 @@
     "spectral_class": "F1II"
   },
   {
-    "id": "iota-1 scorpii",
+    "id": "iot-1 sco",
     "hip": 87073,
     "hyg_id": 86804,
     "entity": "Star",
@@ -10592,7 +10591,7 @@
     "spectral_class": "F3Ia"
   },
   {
-    "id": "kappa scorpii",
+    "id": "kap sco",
     "hip": 86670,
     "hyg_id": 86403,
     "entity": "Star",
@@ -10609,7 +10608,7 @@
     "spectral_class": "B1.5III"
   },
   {
-    "id": "upsilon scorpii",
+    "id": "lesath",
     "hip": 85696,
     "hyg_id": 85436,
     "entity": "Star",
@@ -10626,7 +10625,7 @@
     "spectral_class": "B2IV"
   },
   {
-    "id": "lambda scorpii",
+    "id": "shaula",
     "hip": 85927,
     "hyg_id": 85665,
     "entity": "Star",
@@ -10660,7 +10659,7 @@
     "spectral_class": "K0/K1III"
   },
   {
-    "id": "nu scorpii",
+    "id": "jabbah",
     "hip": 79374,
     "hyg_id": 79134,
     "entity": "Star",
@@ -10677,7 +10676,7 @@
     "spectral_class": "B2IV"
   },
   {
-    "id": "rho scorpii",
+    "id": "iklil",
     "hip": 78104,
     "hyg_id": 77868,
     "entity": "Star",
@@ -10694,7 +10693,7 @@
     "spectral_class": "B2IV/V"
   },
   {
-    "id": "beta scuti",
+    "id": "bet sct",
     "hip": 92175,
     "hyg_id": 91888,
     "entity": "Star",
@@ -10711,7 +10710,7 @@
     "spectral_class": "G5II..."
   },
   {
-    "id": "alpha scuti",
+    "id": "alp sct",
     "hip": 91117,
     "hyg_id": 90835,
     "entity": "Star",
@@ -10728,7 +10727,7 @@
     "spectral_class": "K2III"
   },
   {
-    "id": "gamma scuti",
+    "id": "gam sct",
     "hip": 90595,
     "hyg_id": 90315,
     "entity": "Star",
@@ -10745,7 +10744,7 @@
     "spectral_class": "A1IV/V"
   },
   {
-    "id": "delta scuti",
+    "id": "del sct",
     "hip": 91726,
     "hyg_id": 91441,
     "entity": "Star",
@@ -10762,7 +10761,7 @@
     "spectral_class": "F2IIIp d Del"
   },
   {
-    "id": "beta serpentis",
+    "id": "bet ser",
     "hip": 77233,
     "hyg_id": 76997,
     "entity": "Star",
@@ -10779,7 +10778,7 @@
     "spectral_class": "A3V"
   },
   {
-    "id": "gamma serpentis",
+    "id": "gam ser",
     "hip": 78072,
     "hyg_id": 77836,
     "entity": "Star",
@@ -10796,7 +10795,7 @@
     "spectral_class": "F6V"
   },
   {
-    "id": "kappa serpentis",
+    "id": "gudja",
     "hip": 77450,
     "hyg_id": 77214,
     "entity": "Star",
@@ -10813,7 +10812,7 @@
     "spectral_class": "M1III"
   },
   {
-    "id": "iota serpentis",
+    "id": "iot ser",
     "hip": 76852,
     "hyg_id": 76616,
     "entity": "Star",
@@ -10830,7 +10829,7 @@
     "spectral_class": "A1V"
   },
   {
-    "id": "delta serpentis",
+    "id": "del ser",
     "hip": 76276,
     "hyg_id": 76044,
     "entity": "Star",
@@ -10847,7 +10846,7 @@
     "spectral_class": "F0IV"
   },
   {
-    "id": "alpha serpentis",
+    "id": "unukalhai",
     "hip": 77070,
     "hyg_id": 76835,
     "entity": "Star",
@@ -10864,7 +10863,7 @@
     "spectral_class": "K2III"
   },
   {
-    "id": "epsilon serpentis",
+    "id": "eps ser",
     "hip": 77622,
     "hyg_id": 77386,
     "entity": "Star",
@@ -10881,7 +10880,7 @@
     "spectral_class": "A2m"
   },
   {
-    "id": "mu serpentis",
+    "id": "mu ser",
     "hip": 77516,
     "hyg_id": 77280,
     "entity": "Star",
@@ -10898,7 +10897,7 @@
     "spectral_class": "A0V"
   },
   {
-    "id": "xi serpentis",
+    "id": "xi ser",
     "hip": 86263,
     "hyg_id": 85998,
     "entity": "Star",
@@ -10915,7 +10914,7 @@
     "spectral_class": "F0IIIp"
   },
   {
-    "id": "eta serpentis",
+    "id": "eta ser",
     "hip": 89962,
     "hyg_id": 89684,
     "entity": "Star",
@@ -10932,7 +10931,7 @@
     "spectral_class": "K0III-IV"
   },
   {
-    "id": "theta-1 serpentis",
+    "id": "alya",
     "hip": 92946,
     "hyg_id": 92654,
     "entity": "Star",
@@ -10949,7 +10948,7 @@
     "spectral_class": "A5V"
   },
   {
-    "id": "gamma sextantis",
+    "id": "gam sex",
     "hip": 48437,
     "hyg_id": 48300,
     "entity": "Star",
@@ -10966,7 +10965,7 @@
     "spectral_class": "A2V"
   },
   {
-    "id": "alpha sextantis",
+    "id": "alp sex",
     "hip": 49641,
     "hyg_id": 49500,
     "entity": "Star",
@@ -10983,7 +10982,7 @@
     "spectral_class": "A0III"
   },
   {
-    "id": "beta sextantis",
+    "id": "bet sex",
     "hip": 51437,
     "hyg_id": 51290,
     "entity": "Star",
@@ -11000,7 +10999,7 @@
     "spectral_class": "B6V"
   },
   {
-    "id": "delta sextantis",
+    "id": "del sex",
     "hip": 51362,
     "hyg_id": 51217,
     "entity": "Star",
@@ -11017,7 +11016,7 @@
     "spectral_class": "B9.5V"
   },
   {
-    "id": "gamma sagittae",
+    "id": "gam sge",
     "hip": 98337,
     "hyg_id": 98026,
     "entity": "Star",
@@ -11034,7 +11033,7 @@
     "spectral_class": "K5III"
   },
   {
-    "id": "delta sagittae",
+    "id": "del sge",
     "hip": 97365,
     "hyg_id": 97056,
     "entity": "Star",
@@ -11051,7 +11050,7 @@
     "spectral_class": "M2II + B6"
   },
   {
-    "id": "alpha sagittae",
+    "id": "sham",
     "hip": 96757,
     "hyg_id": 96450,
     "entity": "Star",
@@ -11068,7 +11067,7 @@
     "spectral_class": "G0II"
   },
   {
-    "id": "beta sagittae",
+    "id": "bet sge",
     "hip": 96837,
     "hyg_id": 96530,
     "entity": "Star",
@@ -11085,7 +11084,7 @@
     "spectral_class": "G8II"
   },
   {
-    "id": "epsilon sagittarii",
+    "id": "kaus australis",
     "hip": 90185,
     "hyg_id": 89906,
     "entity": "Star",
@@ -11102,7 +11101,7 @@
     "spectral_class": "B9.5III"
   },
   {
-    "id": "gamma-2 sagittarii",
+    "id": "alnasl",
     "hip": 88635,
     "hyg_id": 88361,
     "entity": "Star",
@@ -11119,7 +11118,7 @@
     "spectral_class": "K0III"
   },
   {
-    "id": "delta sagittarii",
+    "id": "kaus media",
     "hip": 89931,
     "hyg_id": 89653,
     "entity": "Star",
@@ -11136,7 +11135,7 @@
     "spectral_class": "K3III"
   },
   {
-    "id": "lambda sagittarii",
+    "id": "kaus borealis",
     "hip": 90496,
     "hyg_id": 90217,
     "entity": "Star",
@@ -11153,7 +11152,7 @@
     "spectral_class": "K1IIIb"
   },
   {
-    "id": "phi sagittarii",
+    "id": "phi sgr",
     "hip": 92041,
     "hyg_id": 91754,
     "entity": "Star",
@@ -11170,7 +11169,7 @@
     "spectral_class": "B8.5III"
   },
   {
-    "id": "sigma sagittarii",
+    "id": "nunki",
     "hip": 92855,
     "hyg_id": 92564,
     "entity": "Star",
@@ -11187,7 +11186,7 @@
     "spectral_class": "B2.5V"
   },
   {
-    "id": "tau sagittarii",
+    "id": "tau sgr",
     "hip": 93864,
     "hyg_id": 93569,
     "entity": "Star",
@@ -11204,7 +11203,7 @@
     "spectral_class": "K1/K2III"
   },
   {
-    "id": "zeta sagittarii",
+    "id": "ascella",
     "hip": 93506,
     "hyg_id": 93213,
     "entity": "Star",
@@ -11221,7 +11220,7 @@
     "spectral_class": "A3IV"
   },
   {
-    "id": "eta sagittarii",
+    "id": "eta sgr",
     "hip": 89642,
     "hyg_id": 89364,
     "entity": "Star",
@@ -11238,7 +11237,7 @@
     "spectral_class": "M2III"
   },
   {
-    "id": "mu sagittarii",
+    "id": "polis",
     "hip": 89341,
     "hyg_id": 89064,
     "entity": "Star",
@@ -11255,7 +11254,7 @@
     "spectral_class": "B2III:"
   },
   {
-    "id": "rho-1 sagittarii",
+    "id": "rho-1 sgr",
     "hip": 95168,
     "hyg_id": 94873,
     "entity": "Star",
@@ -11272,7 +11271,7 @@
     "spectral_class": "F0III/IV"
   },
   {
-    "id": "pi sagittarii",
+    "id": "albaldah",
     "hip": 94141,
     "hyg_id": 93846,
     "entity": "Star",
@@ -11289,7 +11288,7 @@
     "spectral_class": "F2II/III"
   },
   {
-    "id": "omicron sagittarii",
+    "id": "omi sgr",
     "hip": 93683,
     "hyg_id": 93388,
     "entity": "Star",
@@ -11306,7 +11305,7 @@
     "spectral_class": "K0III"
   },
   {
-    "id": "xi-2 sagittarii",
+    "id": "xi-2 sgr",
     "hip": 93085,
     "hyg_id": 92793,
     "entity": "Star",
@@ -11323,7 +11322,7 @@
     "spectral_class": "G8/K0II/III"
   },
   {
-    "id": "zeta tauri",
+    "id": "tianguan",
     "hip": 26451,
     "hyg_id": 26386,
     "entity": "Star",
@@ -11340,7 +11339,7 @@
     "spectral_class": "B4IIIp"
   },
   {
-    "id": "alpha tauri",
+    "id": "aldebaran",
     "hip": 21421,
     "hyg_id": 21368,
     "entity": "Star",
@@ -11357,7 +11356,7 @@
     "spectral_class": "K5III"
   },
   {
-    "id": "theta-2 tauri",
+    "id": "chamukuy",
     "hip": 20894,
     "hyg_id": 20842,
     "entity": "Star",
@@ -11374,7 +11373,7 @@
     "spectral_class": "A7III"
   },
   {
-    "id": "gamma tauri",
+    "id": "prima hyadum",
     "hip": 20205,
     "hyg_id": 20155,
     "entity": "Star",
@@ -11391,7 +11390,7 @@
     "spectral_class": "G8III"
   },
   {
-    "id": "delta-1 tauri",
+    "id": "secunda hyadum",
     "hip": 20455,
     "hyg_id": 20405,
     "entity": "Star",
@@ -11408,7 +11407,7 @@
     "spectral_class": "G8III"
   },
   {
-    "id": "epsilon tauri",
+    "id": "ain",
     "hip": 20889,
     "hyg_id": 20837,
     "entity": "Star",
@@ -11425,7 +11424,7 @@
     "spectral_class": "K0III"
   },
   {
-    "id": "xi tauri",
+    "id": "xi tau",
     "hip": 16083,
     "hyg_id": 16044,
     "entity": "Star",
@@ -11442,7 +11441,7 @@
     "spectral_class": "B9Vn"
   },
   {
-    "id": "nu tauri",
+    "id": "nu tau",
     "hip": 18907,
     "hyg_id": 18860,
     "entity": "Star",
@@ -11459,7 +11458,7 @@
     "spectral_class": "A1V"
   },
   {
-    "id": "omicron tauri",
+    "id": "omi tau",
     "hip": 15900,
     "hyg_id": 15861,
     "entity": "Star",
@@ -11493,7 +11492,7 @@
     "spectral_class": "F9V"
   },
   {
-    "id": "lambda tauri",
+    "id": "lam tau",
     "hip": 18724,
     "hyg_id": 18677,
     "entity": "Star",
@@ -11510,7 +11509,7 @@
     "spectral_class": "B3V + A"
   },
   {
-    "id": "epsilon telescopii",
+    "id": "eps tel",
     "hip": 89112,
     "hyg_id": 88835,
     "entity": "Star",
@@ -11527,7 +11526,7 @@
     "spectral_class": "G5III"
   },
   {
-    "id": "alpha telescopii",
+    "id": "alp tel",
     "hip": 90422,
     "hyg_id": 90143,
     "entity": "Star",
@@ -11544,7 +11543,7 @@
     "spectral_class": "B3IV"
   },
   {
-    "id": "zeta telescopii",
+    "id": "zet tel",
     "hip": 90568,
     "hyg_id": 90288,
     "entity": "Star",
@@ -11561,7 +11560,7 @@
     "spectral_class": "G8/K0III"
   },
   {
-    "id": "alpha trianguli",
+    "id": "mothallah",
     "hip": 8796,
     "hyg_id": 8777,
     "entity": "Star",
@@ -11578,7 +11577,7 @@
     "spectral_class": "F6IV"
   },
   {
-    "id": "beta trianguli",
+    "id": "bet tri",
     "hip": 10064,
     "hyg_id": 10041,
     "entity": "Star",
@@ -11595,7 +11594,7 @@
     "spectral_class": "A5III"
   },
   {
-    "id": "gamma trianguli",
+    "id": "gam tri",
     "hip": 10670,
     "hyg_id": 10645,
     "entity": "Star",
@@ -11612,7 +11611,7 @@
     "spectral_class": "A1Vnn"
   },
   {
-    "id": "beta-1 tucanae",
+    "id": "bet-1 tuc",
     "hip": 2484,
     "hyg_id": 2478,
     "entity": "Star",
@@ -11629,7 +11628,7 @@
     "spectral_class": "B9V"
   },
   {
-    "id": "zeta tucanae",
+    "id": "zet tuc",
     "hip": 1599,
     "hyg_id": 1595,
     "entity": "Star",
@@ -11646,7 +11645,7 @@
     "spectral_class": "F9V"
   },
   {
-    "id": "epsilon tucanae",
+    "id": "eps tuc",
     "hip": 118322,
     "hyg_id": 117954,
     "entity": "Star",
@@ -11663,7 +11662,7 @@
     "spectral_class": "B9IV"
   },
   {
-    "id": "delta tucanae",
+    "id": "del tuc",
     "hip": 110838,
     "hyg_id": 110492,
     "entity": "Star",
@@ -11680,7 +11679,7 @@
     "spectral_class": "B8V"
   },
   {
-    "id": "alpha tucanae",
+    "id": "alp tuc",
     "hip": 110130,
     "hyg_id": 109784,
     "entity": "Star",
@@ -11697,7 +11696,7 @@
     "spectral_class": "K3III"
   },
   {
-    "id": "gamma tucanae",
+    "id": "gam tuc",
     "hip": 114996,
     "hyg_id": 114634,
     "entity": "Star",
@@ -11714,7 +11713,7 @@
     "spectral_class": "F1III"
   },
   {
-    "id": "gamma ursae majoris",
+    "id": "phecda",
     "hip": 58001,
     "hyg_id": 57828,
     "entity": "Star",
@@ -11731,7 +11730,7 @@
     "spectral_class": "A0V SB"
   },
   {
-    "id": "chi ursae majoris",
+    "id": "taiyangshou",
     "hip": 57399,
     "hyg_id": 57226,
     "entity": "Star",
@@ -11748,7 +11747,7 @@
     "spectral_class": "K0III"
   },
   {
-    "id": "psi ursae majoris",
+    "id": "psi uma",
     "hip": 54539,
     "hyg_id": 54380,
     "entity": "Star",
@@ -11765,7 +11764,7 @@
     "spectral_class": "K1III"
   },
   {
-    "id": "mu ursae majoris",
+    "id": "tania australis",
     "hip": 50801,
     "hyg_id": 50655,
     "entity": "Star",
@@ -11782,7 +11781,7 @@
     "spectral_class": "M0III SB"
   },
   {
-    "id": "lambda ursae majoris",
+    "id": "tania borealis",
     "hip": 50372,
     "hyg_id": 50230,
     "entity": "Star",
@@ -11799,7 +11798,7 @@
     "spectral_class": "A2IV"
   },
   {
-    "id": "nu ursae majoris",
+    "id": "alula borealis",
     "hip": 55219,
     "hyg_id": 55055,
     "entity": "Star",
@@ -11816,7 +11815,7 @@
     "spectral_class": "K3III SB"
   },
   {
-    "id": "delta ursae majoris",
+    "id": "megrez",
     "hip": 59774,
     "hyg_id": 59592,
     "entity": "Star",
@@ -11833,7 +11832,7 @@
     "spectral_class": "A3Vvar"
   },
   {
-    "id": "alpha ursae majoris",
+    "id": "dubhe",
     "hip": 54061,
     "hyg_id": 53905,
     "entity": "Star",
@@ -11850,7 +11849,7 @@
     "spectral_class": "F7V comp"
   },
   {
-    "id": "beta ursae majoris",
+    "id": "merak",
     "hip": 53910,
     "hyg_id": 53754,
     "entity": "Star",
@@ -11867,7 +11866,7 @@
     "spectral_class": "A1V"
   },
   {
-    "id": "epsilon ursae majoris",
+    "id": "alioth",
     "hip": 62956,
     "hyg_id": 62757,
     "entity": "Star",
@@ -11884,7 +11883,7 @@
     "spectral_class": "A0p"
   },
   {
-    "id": "zeta ursae majoris",
+    "id": "mizar",
     "hip": 65378,
     "hyg_id": 65173,
     "entity": "Star",
@@ -11901,7 +11900,7 @@
     "spectral_class": "A2V"
   },
   {
-    "id": "eta ursae majoris",
+    "id": "alkaid",
     "hip": 67301,
     "hyg_id": 67088,
     "entity": "Star",
@@ -11935,7 +11934,7 @@
     "spectral_class": "F0IV"
   },
   {
-    "id": "upsilon ursae majoris",
+    "id": "ups uma",
     "hip": 48319,
     "hyg_id": 48182,
     "entity": "Star",
@@ -11952,7 +11951,7 @@
     "spectral_class": "F0IV"
   },
   {
-    "id": "omicron ursae majoris",
+    "id": "muscida",
     "hip": 41704,
     "hyg_id": 41586,
     "entity": "Star",
@@ -11969,7 +11968,7 @@
     "spectral_class": "G4II-III"
   },
   {
-    "id": "theta ursae majoris",
+    "id": "the uma",
     "hip": 46853,
     "hyg_id": 46720,
     "entity": "Star",
@@ -11986,7 +11985,7 @@
     "spectral_class": "F6IV"
   },
   {
-    "id": "kappa ursae majoris",
+    "id": "alkaphrah",
     "hip": 44471,
     "hyg_id": 44343,
     "entity": "Star",
@@ -12003,7 +12002,7 @@
     "spectral_class": "A1Vn"
   },
   {
-    "id": "iota ursae majoris",
+    "id": "talitha",
     "hip": 44127,
     "hyg_id": 44000,
     "entity": "Star",
@@ -12020,7 +12019,7 @@
     "spectral_class": "A7IV"
   },
   {
-    "id": "alpha ursae minoris",
+    "id": "polaris",
     "hip": 11767,
     "hyg_id": 11734,
     "entity": "Star",
@@ -12037,7 +12036,7 @@
     "spectral_class": "F7:Ib-IIv SB"
   },
   {
-    "id": "delta ursae minoris",
+    "id": "yildun",
     "hip": 85822,
     "hyg_id": 85560,
     "entity": "Star",
@@ -12054,7 +12053,7 @@
     "spectral_class": "A1Vn"
   },
   {
-    "id": "epsilon ursae minoris",
+    "id": "eps umi",
     "hip": 82080,
     "hyg_id": 81830,
     "entity": "Star",
@@ -12071,7 +12070,7 @@
     "spectral_class": "G5IIIvar"
   },
   {
-    "id": "zeta ursae minoris",
+    "id": "zet umi",
     "hip": 77055,
     "hyg_id": 76819,
     "entity": "Star",
@@ -12088,7 +12087,7 @@
     "spectral_class": "A3Vn"
   },
   {
-    "id": "eta ursae minoris",
+    "id": "eta umi",
     "hip": 79822,
     "hyg_id": 79580,
     "entity": "Star",
@@ -12105,7 +12104,7 @@
     "spectral_class": "F5V"
   },
   {
-    "id": "gamma ursae minoris",
+    "id": "pherkad",
     "hip": 75097,
     "hyg_id": 74868,
     "entity": "Star",
@@ -12122,7 +12121,7 @@
     "spectral_class": "A3II-III"
   },
   {
-    "id": "beta ursae minoris",
+    "id": "kochab",
     "hip": 72607,
     "hyg_id": 72380,
     "entity": "Star",
@@ -12139,7 +12138,7 @@
     "spectral_class": "K4IIIvar"
   },
   {
-    "id": "lambda velorum",
+    "id": "suhail",
     "hip": 44816,
     "hyg_id": 44689,
     "entity": "Star",
@@ -12156,7 +12155,7 @@
     "spectral_class": "K4Ib-II"
   },
   {
-    "id": "psi velorum",
+    "id": "psi vel",
     "hip": 46651,
     "hyg_id": 46518,
     "entity": "Star",
@@ -12190,7 +12189,7 @@
     "spectral_class": "A2V"
   },
   {
-    "id": "mu velorum",
+    "id": "mu vel",
     "hip": 52727,
     "hyg_id": 52575,
     "entity": "Star",
@@ -12207,7 +12206,7 @@
     "spectral_class": "G5III SB"
   },
   {
-    "id": "phi velorum",
+    "id": "phi vel",
     "hip": 48774,
     "hyg_id": 48635,
     "entity": "Star",
@@ -12224,7 +12223,7 @@
     "spectral_class": "B5Ib"
   },
   {
-    "id": "kappa velorum",
+    "id": "markeb",
     "hip": 45941,
     "hyg_id": 45809,
     "entity": "Star",
@@ -12241,7 +12240,7 @@
     "spectral_class": "B2IV"
   },
   {
-    "id": "eta virginis",
+    "id": "zaniah",
     "hip": 60129,
     "hyg_id": 59945,
     "entity": "Star",
@@ -12258,7 +12257,7 @@
     "spectral_class": "A2IV"
   },
   {
-    "id": "omicron virginis",
+    "id": "omi vir",
     "hip": 58948,
     "hyg_id": 58773,
     "entity": "Star",
@@ -12275,7 +12274,7 @@
     "spectral_class": "G8III"
   },
   {
-    "id": "nu virginis",
+    "id": "nu vir",
     "hip": 57380,
     "hyg_id": 57208,
     "entity": "Star",
@@ -12292,7 +12291,7 @@
     "spectral_class": "M0III"
   },
   {
-    "id": "beta virginis",
+    "id": "zavijava",
     "hip": 57757,
     "hyg_id": 57584,
     "entity": "Star",
@@ -12309,7 +12308,7 @@
     "spectral_class": "F8V"
   },
   {
-    "id": "gamma virginis",
+    "id": "porrima",
     "hip": 61941,
     "hyg_id": 61748,
     "entity": "Star",
@@ -12326,7 +12325,7 @@
     "spectral_class": "F0V+..."
   },
   {
-    "id": "delta virginis",
+    "id": "minelauva",
     "hip": 63090,
     "hyg_id": 62890,
     "entity": "Star",
@@ -12343,7 +12342,7 @@
     "spectral_class": "M3III"
   },
   {
-    "id": "epsilon virginis",
+    "id": "vindemiatrix",
     "hip": 63608,
     "hyg_id": 63405,
     "entity": "Star",
@@ -12360,7 +12359,7 @@
     "spectral_class": "G8IIIvar"
   },
   {
-    "id": "theta virginis",
+    "id": "the vir",
     "hip": 64238,
     "hyg_id": 64034,
     "entity": "Star",
@@ -12377,7 +12376,7 @@
     "spectral_class": "A1V"
   },
   {
-    "id": "alpha virginis",
+    "id": "spica",
     "hip": 65474,
     "hyg_id": 65269,
     "entity": "Star",
@@ -12394,7 +12393,7 @@
     "spectral_class": "B1V"
   },
   {
-    "id": "zeta virginis",
+    "id": "heze",
     "hip": 66249,
     "hyg_id": 66040,
     "entity": "Star",
@@ -12411,7 +12410,7 @@
     "spectral_class": "A3V"
   },
   {
-    "id": "tau virginis",
+    "id": "tau vir",
     "hip": 68520,
     "hyg_id": 68302,
     "entity": "Star",
@@ -12445,7 +12444,7 @@
     "spectral_class": "A0V"
   },
   {
-    "id": "iota virginis",
+    "id": "syrma",
     "hip": 69701,
     "hyg_id": 69479,
     "entity": "Star",
@@ -12462,7 +12461,7 @@
     "spectral_class": "F7V"
   },
   {
-    "id": "mu virginis",
+    "id": "mu vir",
     "hip": 71957,
     "hyg_id": 71731,
     "entity": "Star",
@@ -12479,7 +12478,7 @@
     "spectral_class": "F2III"
   },
   {
-    "id": "alpha volantis",
+    "id": "alp vol",
     "hip": 44382,
     "hyg_id": 44254,
     "entity": "Star",
@@ -12496,7 +12495,7 @@
     "spectral_class": "Am"
   },
   {
-    "id": "beta volantis",
+    "id": "bet vol",
     "hip": 41312,
     "hyg_id": 41195,
     "entity": "Star",
@@ -12513,7 +12512,7 @@
     "spectral_class": "K2IIIvar"
   },
   {
-    "id": "epsilon volantis",
+    "id": "eps vol",
     "hip": 39794,
     "hyg_id": 39681,
     "entity": "Star",
@@ -12530,7 +12529,7 @@
     "spectral_class": "B6IV"
   },
   {
-    "id": "delta volantis",
+    "id": "del vol",
     "hip": 35228,
     "hyg_id": 35132,
     "entity": "Star",
@@ -12547,7 +12546,7 @@
     "spectral_class": "F6II"
   },
   {
-    "id": "gamma-2 volantis",
+    "id": "gam-2 vol",
     "hip": 34481,
     "hyg_id": 34389,
     "entity": "Star",
@@ -12564,7 +12563,7 @@
     "spectral_class": "G8IIIvar"
   },
   {
-    "id": "alpha vulpeculae",
+    "id": "anser",
     "hip": 95771,
     "hyg_id": 95473,
     "entity": "Star",

@@ -159,7 +159,7 @@
 }
 /*  .pale */
 .star-label-container.pale .star-icon-default { 
-  display: block; 
+  display: none; 
   background-color: color-mix(in srgb, var(--secondary-750) 25%, transparent);
 }
 .star-label-container.pale .star-icon-active { display: none; }

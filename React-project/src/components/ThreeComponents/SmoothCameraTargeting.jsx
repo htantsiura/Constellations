@@ -93,19 +93,35 @@ export function calculateRotatedTarget(cameraRef, currentTarget, newObjectPos) {
 }
 
 export function updateStarsVisibility(activeConstellationGroup, isTargeted, allLabelsRef) {
-      allLabelsRef.current.forEach((groupObject) => {
-        
-        if (groupObject.userData.type === 'star') {
-          
-          if (isTargeted) {
-            if (groupObject.parent === activeConstellationGroup) {
-              groupObject.userData.setState('default'); 
-            } else {
-              groupObject.userData.setState('pale'); 
-            }
-          } else {
-            groupObject.userData.setState('default');
-          }
+  allLabelsRef.current.forEach((groupObject) => {
+    
+    if (groupObject.userData.type === 'star') {
+      if (isTargeted) {
+        if (groupObject.parent === activeConstellationGroup) {
+          groupObject.userData.setState('default'); 
+        } else {
+          groupObject.userData.setState('pale'); 
         }
-      });
+      } else {
+        groupObject.userData.setState('default'); 
+      }
     }
+  });
+}
+
+export function updateLinesVisibility(activeConstellationGroup, isTargeted, cList) {
+
+  Object.values(cList).forEach((item) => {
+    const linesGroup = item.children.find(child => child.userData?.type === 'linesGroup')
+    if (linesGroup) {
+      if (isTargeted) {
+        if (item === activeConstellationGroup)
+          linesGroup.visible = true;
+        else
+          linesGroup.visible = false;
+      } else {
+        linesGroup.visible = true;
+      }
+    }
+  })
+}

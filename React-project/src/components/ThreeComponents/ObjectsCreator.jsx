@@ -103,6 +103,7 @@ export function createStar(item, localPos, worldPos, onClickCallBack, state = 'd
   const starName = document.createElement('div')
   starName.className = 'star-label-text'
   starName.textContent = item.name
+  //starName.textContent = (item.name === item.bayer + ' ' + item.constellation_abbr) ? "" : item.name
   container.appendChild(starName)
 
   const label = new CSS2DObject(container)
@@ -133,17 +134,26 @@ export function createStar(item, localPos, worldPos, onClickCallBack, state = 'd
   return(label)
 }
 
-export function createLine(data, constell_name) {
-  
-  data.map((c) => {
-    
-    if (c.common_name.native === constell_name) {
-      console.log("constellation " + c.iau)
-      console.log("lines " + c.lines[0])
-      console.log("english " + c.common_name.english)
+export function createLines(c, constellationList, lineMaterial, i) {
+  let linesGroup = new THREE.Group()
+  c.lines.map((line) => {
+    const points = []
+    line.map((e) => {
+      const neededStar = constellationList[c.common_name.native].children.find(child => child.userData?.hip === e)
+      neededStar ? points.push(neededStar.userData.localPos) : null
+    })
+    const lineGeometry = new THREE.BufferGeometry().setFromPoints(points)
+    const newLine = new THREE.Line(lineGeometry, lineMaterial)
+    newLine.userData = {
+      index: i,
+      hips: line,
+      type: 'line',
+      constellation: c.common_name.native
     }
-      
+    linesGroup.add(newLine)
+    i++;
   })
+  return(linesGroup)
 }
 
 

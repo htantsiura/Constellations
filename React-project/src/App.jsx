@@ -23,8 +23,7 @@ export default function App() {
   }
 
   const handleConstellationSelect = (constellId) => {
-    //onConstellationClick
-    openConstellation(constellId, setExpandedId, setIsConstellation, setSearchQuery )
+    openConstellation(constellId, setExpandedId, setIsConstellation, setSearchQuery)
   }
 
   return (
