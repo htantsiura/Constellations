@@ -93,9 +93,8 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
 
     function setActiveObject (obj) {
       // if smth was selected, then make it default
-      if (currentActiveObj && currentActiveObj !== obj) {
+      if (currentActiveObj && currentActiveObj !== obj)
         currentActiveObj.userData.setState('default')
-      }
 
       if(obj.userData.state === 'selected') {
         obj.userData.setState('targeted')
@@ -107,13 +106,16 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
       currentActiveObj = obj;
 
       if (onStarClick) {
-        console.log("clicked star", obj.userData.id)
         onStarClick(obj.userData.id); 
+        updateStarsVisibility(obj, allLabelsRef);
+      updateLinesVisibility(obj, constellationList)
       }
       if (onConstellationClick) {
-        console.log("clicked constellation", obj.userData.id)
         onConstellationClick(obj.userData.id); 
+        updateStarsVisibility(obj, allLabelsRef);
+      updateLinesVisibility(obj, constellationList)
       }
+      
     }
 
     const handleTargetToggle = (constellationGroup, pivotPos, isTargeted, isAutoReset = false) => {
@@ -136,8 +138,7 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
           controlsRef.current.update();
         });
       }
-      updateStarsVisibility(constellationGroup, isTargeted, allLabelsRef);
-      updateLinesVisibility(constellationGroup, isTargeted, constellationList)
+      
     };
 
     // Scene Objects creators ------------------------------------------------

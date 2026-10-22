@@ -92,36 +92,74 @@ export function calculateRotatedTarget(cameraRef, currentTarget, newObjectPos) {
     .add(directionToNewObject.multiplyScalar(currentDistance));
 }
 
-export function updateStarsVisibility(activeConstellationGroup, isTargeted, allLabelsRef) {
-  allLabelsRef.current.forEach((groupObject) => {
-    
-    if (groupObject.userData.type === 'star') {
-      if (isTargeted) {
-        if (groupObject.parent === activeConstellationGroup) {
-          groupObject.userData.setState('default'); 
+export function updateStarsVisibility(obj, allLabelsRef) {
+
+  if (obj.userData.type === 'constellation') {
+    console.log('its cosntellation')
+    // turn off all stars, except current constellation
+    allLabelsRef.current.forEach((item) => {
+      if (item.userData.type === 'star') {
+        if (obj.userData.isTargeted) {
+          if (item.parent === obj) {
+            item.userData.setState('show-names'); 
+          } else {
+            item.userData.setState('pale'); 
+          }
         } else {
-          groupObject.userData.setState('pale'); 
+          item.userData.setState('default'); 
         }
-      } else {
-        groupObject.userData.setState('default'); 
       }
-    }
-  });
+    })
+  } 
+
+  if (obj.userData.type === 'star') {
+    // turn off all stars, except current constellation
+    allLabelsRef.current.forEach((item) => {
+      if (item.userData.type === 'star') {
+        
+        if (obj.userData.isTargeted) {
+          
+          if (item.parent !== obj.parent) {
+            console.log("----d-d-d")
+            item.userData.setState('pale'); 
+          } 
+
+        } else {
+          item.userData.setState('default'); 
+        }
+        
+      }
+    })
+  }
 }
 
-export function updateLinesVisibility(activeConstellationGroup, isTargeted, cList) {
+export function updateLinesVisibility(obj, cList) {
 
-  Object.values(cList).forEach((item) => {
-    const linesGroup = item.children.find(child => child.userData?.type === 'linesGroup')
-    if (linesGroup) {
-      if (isTargeted) {
-        if (item === activeConstellationGroup)
-          linesGroup.visible = true;
-        else
-          linesGroup.visible = false;
-      } else {
-        linesGroup.visible = true;
+  if (obj.userData.type === 'constellation') {
+    Object.values(cList).forEach((item) => {
+      const linesGroup = item.children.find(child => child.userData?.type === 'linesGroup')
+      if (linesGroup) {
+        if (obj.userData.isTargeted) {
+          (item === obj) ? linesGroup.visible = true : linesGroup.visible = false;
+        } else {
+          linesGroup.visible = true 
+        }
       }
-    }
-  })
+    })
+  }
+
+  if (obj.userData.type === 'star') {
+    Object.values(cList).forEach((item) => {
+      const linesGroup = item.children.find(child => child.userData?.type === 'linesGroup')
+      if (linesGroup) {
+        if (obj.userData.isTargeted) {
+          (linesGroup.parent === obj.parent) ? linesGroup.visible = true : linesGroup.visible = false;
+        } else {
+          linesGroup.visible = true 
+        }
+      }
+    })
+  }
+
+
 }
