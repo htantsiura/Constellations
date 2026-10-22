@@ -6,8 +6,8 @@ import AboutTheProject from './components/AboutTheProject/AboutTheProject'
 import Contacts from './components/AboutTheProject/Contacts'
 import SkyCanvas from './components/SkyCanvas/SkyCanvas'
 
-import { openConstellation } from './components/utilities/constellationUtils.jsx'
-import { openStar } from './components/utilities/starUtils.jsx'
+import { openConstellationCard } from './components/utilities/constellationUtils.jsx'
+import { openStarCard } from './components/utilities/starUtils.jsx'
 
 
 export default function App() {
@@ -19,11 +19,11 @@ export default function App() {
   const [searchQuery, setSearchQuery] = useState('');
 
   const handleStarSelect = (starId) => {
-    openStar(starId, setExpandedId, setIsStar, setSearchQuery);
+    openStarCard(starId, setExpandedId, setIsStar, setSearchQuery);
   }
 
   const handleConstellationSelect = (constellId) => {
-    openConstellation(constellId, setExpandedId, setIsConstellation, setSearchQuery)
+    openConstellationCard(constellId, setExpandedId, setIsConstellation, setSearchQuery)
   }
 
   return (

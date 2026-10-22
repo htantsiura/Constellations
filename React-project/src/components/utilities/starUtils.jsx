@@ -1,7 +1,7 @@
 //import StarsData from '../../StarsData.json'
 import StarsData from '../../DataSources/StarsData1.json'
 
-export const openStar = (starId, setExpandedId, setIsStar, setSearchQuery) => {
+export const openStarCard = (starId, setExpandedId, setIsStar, setSearchQuery) => {
   const targetStar = StarsData.find((s) => s.id === starId);
   //const targetStar = StarsData.find((s) => s.hip === starId);
   
@@ -18,6 +18,6 @@ export const openStar = (starId, setExpandedId, setIsStar, setSearchQuery) => {
           //behavior: 'smooth', 
           block: 'start' });
       }
-    }, 100);
+    }, 0);
   }
 };

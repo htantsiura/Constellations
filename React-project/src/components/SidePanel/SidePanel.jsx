@@ -13,8 +13,8 @@ import SideContent from '../SideContent/SideContent'
 import StarCard from '../Cards/StarCard'
 import ConstellCard from '../Cards/ConstellCard'
 import { useState } from 'react'
-import { openConstellation } from '../utilities/constellationUtils.jsx'
-import { openStar } from '../utilities/starUtils.jsx' 
+import { openConstellationCard } from '../utilities/constellationUtils.jsx'
+import { openStarCard } from '../utilities/starUtils.jsx' 
 
 const sortByName = (array) => {
   return [...array].sort((a, b) => a.name.localeCompare(b.name));
@@ -77,7 +77,7 @@ export default function SidePanel({
               item={ item }
               isExpanded={ expandedId === item.id }
               onToggle={() => setExpandedId(expandedId === item.id ? null : item.id )}
-              onConstellationClick={() => openConstellation(item.constellation, setExpandedId, setIsConstellation, setSearchQuery )}
+              onConstellationClick={() => openConstellationCard(item.constellation, setExpandedId, setIsConstellation, setSearchQuery )}
             />
           )) : null 
         }
@@ -90,7 +90,7 @@ export default function SidePanel({
             item={ item }
             isExpanded={ expandedId === item.id }
             onToggle={() => setExpandedId(expandedId === item.id ? null : item.id )}
-            onStarClick={ (starId) => openStar(starId, setExpandedId, setIsStar, setSearchQuery)}
+            onStarClick={ (starId) => openStarCard(starId, setExpandedId, setIsStar, setSearchQuery)}
           />
           )): null 
         }

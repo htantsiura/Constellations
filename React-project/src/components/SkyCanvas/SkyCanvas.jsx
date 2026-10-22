@@ -91,23 +91,28 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
 
     // creating objects on the scene ---------------------------------
 
-    function setActiveObject (label) {
+    function setActiveObject (obj) {
       // if smth was selected, then make it default
-      if (currentActiveObj && currentActiveObj !== label) {
+      if (currentActiveObj && currentActiveObj !== obj) {
         currentActiveObj.userData.setState('default')
       }
 
-      if(label.userData.state === 'selected') {
-        label.userData.setState('targeted')
-      } else if(label.userData.state === 'targeted') {
-        label.userData.setState('selected')
+      if(obj.userData.state === 'selected') {
+        obj.userData.setState('targeted')
+      } else if(obj.userData.state === 'targeted') {
+        obj.userData.setState('selected')
       } else {
-        label.userData.setState('selected')
+        obj.userData.setState('selected')
       }
-      currentActiveObj = label;
+      currentActiveObj = obj;
 
       if (onStarClick) {
-        onStarClick(label.userData.id); 
+        console.log("clicked star", obj.userData.id)
+        onStarClick(obj.userData.id); 
+      }
+      if (onConstellationClick) {
+        console.log("clicked constellation", obj.userData.id)
+        onConstellationClick(obj.userData.id); 
       }
     }
 
@@ -142,14 +147,15 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
       const newConstellation = createConstellation(
         item, 
         constellPos, 
-        (label) => {
+        setActiveObject
+        /* (label) => {
           if (onConstellationClick) {
             onConstellationClick(label.userData.name);
           }
         },
         (pivotPos, isTargeted, isAutoReset) => {
           handleTargetToggle(newConstellation, pivotPos, isTargeted, isAutoReset)
-        }
+        } */
       )
       scene.add(newConstellation)
       constellationList[item.name] = newConstellation

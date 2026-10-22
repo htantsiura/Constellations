@@ -68,53 +68,34 @@
   pointer-events: auto;
 }
 
-.constellation-label-text.active {
-  color: var(--primary-500);
-  font-weight: normal;
-}
-
 .constellation-btn-container {
-  display: none; /* hide by default */
   cursor: pointer;
   pointer-events: auto;
 }
 
-.constellation-label-container.active .target-btn-container {
-  display: block;
-}
+/* default */
+.constellation-label-container .constellation-btn-container { display: none; }
+.constellation-label-container .icon-off { display: none; background-color: var(--primary-750); }
+.constellation-label-container .icon-on { display: none; background-color: var(--primary-750); }
+.constellation-label-container .star-label-text { display: block; color: var(--primary-750); font-weight: normal; }
 
-.target-icon-off,
-.target-icon-on {
-  width: var(--star-icon-size);
-  height: var(--star-icon-size);
-  -webkit-mask-size: contain;
-  mask-size: contain;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  mask-position: center;
-}
+/* selected */
+.constellation-label-container.selected .constellation-btn-container { display: block; }
+.constellation-label-container.selected .icon-off { display: block; background-color: var(--primary-500); }
+.constellation-label-container.selected .icon-on { display: none; background-color: var(--primary-500); }
+.constellation-label-container.selected .constellation-label-text { display: block; color: var(--primary-500); }
 
-/* Состояние OFF */
-.target-icon-off {
-  background-color: var(--primary-500);
-  -webkit-mask-image: url('src/assets/starDefault.svg');
-  mask-image: url('src/assets/starDefault.svg'); 
-}
+/* targeted */
+.constellation-label-container.targeted .constellation-btn-container { display: block; }
+.constellation-label-container.targeted .icon-off { display: none; background-color: var(--primary-500); }
+.constellation-label-container.targeted .icon-on { display: block; background-color: var(--primary-500); }
+.constellation-label-container.targeted .constellation-label-text { display: block; color: var(--primary-500); }
 
-/* Состояние ON */
-.target-icon-on {
-  background-color: var(--primary-500);
-  -webkit-mask-image: url('src/assets/starClicked.svg');
-  mask-image: url('src/assets/starClicked.svg'); 
-}
-
-/* ПЕРЕКЛЮЧЕНИЕ: Логика отображения иконок внутри кнопки */
-.constellation-btn-container .icon-off { display: block; }
-.constellation-btn-container .icon-on { display: none; }
-
-.constellation-btn-container.selected .icon-off { display: none; }
-.constellation-btn-container.selected .icon-on { display: block; }
+/* pale */
+.constellation-label-container.pale .constellation-btn-container { display: none; }
+.constellation-label-container.pale .icon-off { display: none; background-color: var(--primary-750); }
+.constellation-label-container.pale .icon-on { display: none; background-color: var(--primary-750); }
+.constellation-label-container.pale .constellation-label-text { display: block; color: var(--primary-750); }
 
 
 /* STAR STYLES =============================================== */
@@ -134,27 +115,6 @@
   cursor: pointer;
   pointer-events: auto;
 }
-
-/* .icon-off,
-.icon-on {
-  width: var(--star-icon-size);
-  height: var(--star-icon-size);
-  -webkit-mask-size: contain;
-  mask-size: contain;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  mask-position: center;
-}
-
-.icon-off {
-  -webkit-mask-image: url('src/assets/starDefault.svg');
-  mask-image: url('src/assets/starDefault.svg'); 
-}
-.icon-on {
-  -webkit-mask-image: url('src/assets/starClicked.svg');
-  mask-image: url('src/assets/starClicked.svg'); 
-} */
 
 /* default */
 .star-label-container .icon-off { display: block; background-color: var(--secondary-750); }
