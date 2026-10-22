@@ -7,8 +7,7 @@ import LinesData from '../../DataSources/LinesData_SnT_upd.json'
 export function createConstellation(item, 
                                     position, 
                                     onClickCallBack, 
-                                    onTargetToggle,
-                                    state = 'default') {
+                                    onTargetToggle) {
   const group = new THREE.Group()
   group.position.copy(position)
 
@@ -16,14 +15,14 @@ export function createConstellation(item,
   container.className = 'constellation-label-container'
 
   const targetBtn = document.createElement('div')
-  targetBtn.className = 'target-btn-container'
+  targetBtn.className = 'constellation-btn-container'
 
   const targetOffIcon = document.createElement('div')
-  targetOffIcon.className = 'target-icon-off'
+  targetOffIcon.className = 'icon-off'
   targetBtn.appendChild(targetOffIcon)
 
   const targetOnIcon = document.createElement('div')
-  targetOnIcon.className = 'target-icon-on'
+  targetOnIcon.className = 'icon-on'
   targetBtn.appendChild(targetOnIcon)
 
   const constellName = document.createElement('div')
@@ -87,23 +86,27 @@ export function createConstellation(item,
   return group
 }
 
-export function createStar(item, localPos, worldPos, onClickCallBack, state = 'default') {
+export function createStar(item, localPos, worldPos, onClickCallBack) {
 
   const container = document.createElement('div')
   container.className = 'star-label-container'
 
-  const defIcon = document.createElement('div')
-  defIcon.className = 'star-icon-default'
-  container.appendChild(defIcon)
+  const targetBtn = document.createElement('div')
+  targetBtn.className = 'star-btn-container'
 
-  const activeIcon = document.createElement('div')
-  activeIcon.className = 'star-icon-active'
-  container.appendChild(activeIcon)
+  const iconOff = document.createElement('div')
+  iconOff.className = 'icon-off'
+  targetBtn.appendChild(iconOff)
+
+  const iconOn = document.createElement('div')
+  iconOn.className = 'icon-on'
+  targetBtn.appendChild(iconOn)
 
   const starName = document.createElement('div')
   starName.className = 'star-label-text'
-  starName.textContent = item.name
-  //starName.textContent = (item.name === item.bayer + ' ' + item.constellation_abbr) ? "" : item.name
+  starName.textContent = (item.name === item.bayer + ' ' + item.constellation_abbr) ? "" : item.name
+  
+  container.appendChild(targetBtn)
   container.appendChild(starName)
 
   const label = new CSS2DObject(container)
@@ -115,19 +118,31 @@ export function createStar(item, localPos, worldPos, onClickCallBack, state = 'd
     type: 'star',
     pivot: worldPos,
     localPos: localPos,
-    state: 'default', // 'default', 'active', 'pale'
+    state: 'default', // 'default', 'show-names', 'selected', 'targeted', 'pale'
     setState: (newState) => {
-      container.classList.remove('default', 'active', 'pale')
+      container.classList.remove('default', 'show-names', 'selected', 'targeted', 'pale')
       label.userData.state = newState;
       container.classList.add(newState)
-    }
+      
+      if (newState === 'selected' || newState === 'targeted' || newState === 'show-names')
+        starName.textContent = item.name;
+      else
+        starName.textContent = (item.name === item.bayer + ' ' + item.constellation_abbr) ? "" : item.name
+     }
   }
 
   label.center.set(0, 0.5)
   label.position.copy(localPos)
+ 
   container.addEventListener('click', () => {
-    if (onClickCallBack) {
-      onClickCallBack(label)
+    if (label.userData.state === ('selected' || 'targeted' )) {
+      if (onClickCallBack) {
+        onClickCallBack(label)
+      }
+    } else {
+        if (onClickCallBack) {
+        onClickCallBack(label)
+      }
     }
   })
 

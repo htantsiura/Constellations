@@ -25,6 +25,29 @@
   z-index: 2;
 }
 
+.icon-off,
+.icon-on {
+  width: var(--star-icon-size);
+  height: var(--star-icon-size);
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+}
+
+.icon-off {
+  -webkit-mask-image: url('src/assets/starDefault.svg');
+  mask-image: url('src/assets/starDefault.svg'); 
+}
+.icon-on {
+  -webkit-mask-image: url('src/assets/starClicked.svg');
+  mask-image: url('src/assets/starClicked.svg'); 
+}
+
+
+/* CONSTELLATION STYLES ====================================== */
 
 .constellation-label-container {
   display: flex;
@@ -43,7 +66,6 @@
   user-select: none;
   cursor: pointer;
   pointer-events: auto;
-
 }
 
 .constellation-label-text.active {
@@ -51,19 +73,16 @@
   font-weight: normal;
 }
 
-/* Контейнер кнопки таргета */
-.target-btn-container {
-  display: none; /* Скрываем по умолчанию */
+.constellation-btn-container {
+  display: none; /* hide by default */
   cursor: pointer;
   pointer-events: auto;
 }
 
-/* МАГИЯ: Показываем кнопку таргета ТОЛЬКО когда всё созвездие активно */
 .constellation-label-container.active .target-btn-container {
   display: block;
 }
 
-/* Стили для иконок (используй свои пути к SVG) */
 .target-icon-off,
 .target-icon-on {
   width: var(--star-icon-size);
@@ -91,20 +110,19 @@
 }
 
 /* ПЕРЕКЛЮЧЕНИЕ: Логика отображения иконок внутри кнопки */
-.target-btn-container .target-icon-off { display: block; }
-.target-btn-container .target-icon-on { display: none; }
+.constellation-btn-container .icon-off { display: block; }
+.constellation-btn-container .icon-on { display: none; }
 
-.target-btn-container.targeted .target-icon-off { display: none; }
-.target-btn-container.targeted .target-icon-on { display: block; }
+.constellation-btn-container.selected .icon-off { display: none; }
+.constellation-btn-container.selected .icon-on { display: block; }
 
 
-
+/* STAR STYLES =============================================== */
 
 .star-label-container {
   display: flex;
   align-items: center;
   gap: 4px;
-
   margin-left: calc(var(--star-icon-size) * -0.5);
 
   user-select: none;
@@ -112,59 +130,54 @@
   pointer-events: auto;
 }
 
-.star-icon-default {
+.star-btn-container {
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+/* .icon-off,
+.icon-on {
   width: var(--star-icon-size);
   height: var(--star-icon-size);
-  
-  background-color: var(--secondary-750);
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+}
 
-  /* apply svg as mask */
+.icon-off {
   -webkit-mask-image: url('src/assets/starDefault.svg');
-  mask-image: url('src/assets/starDefault.svg');
-  -webkit-mask-size: contain;
-  mask-size: contain;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  mask-position: center;
+  mask-image: url('src/assets/starDefault.svg'); 
 }
-
-.star-icon-active {
-  width: var(--star-icon-size);
-  height: var(--star-icon-size);
-  
-  background-color: var(--secondary-500);
-
-  /* apply svg as mask */
+.icon-on {
   -webkit-mask-image: url('src/assets/starClicked.svg');
-  mask-image: url('src/assets/starClicked.svg');
-  -webkit-mask-size: contain;
-  mask-size: contain;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  mask-position: center;
-}
+  mask-image: url('src/assets/starClicked.svg'); 
+} */
 
 /* default */
-.star-label-container .star-icon-default { display: block; }
-.star-label-container .star-icon-active { display: none; }
+.star-label-container .icon-off { display: block; background-color: var(--secondary-750); }
+.star-label-container .icon-on { display: none; background-color: var(--secondary-750); }
+.star-label-container .star-label-text { display: block; color: var(--secondary-750); font-weight: normal; }
 
-/*  .active */
-.star-label-container.active .star-icon-default { display: none; }
-.star-label-container.active .star-icon-active { display: block; }
-.star-label-container.active .star-label-text {
-  color: var(--secondary-500);
-  font-weight: normal;
-}
+/* .selected */
+.star-label-container.selected .icon-off { display: block; background-color: var(--secondary-500); }
+.star-label-container.selected .icon-on { display: none; background-color: var(--secondary-500); }
+.star-label-container.selected .star-label-text { display: block; color: var(--secondary-500); font-weight: normal; }
+
+/*  .targeted */
+.star-label-container.targeted .icon-off { display: none; background-color: var(--secondary-500); }
+.star-label-container.targeted .icon-on { display: block; background-color: var(--secondary-500); }
+.star-label-container.targeted .star-label-text { display: block; color: var(--secondary-500); font-weight: normal; }
+
 /*  .pale */
-.star-label-container.pale .star-icon-default { 
-  display: none; 
-  background-color: color-mix(in srgb, var(--secondary-750) 25%, transparent);
-}
-.star-label-container.pale .star-icon-active { display: none; }
-.star-label-container.pale .star-label-text {
-  display: none;
-}
+.star-label-container.pale .icon-off { display: none; background-color: var(--secondary-750); }
+.star-label-container.pale .icon-on { display: none; background-color: var(--secondary-750); }
+.star-label-container.pale .star-label-text { display: none; color: var(--secondary-500); font-weight: normal; }
+
+/* =========================================================== */
+
+
 
 

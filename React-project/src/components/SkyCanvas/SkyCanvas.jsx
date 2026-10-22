@@ -3,9 +3,6 @@ import { useRef, useEffect } from "react"
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 
-//import ConstellationData from '../../ConstellationsData.json' 
-//import StarsData from '../../StarsData.json' 
-
 import ConstellationData from '../../DataSources/ConstellationData1.json' 
 import StarsData from '../../DataSources/StarsData1.json'
 import LinesData from '../../DataSources/LinesData_SnT_upd.json'
@@ -15,23 +12,26 @@ import { CSS2DRenderer, CSS2DObject } from 'three/examples/jsm/renderers/CSS2DRe
 import { vec3 } from 'three/tsl'
 import { Vector3 } from 'three/webgpu'
 import { createConstellation, createStar, createLines } from '../ThreeComponents/ObjectsCreator'
-import {
-  startTargetAnimation, 
-  updateTargetAnimation, 
-  startCameraAnimation, 
-  updateCameraAnimation, 
-  calculateRotatedTarget,
-  updateStarsVisibility,
-  updateLinesVisibility
-} from '../ThreeComponents/SmoothCameraTargeting'
+import { startTargetAnimation, 
+        updateTargetAnimation, 
+        startCameraAnimation, 
+        updateCameraAnimation, 
+        calculateRotatedTarget,
+        updateStarsVisibility,
+        updateLinesVisibility } from '../ThreeComponents/SmoothCameraTargeting'
 
 export default function SkyCanvas({ onStarClick, onConstellationClick, expandedId }) {
+  
   const containerRef = useRef(null)
   const allLabelsRef = useRef(new Map())
   const activeStarRef = useRef(null)
 
   const controlsRef = useRef(null);
   const cameraRef = useRef(null);
+
+  const selectedObjectRef = useRef(null);
+  const targetedObjectRef = useRef(null);
+  let currentActiveObj = null;
 
   const targetAnimRef = useRef(null); // Для плавного поворота (target)
   const cameraAnimRef = useRef(null); // Для плавного полета (camera.position)
@@ -91,19 +91,23 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
 
     // creating objects on the scene ---------------------------------
 
-  
-    
-
-    function setActiveStar(label) {
-      if (currentActiveStar && currentActiveStar !== label) {
-        currentActiveStar.userData.setState('default')
+    function setActiveObject (label) {
+      // if smth was selected, then make it default
+      if (currentActiveObj && currentActiveObj !== label) {
+        currentActiveObj.userData.setState('default')
       }
-      label.userData.setState('active')
-      currentActiveStar = label;
+
+      if(label.userData.state === 'selected') {
+        label.userData.setState('targeted')
+      } else if(label.userData.state === 'targeted') {
+        label.userData.setState('selected')
+      } else {
+        label.userData.setState('selected')
+      }
+      currentActiveObj = label;
+
       if (onStarClick) {
-        // Обязательно передаем ID звезды, так как твоя функция openStar ищет именно по ID
         onStarClick(label.userData.id); 
-        //onStarClick(label.userData.hip); 
       }
     }
 
@@ -157,7 +161,7 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
       const parentGroup = constellationList[item.constellation]
       const absoluteStarPos = raDecToVector3ForStars(item, distanceScale, isLogariphScale)
       const relativeStarPos = absoluteStarPos.clone().sub(constellationList[item.constellation].userData.pivot)
-      const newStar = createStar(item, relativeStarPos, absoluteStarPos, setActiveStar, 'default')
+      const newStar = createStar(item, relativeStarPos, absoluteStarPos, setActiveObject)
       allLabelsRef.current.set(item.id, newStar)
       parentGroup.add(newStar)
     })
@@ -229,7 +233,7 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
     }
   }, [])
 
-  useEffect(() => {
+  /* useEffect(() => {
     if(!expandedId) return;
     const targetLabel = allLabelsRef.current.get(expandedId)
     
@@ -250,7 +254,7 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
       // Даем команду Аниматору Прицела начать плавный поворот
       startTargetAnimation(controlsRef, targetPos, targetAnimRef);
     }
-  }, [expandedId])
+  }, [expandedId]) */
 
   return (
     <div ref={containerRef} className="sky-canvas-container" />
