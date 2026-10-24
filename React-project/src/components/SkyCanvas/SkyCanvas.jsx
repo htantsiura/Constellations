@@ -9,7 +9,7 @@ import LinesData from '../../DataSources/LinesData_SnT_upd.json'
 
 import { raDecToVector3, raDecToVector3ForStars } from '../utilities/ThreeHelpers'
 import { CSS2DRenderer, CSS2DObject } from 'three/examples/jsm/renderers/CSS2DRenderer.js'
-import { vec3 } from 'three/tsl'
+import { min, vec3 } from 'three/tsl'
 import { Vector3 } from 'three/webgpu'
 import { createConstellation, createStar, createLines } from '../ThreeComponents/ObjectsCreator'
 import { startTargetAnimation, 
@@ -22,9 +22,14 @@ import { startTargetAnimation,
 
 export default function SkyCanvas({ onStarClick, onConstellationClick, expandedId }) {
   
+  const distanceScale = 1
+  const isLogariphScale = true;
+
   const containerRef = useRef(null)
   const allLabelsRef = useRef(new Map())
   const activeObjRef = useRef(null)
+  const previousObjRef = useRef(null)
+  const constellationList = {}
 
   const controlsRef = useRef(null);
   const cameraRef = useRef(null);
@@ -34,6 +39,8 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
 
   const targetAnimRef = useRef(null); // Для плавного поворота (target)
   const cameraAnimRef = useRef(null); // Для плавного полета (camera.position)
+
+  
 
   useEffect(() => {
     const container = containerRef.current
@@ -69,10 +76,7 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
 
     // Main Code  ------------------------------------
 
-    let currentActiveStar = null;
-    const distanceScale = 1
-    const isLogariphScale = true;
-    const constellationList = {}
+    
 
     const testMat = new THREE.MeshBasicMaterial({ color: 'blue' , wireframe: true })
     const lineMaterial = new THREE.LineBasicMaterial({ color: 0x3F0080, });
@@ -91,15 +95,13 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
 
     // creating objects on the scene ---------------------------------
 
+    
+
     function setActiveObject (obj) {
       // if smth was selected, then make it default
       if (activeObjRef.current && activeObjRef.current !== obj) {
-        console.log("active?", obj.userData.id, obj.userData.state)
         activeObjRef.current.userData.setState('default')
       }
-
-      //console.log("check obj id", obj.userData.id)
-      //console.log("check expandedid", expandedId)
       
       if(obj.userData.state === 'selected') {
         obj.userData.setState('targeted')
@@ -199,6 +201,8 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
     function animate() {
       animationFrameId = requestAnimationFrame(animate)
 
+      console.log("camera pos", controls.target)
+
       updateTargetAnimation(targetAnimRef, controlsRef);
       updateCameraAnimation(cameraAnimRef, cameraRef, controlsRef);
       
@@ -236,10 +240,13 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
     }
   }, [])
 
+  let prevExpandedId = null;
+
   useEffect(() => {
     if(!expandedId) return;
+
     const targetLabel = allLabelsRef.current.get(expandedId)
-    
+
     if (targetLabel) {
       if (activeObjRef.current && activeObjRef.current !== targetLabel) {
         activeObjRef.current.userData.setState('default')

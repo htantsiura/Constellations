@@ -3,7 +3,6 @@ import ConstellationData from '../../DataSources/ConstellationData1.json';
 
 export const openConstellationCard = (constellationId, setExpandedId, setIsConstellation, setSearchQuery) => {
   const targetConstellation = ConstellationData.find(
-    //(c) => c.name.toLowerCase() === constellationId
     (c) => c.id === constellationId
   );
   if (targetConstellation) {
