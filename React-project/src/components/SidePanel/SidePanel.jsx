@@ -73,7 +73,7 @@ export default function SidePanel({
               item={ item }
               isExpanded={ expandedId === item.id }
               onToggle={() => setExpandedId(expandedId === item.id ? null : item.id )}
-              onConstellationClick={() => openConstellationCard(item.constellation, setExpandedId, setIsConstellation, setSearchQuery )}
+              onConstellationClick={() => openConstellationCard(item.constellation.toLowerCase(), setExpandedId, setIsConstellation, setSearchQuery )}
             />
           )) : null 
         }

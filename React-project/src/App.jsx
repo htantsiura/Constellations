@@ -19,10 +19,12 @@ export default function App() {
   const [searchQuery, setSearchQuery] = useState('');
 
   const handleStarSelect = (starId) => {
+    console.log("star works", starId)
     openStarCard(starId, setExpandedId, setIsStar, setSearchQuery);
   }
 
   const handleConstellationSelect = (constellId) => {
+    console.log("cons works", constellId)
     openConstellationCard(constellId, setExpandedId, setIsConstellation, setSearchQuery)
   }
 

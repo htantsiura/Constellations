@@ -35,7 +35,7 @@ export default function StarCard({ item, isExpanded, onToggle, onConstellationCl
         <div className='card-body' >
           <ul>
             <ConstellTagButton 
-              name={( item.constellation)} 
+              name={( item.constellation )} 
               onClick={ onConstellationClick }
             />
             <CardBodyLine label="id:" value={ item.id } />

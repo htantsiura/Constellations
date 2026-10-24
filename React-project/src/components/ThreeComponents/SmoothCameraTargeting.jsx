@@ -100,8 +100,6 @@ export function updateStarsVisibility(obj, allLabelsRef) {
   const isTargeted = obj.userData.isTargeted;
   const objType = obj.userData.type 
 
-  console.log('isTargeted', isTargeted)
-
   if (!isTargeted) {
     allLabelsRef.current.forEach((item) => {
       if(item.userData.state !== 'selected')
