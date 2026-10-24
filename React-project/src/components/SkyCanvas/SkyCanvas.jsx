@@ -24,14 +24,13 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
   
   const containerRef = useRef(null)
   const allLabelsRef = useRef(new Map())
-  const activeStarRef = useRef(null)
+  const activeObjRef = useRef(null)
 
   const controlsRef = useRef(null);
   const cameraRef = useRef(null);
 
   const selectedObjectRef = useRef(null);
   const targetedObjectRef = useRef(null);
-  let currentActiveObj = null;
 
   const targetAnimRef = useRef(null); // Для плавного поворота (target)
   const cameraAnimRef = useRef(null); // Для плавного полета (camera.position)
@@ -94,9 +93,8 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
 
     function setActiveObject (obj) {
       // if smth was selected, then make it default
-      if (currentActiveObj && currentActiveObj !== obj) {
-        currentActiveObj.userData.setState('default')
-        console.log(currentActiveObj.userData.name, "?==", obj.userData.name)
+      if (activeObjRef.current && activeObjRef.current !== obj) {
+        activeObjRef.current.userData.setState('default')
       }
       
       if(obj.userData.state === 'selected') {
@@ -104,19 +102,7 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
       } else {
         obj.userData.setState('selected')
       }
-
-      /* if(obj.userData.type === 'constellation' &&
-        obj.userData.state === 'selected' ) {
-          const group = obj.getObjectByName('linesGroup')
-          group.children.forEach((l) => {
-            l.material = lineMaterialSelected
-          })
-        } */
-
-
-
-      currentActiveObj = obj;
-      //console.log("isTargeted:", currentActiveObj.userData.isTargeted)
+      activeObjRef.current = obj;
 
       if (obj.userData.type === 'star' && onStarClick) {
         onStarClick(obj.userData.id)
@@ -165,10 +151,10 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
           if (onConstellationClick) {
             onConstellationClick(label.userData.name);
           }
-        },
+        },*/,
         (pivotPos, isTargeted, isAutoReset) => {
           handleTargetToggle(newConstellation, pivotPos, isTargeted, isAutoReset)
-        } */
+        } 
       )
       scene.add(newConstellation)
       constellationList[item.name] = newConstellation
@@ -198,15 +184,9 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
           }
           constellationList[c.common_name.native].add(newLinesGroup)
           newLinesGroup.position.set(0, 0, 0)
-
-          
         }
       }
     })
-
-    // ------------------------------------------------------------------------
-    // Test Part  -------------------------------------------------------------
-
   
     // ------------------------------------------------------------------------
 
@@ -257,16 +237,15 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
     const targetLabel = allLabelsRef.current.get(expandedId)
     
     if (targetLabel) {
-      if (activeStarRef.current && activeStarRef.current !== targetLabel) {
-        activeStarRef.current.userData.setState('default')
+      if (activeObjRef.current && activeObjRef.current !== targetLabel) {
+        activeObjRef.current.userData.setState('default')
       }
-      targetLabel.userData.setState('active')
-      activeStarRef.current = targetLabel
+      targetLabel.userData.setState('selected')
+      activeObjRef.current = targetLabel
 
       // Сценарий А: Плавный поворот камеры
       const worldPosition = new THREE.Vector3();
       targetLabel.getWorldPosition(worldPosition);
-
       // Вычисляем точку на орбите, чтобы не "срезать угол"
       const targetPos = calculateRotatedTarget(cameraRef, controlsRef.current.target, worldPosition);
       

@@ -3,7 +3,7 @@ import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 import { objectGroup } from "three/tsl";
 
-// 1. Animating target. Controls only that, where we look: controls.target)
+// 1. Animating target. Controls only that, which direction we look: controls.target)
 
 export function startTargetAnimation(controlsRef, newTargetPos, targetAnimRef, onComplete = null) {
   if (!controlsRef.current) return;
