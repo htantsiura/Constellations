@@ -17,8 +17,6 @@ function CardBodyLine({ label, value }) {
 
 export default function StarCard({ item, isExpanded, onToggle, onConstellationClick }) {
 
-  //const name = item.name ? item.name : item.bf
-
   return (
     <div 
       id={`star-${ item.id }`}

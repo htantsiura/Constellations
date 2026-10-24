@@ -252,7 +252,7 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
     }
   }, [])
 
-  /* useEffect(() => {
+  useEffect(() => {
     if(!expandedId) return;
     const targetLabel = allLabelsRef.current.get(expandedId)
     
@@ -273,7 +273,7 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
       // Даем команду Аниматору Прицела начать плавный поворот
       startTargetAnimation(controlsRef, targetPos, targetAnimRef);
     }
-  }, [expandedId]) */
+  }, [expandedId])
 
   return (
     <div ref={containerRef} className="sky-canvas-container" />
