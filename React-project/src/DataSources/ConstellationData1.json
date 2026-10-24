@@ -392,7 +392,7 @@
     ]
   },
   {
-    "id": "canes_venatici",
+    "id": "canes venatici",
     "entity": "Constellation",
     "name": "Canes Venatici",
     "constellation_abbr": "CVn",
@@ -412,7 +412,7 @@
     ]
   },
   {
-    "id": "canis_major",
+    "id": "canis major",
     "entity": "Constellation",
     "name": "Canis Major",
     "constellation_abbr": "CMa",
@@ -448,7 +448,7 @@
     ]
   },
   {
-    "id": "canis_minor",
+    "id": "canis minor",
     "entity": "Constellation",
     "name": "Canis Minor",
     "constellation_abbr": "CMi",
@@ -784,7 +784,7 @@
     ]
   },
   {
-    "id": "coma_berenices",
+    "id": "coma berenices",
     "entity": "Constellation",
     "name": "Coma Berenices",
     "constellation_abbr": "Com",
@@ -806,7 +806,7 @@
     ]
   },
   {
-    "id": "corona_australis",
+    "id": "corona australis",
     "entity": "Constellation",
     "name": "Corona Australis",
     "constellation_abbr": "CrA",
@@ -832,7 +832,7 @@
     ]
   },
   {
-    "id": "corona_borealis",
+    "id": "corona borealis",
     "entity": "Constellation",
     "name": "Corona Borealis",
     "constellation_abbr": "CrB",
@@ -1544,7 +1544,7 @@
     ]
   },
   {
-    "id": "leo_minor",
+    "id": "leo minor",
     "entity": "Constellation",
     "name": "Leo Minor",
     "constellation_abbr": "LMi",
@@ -2216,7 +2216,7 @@
     ]
   },
   {
-    "id": "piscis_austrinus",
+    "id": "piscis austrinus",
     "entity": "Constellation",
     "name": "Piscis Austrinus",
     "constellation_abbr": "PsA",
@@ -2642,7 +2642,7 @@
     ]
   },
   {
-    "id": "triangulum_australe",
+    "id": "triangulum australe",
     "entity": "Constellation",
     "name": "Triangulum Australe",
     "constellation_abbr": "TrA",
@@ -2694,7 +2694,7 @@
     ]
   },
   {
-    "id": "ursa_major",
+    "id": "ursa major",
     "entity": "Constellation",
     "name": "Ursa Major",
     "constellation_abbr": "UMa",
@@ -2746,7 +2746,7 @@
     ]
   },
   {
-    "id": "ursa_minor",
+    "id": "ursa minor",
     "entity": "Constellation",
     "name": "Ursa Minor",
     "constellation_abbr": "UMi",

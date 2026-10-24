@@ -94,8 +94,12 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
     function setActiveObject (obj) {
       // if smth was selected, then make it default
       if (activeObjRef.current && activeObjRef.current !== obj) {
+        console.log("active?", obj.userData.id, obj.userData.state)
         activeObjRef.current.userData.setState('default')
       }
+
+      //console.log("check obj id", obj.userData.id)
+      //console.log("check expandedid", expandedId)
       
       if(obj.userData.state === 'selected') {
         obj.userData.setState('targeted')
