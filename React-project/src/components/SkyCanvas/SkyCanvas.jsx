@@ -95,7 +95,12 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
 
     // creating objects on the scene ---------------------------------
 
-    
+    function changeCameraTarget(pivot) {
+
+      if (!controlsRef.current) return;
+      controlsRef.current.target.copy(pivot)
+      controlsRef.current.update()
+    }
 
     function setActiveObject (obj) {
       // if smth was selected, then make it default
@@ -105,10 +110,14 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
       
       if(obj.userData.state === 'selected') {
         obj.userData.setState('targeted')
+        changeCameraTarget(obj.userData.pivot)
       } else {
         obj.userData.setState('selected')
+        changeCameraTarget(new THREE.Vector3(0, 0, 0))
       }
       activeObjRef.current = obj;
+
+      
 
       if (obj.userData.type === 'star' && onStarClick) {
         onStarClick(obj.userData.id)
@@ -122,7 +131,20 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
       }
     }
 
-    const handleTargetToggle = (constellationGroup, pivotPos, isTargeted, isAutoReset = false) => {
+    
+
+    function changeCameraTarget1(targetObject) {
+
+      if (!controlsRef.current) return;
+      const newTargetPos = new THREE.Vector3()
+      targetObject.getWorldPosition(newTargetPos);
+      controlsRef.current.target.copy(newTargetPos)
+      controlsRef.current.update()
+    }
+
+
+
+    /* const handleTargetToggle = (constellationGroup, pivotPos, isTargeted, isAutoReset = false) => {
       if (!controlsRef.current || !cameraRef.current) return;
 
       if (isTargeted) {
@@ -143,7 +165,7 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
         });
       }
       
-    };
+    }; */
 
     // Scene Objects creators ------------------------------------------------
 
@@ -201,10 +223,8 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
     function animate() {
       animationFrameId = requestAnimationFrame(animate)
 
-      console.log("camera pos", controls.target)
-
-      updateTargetAnimation(targetAnimRef, controlsRef);
-      updateCameraAnimation(cameraAnimRef, cameraRef, controlsRef);
+      /* updateTargetAnimation(targetAnimRef, controlsRef);
+      updateCameraAnimation(cameraAnimRef, cameraRef, controlsRef); */
       
       renderer.render(scene, camera)
       labelRenderer.render(scene, camera)
@@ -254,6 +274,8 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
       targetLabel.userData.setState('selected')
       activeObjRef.current = targetLabel
 
+      
+/* 
       // Сценарий А: Плавный поворот камеры
       const worldPosition = new THREE.Vector3();
       targetLabel.getWorldPosition(worldPosition);
@@ -261,7 +283,7 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
       const targetPos = calculateRotatedTarget(cameraRef, controlsRef.current.target, worldPosition);
       
       // Даем команду Аниматору Прицела начать плавный поворот
-      startTargetAnimation(controlsRef, targetPos, targetAnimRef);
+      startTargetAnimation(controlsRef, targetPos, targetAnimRef); */
     }
   }, [expandedId])
 
