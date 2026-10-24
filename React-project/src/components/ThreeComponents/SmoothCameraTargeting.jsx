@@ -1,6 +1,7 @@
 import { useRef, useEffect } from "react"
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
+import { objectGroup } from "three/tsl";
 
 // 1. Animating target. Controls only that, where we look: controls.target)
 
@@ -94,42 +95,40 @@ export function calculateRotatedTarget(cameraRef, currentTarget, newObjectPos) {
 
 export function updateStarsVisibility(obj, allLabelsRef) {
 
-  if (obj.userData.type === 'constellation') {
-    console.log('its cosntellation')
-    // turn off all stars, except current constellation
-    allLabelsRef.current.forEach((item) => {
-      if (item.userData.type === 'star') {
-        if (obj.userData.isTargeted) {
-          if (item.parent === obj) {
-            item.userData.setState('show-names'); 
-          } else {
-            item.userData.setState('pale'); 
-          }
-        } else {
-          item.userData.setState('default'); 
-        }
-      }
-    })
-  } 
+  if (!obj || !obj.userData) return;
 
-  if (obj.userData.type === 'star') {
-    // turn off all stars, except current constellation
-    allLabelsRef.current.forEach((item) => {
-      if (item.userData.type === 'star') {
-        
-        if (obj.userData.isTargeted) {
-          
-          if (item.parent !== obj.parent) {
-            console.log("----d-d-d")
-            item.userData.setState('pale'); 
-          } 
+  const isTargeted = obj.userData.isTargeted;
+  const objType = obj.userData.type 
 
-        } else {
-          item.userData.setState('default'); 
-        }
-        
-      }
+  console.log('isTargeted', isTargeted)
+
+  if (!isTargeted) {
+    allLabelsRef.current.forEach((item) => {
+      if(item.userData.state !== 'selected')
+        item.userData.setState('default');
     })
+  }
+  else // isTargeted: true
+  {
+    if(objType === 'star') {
+      allLabelsRef.current.forEach((item) => {
+        if (item.parent === obj.parent && item !== obj)
+          item.userData.setState('show-names');
+        else if (item.parent !== obj.parent && item !== obj)
+          item.userData.setState('pale')
+      })
+      //obj.parent.userData.setState('selected')
+    }
+
+    if(objType === 'constellation') {
+      allLabelsRef.current.forEach((item) => {
+        if (item.parent === obj) //.parent && item !== obj)
+          item.userData.setState('show-names');
+        else
+          item.userData.setState('pale')
+      })
+      obj.userData.setState('targeted')
+    }
   }
 }
 
@@ -160,6 +159,4 @@ export function updateLinesVisibility(obj, cList) {
       }
     })
   }
-
-
 }

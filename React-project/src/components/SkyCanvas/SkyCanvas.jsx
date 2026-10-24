@@ -93,29 +93,29 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
 
     function setActiveObject (obj) {
       // if smth was selected, then make it default
-      if (currentActiveObj && currentActiveObj !== obj)
+      if (currentActiveObj && currentActiveObj !== obj) {
         currentActiveObj.userData.setState('default')
-
+        console.log(currentActiveObj.userData.name, "?==", obj.userData.name)
+      }
+      
       if(obj.userData.state === 'selected') {
         obj.userData.setState('targeted')
-      } else if(obj.userData.state === 'targeted') {
-        obj.userData.setState('selected')
       } else {
         obj.userData.setState('selected')
       }
       currentActiveObj = obj;
+      //console.log("isTargeted:", currentActiveObj.userData.isTargeted)
 
-      if (onStarClick) {
-        onStarClick(obj.userData.id); 
-        updateStarsVisibility(obj, allLabelsRef);
-      updateLinesVisibility(obj, constellationList)
+      if (obj.userData.type === 'star' && onStarClick) {
+        onStarClick(obj.userData.id)
+        updateStarsVisibility(obj, allLabelsRef)
+        updateLinesVisibility(obj, constellationList)
       }
-      if (onConstellationClick) {
-        onConstellationClick(obj.userData.id); 
-        updateStarsVisibility(obj, allLabelsRef);
-      updateLinesVisibility(obj, constellationList)
+      if (obj.userData.type === 'constellation' && onConstellationClick) {
+        onConstellationClick(obj.userData.id)
+        updateStarsVisibility(obj, allLabelsRef)
+        updateLinesVisibility(obj, constellationList)
       }
-      
     }
 
     const handleTargetToggle = (constellationGroup, pivotPos, isTargeted, isAutoReset = false) => {
