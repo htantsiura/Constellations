@@ -1543,7 +1543,7 @@
     "declination": -24.1842,
     "apparent_magnitude": 3.89,
     "absolute_magnitude": -16.11,
-    "distance_light_year": 326156.0,
+    "distance_light_year": 1286.0,
     "spectral_class": "K3Iab"
   },
   {
@@ -1781,7 +1781,7 @@
     "declination": 66.3427,
     "apparent_magnitude": 4.26,
     "absolute_magnitude": -15.74,
-    "distance_light_year": 326156.0,
+    "distance_light_year": 2580.0,
     "spectral_class": "O9.5Ia SB:"
   },
   {
@@ -2197,7 +2197,7 @@
     "hip": 54751,
     "hyg_id": 54591,
     "entity": "Star",
-    "name": "HIP 54751",
+    "name": "V533",
     "bayer": "",
     "bf": "",
     "constellation": "Carina",
@@ -2206,7 +2206,7 @@
     "declination": -60.3176,
     "apparent_magnitude": 4.59,
     "absolute_magnitude": -15.41,
-    "distance_light_year": 326156.0,
+    "distance_light_year": 9200.0,
     "spectral_class": "A6Ia"
   },
   {
@@ -2214,7 +2214,7 @@
     "hip": 54463,
     "hyg_id": 54304,
     "entity": "Star",
-    "name": "HIP 54463",
+    "name": "V382",
     "bayer": "",
     "bf": "",
     "constellation": "Carina",
@@ -2223,7 +2223,7 @@
     "declination": -58.975,
     "apparent_magnitude": 3.93,
     "absolute_magnitude": -16.07,
-    "distance_light_year": 326156.0,
+    "distance_light_year": 8560.0,
     "spectral_class": "G0Ia0"
   },
   {
@@ -2648,7 +2648,7 @@
     "declination": -59.4421,
     "apparent_magnitude": 5.07,
     "absolute_magnitude": -14.93,
-    "distance_light_year": 326156.0,
+    "distance_light_year": 5530.0,
     "spectral_class": "G0Ia"
   },
   {
@@ -2869,7 +2869,7 @@
     "declination": 58.78,
     "apparent_magnitude": 4.23,
     "absolute_magnitude": -15.77,
-    "distance_light_year": 326156.0,
+    "distance_light_year": 1370.0,
     "spectral_class": "M2Ia"
   },
   {
@@ -7782,7 +7782,7 @@
     "declination": 7.333,
     "apparent_magnitude": 4.47,
     "absolute_magnitude": -15.53,
-    "distance_light_year": 326156.0,
+    "distance_light_year": 1509.0,
     "spectral_class": "A0Ib"
   },
   {
@@ -9533,7 +9533,7 @@
     "declination": -46.7184,
     "apparent_magnitude": 3.32,
     "absolute_magnitude": -16.68,
-    "distance_light_year": 326156.0,
+    "distance_light_year": 182.0,
     "spectral_class": "G8IIIvar"
   },
   {
@@ -10179,7 +10179,7 @@
     "declination": -28.9548,
     "apparent_magnitude": 3.94,
     "absolute_magnitude": -16.06,
-    "distance_light_year": 326156.0,
+    "distance_light_year": 2280.0,
     "spectral_class": "A2Iab"
   },
   {
@@ -11250,7 +11250,7 @@
     "declination": -21.0588,
     "apparent_magnitude": 3.84,
     "absolute_magnitude": -16.16,
-    "distance_light_year": 326156.0,
+    "distance_light_year": 4892.0,
     "spectral_class": "B2III:"
   },
   {
@@ -11610,6 +11610,78 @@
     "distance_light_year": 112.3,
     "spectral_class": "A1Vnn"
   },
+  {
+    "id": "alp tra",
+    "hip": 82273,
+    "hyg_id": null,
+    "entity": "Star",
+    "name": "Atria",
+    "bayer": "Alp",
+    "bf": "Alp TrA",
+    "constellation": "Triangulum Australe",
+    "constellation_abbr": "TrA",
+    "right_ascension": 16.811,
+    "declination": -69.027,
+    "apparent_magnitude": 1.91,
+    "absolute_magnitude": -3.68,
+    "distance_light_year": 391.0,
+    "spectral_class": "K2III"
+  },
+  {
+    "id": "bet tra",
+    "hip": 77952,
+    "hyg_id": null,
+    "entity": "Star",
+    "name": "Bet TrA",
+    "bayer": "Bet",
+    "bf": "Bet TrA",
+    "constellation": "Triangulum Australe",
+    "constellation_abbr": "TrA",
+    "right_ascension": 15.919,
+    "declination": -63.430,
+    "apparent_magnitude": 2.85,
+    "absolute_magnitude": 2.37,
+    "distance_light_year": 40.4,
+    "spectral_class": "F1 V"
+  },
+  {
+    "id": "eps tra",
+    "hip": 76440,
+    "hyg_id": null,
+    "entity": "Star",
+    "name": "Eps TrA",
+    "bayer": "Eps",
+    "bf": "Eps TrA",
+    "constellation": "Triangulum Australe",
+    "constellation_abbr": "TrA",
+    "right_ascension": 15.612,
+    "declination": -66.317,
+    "apparent_magnitude": 4.11,
+    "absolute_magnitude": 0.15,
+    "distance_light_year": 202.0,
+    "spectral_class": "K0 III"
+  },
+  {
+    "id": "gam tra",
+    "hip": 74946,
+    "hyg_id": null,
+    "entity": "Star",
+    "name": "Gam TrA",
+    "bayer": "Gam",
+    "bf": "Gam TrA",
+    "constellation": "Triangulum Australe",
+    "constellation_abbr": "TrA",
+    "right_ascension": 15.315,
+    "declination": -68.679,
+    "apparent_magnitude": 2.87,
+    "absolute_magnitude": -0.89,
+    "distance_light_year": 190.0,
+    "spectral_class": "A1III"
+  },
+
+
+
+
   {
     "id": "bet-1 tuc",
     "hip": 2484,

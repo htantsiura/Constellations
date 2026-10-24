@@ -11,23 +11,23 @@
     "main_stars_qty": 17,
     "brightest_star": "Alpheratz",
     "list_of_main_stars": [
-      "Alpheratz",
-      "Del And",
-      "Mirach",
-      "Almach",
-      "Omi And",
-      "Iot And",
-      "Kap And",
-      "Lam And",
-      "Sig And",
-      "Pi And",
-      "Mu And",
-      "Nu And",
-      "Phi And",
-      "Nembus",
-      "Eps And",
-      "Zet And",
-      "Eta And"
+      "alpheratz",
+      "del and",
+      "mirach",
+      "almach",
+      "omi and",
+      "iot and",
+      "kap and",
+      "lam and",
+      "sig and",
+      "pi and",
+      "mu and",
+      "nu and",
+      "phi and",
+      "nembus",
+      "eps and",
+      "zet and",
+      "eta and"
     ],
     "list_of_hips": [
       677,
@@ -61,9 +61,9 @@
     "main_stars_qty": 3,
     "brightest_star": "α Ant",
     "list_of_main_stars": [
-      "Iot Ant",
-      "Alp Ant",
-      "Eps Ant"
+      "iot ant",
+      "alp ant",
+      "eps ant"
     ],
     "list_of_hips": [
       53502,
@@ -83,10 +83,10 @@
     "main_stars_qty": 4,
     "brightest_star": "α Aps",
     "list_of_main_stars": [
-      "Alp Aps",
-      "Gam Aps",
-      "Del-1 Aps",
-      "Bet Aps"
+      "alp aps",
+      "gam aps",
+      "del-1 aps",
+      "bet aps"
     ],
     "list_of_hips": [
       72370,
@@ -107,22 +107,22 @@
     "main_stars_qty": 16,
     "brightest_star": "Sadalsuud",
     "list_of_main_stars": [
-      "Albali",
-      "Sadalsuud",
-      "Sadalmelik",
-      "Sadachbia",
-      "Zet-1 Aqr",
-      "Eta Aqr",
-      "Pi Aqr",
-      "Iot Aqr",
-      "Ancha",
-      "Lam Aqr",
-      "Phi Aqr",
-      "Psi-2 Aqr",
-      "98    Aqr",
-      "88    Aqr",
-      "Skat",
-      "Tau-2 Aqr"
+      "albali",
+      "sadalsuud",
+      "sadalmelik",
+      "sadachbia",
+      "zet-1 aqr",
+      "eta aqr",
+      "pi aqr",
+      "iot aqr",
+      "ancha",
+      "lam aqr",
+      "phi aqr",
+      "psi-2 aqr",
+      "98    aqr",
+      "88    aqr",
+      "skat",
+      "tau-2 aqr"
     ],
     "list_of_hips": [
       102618,
@@ -155,17 +155,17 @@
     "main_stars_qty": 11,
     "brightest_star": "Altair",
     "list_of_main_stars": [
-      "Alshain",
-      "Altair",
-      "Tarazed",
-      "Del Aql",
-      "Lam Aql",
-      "Okab",
-      "Eta Aql",
-      "The Aql",
-      "Eps Aql",
-      "12    Aql",
-      "Iot Aql"
+      "alshain",
+      "altair",
+      "tarazed",
+      "del aql",
+      "lam aql",
+      "okab",
+      "eta aql",
+      "the aql",
+      "eps aql",
+      "12    aql",
+      "iot aql"
     ],
     "list_of_hips": [
       98036,
@@ -193,14 +193,14 @@
     "main_stars_qty": 8,
     "brightest_star": "β Ara",
     "list_of_main_stars": [
-      "Gam Ara",
-      "Del Ara",
-      "Eta Ara",
-      "Zet Ara",
-      "Eps-1 Ara",
-      "Alp Ara",
-      "The Ara",
-      "Bet Ara"
+      "gam ara",
+      "del ara",
+      "eta ara",
+      "zet ara",
+      "eps-1 ara",
+      "alp ara",
+      "the ara",
+      "bet ara"
     ],
     "list_of_hips": [
       85267,
@@ -225,10 +225,10 @@
     "main_stars_qty": 4,
     "brightest_star": "Hamal",
     "list_of_main_stars": [
-      "Mesarthim",
-      "Sheratan",
-      "Hamal",
-      "Bharani"
+      "mesarthim",
+      "sheratan",
+      "hamal",
+      "bharani"
     ],
     "list_of_hips": [
       8832,
@@ -249,14 +249,14 @@
     "main_stars_qty": 8,
     "brightest_star": "Capella",
     "list_of_main_stars": [
-      "Hassaleh",
-      "Haedus",
-      "Capella",
-      "Menkalinan",
-      "Mahasim",
-      "Saclateni",
-      "Almaaz",
-      "Del Aur"
+      "hassaleh",
+      "haedus",
+      "capella",
+      "menkalinan",
+      "mahasim",
+      "saclateni",
+      "almaaz",
+      "del aur"
     ],
     "list_of_hips": [
       23015,
@@ -281,18 +281,18 @@
     "main_stars_qty": 12,
     "brightest_star": "Arcturus",
     "list_of_main_stars": [
-      "Arcturus",
-      "Izar",
-      "Del Boo",
-      "Nekkar",
-      "Seginus",
-      "Rho Boo",
-      "Muphrid",
-      "Tau Boo",
-      "Zet Boo",
-      "Xuange",
-      "The Boo",
-      "Kap-2 Boo"
+      "arcturus",
+      "izar",
+      "del boo",
+      "nekkar",
+      "seginus",
+      "rho boo",
+      "muphrid",
+      "tau boo",
+      "zet boo",
+      "xuange",
+      "the boo",
+      "kap-2 boo"
     ],
     "list_of_hips": [
       69673,
@@ -321,10 +321,10 @@
     "main_stars_qty": 4,
     "brightest_star": "α Cae",
     "list_of_main_stars": [
-      "Gam-1 Cae",
-      "Bet Cae",
-      "Alp Cae",
-      "Del Cae"
+      "gam-1 cae",
+      "bet cae",
+      "alp cae",
+      "del cae"
     ],
     "list_of_hips": [
       23595,
@@ -345,14 +345,14 @@
     "main_stars_qty": 8,
     "brightest_star": "β Cam",
     "list_of_main_stars": [
-      "7    Cam",
-      "Bet Cam",
-      "Alp Cam",
-      "HIP 29997",
-      "HIP 33694",
-      "Gam Cam",
-      "HIP 17884",
-      "HIP 16228"
+      "7    cam",
+      "bet cam",
+      "alp cam",
+      "hip 29997",
+      "hip 33694",
+      "gam cam",
+      "hip 17884",
+      "hip 16228"
     ],
     "list_of_hips": [
       23040,
@@ -377,11 +377,11 @@
     "main_stars_qty": 5,
     "brightest_star": "Tarf",
     "list_of_main_stars": [
-      "Acubens",
-      "Asellus Australis",
-      "Tarf",
-      "Asellus Borealis",
-      "Iot Cnc"
+      "acubens",
+      "asellus australis",
+      "tarf",
+      "asellus borealis",
+      "iot cnc"
     ],
     "list_of_hips": [
       44066,
@@ -403,8 +403,8 @@
     "main_stars_qty": 2,
     "brightest_star": "Cor Caroli",
     "list_of_main_stars": [
-      "Cor Caroli",
-      "Chara"
+      "cor caroli",
+      "chara"
     ],
     "list_of_hips": [
       63125,
@@ -423,16 +423,16 @@
     "main_stars_qty": 10,
     "brightest_star": "Sirius",
     "list_of_main_stars": [
-      "Mirzam",
-      "Sirius",
-      "Wezen",
-      "Adhara",
-      "Aludra",
-      "Nu-2 CMa",
-      "Omi-1 CMa",
-      "Iot CMa",
-      "Muliphein",
-      "The CMa"
+      "mirzam",
+      "sirius",
+      "wezen",
+      "adhara",
+      "aludra",
+      "nu-2 cma",
+      "omi-1 cma",
+      "iot cma",
+      "muliphein",
+      "the cma"
     ],
     "list_of_hips": [
       30324,
@@ -459,8 +459,8 @@
     "main_stars_qty": 2,
     "brightest_star": "Procyon",
     "list_of_main_stars": [
-      "Procyon",
-      "Gomeisa"
+      "procyon",
+      "gomeisa"
     ],
     "list_of_hips": [
       37279,
@@ -479,15 +479,15 @@
     "main_stars_qty": 9,
     "brightest_star": "Deneb Algedi",
     "list_of_main_stars": [
-      "Algedi",
-      "Dabih",
-      "Psi Cap",
-      "Ome Cap",
-      "Zet Cap",
-      "Eps Cap",
-      "Deneb Algedi",
-      "Nashira",
-      "The Cap"
+      "algedi",
+      "dabih",
+      "psi cap",
+      "ome cap",
+      "zet cap",
+      "eps cap",
+      "deneb algedi",
+      "nashira",
+      "the cap"
     ],
     "list_of_hips": [
       100064,
@@ -513,19 +513,19 @@
     "main_stars_qty": 13,
     "brightest_star": "Canopus",
     "list_of_main_stars": [
-      "Canopus",
-      "Miaplacidus",
-      "Ome Car",
-      "The Car",
-      "HIP 51576",
-      "HIP 50371",
-      "Aspidiske",
-      "HIP 53253",
-      "HIP 54301",
-      "HIP 54751",
-      "HIP 54463",
-      "Avior",
-      "Chi Car"
+      "canopus",
+      "miaplacidus",
+      "ome car",
+      "the car",
+      "hip 51576",
+      "hip 50371",
+      "aspidiske",
+      "hip 53253",
+      "hip 54301",
+      "hip 54751",
+      "hip 54463",
+      "avior",
+      "chi car"
     ],
     "list_of_hips": [
       30438,
@@ -555,11 +555,11 @@
     "main_stars_qty": 5,
     "brightest_star": "Cih",
     "list_of_main_stars": [
-      "Caph",
-      "Schedar",
-      "Cih",
-      "Ruchbah",
-      "Segin"
+      "caph",
+      "schedar",
+      "cih",
+      "ruchbah",
+      "segin"
     ],
     "list_of_hips": [
       746,
@@ -581,27 +581,27 @@
     "main_stars_qty": 21,
     "brightest_star": "Rigil Kentaurus",
     "list_of_main_stars": [
-      "Gam Cen",
-      "Eps Cen",
-      "Hadar",
-      "Rigil Kentaurus",
-      "Zet Cen",
-      "Ups-1 Cen",
-      "Phi Cen",
-      "Eta Cen",
-      "Chi Cen",
-      "Psi Cen",
-      "Menkent",
-      "Nu Cen",
-      "Pi Cen",
-      "Del Cen",
-      "Sig Cen",
-      "Rho Cen",
-      "Omi-1 Cen",
-      "HIP 65936",
-      "Iot Cen",
-      "HIP 61789",
-      "Kap Cen"
+      "gam cen",
+      "eps cen",
+      "hadar",
+      "rigil kentaurus",
+      "zet cen",
+      "ups-1 cen",
+      "phi cen",
+      "eta cen",
+      "chi cen",
+      "psi cen",
+      "menkent",
+      "nu cen",
+      "pi cen",
+      "del cen",
+      "sig cen",
+      "rho cen",
+      "omi-1 cen",
+      "hip 65936",
+      "iot cen",
+      "hip 61789",
+      "kap cen"
     ],
     "list_of_hips": [
       61932,
@@ -639,16 +639,16 @@
     "main_stars_qty": 10,
     "brightest_star": "Alderamin",
     "list_of_main_stars": [
-      "Eta Cep",
-      "Alderamin",
-      "Alfirk",
-      "Iot Cep",
-      "Errai",
-      "Del Cep",
-      "Zet Cep",
-      "Eps Cep",
-      "Mu Cep",
-      "The Cep"
+      "eta cep",
+      "alderamin",
+      "alfirk",
+      "iot cep",
+      "errai",
+      "del cep",
+      "zet cep",
+      "eps cep",
+      "mu cep",
+      "the cep"
     ],
     "list_of_hips": [
       102422,
@@ -675,20 +675,20 @@
     "main_stars_qty": 14,
     "brightest_star": "Diphda",
     "list_of_main_stars": [
-      "Kaffaljidhma",
-      "Menkar",
-      "Lam Cet",
-      "Mu Cet",
-      "Xi-2 Cet",
-      "Del Cet",
-      "Mira",
-      "Baten Kaitos",
-      "Tau Cet",
-      "Diphda",
-      "Iot Cet",
-      "Eta Cet",
-      "The Cet",
-      "Pi Cet"
+      "kaffaljidhma",
+      "menkar",
+      "lam cet",
+      "mu cet",
+      "xi-2 cet",
+      "del cet",
+      "mira",
+      "baten kaitos",
+      "tau cet",
+      "diphda",
+      "iot cet",
+      "eta cet",
+      "the cet",
+      "pi cet"
     ],
     "list_of_hips": [
       12706,
@@ -719,11 +719,11 @@
     "main_stars_qty": 5,
     "brightest_star": "α Chamaeleon",
     "list_of_main_stars": [
-      "Alp Cha",
-      "Gam Cha",
-      "Del-2 Cha",
-      "Bet Cha",
-      "Eps Cha"
+      "alp cha",
+      "gam cha",
+      "del-2 cha",
+      "bet cha",
+      "eps cha"
     ],
     "list_of_hips": [
       40702,
@@ -745,9 +745,9 @@
     "main_stars_qty": 3,
     "brightest_star": "α Circinus",
     "list_of_main_stars": [
-      "Bet Cir",
-      "Alp Cir",
-      "Gam Cir"
+      "bet cir",
+      "alp cir",
+      "gam cir"
     ],
     "list_of_hips": [
       74824,
@@ -767,12 +767,12 @@
     "main_stars_qty": 6,
     "brightest_star": "Phact",
     "list_of_main_stars": [
-      "Phact",
-      "Wazn",
-      "Eps Col",
-      "Eta Col",
-      "Gam Col",
-      "Del Col"
+      "phact",
+      "wazn",
+      "eps col",
+      "eta col",
+      "gam col",
+      "del col"
     ],
     "list_of_hips": [
       26634,
@@ -795,9 +795,9 @@
     "main_stars_qty": 3,
     "brightest_star": "β Com",
     "list_of_main_stars": [
-      "Diadem",
-      "Bet Com",
-      "Gam Com"
+      "diadem",
+      "bet com",
+      "gam com"
     ],
     "list_of_hips": [
       64241,
@@ -817,11 +817,11 @@
     "main_stars_qty": 5,
     "brightest_star": "β CrA",
     "list_of_main_stars": [
-      "Gam CrA",
-      "Meridiana",
-      "Bet CrA",
-      "Del CrA",
-      "The CrA"
+      "gam cra",
+      "meridiana",
+      "bet cra",
+      "del cra",
+      "the cra"
     ],
     "list_of_hips": [
       93825,
@@ -843,13 +843,13 @@
     "main_stars_qty": 7,
     "brightest_star": "Alphecca",
     "list_of_main_stars": [
-      "The CrB",
-      "Nusakan",
-      "Alphecca",
-      "Gam CrB",
-      "Del CrB",
-      "Eps CrB",
-      "Iot CrB"
+      "the crb",
+      "nusakan",
+      "alphecca",
+      "gam crb",
+      "del crb",
+      "eps crb",
+      "iot crb"
     ],
     "list_of_hips": [
       76127,
@@ -873,11 +873,11 @@
     "main_stars_qty": 5,
     "brightest_star": "Gienah",
     "list_of_main_stars": [
-      "Algorab",
-      "Gienah",
-      "Eps Crv",
-      "Kraz",
-      "Alchiba"
+      "algorab",
+      "gienah",
+      "eps crv",
+      "kraz",
+      "alchiba"
     ],
     "list_of_hips": [
       60965,
@@ -899,14 +899,14 @@
     "main_stars_qty": 8,
     "brightest_star": "δ Crt",
     "list_of_main_stars": [
-      "Alkes",
-      "Bet Crt",
-      "Gam Crt",
-      "Zet Crt",
-      "Eta Crt",
-      "Del Crt",
-      "Eps Crt",
-      "The Crt"
+      "alkes",
+      "bet crt",
+      "gam crt",
+      "zet crt",
+      "eta crt",
+      "del crt",
+      "eps crt",
+      "the crt"
     ],
     "list_of_hips": [
       53740,
@@ -931,10 +931,10 @@
     "main_stars_qty": 4,
     "brightest_star": "Acrux",
     "list_of_main_stars": [
-      "Acrux",
-      "Gacrux",
-      "Mimosa",
-      "Imai"
+      "acrux",
+      "gacrux",
+      "mimosa",
+      "imai"
     ],
     "list_of_hips": [
       60718,
@@ -955,16 +955,16 @@
     "main_stars_qty": 10,
     "brightest_star": "Deneb",
     "list_of_main_stars": [
-      "Deneb",
-      "Sadr",
-      "Aljanah",
-      "Albireo",
-      "Fawaris",
-      "Iot-2 Cyg",
-      "Kap Cyg",
-      "32    Cyg",
-      "Nu Cyg",
-      "Zet Cyg"
+      "deneb",
+      "sadr",
+      "aljanah",
+      "albireo",
+      "fawaris",
+      "iot-2 cyg",
+      "kap cyg",
+      "32    cyg",
+      "nu cyg",
+      "zet cyg"
     ],
     "list_of_hips": [
       102098,
@@ -991,11 +991,11 @@
     "main_stars_qty": 5,
     "brightest_star": "Rotanev",
     "list_of_main_stars": [
-      "Aldulfin",
-      "Rotanev",
-      "Sualocin",
-      "Gam-2 Del",
-      "Del Del"
+      "aldulfin",
+      "rotanev",
+      "sualocin",
+      "gam-2 del",
+      "del del"
     ],
     "list_of_hips": [
       101421,
@@ -1017,12 +1017,12 @@
     "main_stars_qty": 6,
     "brightest_star": "α Dor",
     "list_of_main_stars": [
-      "Gam Dor",
-      "Alp Dor",
-      "Zet Dor",
-      "Bet Dor",
-      "Del Dor",
-      "HIP 27890"
+      "gam dor",
+      "alp dor",
+      "zet dor",
+      "bet dor",
+      "del dor",
+      "hip 27890"
     ],
     "list_of_hips": [
       19893,
@@ -1045,21 +1045,21 @@
     "main_stars_qty": 15,
     "brightest_star": "Eltanin",
     "list_of_main_stars": [
-      "Giausar",
-      "Kap Dra",
-      "Thuban",
-      "Edasich",
-      "The Dra",
-      "Athebyne",
-      "Aldhibah",
-      "Phi Dra",
-      "Chi Dra",
-      "Altais",
-      "Eps Dra",
-      "Grumium",
-      "Nu-2 Dra",
-      "Rastaban",
-      "Eltanin"
+      "giausar",
+      "kap dra",
+      "thuban",
+      "edasich",
+      "the dra",
+      "athebyne",
+      "aldhibah",
+      "phi dra",
+      "chi dra",
+      "altais",
+      "eps dra",
+      "grumium",
+      "nu-2 dra",
+      "rastaban",
+      "eltanin"
     ],
     "list_of_hips": [
       56211,
@@ -1091,9 +1091,9 @@
     "main_stars_qty": 3,
     "brightest_star": "Kitalpha",
     "list_of_main_stars": [
-      "Kitalpha",
-      "Del Equ",
-      "Gam Equ"
+      "kitalpha",
+      "del equ",
+      "gam equ"
     ],
     "list_of_hips": [
       104987,
@@ -1113,35 +1113,35 @@
     "main_stars_qty": 29,
     "brightest_star": "Achernar",
     "list_of_main_stars": [
-      "Cursa",
-      "Mu Eri",
-      "Nu Eri",
-      "Beid",
-      "Zaurak",
-      "Pi Eri",
-      "Del Eri",
-      "Ran",
-      "Azha",
-      "Tau-1 Eri",
-      "Tau-3 Eri",
-      "Tau-4 Eri",
-      "Tau-5 Eri",
-      "Tau-6 Eri",
-      "Tau-8 Eri",
-      "Tau-9 Eri",
-      "Ups-1 Eri",
-      "Theemin",
-      "Beemim",
-      "Ups-4 Eri",
-      "HIP 17874",
-      "HIP 16870",
-      "82 G. Eri",
-      "Acamar",
-      "Iot Eri",
-      "HIP 12413",
-      "Kap Eri",
-      "Chi Eri",
-      "Achernar"
+      "cursa",
+      "mu eri",
+      "nu eri",
+      "beid",
+      "zaurak",
+      "pi eri",
+      "del eri",
+      "ran",
+      "azha",
+      "tau-1 eri",
+      "tau-3 eri",
+      "tau-4 eri",
+      "tau-5 eri",
+      "tau-6 eri",
+      "tau-8 eri",
+      "tau-9 eri",
+      "ups-1 eri",
+      "theemin",
+      "beemim",
+      "ups-4 eri",
+      "hip 17874",
+      "hip 16870",
+      "82 g. eri",
+      "acamar",
+      "iot eri",
+      "hip 12413",
+      "kap eri",
+      "chi eri",
+      "achernar"
     ],
     "list_of_hips": [
       23875,
@@ -1187,9 +1187,9 @@
     "main_stars_qty": 3,
     "brightest_star": "Dalim",
     "list_of_main_stars": [
-      "Dalim",
-      "Bet For",
-      "Nu For"
+      "dalim",
+      "bet for",
+      "nu for"
     ],
     "list_of_hips": [
       14879,
@@ -1209,23 +1209,23 @@
     "main_stars_qty": 17,
     "brightest_star": "Pollux",
     "list_of_main_stars": [
-      "Alzirr",
-      "Lam Gem",
-      "Wasat",
-      "Mekbuda",
-      "Alhena",
-      "Ups Gem",
-      "Kap Gem",
-      "Pollux",
-      "Iot Gem",
-      "Tau Gem",
-      "Castor",
-      "The Gem",
-      "Mebsuta",
-      "Nu Gem",
-      "Tejat",
-      "Propus",
-      "1    Gem"
+      "alzirr",
+      "lam gem",
+      "wasat",
+      "mekbuda",
+      "alhena",
+      "ups gem",
+      "kap gem",
+      "pollux",
+      "iot gem",
+      "tau gem",
+      "castor",
+      "the gem",
+      "mebsuta",
+      "nu gem",
+      "tejat",
+      "propus",
+      "1    gem"
     ],
     "list_of_hips": [
       32362,
@@ -1259,13 +1259,13 @@
     "main_stars_qty": 7,
     "brightest_star": "Alnair",
     "list_of_main_stars": [
-      "Aldhanab",
-      "Lam Gru",
-      "Del-1 Gru",
-      "Alnair",
-      "Tiaki",
-      "Eps Gru",
-      "Zet Gru"
+      "aldhanab",
+      "lam gru",
+      "del-1 gru",
+      "alnair",
+      "tiaki",
+      "eps gru",
+      "zet gru"
     ],
     "list_of_hips": [
       108085,
@@ -1289,27 +1289,27 @@
     "main_stars_qty": 21,
     "brightest_star": "Kornephoros",
     "list_of_main_stars": [
-      "Sarin",
-      "Rasalgethi",
-      "Kornephoros",
-      "Gam Her",
-      "Zet Her",
-      "Eps Her",
-      "Eta Her",
-      "Sig Her",
-      "Tau Her",
-      "Pi Her",
-      "Rho Her",
-      "The Her",
-      "Iot Her",
-      "Maasym",
-      "Mu Her",
-      "Xi Her",
-      "Omi Her",
-      "Chi Her",
-      "Phi Her",
-      "Cujam",
-      "29    Her"
+      "sarin",
+      "rasalgethi",
+      "kornephoros",
+      "gam her",
+      "zet her",
+      "eps her",
+      "eta her",
+      "sig her",
+      "tau her",
+      "pi her",
+      "rho her",
+      "the her",
+      "iot her",
+      "maasym",
+      "mu her",
+      "xi her",
+      "omi her",
+      "chi her",
+      "phi her",
+      "cujam",
+      "29    her"
     ],
     "list_of_hips": [
       84379,
@@ -1347,12 +1347,12 @@
     "main_stars_qty": 6,
     "brightest_star": "α Hor",
     "list_of_main_stars": [
-      "Alp Hor",
-      "Iot Hor",
-      "Eta Hor",
-      "Zet Hor",
-      "Mu Hor",
-      "Bet Hor"
+      "alp hor",
+      "iot hor",
+      "eta hor",
+      "zet hor",
+      "mu hor",
+      "bet hor"
     ],
     "list_of_hips": [
       19747,
@@ -1375,25 +1375,25 @@
     "main_stars_qty": 19,
     "brightest_star": "Alphard",
     "list_of_main_stars": [
-      "Rho Hya",
-      "Eta Hya",
-      "Minchir",
-      "Del Hya",
-      "Ashlesha",
-      "Zet Hya",
-      "The Hya",
-      "Ukdah",
-      "Alphard",
-      "Zhang",
-      "Ups-2 Hya",
-      "Lam Hya",
-      "Mu Hya",
-      "Nu Hya",
-      "Xi Hya",
-      "Bet Hya",
-      "Gam Hya",
-      "Pi Hya",
-      "58    Hya"
+      "rho hya",
+      "eta hya",
+      "minchir",
+      "del hya",
+      "ashlesha",
+      "zet hya",
+      "the hya",
+      "ukdah",
+      "alphard",
+      "zhang",
+      "ups-2 hya",
+      "lam hya",
+      "mu hya",
+      "nu hya",
+      "xi hya",
+      "bet hya",
+      "gam hya",
+      "pi hya",
+      "58    hya"
     ],
     "list_of_hips": [
       43234,
@@ -1429,10 +1429,10 @@
     "main_stars_qty": 4,
     "brightest_star": "β Hyi",
     "list_of_main_stars": [
-      "Bet Hyi",
-      "Gam Hyi",
-      "Del Hyi",
-      "Alp Hyi"
+      "bet hyi",
+      "gam hyi",
+      "del hyi",
+      "alp hyi"
     ],
     "list_of_hips": [
       2021,
@@ -1453,11 +1453,11 @@
     "main_stars_qty": 5,
     "brightest_star": "α Ind",
     "list_of_main_stars": [
-      "Bet Ind",
-      "Eta Ind",
-      "Alp Ind",
-      "The Ind",
-      "Del Ind"
+      "bet ind",
+      "eta ind",
+      "alp ind",
+      "the ind",
+      "del ind"
     ],
     "list_of_hips": [
       103227,
@@ -1479,15 +1479,15 @@
     "main_stars_qty": 9,
     "brightest_star": "α Lac",
     "list_of_main_stars": [
-      "5    Lac",
-      "Alp Lac",
-      "Bet Lac",
-      "4    Lac",
-      "2    Lac",
-      "6    Lac",
-      "11    Lac",
-      "HIP 109754",
-      "1    Lac"
+      "5    lac",
+      "alp lac",
+      "bet lac",
+      "4    lac",
+      "2    lac",
+      "6    lac",
+      "11    lac",
+      "hip 109754",
+      "1    lac"
     ],
     "list_of_hips": [
       111022,
@@ -1513,19 +1513,19 @@
     "main_stars_qty": 13,
     "brightest_star": "Regulus",
     "list_of_main_stars": [
-      "Regulus",
-      "Eta Leo",
-      "Algieba",
-      "Adhafera",
-      "Rasalas",
-      "Ras Elased Australis",
-      "Zosma",
-      "Denebola",
-      "Chertan",
-      "Kap Leo",
-      "Alterf",
-      "Iot Leo",
-      "Sig Leo"
+      "regulus",
+      "eta leo",
+      "algieba",
+      "adhafera",
+      "rasalas",
+      "ras elased australis",
+      "zosma",
+      "denebola",
+      "chertan",
+      "kap leo",
+      "alterf",
+      "iot leo",
+      "sig leo"
     ],
     "list_of_hips": [
       49669,
@@ -1555,11 +1555,11 @@
     "main_stars_qty": 5,
     "brightest_star": "Praecipua",
     "list_of_main_stars": [
-      "10    LMi",
-      "21    LMi",
-      "Bet LMi",
-      "Praecipua",
-      "30    LMi"
+      "10    lmi",
+      "21    lmi",
+      "bet lmi",
+      "praecipua",
+      "30    lmi"
     ],
     "list_of_hips": [
       46952,
@@ -1581,17 +1581,17 @@
     "main_stars_qty": 11,
     "brightest_star": "Arneb",
     "list_of_main_stars": [
-      "Eps Lep",
-      "Mu Lep",
-      "Arneb",
-      "Nihal",
-      "Lam Lep",
-      "Kap Lep",
-      "Gam Lep",
-      "Del Lep",
-      "The Lep",
-      "Eta Lep",
-      "Zet Lep"
+      "eps lep",
+      "mu lep",
+      "arneb",
+      "nihal",
+      "lam lep",
+      "kap lep",
+      "gam lep",
+      "del lep",
+      "the lep",
+      "eta lep",
+      "zet lep"
     ],
     "list_of_hips": [
       23685,
@@ -1619,12 +1619,12 @@
     "main_stars_qty": 6,
     "brightest_star": "Zubeneschamali",
     "list_of_main_stars": [
-      "Zubenelgenubi",
-      "Zubeneschamali",
-      "Brachium",
-      "Zubenelhakrabi",
-      "Ups Lib",
-      "Tau Lib"
+      "zubenelgenubi",
+      "zubeneschamali",
+      "brachium",
+      "zubenelhakrabi",
+      "ups lib",
+      "tau lib"
     ],
     "list_of_hips": [
       72622,
@@ -1647,15 +1647,15 @@
     "main_stars_qty": 9,
     "brightest_star": "α Lup",
     "list_of_main_stars": [
-      "Alp Lup",
-      "Zet Lup",
-      "Eps Lup",
-      "Gam Lup",
-      "Del Lup",
-      "Bet Lup",
-      "Eta Lup",
-      "Phi-1 Lup",
-      "Chi Lup"
+      "alp lup",
+      "zet lup",
+      "eps lup",
+      "gam lup",
+      "del lup",
+      "bet lup",
+      "eta lup",
+      "phi-1 lup",
+      "chi lup"
     ],
     "list_of_hips": [
       71860,
@@ -1681,14 +1681,14 @@
     "main_stars_qty": 8,
     "brightest_star": "α Lyn",
     "list_of_main_stars": [
-      "Alp Lyn",
-      "38    Lyn",
-      "HIP 44700",
-      "HIP 44248",
-      "Alsciaukat",
-      "21    Lyn",
-      "15    Lyn",
-      "2    Lyn"
+      "alp lyn",
+      "38    lyn",
+      "hip 44700",
+      "hip 44248",
+      "alsciaukat",
+      "21    lyn",
+      "15    lyn",
+      "2    lyn"
     ],
     "list_of_hips": [
       45860,
@@ -1713,12 +1713,12 @@
     "main_stars_qty": 6,
     "brightest_star": "Vega",
     "list_of_main_stars": [
-      "Vega",
-      "Eps-1 Lyr",
-      "Zet-1 Lyr",
-      "Del-2 Lyr",
-      "Sulafat",
-      "Sheliak"
+      "vega",
+      "eps-1 lyr",
+      "zet-1 lyr",
+      "del-2 lyr",
+      "sulafat",
+      "sheliak"
     ],
     "list_of_hips": [
       91262,
@@ -1741,8 +1741,8 @@
     "main_stars_qty": 2,
     "brightest_star": "α Men",
     "list_of_main_stars": [
-      "Alp Men",
-      "Bet Men"
+      "alp men",
+      "bet men"
     ],
     "list_of_hips": [
       29271,
@@ -1761,8 +1761,8 @@
     "main_stars_qty": 2,
     "brightest_star": "Ɣ Mic",
     "list_of_main_stars": [
-      "Alp Mic",
-      "Bet Mic"
+      "alp mic",
+      "bet mic"
     ],
     "list_of_hips": [
       102831,
@@ -1781,15 +1781,15 @@
     "main_stars_qty": 9,
     "brightest_star": "β Mon",
     "list_of_main_stars": [
-      "15    Mon",
-      "13    Mon",
-      "Eps Mon",
-      "18    Mon",
-      "Del Mon",
-      "Bet Mon",
-      "Gam Mon",
-      "Zet Mon",
-      "Alp Mon"
+      "15    mon",
+      "13    mon",
+      "eps mon",
+      "18    mon",
+      "del mon",
+      "bet mon",
+      "gam mon",
+      "zet mon",
+      "alp mon"
     ],
     "list_of_hips": [
       31978,
@@ -1815,12 +1815,12 @@
     "main_stars_qty": 6,
     "brightest_star": "α Mus",
     "list_of_main_stars": [
-      "Lam Mus",
-      "Eps Mus",
-      "Alp Mus",
-      "Bet Mus",
-      "Del Mus",
-      "Gam Mus"
+      "lam mus",
+      "eps mus",
+      "alp mus",
+      "bet mus",
+      "del mus",
+      "gam mus"
     ],
     "list_of_hips": [
       57363,
@@ -1843,10 +1843,10 @@
     "main_stars_qty": 4,
     "brightest_star": "Gam2Nor",
     "list_of_main_stars": [
-      "Eta Nor",
-      "Gam-2 Nor",
-      "Eps Nor",
-      "Del Nor"
+      "eta nor",
+      "gam-2 nor",
+      "eps nor",
+      "del nor"
     ],
     "list_of_hips": [
       78639,
@@ -1867,9 +1867,9 @@
     "main_stars_qty": 3,
     "brightest_star": "ν Oct",
     "list_of_main_stars": [
-      "Del Oct",
-      "Nu Oct",
-      "Bet Oct"
+      "del oct",
+      "nu oct",
+      "bet oct"
     ],
     "list_of_hips": [
       70638,
@@ -1889,23 +1889,23 @@
     "main_stars_qty": 17,
     "brightest_star": "Rasalhague",
     "list_of_main_stars": [
-      "Rasalhague",
-      "Kap Oph",
-      "Marfik",
-      "Yed Prior",
-      "Yed Posterior",
-      "Ups Oph",
-      "Zet Oph",
-      "Sabik",
-      "Cebalrai",
-      "Gam Oph",
-      "Nu Oph",
-      "The Oph",
-      "45    Oph",
-      "Phi Oph",
-      "Chi Oph",
-      "Psi Oph",
-      "Rho Oph"
+      "rasalhague",
+      "kap oph",
+      "marfik",
+      "yed prior",
+      "yed posterior",
+      "ups oph",
+      "zet oph",
+      "sabik",
+      "cebalrai",
+      "gam oph",
+      "nu oph",
+      "the oph",
+      "45    oph",
+      "phi oph",
+      "chi oph",
+      "psi oph",
+      "rho oph"
     ],
     "list_of_hips": [
       86032,
@@ -1939,28 +1939,28 @@
     "main_stars_qty": 22,
     "brightest_star": "Rigel",
     "list_of_main_stars": [
-      "Betelgeuse",
-      "Alnitak",
-      "Saiph",
-      "Alnilam",
-      "Mintaka",
-      "Bellatrix",
-      "Eta Ori",
-      "Rigel",
-      "Meissa",
-      "11    Ori",
-      "Omi-2 Ori",
-      "Pi-1 Ori",
-      "Pi-2 Ori",
-      "Tabit",
-      "Pi-4 Ori",
-      "Pi-5 Ori",
-      "Pi-6 Ori",
-      "Mu Ori",
-      "Nu Ori",
-      "Xi Ori",
-      "Chi-2 Ori",
-      "Chi-1 Ori"
+      "betelgeuse",
+      "alnitak",
+      "saiph",
+      "alnilam",
+      "mintaka",
+      "bellatrix",
+      "eta ori",
+      "rigel",
+      "meissa",
+      "11    ori",
+      "omi-2 ori",
+      "pi-1 ori",
+      "pi-2 ori",
+      "tabit",
+      "pi-4 ori",
+      "pi-5 ori",
+      "pi-6 ori",
+      "mu ori",
+      "nu ori",
+      "xi ori",
+      "chi-2 ori",
+      "chi-1 ori"
     ],
     "list_of_hips": [
       27989,
@@ -1999,17 +1999,17 @@
     "main_stars_qty": 11,
     "brightest_star": "Peacock",
     "list_of_main_stars": [
-      "Peacock",
-      "Del Pav",
-      "Bet Pav",
-      "Gam Pav",
-      "Zet Pav",
-      "Eps Pav",
-      "Kap Pav",
-      "Pi Pav",
-      "Eta Pav",
-      "Xi Pav",
-      "Lam Pav"
+      "peacock",
+      "del pav",
+      "bet pav",
+      "gam pav",
+      "zet pav",
+      "eps pav",
+      "kap pav",
+      "pi pav",
+      "eta pav",
+      "xi pav",
+      "lam pav"
     ],
     "list_of_hips": [
       100751,
@@ -2037,18 +2037,18 @@
     "main_stars_qty": 12,
     "brightest_star": "Enif",
     "list_of_main_stars": [
-      "Pi-2 Peg",
-      "Matar",
-      "Scheat",
-      "Sadalbari",
-      "Lam Peg",
-      "Iot Peg",
-      "Kap Peg",
-      "Markab",
-      "Algenib",
-      "Enif",
-      "Biham",
-      "Homam"
+      "pi-2 peg",
+      "matar",
+      "scheat",
+      "sadalbari",
+      "lam peg",
+      "iot peg",
+      "kap peg",
+      "markab",
+      "algenib",
+      "enif",
+      "biham",
+      "homam"
     ],
     "list_of_hips": [
       109410,
@@ -2077,25 +2077,25 @@
     "main_stars_qty": 19,
     "brightest_star": "Mirfak",
     "list_of_main_stars": [
-      "Atik",
-      "Zet Per",
-      "Menkib",
-      "Eps Per",
-      "Del Per",
-      "Mirfak",
-      "Gam Per",
-      "Miram",
-      "Tau Per",
-      "Iot Per",
-      "Misam",
-      "Algol",
-      "Rho Per",
-      "48    Per",
-      "Mu Per",
-      "HIP 20070",
-      "Lam Per",
-      "The Per",
-      "Phi Per"
+      "atik",
+      "zet per",
+      "menkib",
+      "eps per",
+      "del per",
+      "mirfak",
+      "gam per",
+      "miram",
+      "tau per",
+      "iot per",
+      "misam",
+      "algol",
+      "rho per",
+      "48    per",
+      "mu per",
+      "hip 20070",
+      "lam per",
+      "the per",
+      "phi per"
     ],
     "list_of_hips": [
       17448,
@@ -2131,12 +2131,12 @@
     "main_stars_qty": 6,
     "brightest_star": "Ankaa",
     "list_of_main_stars": [
-      "Ankaa",
-      "Bet Phe",
-      "Gam Phe",
-      "Eps Phe",
-      "Wurren",
-      "Del Phe"
+      "ankaa",
+      "bet phe",
+      "gam phe",
+      "eps phe",
+      "wurren",
+      "del phe"
     ],
     "list_of_hips": [
       2081,
@@ -2159,9 +2159,9 @@
     "main_stars_qty": 3,
     "brightest_star": "α Pic",
     "list_of_main_stars": [
-      "Alp Pic",
-      "Gam Pic",
-      "Bet Pic"
+      "alp pic",
+      "gam pic",
+      "bet pic"
     ],
     "list_of_hips": [
       32607,
@@ -2181,21 +2181,21 @@
     "main_stars_qty": 15,
     "brightest_star": "Alpherg",
     "list_of_main_stars": [
-      "Phi Psc",
-      "Ups Psc",
-      "Tau Psc",
-      "Alpherg",
-      "Torcular",
-      "Alp Psc",
-      "Nu Psc",
-      "Eps Psc",
-      "Del Psc",
-      "Ome Psc",
-      "Iot Psc",
-      "The Psc",
-      "Gam Psc",
-      "Kap Psc",
-      "Lam Psc"
+      "phi psc",
+      "ups psc",
+      "tau psc",
+      "alpherg",
+      "torcular",
+      "alp psc",
+      "nu psc",
+      "eps psc",
+      "del psc",
+      "ome psc",
+      "iot psc",
+      "the psc",
+      "gam psc",
+      "kap psc",
+      "lam psc"
     ],
     "list_of_hips": [
       5742,
@@ -2227,14 +2227,14 @@
     "main_stars_qty": 8,
     "brightest_star": "Fomalhaut",
     "list_of_main_stars": [
-      "Fomalhaut",
-      "Del PsA",
-      "Gam PsA",
-      "Bet PsA",
-      "Mu PsA",
-      "Iot PsA",
-      "The PsA",
-      "Eps PsA"
+      "fomalhaut",
+      "del psa",
+      "gam psa",
+      "bet psa",
+      "mu psa",
+      "iot psa",
+      "the psa",
+      "eps psa"
     ],
     "list_of_hips": [
       113368,
@@ -2259,15 +2259,15 @@
     "main_stars_qty": 9,
     "brightest_star": "Naos",
     "list_of_main_stars": [
-      "Naos",
-      "Tureis",
-      "Azmidi",
-      "HIP 37229",
-      "HIP 36917",
-      "Pi Pup",
-      "Nu Pup",
-      "3    Pup",
-      "Omi Pup"
+      "naos",
+      "tureis",
+      "azmidi",
+      "hip 37229",
+      "hip 36917",
+      "pi pup",
+      "nu pup",
+      "3    pup",
+      "omi pup"
     ],
     "list_of_hips": [
       39429,
@@ -2293,9 +2293,9 @@
     "main_stars_qty": 3,
     "brightest_star": "α Pyx",
     "list_of_main_stars": [
-      "Bet Pyx",
-      "Alp Pyx",
-      "Gam Pyx"
+      "bet pyx",
+      "alp pyx",
+      "gam pyx"
     ],
     "list_of_hips": [
       42515,
@@ -2315,10 +2315,10 @@
     "main_stars_qty": 4,
     "brightest_star": "α Ret",
     "list_of_main_stars": [
-      "Alp Ret",
-      "Bet Ret",
-      "Del Ret",
-      "Eps Ret"
+      "alp ret",
+      "bet ret",
+      "del ret",
+      "eps ret"
     ],
     "list_of_hips": [
       19780,
@@ -2339,10 +2339,10 @@
     "main_stars_qty": 4,
     "brightest_star": "Ɣ Sge",
     "list_of_main_stars": [
-      "Gam Sge",
-      "Del Sge",
-      "Sham",
-      "Bet Sge"
+      "gam sge",
+      "del sge",
+      "sham",
+      "bet sge"
     ],
     "list_of_hips": [
       98337,
@@ -2363,20 +2363,20 @@
     "main_stars_qty": 14,
     "brightest_star": "Kaus Australis",
     "list_of_main_stars": [
-      "Kaus Australis",
-      "Alnasl",
-      "Kaus Media",
-      "Kaus Borealis",
-      "Phi Sgr",
-      "Nunki",
-      "Tau Sgr",
-      "Ascella",
-      "Eta Sgr",
-      "Polis",
-      "Rho-1 Sgr",
-      "Albaldah",
-      "Omi Sgr",
-      "Xi-2 Sgr"
+      "kaus australis",
+      "alnasl",
+      "kaus media",
+      "kaus borealis",
+      "phi sgr",
+      "nunki",
+      "tau sgr",
+      "ascella",
+      "eta sgr",
+      "polis",
+      "rho-1 sgr",
+      "albaldah",
+      "omi sgr",
+      "xi-2 sgr"
     ],
     "list_of_hips": [
       90185,
@@ -2407,24 +2407,24 @@
     "main_stars_qty": 18,
     "brightest_star": "Antares",
     "list_of_main_stars": [
-      "Acrab",
-      "Dschubba",
-      "Fang",
-      "Alniyat",
-      "Antares",
-      "Paikauhale",
-      "Larawag",
-      "Xamidimura",
-      "Zet-2 Sco",
-      "Eta Sco",
-      "Sargas",
-      "Iot-1 Sco",
-      "Kap Sco",
-      "Lesath",
-      "Shaula",
-      "Fuyue",
-      "Jabbah",
-      "Iklil"
+      "acrab",
+      "dschubba",
+      "fang",
+      "alniyat",
+      "antares",
+      "paikauhale",
+      "larawag",
+      "xamidimura",
+      "zet-2 sco",
+      "eta sco",
+      "sargas",
+      "iot-1 sco",
+      "kap sco",
+      "lesath",
+      "shaula",
+      "fuyue",
+      "jabbah",
+      "iklil"
     ],
     "list_of_hips": [
       78820,
@@ -2459,10 +2459,10 @@
     "main_stars_qty": 4,
     "brightest_star": "α Scl",
     "list_of_main_stars": [
-      "Alp Scl",
-      "Del Scl",
-      "Gam Scl",
-      "Bet Scl"
+      "alp scl",
+      "del scl",
+      "gam scl",
+      "bet scl"
     ],
     "list_of_hips": [
       4577,
@@ -2483,10 +2483,10 @@
     "main_stars_qty": 4,
     "brightest_star": "α Sct",
     "list_of_main_stars": [
-      "Bet Sct",
-      "Alp Sct",
-      "Gam Sct",
-      "Del Sct"
+      "bet sct",
+      "alp sct",
+      "gam sct",
+      "del sct"
     ],
     "list_of_hips": [
       92175,
@@ -2507,17 +2507,17 @@
     "main_stars_qty": 11,
     "brightest_star": "Unukalhai",
     "list_of_main_stars": [
-      "Bet Ser",
-      "Gam Ser",
-      "Gudja",
-      "Iot Ser",
-      "Del Ser",
-      "Unukalhai",
-      "Eps Ser",
-      "Mu Ser",
-      "Xi Ser",
-      "Eta Ser",
-      "Alya"
+      "bet ser",
+      "gam ser",
+      "gudja",
+      "iot ser",
+      "del ser",
+      "unukalhai",
+      "eps ser",
+      "mu ser",
+      "xi ser",
+      "eta ser",
+      "alya"
     ],
     "list_of_hips": [
       77233,
@@ -2545,10 +2545,10 @@
     "main_stars_qty": 4,
     "brightest_star": "α Sextans",
     "list_of_main_stars": [
-      "Gam Sex",
-      "Alp Sex",
-      "Bet Sex",
-      "Del Sex"
+      "gam sex",
+      "alp sex",
+      "bet sex",
+      "del sex"
     ],
     "list_of_hips": [
       48437,
@@ -2569,18 +2569,18 @@
     "main_stars_qty": 12,
     "brightest_star": "Aldebaran",
     "list_of_main_stars": [
-      "Elnath",
-      "Tianguan",
-      "Aldebaran",
-      "Chamukuy",
-      "Prima Hyadum",
-      "Secunda Hyadum",
-      "Ain",
-      "Xi Tau",
-      "Nu Tau",
-      "Omi Tau",
-      "10    Tau",
-      "Lam Tau"
+      "elnath",
+      "tianguan",
+      "aldebaran",
+      "chamukuy",
+      "prima hyadum",
+      "secunda hyadum",
+      "ain",
+      "xi tau",
+      "nu tau",
+      "omi tau",
+      "10    tau",
+      "lam tau"
     ],
     "list_of_hips": [
       25428,
@@ -2609,9 +2609,9 @@
     "main_stars_qty": 3,
     "brightest_star": "α Tel",
     "list_of_main_stars": [
-      "Eps Tel",
-      "Alp Tel",
-      "Zet Tel"
+      "eps tel",
+      "alp tel",
+      "zet tel"
     ],
     "list_of_hips": [
       89112,
@@ -2631,9 +2631,9 @@
     "main_stars_qty": 3,
     "brightest_star": "β Tri",
     "list_of_main_stars": [
-      "Mothallah",
-      "Bet Tri",
-      "Gam Tri"
+      "mothallah",
+      "bet tri",
+      "gam tri"
     ],
     "list_of_hips": [
       8796,
@@ -2667,12 +2667,12 @@
     "main_stars_qty": 6,
     "brightest_star": "α Tuc",
     "list_of_main_stars": [
-      "Bet-1 Tuc",
-      "Zet Tuc",
-      "Eps Tuc",
-      "Del Tuc",
-      "Alp Tuc",
-      "Gam Tuc"
+      "bet-1 tuc",
+      "zet tuc",
+      "eps tuc",
+      "del tuc",
+      "alp tuc",
+      "gam tuc"
     ],
     "list_of_hips": [
       2484,
@@ -2695,24 +2695,24 @@
     "main_stars_qty": 18,
     "brightest_star": "Alioth",
     "list_of_main_stars": [
-      "Phecda",
-      "Taiyangshou",
-      "Psi UMa",
-      "Tania Australis",
-      "Tania Borealis",
-      "Alula Borealis",
-      "Megrez",
-      "Dubhe",
-      "Merak",
-      "Alioth",
-      "Mizar",
-      "Alkaid",
-      "23    UMa",
-      "Ups UMa",
-      "Muscida",
-      "The UMa",
-      "Alkaphrah",
-      "Talitha"
+      "phecda",
+      "taiyangshou",
+      "psi uma",
+      "tania australis",
+      "tania borealis",
+      "alula borealis",
+      "megrez",
+      "dubhe",
+      "merak",
+      "alioth",
+      "mizar",
+      "alkaid",
+      "23    uma",
+      "ups uma",
+      "muscida",
+      "the uma",
+      "alkaphrah",
+      "talitha"
     ],
     "list_of_hips": [
       58001,
@@ -2747,13 +2747,13 @@
     "main_stars_qty": 7,
     "brightest_star": "Polaris",
     "list_of_main_stars": [
-      "Polaris",
-      "Yildun",
-      "Eps UMi",
-      "Zet UMi",
-      "Eta UMi",
-      "Pherkad",
-      "Kochab"
+      "polaris",
+      "yildun",
+      "eps umi",
+      "zet umi",
+      "eta umi",
+      "pherkad",
+      "kochab"
     ],
     "list_of_hips": [
       11767,
@@ -2777,14 +2777,14 @@
     "main_stars_qty": 8,
     "brightest_star": "Alsephina",
     "list_of_main_stars": [
-      "Alsephina",
-      "Gam-2 Vel",
-      "Suhail",
-      "Psi Vel",
-      "HIP 50191",
-      "Mu Vel",
-      "Phi Vel",
-      "Markeb"
+      "alsephina",
+      "gam-2 vel",
+      "suhail",
+      "psi vel",
+      "hip 50191",
+      "mu vel",
+      "phi vel",
+      "markeb"
     ],
     "list_of_hips": [
       42913,
@@ -2809,20 +2809,20 @@
     "main_stars_qty": 14,
     "brightest_star": "Spica",
     "list_of_main_stars": [
-      "Zaniah",
-      "Omi Vir",
-      "Nu Vir",
-      "Zavijava",
-      "Porrima",
-      "Minelauva",
-      "Vindemiatrix",
-      "The Vir",
-      "Spica",
-      "Heze",
-      "Tau Vir",
-      "109    Vir",
-      "Syrma",
-      "Mu Vir"
+      "zaniah",
+      "omi vir",
+      "nu vir",
+      "zavijava",
+      "porrima",
+      "minelauva",
+      "vindemiatrix",
+      "the vir",
+      "spica",
+      "heze",
+      "tau vir",
+      "109    vir",
+      "syrma",
+      "mu vir"
     ],
     "list_of_hips": [
       60129,
@@ -2853,11 +2853,11 @@
     "main_stars_qty": 5,
     "brightest_star": "β Vol",
     "list_of_main_stars": [
-      "Alp Vol",
-      "Bet Vol",
-      "Eps Vol",
-      "Del Vol",
-      "Gam-2 Vol"
+      "alp vol",
+      "bet vol",
+      "eps vol",
+      "del vol",
+      "gam-2 vol"
     ],
     "list_of_hips": [
       44382,
@@ -2879,8 +2879,8 @@
     "main_stars_qty": 2,
     "brightest_star": "Anser",
     "list_of_main_stars": [
-      "Anser",
-      "13    Vul"
+      "anser",
+      "13    vul"
     ],
     "list_of_hips": [
       95771,

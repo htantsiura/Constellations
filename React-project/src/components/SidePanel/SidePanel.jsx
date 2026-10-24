@@ -26,10 +26,6 @@ export default function SidePanel({
   expandedId, setExpandedId,
   searchQuery, setSearchQuery
 }) {
-  /* const [isStar, setIsStar] = useState(true);
-  const [isConstellation, setIsConstellation] = useState(true);
-  const [expandedId, setExpandedId] = useState(null);
-  const [searchQuery, setSearchQuery] = useState(''); */
   
   const [contentStars, setContentStars] = useState(null);
   const [contentConstell, setContentConstell] = useState(null);

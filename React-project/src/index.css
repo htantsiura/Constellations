@@ -52,7 +52,7 @@ html, body, #root {
   --text-grey: var(--grey);
   --text-title: var(--primary-250);
   --btn-border-darkgrey: var(--darkgrey);
-  --card-bg-color: var(--darkgrey-900);
+  --card-bg-color: color-mix(in srgb, var(--primary-750) 30%, var(--black));
 
 
   --sans: system-ui, 'Segoe UI', Roboto, sans-serif;

@@ -72,7 +72,8 @@
 }
 
 .constellation-name {
-  color: var(--darkgrey);
+  color: color-mix(in srgb, var(--primary-250) 50%, var(--primary-950));
+  font-weight: lighter;
 }
 
 .card-body-line {

@@ -53,6 +53,13 @@ export function createConstellation(item, worldPos, onClickCallBack) {
       } else {
         group.userData.isTargeted = false;
       }
+
+      const linesGroup = group.getObjectByName('linesGroup')
+      if(linesGroup) {
+        linesGroup.children.forEach((l) => {
+          l.userData.setState(newState)
+        })
+      }
     }
   }
 
@@ -130,7 +137,7 @@ export function createStar(item, localPos, worldPos, onClickCallBack) {
   return(label)
 }
 
-export function createLines(c, constellationList, lineMaterial, i) {
+export function createLines(c, constellationList, lineMaterial, lineMaterialSelected, i) {
   let linesGroup = new THREE.Group()
   c.lines.map((line) => {
     const points = []
@@ -144,10 +151,20 @@ export function createLines(c, constellationList, lineMaterial, i) {
       index: i,
       hips: line,
       type: 'line',
-      constellation: c.common_name.native
+      constellation: c.common_name.native,
+      state: 'default', // 'default', 'show-names', 'selected', 'targeted', 'pale'
+      setState: (newState) => {
+        newLine.userData.state = newState;
+        if (newState === 'selected' || newState === 'targeted') {
+          newLine.material = lineMaterialSelected
+        } else {
+          newLine.material = lineMaterial
+        }
+      }
     }
     linesGroup.add(newLine)
     i++;
   })
+  
   return(linesGroup)
 }

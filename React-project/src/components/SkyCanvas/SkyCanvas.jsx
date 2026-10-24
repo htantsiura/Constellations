@@ -77,6 +77,7 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
 
     const testMat = new THREE.MeshBasicMaterial({ color: 'blue' , wireframe: true })
     const lineMaterial = new THREE.LineBasicMaterial({ color: 0x3F0080, });
+    const lineMaterialSelected = new THREE.LineBasicMaterial({ color: 0x7E00FF, });
     const testGeometry = new THREE.BoxGeometry()
     const testCube = new THREE.Mesh( testGeometry, testMat)
     const starScale = 0.5
@@ -103,6 +104,17 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
       } else {
         obj.userData.setState('selected')
       }
+
+      /* if(obj.userData.type === 'constellation' &&
+        obj.userData.state === 'selected' ) {
+          const group = obj.getObjectByName('linesGroup')
+          group.children.forEach((l) => {
+            l.material = lineMaterialSelected
+          })
+        } */
+
+
+
       currentActiveObj = obj;
       //console.log("isTargeted:", currentActiveObj.userData.isTargeted)
 
@@ -178,7 +190,7 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
       if (parentGroup) {
         if(c.common_name.native === parentGroup.userData.name) {
           let i = 0;
-          const newLinesGroup = createLines(c, constellationList, lineMaterial, i)
+          const newLinesGroup = createLines(c, constellationList, lineMaterial, lineMaterialSelected, i)
           newLinesGroup.name = "linesGroup"
           newLinesGroup.userData = {
             constellation: c.common_name.native,

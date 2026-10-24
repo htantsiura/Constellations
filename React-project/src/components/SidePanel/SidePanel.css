@@ -1,6 +1,9 @@
 .side-panel-container {
+/* 
   background-color: color-mix(in srgb, var(--black) 20%, transparent);
+   */
   backdrop-filter: blur(10px); 
+  
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -14,7 +17,9 @@
 }
 
 .side-panel-header {
+  /*
   background-color: color-mix(in srgb, var(--black) 20%, transparent);
+  */
 
   display: flex;
   justify-content: space-between;

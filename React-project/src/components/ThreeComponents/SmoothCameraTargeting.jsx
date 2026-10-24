@@ -106,7 +106,12 @@ export function updateStarsVisibility(obj, allLabelsRef) {
     allLabelsRef.current.forEach((item) => {
       if(item.userData.state !== 'selected')
         item.userData.setState('default');
+      if(objType === 'constellation') {
+        if (item.parent === obj) //.parent && item !== obj)
+            item.userData.setState('show-names');
+      }
     })
+    
   }
   else // isTargeted: true
   {
