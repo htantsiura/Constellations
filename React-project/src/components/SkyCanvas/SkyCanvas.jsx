@@ -2,25 +2,18 @@ import './SkyCanvas.css'
 import { useRef, useEffect } from "react"
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
-import gsap from 'gsap'
 
 import ConstellationData from '../../DataSources/ConstellationData1.json' 
 import StarsData from '../../DataSources/StarsData1.json'
 import LinesData from '../../DataSources/LinesData_SnT_upd.json'
 
 import { raDecToVector3, raDecToVector3ForStars } from '../utilities/ThreeHelpers'
-import { CSS2DRenderer, CSS2DObject } from 'three/examples/jsm/renderers/CSS2DRenderer.js'
+import { CSS2DRenderer } from 'three/examples/jsm/renderers/CSS2DRenderer.js'
 import { min, vec3 } from 'three/tsl'
 import { Vector3 } from 'three/webgpu'
 import { createConstellation, createStar, createLines, createSun } from '../ThreeComponents/ObjectsCreator'
-import { startTargetAnimation, 
-        updateTargetAnimation, 
-        startCameraAnimation, 
-        updateCameraAnimation, 
-        calculateRotatedTarget,
-        updateStarsVisibility,
-        updateLinesVisibility, 
-        updateSunVisibility } from '../ThreeComponents/SmoothCameraTargeting'
+import { updateStarsVisibility,
+        updateLinesVisibility } from '../ThreeComponents/ObjectsVisibility'
 import { ImprovedNoise } from 'three/examples/jsm/Addons.js'
 
 import { cameraZoom, changeCameraTarget, changeCameraSelectFromZero } from '../ThreeComponents/Navigation'
@@ -34,20 +27,11 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
   const containerRef = useRef(null)
   const allLabelsRef = useRef(new Map())
   const activeObjRef = useRef(null)
-  const previousObjRef = useRef(null)
   const constellationList = {}
-
   const controlsRef = useRef(null);
-  const cameraPosRef = useRef(null);
 
   const cameraRef = useRef(null); // for resizing
   const cameraObj = useRef(null);
-
-  const selectedObjectRef = useRef(null);
-  const targetedObjectRef = useRef(null);
-
-  const targetAnimRef = useRef(null); // Для плавного поворота (target)
-  const cameraAnimRef = useRef(null); // Для плавного полета (camera.position)
 
   useEffect(() => {
 
@@ -64,10 +48,7 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
     const camera = new THREE.PerspectiveCamera( 35, width / height, 10, 2500 )
     camera.position.set(0, 0, 0)
     cameraRef.current = camera
-    console.log(camera)
     cameraObj.current = camera;
-    const cameraPos = new THREE.Vector3();
-    const cameraRot = new THREE.Quaternion()
 
     const renderer = new THREE.WebGLRenderer()
     renderer.setSize(width, height)
@@ -200,9 +181,7 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
       renderer.dispose()
     }
   }, [])
-
-  let prevExpandedId = null;
-
+  
   useEffect(() => {
     if(!expandedId) return;
     const targetLabel = allLabelsRef.current.get(expandedId)

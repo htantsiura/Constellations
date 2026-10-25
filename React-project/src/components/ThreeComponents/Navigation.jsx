@@ -1,9 +1,9 @@
 import gsap from "gsap";
 
+const CAMERA_DISTANCE = -0.1
+
 export function changeCameraTarget(pivot, controlsRef) {
   if (!controlsRef.current) return;
-
-  
 
   gsap.to(controlsRef.current.target, {
     x: pivot.x,
@@ -15,28 +15,14 @@ export function changeCameraTarget(pivot, controlsRef) {
       controlsRef.current.update();
     }
   });
-
-  
-
-
-  //controlsRef.current.update();
-  /* controlsRef.current.target.copy(pivot)
-  controlsRef.current.update() */
 }
 
 export function changeCameraSelectFromZero(pivot, cameraRef, controlsRef) {
+  
   if(!controlsRef.current || !cameraRef.current) return;
 
-  //controlsRef.current.target.set(0, 0, 0);
-  /*const direction = pivot.clone().normalize();
-  const CAMERA_DISTANCE = -1;
-  const newCameraPos = direction.multiplyScalar(CAMERA_DISTANCE);
-  cameraRef.current.position.copy(newCameraPos); */
-
   const direction = pivot.clone().normalize();
-  const CAMERA_DISTANCE = -20;
   const newCameraPos = direction.multiplyScalar(CAMERA_DISTANCE);
-  //cameraRef.current.position.copy(newCameraPos);
 
   gsap.to(cameraRef.current.position, {
     x: newCameraPos.x,
@@ -56,8 +42,6 @@ export function changeCameraSelectFromZero(pivot, cameraRef, controlsRef) {
     duration: 1.0, 
     ease: "power2.inOut"
   });
-
-  //controlsRef.current.update();
 }
 
 export function cameraZoom(camera, value) {
@@ -72,4 +56,3 @@ export function cameraZoom(camera, value) {
     }
   })
 }
-
