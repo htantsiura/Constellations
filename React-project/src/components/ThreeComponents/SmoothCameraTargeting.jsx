@@ -2,6 +2,7 @@ import { useRef, useEffect } from "react"
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 import { objectGroup } from "three/tsl";
+import { Vector3 } from "three/webgpu";
 
 // 1. Animating target. Controls only that, which direction we look: controls.target)
 
@@ -162,4 +163,14 @@ export function updateLinesVisibility(obj, cList) {
       }
     })
   }
+}
+
+export function updateSunVisibility(camera, sun) {
+
+  if(!camera) return;
+  const zero = new Vector3(0, 0, 0)
+  const pos = new Vector3()
+  camera.getWorldPosition(pos)
+  const distance = pos.distanceTo(zero)
+  distance < 5 ? sun.visible = false : sun.visible = true;
 }

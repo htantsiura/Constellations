@@ -2,6 +2,7 @@ import './SkyCanvas.css'
 import { useRef, useEffect } from "react"
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
+import gsap from 'gsap'
 
 import ConstellationData from '../../DataSources/ConstellationData1.json' 
 import StarsData from '../../DataSources/StarsData1.json'
@@ -11,19 +12,22 @@ import { raDecToVector3, raDecToVector3ForStars } from '../utilities/ThreeHelper
 import { CSS2DRenderer, CSS2DObject } from 'three/examples/jsm/renderers/CSS2DRenderer.js'
 import { min, vec3 } from 'three/tsl'
 import { Vector3 } from 'three/webgpu'
-import { createConstellation, createStar, createLines } from '../ThreeComponents/ObjectsCreator'
+import { createConstellation, createStar, createLines, createSun } from '../ThreeComponents/ObjectsCreator'
 import { startTargetAnimation, 
         updateTargetAnimation, 
         startCameraAnimation, 
         updateCameraAnimation, 
         calculateRotatedTarget,
         updateStarsVisibility,
-        updateLinesVisibility } from '../ThreeComponents/SmoothCameraTargeting'
+        updateLinesVisibility, 
+        updateSunVisibility } from '../ThreeComponents/SmoothCameraTargeting'
+import { ImprovedNoise } from 'three/examples/jsm/Addons.js'
 
 export default function SkyCanvas({ onStarClick, onConstellationClick, expandedId }) {
   
   const distanceScale = 1
   const isLogariphScale = true;
+  const zeroPos = new THREE.Vector3(0, 0, 0)
 
   const containerRef = useRef(null)
   const allLabelsRef = useRef(new Map())
@@ -32,7 +36,9 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
   const constellationList = {}
 
   const controlsRef = useRef(null);
-  const cameraRef = useRef(null);
+  const cameraPosRef = useRef(null);
+
+  const cameraRef = useRef(null); // for resizing
 
   const selectedObjectRef = useRef(null);
   const targetedObjectRef = useRef(null);
@@ -40,20 +46,24 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
   const targetAnimRef = useRef(null); // Для плавного поворота (target)
   const cameraAnimRef = useRef(null); // Для плавного полета (camera.position)
 
-  
-
   useEffect(() => {
+
+    // CREATING SCENE, CAMERA, LAYERS, CONTROLS ------------------------------------------------
+
     const container = containerRef.current
     if (!container) return
-
-    const scene = new THREE.Scene()
-    scene.background = new THREE.Color('#0D001A')
-
     const width = container.clientWidth
     const height = container.clientHeight
-    const camera = new THREE.PerspectiveCamera( 35, width / height, 1, 2500 )
-    camera.position.set(0, 0, 0.1)
+
+    const scene = new THREE.Scene()
+    scene.background = new THREE.Color(0x0D001A)
+
+    const camera = new THREE.PerspectiveCamera( 35, width / height, 10, 2500 )
+    camera.position.set(0, 0, 0)
     cameraRef.current = camera
+    console.log(camera)
+    const cameraPos = new THREE.Vector3();
+    const cameraRot = new THREE.Quaternion()
 
     const renderer = new THREE.WebGLRenderer()
     renderer.setSize(width, height)
@@ -71,29 +81,14 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
     controls.screenSpacePanning = false
     controls.minDistance = 0.1
     controls.maxDistance = 3000
-    controls.target.set(0, 0, 0)
+    controls.target.copy(zeroPos)
     controlsRef.current = controls
+    controlsRef.current.update()
 
-    // Main Code  ------------------------------------
+    // functions  ------------------------------------
 
-    
+    //controlsRef.current.update()
 
-    const testMat = new THREE.MeshBasicMaterial({ color: 'blue' , wireframe: true })
-    const lineMaterial = new THREE.LineBasicMaterial({ color: 0x3F0080, });
-    const lineMaterialSelected = new THREE.LineBasicMaterial({ color: 0x7E00FF, });
-    const testGeometry = new THREE.BoxGeometry()
-    const testCube = new THREE.Mesh( testGeometry, testMat)
-    const starScale = 0.5
-    testCube.scale.set(starScale, starScale, starScale)
-    scene.add(testCube)
-/* 
-    const starPlaneGeometry = new THREE.PlaneGeometry()
-    const starMaterial = new THREE.MeshBasicMaterial({ color: 'yellow', side: THREE.DoubleSide })
-    const star = new THREE.Mesh(new THREE.BoxGeometry(), starMaterial);
-    //scene.add(star)
- */
-
-    // creating objects on the scene ---------------------------------
 
     function changeCameraTarget(pivot) {
 
@@ -102,22 +97,51 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
       controlsRef.current.update()
     }
 
+    function changeCameraSelectFromZero(pivot) {
+      if(!controlsRef.current || !cameraRef.current) return;
+
+      controlsRef.current.target.set(0, 0, 0);
+      const direction = pivot.clone().normalize();
+      const CAMERA_DISTANCE = -1;
+      const newCameraPos = direction.multiplyScalar(CAMERA_DISTANCE);
+      cameraRef.current.position.copy(newCameraPos);
+      controlsRef.current.update();
+
+    }
+
+    function cameraZoom(camera, value) {
+      gsap.to( camera, {
+        fov: value,
+        duration: 0.5, 
+        ease: "power3.Out",
+        repeat: 0,
+        yoyo: false,
+        onUpdate: () => {
+          camera.updateProjectionMatrix()
+        }
+      })
+    }
+
+
     function setActiveObject (obj) {
       // if smth was selected, then make it default
       if (activeObjRef.current && activeObjRef.current !== obj) {
         activeObjRef.current.userData.setState('default')
       }
-      
       if(obj.userData.state === 'selected') {
         obj.userData.setState('targeted')
-        changeCameraTarget(obj.userData.pivot)
+        //changeCameraTarget(obj.userData.pivot)
+        cameraZoom(camera, 30)
+        
       } else {
         obj.userData.setState('selected')
-        changeCameraTarget(new THREE.Vector3(0, 0, 0))
+        //changeCameraTarget(zeroPos)
+        //changeCameraSelectFromZero(obj.userData.pivot)
+        cameraZoom(camera, 35)
       }
+      changeCameraTarget(obj.userData.pivot)
+      //changeCameraTarget(obj.userData.pivot)
       activeObjRef.current = obj;
-
-      
 
       if (obj.userData.type === 'star' && onStarClick) {
         onStarClick(obj.userData.id)
@@ -131,20 +155,7 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
       }
     }
 
-    
-
-    function changeCameraTarget1(targetObject) {
-
-      if (!controlsRef.current) return;
-      const newTargetPos = new THREE.Vector3()
-      targetObject.getWorldPosition(newTargetPos);
-      controlsRef.current.target.copy(newTargetPos)
-      controlsRef.current.update()
-    }
-
-
-
-    /* const handleTargetToggle = (constellationGroup, pivotPos, isTargeted, isAutoReset = false) => {
+      /* const handleTargetToggle = (constellationGroup, pivotPos, isTargeted, isAutoReset = false) => {
       if (!controlsRef.current || !cameraRef.current) return;
 
       if (isTargeted) {
@@ -167,7 +178,32 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
       
     }; */
 
-    // Scene Objects creators ------------------------------------------------
+    // CREATING OBJECTS ON THE SCENE ------------------------------------------------
+
+    /* 
+    const testMat = new THREE.MeshBasicMaterial({ color: 'blue' , wireframe: true })
+    const darkPlaneMat = new THREE.MeshBasicMaterial({ color: 'brown', side: THREE.DoubleSide, wireframe: false})
+
+    const testGeometry = new THREE.BoxGeometry()
+    const darkPlaneGeometry = new THREE.PlaneGeometry();
+
+    const darkPlane = new THREE.Mesh(darkPlaneGeometry, darkPlaneMat);
+    camera.add(darkPlane)
+    scene.add(camera)
+    darkPlane.scale.set(1, 1, 1)
+    darkPlane.position.set(0, 0, -5)
+
+    const darkPlaneContainer = document.createElement('div')
+    darkPlaneContainer.className = 'dark-plane-container'
+    const darkScreen = new CSS2DObject(darkPlaneContainer)
+    camera.add(darkScreen)
+    darkScreen.position.set(0, 0, -1) */
+   
+    const lineMaterial = new THREE.LineBasicMaterial({ color: 0x3F0080, });
+    const lineMaterialSelected = new THREE.LineBasicMaterial({ color: 0x7E00FF});
+    
+    const sun = createSun();
+    scene.add(sun)
 
     ConstellationData.forEach((item) => {
       const constellPos = raDecToVector3(item, distanceScale, isLogariphScale)
@@ -222,6 +258,10 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
 
     function animate() {
       animationFrameId = requestAnimationFrame(animate)
+
+
+      /* const pos = new Vector3()
+      console.log(camera.getWorldPosition(pos)) */
 
       /* updateTargetAnimation(targetAnimRef, controlsRef);
       updateCameraAnimation(cameraAnimRef, cameraRef, controlsRef); */

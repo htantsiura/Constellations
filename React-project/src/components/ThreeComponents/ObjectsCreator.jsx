@@ -168,3 +168,36 @@ export function createLines(c, constellationList, lineMaterial, lineMaterialSele
   
   return(linesGroup)
 }
+
+export function createSun() {
+  let sunScale = 0.5;
+  let sunRatio = 8
+  let sunMove = (sunRatio / 2 + 1) * sunScale
+
+  const sunMat = new THREE.MeshBasicMaterial({ color: 'orange' , wireframe: true })
+  const pyramid = new THREE.ConeGeometry(1 * sunScale, sunRatio * sunScale, 4)
+  const sunPyramid = new THREE.Mesh(pyramid, sunMat)
+
+  const sun = new THREE.Group()
+  for (let i = 0; i < 6; i++) {
+    const newPyramid = sunPyramid.clone()
+    sun.add(newPyramid)
+  }
+  sun.children[0].rotateX(Math.PI * 0)
+  sun.children[1].rotateX(Math.PI * 1)
+  sun.children[2].rotateZ(Math.PI * 0.5)
+  sun.children[3].rotateZ(Math.PI * -0.5)
+  sun.children[2].rotateX(Math.PI * 0.5)
+  sun.children[3].rotateX(Math.PI * -0.5)
+  sun.children[4].rotateZ(Math.PI * 0.5)
+  sun.children[5].rotateZ(Math.PI * -0.5)
+
+  sun.children[1].position.set(0, -sunMove, 0)
+  sun.children[0].position.set(0, sunMove, 0)
+  sun.children[2].position.set(0, 0, sunMove)
+  sun.children[3].position.set(0, 0, -sunMove)
+  sun.children[4].position.set(-sunMove, 0, 0)
+  sun.children[5].position.set(sunMove, 0, 0)
+
+  return sun;
+}

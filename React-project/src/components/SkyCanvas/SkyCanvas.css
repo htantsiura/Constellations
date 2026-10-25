@@ -25,6 +25,14 @@
   z-index: 2;
 }
 
+.dark-plane-container {
+  width: 100vw; 
+  height: 100vh; 
+  background-color: var(--primary-950); 
+  opacity: 0.5;
+  
+}
+
 .icon-off,
 .icon-on {
   width: var(--star-icon-size);
