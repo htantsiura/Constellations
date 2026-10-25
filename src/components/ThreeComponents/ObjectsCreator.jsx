@@ -68,7 +68,7 @@ export function createConstellation(item, worldPos, onClickCallBack) {
       onClickCallBack(group);
     }
   });
-
+  
   group.add(label)
   return group
 }
@@ -133,7 +133,6 @@ export function createStar(item, localPos, worldPos, onClickCallBack) {
       onClickCallBack(label)
     }
   })
-
   return(label)
 }
 
