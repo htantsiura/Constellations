@@ -41,6 +41,7 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
   const cameraPosRef = useRef(null);
 
   const cameraRef = useRef(null); // for resizing
+  const cameraObj = useRef(null);
 
   const selectedObjectRef = useRef(null);
   const targetedObjectRef = useRef(null);
@@ -64,6 +65,7 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
     camera.position.set(0, 0, 0)
     cameraRef.current = camera
     console.log(camera)
+    cameraObj.current = camera;
     const cameraPos = new THREE.Vector3();
     const cameraRot = new THREE.Quaternion()
 
@@ -104,7 +106,6 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
         changeCameraSelectFromZero(obj.userData.pivot, cameraRef, controlsRef)
         cameraZoom(camera, 35)
       }
-      
       activeObjRef.current = obj;
 
       if (obj.userData.type === 'star' && onStarClick) {
@@ -119,51 +120,8 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
       }
     }
     
-
-      /* const handleTargetToggle = (constellationGroup, pivotPos, isTargeted, isAutoReset = false) => {
-      if (!controlsRef.current || !cameraRef.current) return;
-
-      if (isTargeted) {
-        controlsRef.current.maxDistance = Infinity; 
-        controlsRef.current.target.copy(pivotPos);  
-        controlsRef.current.update();
-      } else {
-        if (isAutoReset) return;
-
-        const centerPos = new THREE.Vector3(0, 0, 0);
-        const currentDist = cameraRef.current.position.distanceTo(centerPos);
-        controlsRef.current.maxDistance = Math.max(500, currentDist);
-        
-        const fakeCenterTarget = calculateRotatedTarget(cameraRef, controlsRef.current.target, centerPos);
-        startTargetAnimation(controlsRef, fakeCenterTarget, targetAnimRef, () => {
-          controlsRef.current.target.copy(centerPos);
-          controlsRef.current.update();
-        });
-      }
-      
-    }; */
-
     // CREATING OBJECTS ON THE SCENE ------------------------------------------------
 
-    /* 
-    const testMat = new THREE.MeshBasicMaterial({ color: 'blue' , wireframe: true })
-    const darkPlaneMat = new THREE.MeshBasicMaterial({ color: 'brown', side: THREE.DoubleSide, wireframe: false})
-
-    const testGeometry = new THREE.BoxGeometry()
-    const darkPlaneGeometry = new THREE.PlaneGeometry();
-
-    const darkPlane = new THREE.Mesh(darkPlaneGeometry, darkPlaneMat);
-    camera.add(darkPlane)
-    scene.add(camera)
-    darkPlane.scale.set(1, 1, 1)
-    darkPlane.position.set(0, 0, -5)
-
-    const darkPlaneContainer = document.createElement('div')
-    darkPlaneContainer.className = 'dark-plane-container'
-    const darkScreen = new CSS2DObject(darkPlaneContainer)
-    camera.add(darkScreen)
-    darkScreen.position.set(0, 0, -1) */
-   
     const lineMaterial = new THREE.LineBasicMaterial({ color: 0x3F0080, });
     const lineMaterialSelected = new THREE.LineBasicMaterial({ color: 0x7E00FF});
     
@@ -172,26 +130,13 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
 
     ConstellationData.forEach((item) => {
       const constellPos = raDecToVector3(item, distanceScale, isLogariphScale)
-      const newConstellation = createConstellation(
-        item, 
-        constellPos, 
-        setActiveObject
-        /* (label) => {
-          if (onConstellationClick) {
-            onConstellationClick(label.userData.name);
-          }
-        },*/,
-        (pivotPos, isTargeted, isAutoReset) => {
-          handleTargetToggle(newConstellation, pivotPos, isTargeted, isAutoReset)
-        } 
-      )
+      const newConstellation = createConstellation( item, constellPos, setActiveObject )
       scene.add(newConstellation)
       constellationList[item.name] = newConstellation
       allLabelsRef.current.set(item.id, newConstellation)
     })
 
     StarsData.forEach((item) => {
-      //console.log('star.  ', constellationList[item.constellation].userData.name)
       const parentGroup = constellationList[item.constellation]
       const absoluteStarPos = raDecToVector3ForStars(item, distanceScale, isLogariphScale)
       const relativeStarPos = absoluteStarPos.clone().sub(constellationList[item.constellation].userData.pivot)
@@ -224,13 +169,6 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
     function animate() {
       animationFrameId = requestAnimationFrame(animate)
 
-
-      /* const pos = new Vector3()
-      console.log(camera.getWorldPosition(pos)) */
-
-      /* updateTargetAnimation(targetAnimRef, controlsRef);
-      updateCameraAnimation(cameraAnimRef, cameraRef, controlsRef); */
-      
       renderer.render(scene, camera)
       labelRenderer.render(scene, camera)
     }
@@ -256,11 +194,9 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
       if (container.contains(renderer.domElement)) {
         container.removeChild(renderer.domElement)
       }
-
       if (container.contains(labelRenderer.domElement)) {
         container.removeChild(labelRenderer.domElement)
       }
-
       renderer.dispose()
     }
   }, [])
@@ -269,32 +205,19 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
 
   useEffect(() => {
     if(!expandedId) return;
-
     const targetLabel = allLabelsRef.current.get(expandedId)
 
     if (targetLabel) {
+      if (activeObjRef.current === targetLabel) return;
+
       if (activeObjRef.current && activeObjRef.current !== targetLabel) {
         activeObjRef.current.userData.setState('default')
       }
       targetLabel.userData.setState('selected')
       activeObjRef.current = targetLabel
 
-      const targetPos = new THREE.Vector3();
-      targetLabel.getWorldPosition(targetPos);
-
-      if(controlsRef.current) {
-        gsap.to(controlsRef.current.target, {
-          x: targetPos.x,
-          y: targetPos.y,
-          z: targetPos.z,
-          duration: 2, 
-          ease: "power2.inOut",
-          onUpdate: () => {
-            controlsRef.current.update();
-          }
-        })
-      }
-      
+      changeCameraSelectFromZero(targetLabel.userData.pivot, cameraRef, controlsRef);
+      cameraZoom(cameraObj.current, 35);
     }
   }, [expandedId])
 
