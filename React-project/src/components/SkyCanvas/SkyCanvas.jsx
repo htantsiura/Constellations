@@ -23,6 +23,8 @@ import { startTargetAnimation,
         updateSunVisibility } from '../ThreeComponents/SmoothCameraTargeting'
 import { ImprovedNoise } from 'three/examples/jsm/Addons.js'
 
+import { cameraZoom, changeCameraTarget, changeCameraSelectFromZero } from '../ThreeComponents/Navigation'
+
 export default function SkyCanvas({ onStarClick, onConstellationClick, expandedId }) {
   
   const distanceScale = 1
@@ -87,42 +89,6 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
 
     // functions  ------------------------------------
 
-    //controlsRef.current.update()
-
-
-    function changeCameraTarget(pivot) {
-
-      if (!controlsRef.current) return;
-      controlsRef.current.target.copy(pivot)
-      controlsRef.current.update()
-    }
-
-    function changeCameraSelectFromZero(pivot) {
-      if(!controlsRef.current || !cameraRef.current) return;
-
-      controlsRef.current.target.set(0, 0, 0);
-      const direction = pivot.clone().normalize();
-      const CAMERA_DISTANCE = -1;
-      const newCameraPos = direction.multiplyScalar(CAMERA_DISTANCE);
-      cameraRef.current.position.copy(newCameraPos);
-      controlsRef.current.update();
-
-    }
-
-    function cameraZoom(camera, value) {
-      gsap.to( camera, {
-        fov: value,
-        duration: 0.5, 
-        ease: "power3.Out",
-        repeat: 0,
-        yoyo: false,
-        onUpdate: () => {
-          camera.updateProjectionMatrix()
-        }
-      })
-    }
-
-
     function setActiveObject (obj) {
       // if smth was selected, then make it default
       if (activeObjRef.current && activeObjRef.current !== obj) {
@@ -130,17 +96,15 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
       }
       if(obj.userData.state === 'selected') {
         obj.userData.setState('targeted')
-        //changeCameraTarget(obj.userData.pivot)
+        changeCameraTarget(obj.userData.pivot, controlsRef)
         cameraZoom(camera, 30)
         
       } else {
         obj.userData.setState('selected')
-        //changeCameraTarget(zeroPos)
-        //changeCameraSelectFromZero(obj.userData.pivot)
+        changeCameraSelectFromZero(obj.userData.pivot, cameraRef, controlsRef)
         cameraZoom(camera, 35)
       }
-      changeCameraTarget(obj.userData.pivot)
-      //changeCameraTarget(obj.userData.pivot)
+      
       activeObjRef.current = obj;
 
       if (obj.userData.type === 'star' && onStarClick) {
@@ -154,6 +118,7 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
         updateLinesVisibility(obj, constellationList)
       }
     }
+    
 
       /* const handleTargetToggle = (constellationGroup, pivotPos, isTargeted, isAutoReset = false) => {
       if (!controlsRef.current || !cameraRef.current) return;
@@ -314,16 +279,22 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
       targetLabel.userData.setState('selected')
       activeObjRef.current = targetLabel
 
+      const targetPos = new THREE.Vector3();
+      targetLabel.getWorldPosition(targetPos);
+
+      if(controlsRef.current) {
+        gsap.to(controlsRef.current.target, {
+          x: targetPos.x,
+          y: targetPos.y,
+          z: targetPos.z,
+          duration: 2, 
+          ease: "power2.inOut",
+          onUpdate: () => {
+            controlsRef.current.update();
+          }
+        })
+      }
       
-/* 
-      // Сценарий А: Плавный поворот камеры
-      const worldPosition = new THREE.Vector3();
-      targetLabel.getWorldPosition(worldPosition);
-      // Вычисляем точку на орбите, чтобы не "срезать угол"
-      const targetPos = calculateRotatedTarget(cameraRef, controlsRef.current.target, worldPosition);
-      
-      // Даем команду Аниматору Прицела начать плавный поворот
-      startTargetAnimation(controlsRef, targetPos, targetAnimRef); */
     }
   }, [expandedId])
 
