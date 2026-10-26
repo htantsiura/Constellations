@@ -46,12 +46,12 @@
 }
 
 .icon-off {
-  -webkit-mask-image: url('src/assets/starDefault.svg');
-  mask-image: url('src/assets/starDefault.svg'); 
+  -webkit-mask-image: url('../../assets/starDefault.svg');
+  mask-image: url('../../assets/starDefault.svg'); 
 }
 .icon-on {
-  -webkit-mask-image: url('src/assets/starClicked.svg');
-  mask-image: url('src/assets/starClicked.svg'); 
+  -webkit-mask-image: url('../../assets/starClicked.svg');
+  mask-image: url('../../assets/starClicked.svg'); 
 }
 
 @keyframes spin {
