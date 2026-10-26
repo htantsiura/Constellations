@@ -9,7 +9,6 @@ import ConstellationData from '../../DataSources/ConstellationData1.json'
 
 import iconStar from '../../assets/Icon-star.svg'
 import iconConstell from '../../assets/Icon-constellation.svg'
-import SideContent from '../SideContent/SideContent'
 import StarCard from '../Cards/StarCard'
 import ConstellCard from '../Cards/ConstellCard'
 import { useState } from 'react'
