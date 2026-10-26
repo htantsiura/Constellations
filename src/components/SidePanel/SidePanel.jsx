@@ -48,7 +48,7 @@ export default function SidePanel({
           value={ searchQuery }
           onChange={(e) => setSearchQuery(e.target.value)}
         />
-        <FilterButton 
+        {/* <FilterButton 
           id="Constellation-btn" 
           icon={iconConstell} 
           onClick={() => setIsConstellation( !isConstellation )}
@@ -61,7 +61,7 @@ export default function SidePanel({
           onClick={() => setIsStar( !isStar )}
           isActive={isStar}
           bgColor="var(--secondary-750)"
-        />
+        /> */}
       </div>
       <div className='side-panel-body'>
         { 

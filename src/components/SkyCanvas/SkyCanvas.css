@@ -64,12 +64,12 @@
 }
 
 .constellation-label-text {
-  color: var(--primary-750);
+  color: var(--primary-600);
 
   font-family: sans-serif;
   font-size: 18px;
   text-transform: uppercase;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.4rem;
   
   user-select: none;
   cursor: pointer;
@@ -83,27 +83,27 @@
 
 /* default */
 .constellation-label-container .constellation-btn-container { display: none; }
-.constellation-label-container .icon-off { display: none; background-color: var(--primary-750); }
-.constellation-label-container .icon-on { display: none; background-color: var(--primary-750); }
-.constellation-label-container .star-label-text { display: block; color: var(--primary-750); font-weight: normal; }
+.constellation-label-container .icon-off { display: none; background-color: var(--primary-600); }
+.constellation-label-container .icon-on { display: none; background-color: var(--primary-600); }
+.constellation-label-container .star-label-text { display: block; color: var(--primary-600); font-weight: normal; }
 
 /* selected */
 .constellation-label-container.selected .constellation-btn-container { display: block; }
-.constellation-label-container.selected .icon-off { display: block; background-color: var(--primary-500); }
-.constellation-label-container.selected .icon-on { display: none; background-color: var(--primary-500); }
-.constellation-label-container.selected .constellation-label-text { display: block; color: var(--primary-500); }
+.constellation-label-container.selected .icon-off { display: block; background-color: var(--primary-400); }
+.constellation-label-container.selected .icon-on { display: none; background-color: var(--primary-400); }
+.constellation-label-container.selected .constellation-label-text { display: block; color: var(--primary-400); }
 
 /* targeted */
 .constellation-label-container.targeted .constellation-btn-container { display: block; }
-.constellation-label-container.targeted .icon-off { display: none; background-color: var(--primary-500); }
-.constellation-label-container.targeted .icon-on { display: block; background-color: var(--primary-500); }
-.constellation-label-container.targeted .constellation-label-text { display: block; color: var(--primary-500); }
+.constellation-label-container.targeted .icon-off { display: none; background-color: var(--primary-400); }
+.constellation-label-container.targeted .icon-on { display: block; background-color: var(--primary-400); }
+.constellation-label-container.targeted .constellation-label-text { display: block; color: var(--primary-400); }
 
 /* pale */
 .constellation-label-container.pale .constellation-btn-container { display: none; }
-.constellation-label-container.pale .icon-off { display: none; background-color: var(--primary-750); }
-.constellation-label-container.pale .icon-on { display: none; background-color: var(--primary-750); }
-.constellation-label-container.pale .constellation-label-text { display: block; color: var(--primary-750); }
+.constellation-label-container.pale .icon-off { display: none; background-color: var(--primary-600); }
+.constellation-label-container.pale .icon-on { display: none; background-color: var(--primary-600); }
+.constellation-label-container.pale .constellation-label-text { display: block; color: var(--primary-600); }
 
 
 /* STAR STYLES =============================================== */
@@ -125,24 +125,24 @@
 }
 
 /* default */
-.star-label-container .icon-off { display: block; background-color: var(--secondary-750); }
-.star-label-container .icon-on { display: none; background-color: var(--secondary-750); }
-.star-label-container .star-label-text { display: block; color: var(--secondary-750); font-weight: normal; }
+.star-label-container .icon-off { display: block; background-color: var(--secondary-600); }
+.star-label-container .icon-on { display: none; background-color: var(--secondary-600); }
+.star-label-container .star-label-text { display: block; color: var(--secondary-600); font-weight: normal; }
 
 /* .selected */
-.star-label-container.selected .icon-off { display: block; background-color: var(--secondary-500); }
-.star-label-container.selected .icon-on { display: none; background-color: var(--secondary-500); }
-.star-label-container.selected .star-label-text { display: block; color: var(--secondary-500); font-weight: normal; }
+.star-label-container.selected .icon-off { display: block; background-color: var(--secondary-400); }
+.star-label-container.selected .icon-on { display: none; background-color: var(--secondary-400); }
+.star-label-container.selected .star-label-text { display: block; color: var(--secondary-400); font-weight: normal; }
 
 /*  .targeted */
-.star-label-container.targeted .icon-off { display: none; background-color: var(--secondary-500); }
-.star-label-container.targeted .icon-on { display: block; background-color: var(--secondary-500); }
-.star-label-container.targeted .star-label-text { display: block; color: var(--secondary-500); font-weight: normal; }
+.star-label-container.targeted .icon-off { display: none; background-color: var(--secondary-400); }
+.star-label-container.targeted .icon-on { display: block; background-color: var(--secondary-400); }
+.star-label-container.targeted .star-label-text { display: block; color: var(--secondary-400); font-weight: normal; }
 
 /*  .pale */
-.star-label-container.pale .icon-off { display: none; background-color: var(--secondary-750); }
-.star-label-container.pale .icon-on { display: none; background-color: var(--secondary-750); }
-.star-label-container.pale .star-label-text { display: none; color: var(--secondary-500); font-weight: normal; }
+.star-label-container.pale .icon-off { display: none; background-color: var(--secondary-600); }
+.star-label-container.pale .icon-on { display: none; background-color: var(--secondary-600); }
+.star-label-container.pale .star-label-text { display: none; color: var(--secondary-400); font-weight: normal; }
 
 /* =========================================================== */
 

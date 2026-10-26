@@ -29,14 +29,19 @@ html, body, #root {
   /* Primary */
   --primary-50: #F2E5FF;
   --primary-250: #BF80FF;
+  --primary-400: #9833FF;
   --primary-500: #7E00FF;
+  --primary-600: #6500CC;
   --primary-750: #3F0080;
+  --primary-900: #190033;
   --primary-950: #0D001A;
 
   /* Secondary */
   --secondary-50: #E5FAFF;
   --secondary-250: #80E5FF;
+  --secondary-400: #33D6FF;
   --secondary-500: #00CCFF;
+  --secondary-600: #00A3CC;
   --secondary-750: #006680;
   --secondary-950: #00141A;
 
@@ -49,9 +54,12 @@ html, body, #root {
 
 /* Tokens */
   --text-white: var(--white);
-  --text-grey: var(--grey);
+  --text-grey1: var(--grey);
+  --text-grey: color-mix(in srgb, var(--grey) 70%, var(--primary-250));
   --text-title: var(--primary-250);
   --btn-border-darkgrey: var(--darkgrey);
+  --card-bg-color_1: var(--primary-950);
+
   --card-bg-color: color-mix(in srgb, var(--primary-750) 30%, var(--black));
 
 

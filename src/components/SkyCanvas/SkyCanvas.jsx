@@ -103,8 +103,8 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
     
     // CREATING OBJECTS ON THE SCENE ------------------------------------------------
 
-    const lineMaterial = new THREE.LineBasicMaterial({ color: 0x3F0080, });
-    const lineMaterialSelected = new THREE.LineBasicMaterial({ color: 0x7E00FF});
+    const lineMaterial = new THREE.LineBasicMaterial({ color: 0x6500CC, });
+    const lineMaterialSelected = new THREE.LineBasicMaterial({ color: 0x9833FF});
     
     const sun = createSun();
     scene.add(sun)

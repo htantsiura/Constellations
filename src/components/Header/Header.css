@@ -6,7 +6,10 @@
   padding: 12px 24px;
   width: 100%;
   height: var(--header-height);
-  background-color: var(--black);
+  /* background-color: var(--primary-950); */
+  background-color: color-mix(in srgb, var(--primary-950) 0%, transparent);
+  backdrop-filter: blur(8px); 
+  
   color: var(--white); 
   min-width: 1440px;
 
@@ -30,7 +33,7 @@
 .nav-btn {
   background: none;
   border: none;
-  color: var(--text-white);
+  color: var(--primary-250);
   cursor: pointer;
   font-size: 13pt;
   padding: 8px 12px;

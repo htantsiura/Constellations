@@ -2,12 +2,17 @@
   padding: 8px 12px;
   border-radius: var(--corner-radius);
   border: none;
-  background-color: var(--darkgrey);
+  color: var(--primary-250);
+  background-color: color-mix(in srgb, var(--primary-750) 70%, var(--black));
   outline: none;
-  width: 188px;
+  width: 300px;
+
+  font-size: 15px;
+
 }
 
 .header-search-input::placeholder {
-  color: var(--text-grey);
+  color: var(--primary-250);
   opacity: 1;
 }
+

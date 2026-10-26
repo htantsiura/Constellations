@@ -5,11 +5,11 @@
 
   border-radius: var(--corner-radius);
   border: none;
-  /* border: 1px solid; */
-  /* border-color: var(--primary-250); */
-  background-color: var(--primary-750);
+  border: 1px solid;
+  border-color: var(--primary-600);
+  background-color: var(--primary-950); 
   
-  color: var(--primary-250);
+  color: var(--primary-400);
   opacity: 1;
   transition: opacity 0.2s ease;
   cursor: pointer;
