@@ -68,7 +68,7 @@
 .constellation-label-container {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 8px;
 }
 
 .constellation-label-text {
@@ -100,13 +100,13 @@
 .constellation-label-container.selected .constellation-btn-container { display: block; }
 .constellation-label-container.selected .icon-off { display: block; background-color: var(--primary-400); }
 .constellation-label-container.selected .icon-on { display: none; background-color: var(--primary-400); }
-.constellation-label-container.selected .constellation-label-text { display: block; color: var(--primary-400); }
+.constellation-label-container.selected .constellation-label-text { display: block; color: var(--primary-400); font-weight: normal; }
 
 /* targeted */
 .constellation-label-container.targeted .constellation-btn-container { display: block; }
 .constellation-label-container.targeted .icon-off { display: none; background-color: var(--primary-400); }
 .constellation-label-container.targeted .icon-on { display: block; background-color: var(--primary-400); }
-.constellation-label-container.targeted .constellation-label-text { display: block; color: var(--primary-400); }
+.constellation-label-container.targeted .constellation-label-text { display: block; color: var(--primary-400); font-weight: normal; }
 
 /* pale */
 .constellation-label-container.pale .constellation-btn-container { display: none; }
