@@ -54,6 +54,14 @@
   mask-image: url('src/assets/starClicked.svg'); 
 }
 
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 /* CONSTELLATION STYLES ====================================== */
 
@@ -79,6 +87,7 @@
 .constellation-btn-container {
   cursor: pointer;
   pointer-events: auto;
+  animation: spin 6s linear infinite;
 }
 
 /* default */
@@ -111,7 +120,7 @@
 .star-label-container {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 8px;
   margin-left: calc(var(--star-icon-size) * -0.5);
 
   user-select: none;
@@ -122,6 +131,7 @@
 .star-btn-container {
   cursor: pointer;
   pointer-events: auto;
+  animation: spin 6s linear infinite;
 }
 
 /* default */
