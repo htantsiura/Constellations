@@ -19,15 +19,18 @@ function AboutCard({ data }) {
 export default function AboutTheProject({ onClose }) {
   return(
     <div className='page-about'>
-      <div className='page-about-header' >
+      {/* <div className='page-about-header' >
         <ButtonBack 
           icon={ iconBackArrow }
           onClick={ onClose }
           />
-      </div>
+      </div> */}
       <div className='page-about-body'>
         <AboutCard data={aboutData[0]} />
         <AboutCard data={aboutData[1]} />
+        <AboutCard data={aboutData[2]} />
+        <AboutCard data={aboutData[3]} />
+        <AboutCard data={aboutData[4]} />
       </div>
     </div>
   )

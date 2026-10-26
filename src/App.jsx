@@ -38,12 +38,12 @@ export default function App() {
       <div className='ui-container'>
         <Header 
           onOpenAbout={() => setActivePage('about')}
-          onOpenContacts={() => setActivePage('contacts')}
+          onOpenScene={() => setActivePage('panel')}
         />
         <main className='main-section'>
           { activePage === 'about' && <AboutTheProject onClose={() => setActivePage('panel')} /> }
-          { activePage === 'contacts' && <Contacts onClose={() => setActivePage('panel')} /> }
-          { activePage === 'panel' && 
+{/*           { activePage === 'contacts' && <Contacts onClose={() => setActivePage('panel')} /> }
+ */}          { activePage === 'panel' && 
             <SidePanel 
               isStar={isStar} setIsStar={setIsStar}
               isConstellation={isConstellation} setIsConstellation={setIsConstellation}
