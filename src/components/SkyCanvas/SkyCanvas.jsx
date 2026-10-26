@@ -21,6 +21,7 @@ import { cameraZoom, changeCameraTarget, changeCameraSelectFromZero } from '../T
 export default function SkyCanvas({ onStarClick, onConstellationClick, expandedId }) {
   
   const distanceScale = 1
+  const FOV = 45;
   const isLogariphScale = true;
   const zeroPos = new THREE.Vector3(0, 0, 0)
 
@@ -45,7 +46,7 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
     const scene = new THREE.Scene()
     scene.background = new THREE.Color(0x0D001A)
 
-    const camera = new THREE.PerspectiveCamera( 35, width / height, 10, 2500 )
+    const camera = new THREE.PerspectiveCamera( FOV, width / height, 10, 2500 )
     camera.position.set(0, 0, 0)
     cameraRef.current = camera
     cameraObj.current = camera;
@@ -80,12 +81,12 @@ export default function SkyCanvas({ onStarClick, onConstellationClick, expandedI
       if(obj.userData.state === 'selected') {
         obj.userData.setState('targeted')
         changeCameraTarget(obj.userData.pivot, controlsRef)
-        cameraZoom(camera, 30)
+        cameraZoom(camera, FOV - 5)
         
       } else {
         obj.userData.setState('selected')
         changeCameraSelectFromZero(obj.userData.pivot, cameraRef, controlsRef)
-        cameraZoom(camera, 35)
+        cameraZoom(camera, FOV)
       }
       activeObjRef.current = obj;
 
